@@ -1,5 +1,5 @@
 html { font-family: sans-serif; background: #eee; padding: 1rem; }
-body { max-width: 960px; margin: 0 auto; background: white; }
+body { max-width: 1080; margin: 0 auto; background: rgb(177, 172, 172);  min-height: 100vh; width: auto;}
 h1 { font-family: serif; color: #377ba8; margin: 1rem 0; }
 a { color: #377ba8; }
 hr { border: none; border-top: 1px solid lightgray; }
@@ -25,4 +25,50 @@ nav ul li a, nav ul li span, header .action { display: block; padding: 0.5rem; }
 input.danger { color: #cc2f2e; }
 input[type=submit] { align-self: start; min-width: 10em; }
 
-.B1{margin-right: 10em; width: 50%; text-align: center; padding-bottom: 8px; align-items: center;}
+#headHover:hover{
+    color: white;
+}
+
+/* Divisions */
+.relativeTest {
+    vertical-align: top;
+    align-items: center;
+    justify-content: center;   
+    display: flex;   
+    margin: auto;
+    padding: 10px 0;
+    border-style:solid;
+    border-color:black;
+} 
+
+
+/* Buttons */
+.headers{
+    font-family: serif; 
+    color: black; 
+    margin: 1rem 0;
+}
+
+.headers:hover{
+    font-family: serif; 
+    color: white; 
+    margin: 1rem 0;
+}
+
+.B1{
+    font-family: serif; 
+    font-size: larger;
+    font-weight: bold;
+    margin-right: 7em; 
+    width: 110px; 
+    text-align: center; 
+    padding-bottom: 8px; 
+    align-items: center; 
+    border: 2px solid #555555;
+    color: #377ba8;
+}
+
+.B1:hover {
+    background-color: #e4c3c3;
+    color: black;
+} 

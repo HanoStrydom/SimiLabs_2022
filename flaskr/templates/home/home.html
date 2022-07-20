@@ -1,15 +1,26 @@
 {% extends 'base.html' %}
 
-{% block header %}
-    {% block title %}   <a href="/home"> <button class="B1"> <h1>  Home </h1> </button> </a>
-                        <a href="/text"> <button class="B1"> <h1>  Text </h1> </button> </a> 
-                        <a href="/Stylometry"> <button class="B1"> <h1>  Stylometry </h1> </button> </a> 
-                        <a href="/Reports"> <button class="B1"> <h1>  Reports </h1> </button> </a> 
-    {% endblock %} 
-{% endblock %}
+<!-- {% block header %}
+    {% block title %} <h1> Home </h1> {% endblock %} 
+{% endblock %} -->
 
 {% block content %}
 
-    <h2> Hello World </h2>
+<!-- <div class="relativeTest">
+    <a href="/home"> <button class="B1">  Home  </button> </a>
+    <a href="/text"> <button class="B1">  Text  </button> </a> 
+    <a href="/Stylometry"> <button class="B1">   Stylo  </button> </a> 
+    <a href="/Reports"> <button class="B1">   Reports  </button> </a>
+</div> -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="w3-container">    
+    <div class="w3-bar w3-light-grey">
+      <a href="#" class="w3-bar-item w3-button">Home</a>
+      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
 
 {% endblock %}
