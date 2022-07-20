@@ -1,6 +1,6 @@
 import os, socket
 
-from flask import Flask
+from flask import Flask, render_template
 
 HOST = ''
 PORT = 5000
@@ -43,7 +43,12 @@ def create_app(test_config=None):
 
     # a simple page that says hello
     @app.route('/')
-    def hello():
-        return f'Server is running on Port {PORT}'
+    def initial():
+        return render_template('auth/register.html')
+        #return f'Server is running on Port {PORT}'
+
+    @app.route('/home')
+    def home():
+        return render_template('home/home.html')
 
     return app
