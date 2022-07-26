@@ -4,8 +4,6 @@ flask run -->
 
 {% block content %}
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +13,7 @@ flask run -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/static/home.css">
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
@@ -27,39 +26,56 @@ body {font-family: "Lato", sans-serif}
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="/home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="auth/login" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Text Comparison</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Stylometry</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Reports</a>
+    <!-- <a href="/text" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Text Comparison</a> -->
+
+    <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="Text Compare">Text Compare <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="/QuickText" class="w3-bar-item w3-button">Quick</a>
+            <a href="/ExtensiveText" class="w3-bar-item w3-button">Extensive</a>
+        </div>
+      </div>
+
+    <a href="/stylometry" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Stylometry</a>
+    <a href="/reports" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Reports</a>
+
+
+    
+
+
     <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Help</a>
+        <a href="/help" class="w3-bar-item w3-button">Help</a>
         <a href="{{ url_for('auth.logout') }}" class="w3-bar-item w3-button">Log Out</a>
       </div>
     </div>
+
+
   </div>
 </div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
 
 <!-- Page content -->
+<br>
+<br>
+<br>
 
-  
+<h1> Shortcut</h1>
+<p> Choose a file to continue working on:</p>
+
+
+
+
+
+
 <!-- End Page Content -->
 </div>
 
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <p class="w3-medium">Powered by <a href="https://github.com/ISE-Project-2022/SimiLabs_2022" target="_blank">SimiLabs 2022</a></p>
+  <p class="w3-medium">Powered by <a href="https://github.com/ISE-Project-2022/SimiLabs_2022" target="_blank"> SimiLabs 2022</a></p>
 </footer>
 
 <script>

@@ -51,4 +51,27 @@ def create_app(test_config=None):
     def home():
         return render_template('home/home.html')
 
+    @app.route('/QuickText')
+    def QuickText():
+        return render_template('text/QuickText.html')
+
+    @app.route('/ExtensiveText')
+    def ExtensiveText():
+        return render_template('text/ExtensiveText.html')
+
+
+    @app.route('/stylometry')
+    def stylo():
+        return render_template('stylometry/stylo.html')
+
+    @app.route('/reports')
+    def report():
+        return render_template('reports/report.html')
+
+    @app.route('/help')
+    def help():
+        return render_template('help/help.html')
+
+    
+
     return app

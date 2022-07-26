@@ -13,7 +13,7 @@ flask run -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/static/home.css">
+<link rel="stylesheet" href="/static/text.css">
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
@@ -61,11 +61,21 @@ body {font-family: "Lato", sans-serif}
 <br>
 <br>
 
-<h1> Shortcut</h1>
-<p> Choose a file to continue working on:</p>
 
-
-
+<div class="form-center" style="border: 1px solid;">
+  <form action="/action_page.php">
+    <p>Choose Corpus:</p>
+    <input type="file" id="Source" name="Source" class="input">
+    <br>
+    <p>Upload Document:</p>
+    <input type="file" id="Comparison" name="Comparison" class="input">
+    <br>
+    <br>
+    <input type="submit" class="submit" >
+    <br>
+    <br>
+  </form>
+</div>
 
 
 

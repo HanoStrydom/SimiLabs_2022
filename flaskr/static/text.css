@@ -1,0 +1,18 @@
+h1 {align-items: center; justify-content: center; display: flex; font-weight: bold;}
+p {align-items: center; justify-content: center; display: flex; font-weight: bold;}
+.form-center{
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(197, 202, 200);
+    width: 50%;
+}
+
+.submit{
+    margin: auto;
+}
+
+.input{
+    margin-left: 13em;
+}
