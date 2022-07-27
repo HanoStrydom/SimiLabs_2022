@@ -5,3 +5,5 @@ CREATE TABLE user (
   username TEXT UNIQUE NOT NULL,
   password TEXT NOT NULL
 );
+
+INSERT INTO user VALUES ('Test','1234')
