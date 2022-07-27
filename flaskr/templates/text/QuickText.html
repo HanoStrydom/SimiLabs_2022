@@ -62,20 +62,35 @@ body {font-family: "Lato", sans-serif}
 <br>
 
 
-<div class="form-center" style="border: 1px solid;">
-  <form action="/action_page.php">
-    <p>Choose first Document:</p>
-    <input type="file" id="Source" name="Source" class="input">
-    <br>
-    <p>Choose second Document:</p>
-    <input type="file" id="Comparison" name="Comparison" class="input">
-    <br>
-    <br>
-    <input type="submit" class="submit" >
-    <br>
-    <br>
-  </form>
-</div>
+<!-- <div class="form-center" style="border: 1px solid;">
+  <form action = "http://localhost:5000/uploader" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+      </form>
+</div> -->
+<p>
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+		<ul class=flashes>
+		{% for message in messages %}
+		  <li>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	  {% endif %}
+	{% endwith %}
+</p>
+<form method="post" action="/QuickText" enctype="multipart/form-data">
+    <dl>
+		<p>
+			<input type="file" name="file" autocomplete="off" required>
+      <input type="file" name="file2" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input type="submit" value="Submit">
+	</p>
+</form>
 
 
 
