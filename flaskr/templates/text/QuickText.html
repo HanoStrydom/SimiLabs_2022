@@ -60,15 +60,6 @@ body {font-family: "Lato", sans-serif}
 <br>
 <br>
 <br>
-
-
-<!-- <div class="form-center" style="border: 1px solid;">
-  <form action = "http://localhost:5000/uploader" method = "POST" 
-         enctype = "multipart/form-data">
-         <input type = "file" name = "file" />
-         <input type = "submit"/>
-      </form>
-</div> -->
 <p>
 	{% with messages = get_flashed_messages() %}
 	  {% if messages %}
@@ -80,16 +71,21 @@ body {font-family: "Lato", sans-serif}
 	  {% endif %}
 	{% endwith %}
 </p>
-<form method="post" action="/QuickText" enctype="multipart/form-data">
+<div class="form-center">
+  <form method="post" action="/QuickText" enctype="multipart/form-data">
     <dl>
-		<p>
-			<input type="file" name="file" autocomplete="off" required>
-      <input type="file" name="file2" autocomplete="off" required>
-		</p>
+        <p>
+            <p>Upload Source Document</p>
+            <input type="file" name="file" autocomplete="off" required class="input">
+            <p>Upload Comparison Document</p>
+            <input type="file" name="file2" autocomplete="off" required class="input">
+        </p>
     </dl>
     <p>
-		<input type="submit" value="Submit">
-	</p>
+          <input type="submit" value="Submit">
+      </p>
+</form>
+</div>
 </form>
 
 
