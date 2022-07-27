@@ -6,4 +6,4 @@ CREATE TABLE user (
   password TEXT NOT NULL
 );
 
-INSERT INTO user VALUES ('Test','1234')
+INSERT INTO user VALUES (1,'Test','1234')
