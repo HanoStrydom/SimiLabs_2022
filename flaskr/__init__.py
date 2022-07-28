@@ -7,8 +7,6 @@ from werkzeug.utils import secure_filename
 from werkzeug.datastructures import  FileStorage
 
 
-
-
 HOST = ''
 PORT = 5000
 
@@ -68,7 +66,7 @@ def create_app(test_config=None):
     # a simple page that says hello
     @app.route('/')
     def initial():
-        return render_template('auth/register.html')
+        return render_template('auth/login.html')
         #return f'Server is running on Port {PORT}'
 
     @app.route('/home')

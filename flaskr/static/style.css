@@ -72,3 +72,14 @@ input[type=submit] { align-self: start; min-width: 10em; }
     background-color: #e4c3c3;
     color: black;
 } 
+
+
+.form-center{
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(197, 202, 200);
+    width: 50%;
+    border: 3px solid black;
+}

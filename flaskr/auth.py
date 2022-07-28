@@ -14,6 +14,7 @@ def register():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
+        password2 = request.form['password2']
         db = get_db()
         error = None
 
@@ -22,17 +23,20 @@ def register():
         elif not password:
             error = 'Password is required.'
 
-        if error is None:
-            try:
-                db.execute(
-                    "INSERT INTO user (username, password) VALUES (?, ?)",
-                    (username, generate_password_hash(password)),
-                )
-                db.commit()
-            except db.IntegrityError:
-                error = f"User {username} is already registered."
-            else:
-                return redirect(url_for("auth.login"))
+        if(password == password2):
+            if error is None:
+                try:
+                    db.execute(
+                        "INSERT INTO user (username, password) VALUES (?, ?)",
+                        (username, generate_password_hash(password)),
+                    )
+                    db.commit()
+                except db.IntegrityError:
+                    error = f"User {username} is already registered."
+                else:
+                    return redirect(url_for("auth.login"))
+        else:
+            error = f"Passwords do not Match"      
 
         flash(error)
 

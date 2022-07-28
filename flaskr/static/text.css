@@ -1,5 +1,6 @@
 h1 {align-items: center; justify-content: center; display: flex; font-weight: bold;}
 p {align-items: center; justify-content: center; display: flex; font-weight: bold;}
+
 .form-center{
     margin: auto;
     display:flex;
