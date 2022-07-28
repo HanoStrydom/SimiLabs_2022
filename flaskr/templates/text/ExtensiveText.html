@@ -55,6 +55,18 @@ body {font-family: "Lato", sans-serif}
   </div>
 </div>
 
+<p>
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+  {% endwith %}
+</p>
+
 
 <!-- Page content -->
 <br>
@@ -69,7 +81,7 @@ body {font-family: "Lato", sans-serif}
         <p>Upload Corpus Document</p>
         <input type="file" name="files[]" multiple="true" autocomplete="off" required class="input">
         <p>Upload Comparison Document</p>
-        <input type="file" name="file2" autocomplete="off" required class="input">
+        <input type="file" name="comparison" autocomplete="off" required class="input">
       </p>
     </dl>
       <p>
