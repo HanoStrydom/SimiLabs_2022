@@ -63,18 +63,19 @@ body {font-family: "Lato", sans-serif}
 
 
 <div class="form-center" style="border: 1px solid;">
-  <form action="/action_page.php">
-    <p>Choose Corpus:</p>
-    <input type="file" id="Source" name="Source" class="input">
-    <br>
-    <p>Upload Document:</p>
-    <input type="file" id="Comparison" name="Comparison" class="input">
-    <br>
-    <br>
-    <input type="submit" class="submit" >
-    <br>
-    <br>
-  </form>
+  <form method="post" action="/ExtensiveText" enctype="multipart/form-data">
+    <dl>
+      <p>
+        <p>Upload Corpus Document</p>
+        <input type="file" name="files[]" multiple="true" autocomplete="off" required class="input">
+        <p>Upload Comparison Document</p>
+        <input type="file" name="file2" autocomplete="off" required class="input">
+      </p>
+    </dl>
+      <p>
+        <input type="submit" value="Submit">
+      </p>
+    </form>
 </div>
 
 
