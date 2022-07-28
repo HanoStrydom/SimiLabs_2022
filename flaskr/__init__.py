@@ -6,10 +6,8 @@ from flask import Flask, render_template, request,flash,redirect
 from werkzeug.utils import secure_filename
 from werkzeug.datastructures import  FileStorage
 
-
 HOST = ''
 PORT = 5000
-
 
 def create_app(test_config=None):
     # create and configure the app
@@ -95,6 +93,10 @@ def create_app(test_config=None):
     def help():
         return render_template('help/help.html')
 
+    @app.route('/popup', methods=['GET'])
+    def popup():
+        return render_template('text/popup.html')
+
     # Upload File
     @app.route('/QuickText', methods=['GET','POST'])
     def upload_file():
@@ -135,7 +137,6 @@ def create_app(test_config=None):
                     comparison = request.files['comparison']
                     filename3 = secure_filename(comparison.filename)
                     comparison.save(os.path.join(app.config['UPLOAD_FOLDER'], filename3))
-            # flash('File(s) successfully uploaded')
             return redirect('/home')
 
     return app
