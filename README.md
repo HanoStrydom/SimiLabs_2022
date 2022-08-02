@@ -22,6 +22,7 @@ Our goal and vision is to develop a ...
 
 # Packages
 - Download and install the lastest version of [Python]
+- Download and install the lastest version of [Visual Studio Code]
 - Before executing the development commands, import this packages:
 ```sh
 pip install .
@@ -55,4 +56,5 @@ Documentation can be found [here]
    [GitBash]: <https://git-scm.com/downloads>
    [here]: <https://github.com/ISE-Project-2022/Documentation>
    [python]: <https://www.python.org/downloads/>
+   [Visual Studio Code]: <https://code.visualstudio.com/download>
 
