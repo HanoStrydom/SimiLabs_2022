@@ -20,9 +20,15 @@ Powered by:
 # SimiLabs Goal
 Our goal and vision is to develop a ...
 
+# Packages
+- Download and install the lastest version of [Python]
+- Before executing the development commands, import this packages:
+```sh
+pip install .
+```
+
 # Development
 Before executing flask, the following commands needs to be run in [GitBash]:
-
 ```sh
 export FLASK_APP=flaskr
 export FLASK_ENV=development
@@ -44,8 +50,9 @@ Documentation can be found [here]
    [Hano Strydom]: <mailto: hanostrydom8@gmail.com>
    [Llewellyn Anthony]: <mailto: llewellynant@gmail.com>
    [Michael Rosin]: <mailto: michaeljoshuarosin@gmail.com>
-   [Annika du Toit]: <mailto: >
+   [Annika du Toit]: <mailto: nikadt.42@gmail.com>
    [Shené Boshoff]: <mailto: sheneboshoff6@gmail.com>
    [GitBash]: <https://git-scm.com/downloads>
    [here]: <https://github.com/ISE-Project-2022/Documentation>
+   [python]: <https://www.python.org/downloads/>
 
