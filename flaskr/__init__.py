@@ -61,7 +61,6 @@ def create_app(test_config=None):
     from . import auth
     app.register_blueprint(auth.bp)
 
-    # a simple page that says hello
     @app.route('/')
     def initial():
         return render_template('auth/login.html')
@@ -106,7 +105,7 @@ def create_app(test_config=None):
     def styloReport():
         return render_template('reports/styloReport.html')
 
-    #Report Links Begin
+    #Report Links End
 
     # Upload File
     @app.route('/QuickText', methods=['GET','POST'])
