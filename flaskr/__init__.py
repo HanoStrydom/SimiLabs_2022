@@ -93,9 +93,20 @@ def create_app(test_config=None):
     def help():
         return render_template('help/help.html')
 
+    #Report Links Begin
     @app.route('/quickReport', methods=['GET'])
     def quickReport():
-        return render_template('quickReport/quickReport.html')
+        return render_template('reports/quickReport.html')
+
+    @app.route('/extensiveReport', methods=['GET'])
+    def extensiveReport():
+        return render_template('reports/extensiveReport.html')
+
+    @app.route('/styloReport', methods=['GET'])
+    def styloReport():
+        return render_template('reports/styloReport.html')
+
+    #Report Links Begin
 
     # Upload File
     @app.route('/QuickText', methods=['GET','POST'])
@@ -116,7 +127,7 @@ def create_app(test_config=None):
                 file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
                 file2.save(os.path.join(app.config['UPLOAD_FOLDER'], filename2))
                 flash('File successfully uploaded')
-                return redirect('/home')
+                return redirect('/quickReport')
             else:
                 flash('Allowed file types are txt, pdf, docx')
                 return redirect(request.url)
@@ -137,6 +148,6 @@ def create_app(test_config=None):
                     comparison = request.files['comparison']
                     filename3 = secure_filename(comparison.filename)
                     comparison.save(os.path.join(app.config['UPLOAD_FOLDER'], filename3))
-            return redirect('/home')
+            return redirect('/extensiveReport')
 
     return app
