@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>{% block title %}{% endblock %} - SimiLabs</title>
+{% block header %}
+
+{% endblock %}
+</head>
+<body>
+
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="/home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <!-- <a href="/text" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Text Comparison</a> -->
+
+    <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="Text Compare">Text Compare <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="/QuickText" class="w3-bar-item w3-button">Quick</a>
+            <a href="/ExtensiveText" class="w3-bar-item w3-button">Extensive</a>
+        </div>
+      </div>
+
+    <a href="/stylometry" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Stylometry</a>
+    <a href="/reports" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Reports</a>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="/help" class="w3-bar-item w3-button">Help</a>
+        <a href="{{ url_for('auth.logout') }}" class="w3-bar-item w3-button">Log Out</a>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+{% block main %}
+
+
+
+{% endblock %}
+
+<!-- Footer -->
+<div id="footer">
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+      <p class="w3-medium">Powered by <a href="https://github.com/ISE-Project-2022/SimiLabs_2022" target="_blank"> SimiLabs 2022</a></p>
+    </footer>
+  </div>
+  
+  <script>
+  // Automatic Slideshow - change image every 4 seconds
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+  }
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+  

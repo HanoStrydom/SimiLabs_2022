@@ -93,9 +93,9 @@ def create_app(test_config=None):
     def help():
         return render_template('help/help.html')
 
-    @app.route('/popup', methods=['GET'])
-    def popup():
-        return render_template('text/popup.html')
+    @app.route('/quickReport', methods=['GET'])
+    def quickReport():
+        return render_template('quickReport/quickReport.html')
 
     # Upload File
     @app.route('/QuickText', methods=['GET','POST'])
