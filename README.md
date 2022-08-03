@@ -29,14 +29,24 @@ pip install .
 ```
 
 # Development
-Before executing flask, the following commands needs to be run in [GitBash]:
+Before executing flask, the following commands needs to be run in [GitBash]: 
+
+> Git Bash is an application for Microsoft Windows environments which provides an emulation layer for a Git command line experience. Bash is an acronym for Bourne Again Shell. A shell is a terminal application used to interface with an operating system through written commands
+
+*For older flask versions*
 ```sh
 export FLASK_APP=flaskr
 export FLASK_ENV=development
 flask init-db
 flask run
 ```
-> Git Bash is an application for Microsoft Windows environments which provides an emulation layer for a Git command line experience. Bash is an acronym for Bourne Again Shell. A shell is a terminal application used to interface with an operating system through written commands
+*For newer flask versions*
+```sh
+export FLASK_APP=example
+export FLASK_DEBUG=1
+flask init-db
+flask run
+```
 
 # Documentation
 Documentation can be found [here]
