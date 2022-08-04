@@ -2,7 +2,7 @@ from ipaddress import summarize_address_range
 import os, socket
 from types import MethodDescriptorType
 
-from flask import Flask, render_template, request,flash,redirect
+from flask import Flask, render_template, request,flash,redirect, url_for
 from werkzeug.utils import secure_filename
 from werkzeug.datastructures import  FileStorage
 
@@ -63,7 +63,7 @@ def create_app(test_config=None):
 
     @app.route('/')
     def initial():
-        return render_template('auth/login.html')
+        return redirect('auth/login')
         #return f'Server is running on Port {PORT}'
 
     @app.route('/home')
@@ -74,11 +74,9 @@ def create_app(test_config=None):
     def QuickText():
         return render_template('text/QuickText.html')
 
-    
     @app.route('/ExtensiveText')
     def ExtensiveText():
         return render_template('text/ExtensiveText.html')
-
 
     @app.route('/stylometry')
     def stylo():
