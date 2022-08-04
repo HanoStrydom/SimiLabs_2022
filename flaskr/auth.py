@@ -9,7 +9,7 @@ from flaskr.db import get_db
 
 bp = Blueprint('auth', __name__, url_prefix='/auth')
 
-@bp.route('/register', methods=('GET', 'POST'))
+@bp.route('/authRegister', methods=('GET', 'POST'))
 def register():
     session.clear()
     if request.method == 'POST':
@@ -35,13 +35,13 @@ def register():
                 except db.IntegrityError:
                     error = f"User {username} is already registered."
                 else:
-                    return redirect(url_for("auth.login"))
+                    return redirect(url_for("authLogin"))
         else:
             error = f"Passwords do not Match"      
 
         flash(error)
 
-    return render_template('auth/register.html')
+    return render_template('auth/authRegister.html')
 
 # Change if broken
 @bp.route('/authLogin', methods=('GET', 'POST'))
