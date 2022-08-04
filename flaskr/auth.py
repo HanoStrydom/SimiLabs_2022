@@ -62,11 +62,11 @@ def login():
         if error is None:
             session.clear()
             session['user_id'] = user['id']
-            return redirect(url_for('home'))
+            return redirect(url_for('authLogin'))
 
         flash(error)
     # delete if broken
-    return render_template('home/home.html')
+    return render_template('/auth/authLogin.html')
 
 @bp.before_app_request
 def load_logged_in_user():
