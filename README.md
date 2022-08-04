@@ -1,5 +1,5 @@
 # SimiLabs 2022
-**A plagiarism/stylometry checker Python flask application**
+**A plagiarism/stylometry checker using Python**
 ____________________________________________________________
 Powered by:
 [![N|Solid](https://codersera.com/blog/wp-content/uploads/2019/06/flask-1.png)](https://flask.palletsprojects.com/en/2.1.x/)
@@ -18,7 +18,7 @@ Powered by:
 | [Shené Boshoff] | Cloud Admin |
 
 # SimiLabs Goal
-Our goal and vision is to develop a ...
+The current requirements from the client (NWU Registrar), with Mr Zander Janse van Rensburg as the project overseeing manager, requires our company to design and build a modular workflow system that would assist lecturers in academics to identify and report academic misconduct cases according to standing NWU SOPS. The NWU Registrar must address plagiarism by evaluating each case individually and appointing experts to prepare technical reports. 
 
 # Packages
 - Download and install the lastest version of [Python]
@@ -27,6 +27,7 @@ Our goal and vision is to develop a ...
 ```sh
 pip install .
 ```
+> Requirements can also be seen in the requirements.txt document.
 
 # Development
 Before executing flask, the following commands needs to be run in [GitBash]: 
