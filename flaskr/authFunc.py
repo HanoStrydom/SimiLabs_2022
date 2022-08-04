@@ -42,8 +42,8 @@ def register():
 
     return render_template('auth/register.html')
 
-# Change if broken
-@bp.route('/authLogin', methods=('GET', 'POST'))
+
+@bp.route('/login', methods=('GET', 'POST'))
 def login():
     if request.method == 'POST':
         username = request.form['username']
@@ -65,8 +65,8 @@ def login():
             return redirect(url_for('home'))
 
         flash(error)
-    # delete if broken
-    return render_template('home/home.html')
+
+    return render_template('auth/authLogin.html')
 
 @bp.before_app_request
 def load_logged_in_user():
@@ -82,7 +82,7 @@ def load_logged_in_user():
 @bp.route('/logout')
 def logout():
     session.clear()
-    return redirect(url_for('authLogin'))
+    return redirect(url_for('initial'))
 
 def login_required(view):
     @functools.wraps(view)
