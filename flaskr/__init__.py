@@ -63,12 +63,16 @@ def create_app(test_config=None):
 
     @app.route('/')
     def initial():
-        return redirect('auth/login')
+        return redirect('auth/authLogin')
         #return f'Server is running on Port {PORT}'
 
     @app.route('/home')
     def home():
         return render_template('home/home.html')
+    
+    @app.route('/auth/authLogin')
+    def authLogin():
+        return render_template('auth/authLogin.html')
 
     @app.route('/QuickText')
     def QuickText():
