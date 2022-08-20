@@ -9,7 +9,7 @@ from werkzeug.datastructures import  FileStorage
 from werkzeug.exceptions import default_exceptions, HTTPException
 from html import escape
 import cs50
-import helpers
+from flaskr.helpers import lines, sentences, substrings
 import nltk
 nltk.download('punkt')
 
@@ -30,8 +30,9 @@ def create_app(test_config=None):
     # file Upload
     UPLOAD_FOLDER = os.path.join(path, 'flaskr/templates/uploader')
 
-    if not os.path.isdir(UPLOAD_FOLDER):
-        os.mkdir(UPLOAD_FOLDER)
+    # insert if uploading to folder
+    # if not os.path.isdir(UPLOAD_FOLDER):
+    #     os.mkdir(UPLOAD_FOLDER)
 
     app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
     ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'docx'])
@@ -152,7 +153,7 @@ def create_app(test_config=None):
     def compare():
         """Handle requests for /compare via POST"""
         # Read files
-        if not request.files["file"] or not request.files["file2"]:
+        if not request.files["file1"] or not request.files["file2"]:
             abort(400, "missing file")
         try:
             file1 = request.files["file1"].read().decode("utf-8")
@@ -182,7 +183,7 @@ def create_app(test_config=None):
         highlights2 = highlight(file2, regexes)
 
         # Output comparison
-        return render_template("compare.html", file1=highlights1, file2=highlights2)
+        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2)
 
     def highlight(s, regexes):
         """Highlight all instances of regexes in s."""
@@ -250,7 +251,7 @@ def create_app(test_config=None):
     @app.errorhandler(HTTPException)
     def errorhandler(error):
         """Handle errors"""
-        return render_template("error.html", error=error), error.code
+        return render_template("./templates/reports/error.html", error=error), error.code
     for code in default_exceptions:
         app.errorhandler(code)(errorhandler)
 
