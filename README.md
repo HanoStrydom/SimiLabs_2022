@@ -54,6 +54,7 @@ Documentation can be found [here]
 
 ## License
 - MIT
+
 *Copyright (c) 2022 ISE-Project-2022*
 
 *Permission is hereby granted, free of charge, to any person obtaining a copy
