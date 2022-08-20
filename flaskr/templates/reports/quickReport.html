@@ -13,6 +13,12 @@
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
+.col-6 {
+    -ms-flex:0 0 50%;
+    flex:0 0 50%;
+    max-width:50%;
+    position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}.col{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%
+}
 </style>
 
 {% endblock %}
@@ -32,13 +38,13 @@ body {font-family: "Lato", sans-serif}
 </div>
 
 <!-- Suspect Doc -->
-<div>
-
+<div class="col-6">
+    <pre>{{ file1 | safe }}</pre>
 </div>
 
 <!-- Report -->
-<div>
-
+<div class="col-6">
+    <pre>{{ file2 | safe }}</pre>
 </div>
 
 <!-- End Page Content -->
