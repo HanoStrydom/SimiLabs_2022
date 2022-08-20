@@ -9,7 +9,7 @@ from werkzeug.datastructures import  FileStorage
 from werkzeug.exceptions import default_exceptions, HTTPException
 from html import escape
 import cs50
-from helpers import lines, sentences, substrings
+import helpers
 import nltk
 nltk.download('punkt')
 
