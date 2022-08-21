@@ -251,7 +251,7 @@ def create_app(test_config=None):
     @app.errorhandler(HTTPException)
     def errorhandler(error):
         """Handle errors"""
-        return render_template("./templates/reports/error.html", error=error), error.code
+        return render_template("/reports/error.html", error=error), error.code
     for code in default_exceptions:
         app.errorhandler(code)(errorhandler)
 

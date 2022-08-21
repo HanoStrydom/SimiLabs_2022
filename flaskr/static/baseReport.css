@@ -46,7 +46,8 @@
 {
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    
 }
 
   pre
@@ -55,7 +56,6 @@
     overflow: auto;
     padding: 15px;
     white-space: pre-wrap;
-    margin-left: 10em;
 }
 
 span.highlight
