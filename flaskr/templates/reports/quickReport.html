@@ -33,14 +33,19 @@ body {font-family: "Lato", sans-serif}
 </div>
 
 <!-- Suspect Doc -->
-<div class="col-6">
-    <pre>{{ file1 | safe }}</pre>
+<div class="container-fluid">
+    <div class="row" style="width: 50%">
+        <div class="col-6" style="border: 3px solid black;">
+            <pre>{{ file1 | safe }}</pre>
+        </div>
+        
+        <!-- Report -->
+        <div class="col-6" style="border: 3px solid black;">
+            <pre>{{ file2 | safe }}</pre>
+        </div>
+    </div>
 </div>
 
-<!-- Report -->
-<div class="col-6">
-    <pre>{{ file2 | safe }}</pre>
-</div>
 
 <!-- End Page Content -->
 

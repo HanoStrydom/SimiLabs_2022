@@ -41,3 +41,24 @@
     opacity: 1;
     right: 0;
   }
+
+  div.container-fluid, div.row, div.col, div.jumbotron
+{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+  pre
+{
+    height: 100%;
+    overflow: auto;
+    padding: 15px;
+    white-space: pre-wrap;
+    margin-left: 10em;
+}
+
+span.highlight
+{
+    background-color: #ff0;
+}

@@ -243,7 +243,7 @@ def create_app(test_config=None):
         for start, end, highlighted in regions:
             escaped = escape(s[start:end])
             if highlighted:
-                result += f"<span>{escaped}</span>"
+                result += f"<span class='highlight'>{escaped}</span>"
             else:
                 result += escaped
         return result
