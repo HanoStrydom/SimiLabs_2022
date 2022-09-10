@@ -1,5 +1,6 @@
 from ipaddress import summarize_address_range
 import os, socket
+from pydoc import doc
 from types import MethodDescriptorType
 
 import re
@@ -12,6 +13,10 @@ import cs50
 from flaskr.helpers import lines, sentences, substrings
 import nltk
 nltk.download('punkt')
+
+import docx2txt
+import sys
+import PyPDF2
 
 HOST = ''
 PORT = 5000
@@ -150,14 +155,35 @@ def create_app(test_config=None):
     #             flash('Allowed file types are txt, pdf, docx')
     #             return redirect(request.url)
 
+
     def compare():
         """Handle requests for /compare via POST"""
         # Read files
         if not request.files["file1"] or not request.files["file2"]:
             abort(400, "missing file")
         try:
-            file1 = request.files["file1"].read().decode("utf-8")
-            file2 = request.files["file2"].read().decode("utf-8")
+
+            #Code to convert files to text - Thank you copilot for the help
+            if request.files["file1"].filename.endswith('.docx'):
+                file1 = docx2txt.process(request.files["file1"])
+            elif request.files["file1"].filename.endswith('.pdf'):
+                pdfReader = PyPDF2.PdfFileReader(request.files["file1"])
+                pageObj = pdfReader.getPage(0)
+                file1 = pageObj.extractText()
+
+            else:
+                file1 = request.files["file1"].read().decode("utf-8")
+
+            if request.files["file2"].filename.endswith('.docx'):
+                file2 = docx2txt.process(request.files["file2"])
+            elif request.files["file2"].filename.endswith('.pdf'):
+                pdfReader = PyPDF2.PdfFileReader(request.files["file2"])
+                pageObj = pdfReader.getPage(0)
+                file2 = pageObj.extractText()
+            else:
+                file2 = request.files["file2"].read().decode("utf-8")
+            
+
         except Exception:
             abort(400, "invalid file")
 
