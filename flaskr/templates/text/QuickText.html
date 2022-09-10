@@ -41,19 +41,7 @@ body {font-family: "Lato", sans-serif}
 
     <!-- Script to disable substring textbox unless the radiobutton is checked-->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            $("input[name='algorithm']").click(function () {
-                if ($("#chkSubstring").is(":checked")) {
-                    $("#txtSubstring").removeAttr("disabled");
-                    $("#txtSubstring").focus();
-                } else {
-                    $("#txtSubstring").attr("disabled", "disabled");
-                }
-            });
-        });
-    </script>
-
+    <script type="text/javascript" src="../../static/js/disabledtext.js"></script>
 
     <h5>Algorithm</h5>
               <input type="radio" name="algorithm" value="lines" checked> Lines<br>
