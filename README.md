@@ -26,6 +26,7 @@ The current requirements from the client (NWU Registrar), with Mr Zander Janse v
 - Before executing the development commands, import this packages:
 ```sh
 pip install .
+pip install -r requirements.txt
 ```
 > Requirements can also be seen in the requirements.txt document.
 
