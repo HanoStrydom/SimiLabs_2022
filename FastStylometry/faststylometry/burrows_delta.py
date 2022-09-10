@@ -98,9 +98,7 @@ def get_token_proportions(corpus: Corpus):
     """
     token_proportions = corpus.df_token_counts_by_author.to_numpy() / corpus.df_total_token_counts_by_author.to_numpy()
 
-    corpus.df_token_proportions = pd.DataFrame(token_proportions, columns=corpus.top_tokens,
-                                               index=corpus.df_token_counts_by_author.index)
-
+    corpus.df_token_proportions = pd.DataFrame(token_proportions, columns=corpus.top_tokens, index=corpus.df_token_counts_by_author.index)
 
 def get_author_z_scores(test_corpus: Corpus, training_corpus: Corpus = None) -> pd.DataFrame:
     """
