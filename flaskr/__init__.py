@@ -4,7 +4,7 @@ from pydoc import doc
 from types import MethodDescriptorType
 
 import re
-from flask import Flask, render_template, request,flash,redirect, url_for,abort, request 
+from flask import Flask, render_template, request,flash,redirect, url_for,abort, request, session 
 from werkzeug.utils import secure_filename
 from werkzeug.datastructures import  FileStorage
 from werkzeug.exceptions import default_exceptions, HTTPException
@@ -13,10 +13,15 @@ import cs50
 from flaskr.helpers import lines, sentences, substrings
 import nltk
 nltk.download('punkt')
-
 import docx2txt
 import sys
 import PyPDF2
+from flask_mysqldb import MySQL
+import MySQLdb.cursors
+from dotenv import load_dotenv
+from werkzeug.security import check_password_hash, generate_password_hash
+
+load_dotenv()
 
 HOST = ''
 PORT = 5000
@@ -25,8 +30,7 @@ def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
-        SECRET_KEY='dev',
-        DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
+        SECRET_KEY='dev'
     )
 
     # delete if broken
@@ -34,6 +38,11 @@ def create_app(test_config=None):
     path = os.getcwd()
     # file Upload
     UPLOAD_FOLDER = os.path.join(path, 'flaskr/templates/uploader')
+    app.config['MYSQL_HOST'] = os.getenv('MYSQL_HOST')
+    app.config['MYSQL_USER'] = os.getenv('MYSQL_USER')
+    app.config['MYSQL_PASSWORD'] = os.getenv('MYSQL_PASSWORD')
+    app.config['MYSQL_DB'] = os.getenv('MySQL_DB')
+    mysql = MySQL(app)
 
     # insert if uploading to folder
     # if not os.path.isdir(UPLOAD_FOLDER):
@@ -45,7 +54,6 @@ def create_app(test_config=None):
 
     def allowed_file(filename):
         return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
-
 
     if test_config is None:
         # load the instance config, if it exists, when not testing
@@ -68,9 +76,6 @@ def create_app(test_config=None):
         return 'Error: server failed to startup ... could not find port number'
     finally:
         s.close()
-    
-    from . import db
-    db.init_app(app)
 
     @app.after_request
     def after_request(response):
@@ -79,9 +84,6 @@ def create_app(test_config=None):
         response.headers["Expires"] = 0
         response.headers["Pragma"] = "no-cache"
         return response
-
-    from . import auth
-    app.register_blueprint(auth.bp)
 
     @app.route('/')
     def initial():
@@ -92,9 +94,59 @@ def create_app(test_config=None):
     def home():
         return render_template('home/home.html')
     
-    @app.route('/auth/authLogin')
+    @app.route('/auth/authLogin',methods =['GET', 'POST'])
     def authLogin():
-        return render_template('auth/authLogin.html')
+        msg = ''
+        if request.method == 'POST' and 'username' in request.form and 'password' in request.form:
+            username = request.form['username']
+            password = request.form['password']
+            # db = get_db()
+            cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
+            cursor.execute('SELECT * FROM accounts WHERE username = %s', ([username]))
+            account = cursor.fetchone()
+            if account is None:
+                msg = 'Incorrect username.'
+            elif not check_password_hash(account['password'], password):
+                msg = 'Incorrect password.'
+            if msg == '':
+                session['loggedin'] = True
+                session['id'] = account['id']
+                session['username'] = account['username']
+                msg = 'Logged in successfully !'
+                return render_template('/home/home.html', msg = msg)
+        return render_template('auth/authLogin.html', msg=msg)
+
+    @app.route('/logout')
+    def logout():
+        session.pop('loggedin', None)
+        session.pop('id', None)
+        session.pop('username', None)
+        return redirect(url_for('authLogin'))
+
+    @app.route('/auth/authRegister', methods=('GET', 'POST'))
+    def register():
+        msg = ''
+        if request.method == 'POST' and 'username' in request.form and 'password' in request.form and 'password2' in request.form:
+            username = request.form['username']
+            password = request.form['password']
+            password2 = request.form['password2']
+            cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
+            cursor.execute('SELECT * FROM accounts WHERE username = % s', ([username]))
+            account = cursor.fetchone()
+            if account:
+                msg = 'Account already exists !'
+            elif password != password2:
+                msg = 'Passwords do not match!'
+            elif not username or not password or not password2:
+                msg = 'Please fill out the form !'
+            else:
+                cursor.execute('INSERT INTO accounts VALUES (NULL,% s, % s)', ([username], [generate_password_hash(password)]))
+                mysql.connection.commit()
+                msg = 'You have successfully registered !'
+                return render_template('/home/home.html', msg = msg)
+        elif request.method == 'POST':
+            msg = 'Please fill out the form !'
+        return render_template('auth/authRegister.html', msg=msg)
 
     @app.route('/QuickText')
     def QuickText():

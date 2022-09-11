@@ -29,6 +29,7 @@ entrypoints==0.4
 executing==0.8.3
 filelock==3.7.0
 Flask==2.1.1
+Flask-MySQLdb==1.0.1
 Flask-Session==0.4.0
 Flask-WTF==1.0.1
 flaskr==1.0.0    
@@ -97,6 +98,7 @@ pyserial==3.5
 PySocks==1.7.1
 pytest==7.1.2
 python-dateutil==2.8.2
+python-dotenv==0.21.0
 pytz==2022.1
 pywin32==303
 pywinpty==2.0.5
