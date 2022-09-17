@@ -20,8 +20,8 @@ p {align-items: center; justify-content: center; display: flex; font-weight: bol
 }
 
 #footer {
-    position:absolute;
-    bottom: auto;
+    position:fixed;
+    bottom: 0;
     width:100%;
     /* background: linear-gradient(to right, #377ba8 , grey); */
     background: linear-gradient(89deg, #FF5EDF 20%, #04C8DE 100%);
