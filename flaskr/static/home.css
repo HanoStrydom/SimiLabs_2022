@@ -1,3 +1,7 @@
 h1 {align-items: center; justify-content: center; display: flex; font-weight: bold;}
 p {align-items: center; justify-content: center; display: flex; font-weight: bold;}
-#footer {position:absolute;bottom:0;width:100%;background: linear-gradient(89deg, purple 20%, rgb(252, 30, 233) 100%);}
+#footer {
+    position:fixed;
+    bottom:0px;width:100%;
+    background: linear-gradient(89deg, purple 20%, rgb(252, 30, 233) 100%);
+}
