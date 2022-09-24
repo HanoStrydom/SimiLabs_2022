@@ -20,6 +20,7 @@ from flask_mysqldb import MySQL
 import MySQLdb.cursors
 from dotenv import load_dotenv
 from werkzeug.security import check_password_hash, generate_password_hash
+from flaskr.wordcloud import create_wordcloud_from_file
 
 load_dotenv()
 
@@ -185,29 +186,6 @@ def create_app(test_config=None):
 
     # Upload File
     @app.route('/QuickText', methods=['GET','POST'])
-    # def upload_file():
-    #     if request.method == 'POST':
-    #         # check if the post request has the file part
-    #         if 'file' not in request.files:
-    #             flash('No file part')
-    #             return redirect(request.url)
-    #         file = request.files['file1']
-    #         file2 = request.files['file2']
-    #         if file.filename == '':
-    #             flash('No file selected for uploading')
-    #             return redirect(request.url)
-    #         if file and allowed_file(file.filename):
-    #             filename = secure_filename(file.filename)
-    #             filename2 = secure_filename(file2.filename)
-    #             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-    #             file2.save(os.path.join(app.config['UPLOAD_FOLDER'], filename2))
-    #             flash('File successfully uploaded')
-    #             return redirect('/quickReport')
-    #         else:
-    #             flash('Allowed file types are txt, pdf, docx')
-    #             return redirect(request.url)
-
-
     def compare():
         """Handle requests for /compare via POST"""
         # Read files
@@ -222,7 +200,6 @@ def create_app(test_config=None):
                 pdfReader = PyPDF2.PdfFileReader(request.files["file1"])
                 pageObj = pdfReader.getPage(0)
                 file1 = pageObj.extractText()
-
             else:
                 file1 = request.files["file1"].read().decode("utf-8")
 
@@ -259,9 +236,11 @@ def create_app(test_config=None):
         # Highlight files
         highlights1 = highlight(file1, regexes)
         highlights2 = highlight(file2, regexes)
+        argsFileName = request.files["file1"].filename
+        image = create_wordcloud_from_file(argsFileName)
 
         # Output comparison
-        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2)
+        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, image=image)
 
     def highlight(s, regexes):
         """Highlight all instances of regexes in s."""
@@ -326,6 +305,7 @@ def create_app(test_config=None):
                 result += escaped
         return result
 
+
     @app.errorhandler(HTTPException)
     def errorhandler(error):
         """Handle errors"""
@@ -352,3 +332,6 @@ def create_app(test_config=None):
             return redirect('/extensiveReport')
 
     return app
+
+
+    
