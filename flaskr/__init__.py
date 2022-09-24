@@ -20,6 +20,7 @@ from flask_mysqldb import MySQL
 import MySQLdb.cursors
 from dotenv import load_dotenv
 from werkzeug.security import check_password_hash, generate_password_hash
+from flaskr.wordcloud import create_wordcloud_from_file
 
 load_dotenv()
 
@@ -235,9 +236,11 @@ def create_app(test_config=None):
         # Highlight files
         highlights1 = highlight(file1, regexes)
         highlights2 = highlight(file2, regexes)
+        argsFileName = request.files["file1"].filename
+        image = create_wordcloud_from_file(argsFileName)
 
         # Output comparison
-        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2)
+        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, image=image)
 
     def highlight(s, regexes):
         """Highlight all instances of regexes in s."""
