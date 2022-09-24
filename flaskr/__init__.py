@@ -197,35 +197,37 @@ def create_app(test_config=None):
             doc2 = request.files["file2"]
 
             #Code to convert files to text - Thank you copilot for the help
-            if request.files["file1"].filename.endswith('.docx'):
-                file1 = docx2txt.process(request.files["file1"])
+            if doc1.filename.endswith('.docx'):
                 filenamedoc = secure_filename(doc1.filename)
                 doc1.save(os.path.join(app.config['UPLOAD_FOLDER'], filenamedoc))
-            elif request.files["file1"].filename.endswith('.pdf'):
-                pdfReader = PyPDF2.PdfFileReader(request.files["file1"])
+                file1 = docx2txt.process(doc1)
+            elif doc1.filename.endswith('.pdf'):
+                pdfReader = PyPDF2.PdfFileReader(doc1)
                 pageObj = pdfReader.getPage(0)
-                file1 = pageObj.extractText()
                 filenamePDF = secure_filename(doc1.filename)
                 doc1.save(os.path.join(app.config['UPLOAD_FOLDER'], filenamePDF))
+                file1 = pageObj.extractText()
             else:
                 filenametxt = secure_filename(doc1.filename)
                 doc1.save(os.path.join(app.config['UPLOAD_FOLDER'], filenametxt))
-                file1 = request.files["file1"].read().decode("utf-8")
+                doc1.seek(0)
+                file1 = doc1.read().decode("utf-8")
 
-            if request.files["file2"].filename.endswith('.docx'):
-                file2 = docx2txt.process(request.files["file2"])
+            if doc2.filename.endswith('.docx'):
                 docName = secure_filename(doc2.filename)
                 doc2.save(os.path.join(app.config['UPLOAD_FOLDER'], docName))
-            elif request.files["file2"].filename.endswith('.pdf'):
-                pdfReader = PyPDF2.PdfFileReader(request.files["file2"])
+                file2 = docx2txt.process(doc2)
+            elif doc2.filename.endswith('.pdf'):
+                pdfReader = PyPDF2.PdfFileReader(doc2)
                 pageObj = pdfReader.getPage(0)
-                doc2 = pageObj.extractText()
                 pdfName = secure_filename(doc2.filename)
                 file2.save(os.path.join(app.config['UPLOAD_FOLDER'], pdfName))
+                doc2 = pageObj.extractText()
             else:
                 txtName = secure_filename(doc2.filename)
                 doc2.save(os.path.join(app.config['UPLOAD_FOLDER'], txtName))
-                file2 = request.files["file2"].read().decode("utf-8")
+                doc2.seek(0)
+                file2 = doc2.read().decode("utf-8")
             
 
         except Exception:
@@ -253,6 +255,8 @@ def create_app(test_config=None):
         highlights2 = highlight(file2, regexes)
         argsFileName = doc1.filename
         image = create_wordcloud_from_file(f'{os.getenv("UPLOAD_DIR")}/{argsFileName}')
+        print(f'File1: {file1}')
+        print(f'File2: {file1}')
 
         # Output comparison
         return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, image=image)
