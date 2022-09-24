@@ -7,9 +7,13 @@ def create_wordcloud_from_file(filename):
     wordcloud = WordCloud().generate(text)
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis("off")
-    newFileName = os.path.splitext(filename)[0]
+    splitName = filename.split("/")
+    imgName = splitName[len(splitName)-1]
+    extension = filename.split(".")
+    extname = extension[len(extension)-1]
+    derivedName = imgName.replace(f'.{extname}',"")
     i = 0
-    imgPath = f'WordCloud/{newFileName}{i}.png'
+    imgPath = f'flaskr/WordCloud/{derivedName}{i}.png'
     while True:
         #Check if a image with the name wordcloud.png exists
         if os.path.exists(imgPath):

@@ -36,9 +36,10 @@ def create_app(test_config=None):
 
     # delete if broken
     app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
-    path = os.getcwd()
-    # file Upload
-    UPLOAD_FOLDER = os.path.join(path, 'flaskr/templates/uploader')
+    # Gets the current directory
+    # path = os.getcwd()
+    # UPLOAD_FOLDER = os.path.join(path, os.getenv('UPLOAD_DIR'))
+    UPLOAD_FOLDER = os.getenv('UPLOAD_DIR')
     app.config['MYSQL_HOST'] = os.getenv('MYSQL_HOST')
     app.config['MYSQL_USER'] = os.getenv('MYSQL_USER')
     app.config['MYSQL_PASSWORD'] = os.getenv('MYSQL_PASSWORD')
@@ -46,8 +47,8 @@ def create_app(test_config=None):
     mysql = MySQL(app)
 
     # insert if uploading to folder
-    # if not os.path.isdir(UPLOAD_FOLDER):
-    #     os.mkdir(UPLOAD_FOLDER)
+    if not os.path.isdir(UPLOAD_FOLDER):
+        os.mkdir(UPLOAD_FOLDER)
 
     app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
     ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'docx'])
@@ -192,24 +193,38 @@ def create_app(test_config=None):
         if not request.files["file1"] or not request.files["file2"]:
             abort(400, "missing file")
         try:
+            doc1 = request.files["file1"]
+            doc2 = request.files["file2"]
 
             #Code to convert files to text - Thank you copilot for the help
             if request.files["file1"].filename.endswith('.docx'):
                 file1 = docx2txt.process(request.files["file1"])
+                filenamedoc = secure_filename(doc1.filename)
+                doc1.save(os.path.join(app.config['UPLOAD_FOLDER'], filenamedoc))
             elif request.files["file1"].filename.endswith('.pdf'):
                 pdfReader = PyPDF2.PdfFileReader(request.files["file1"])
                 pageObj = pdfReader.getPage(0)
                 file1 = pageObj.extractText()
+                filenamePDF = secure_filename(doc1.filename)
+                doc1.save(os.path.join(app.config['UPLOAD_FOLDER'], filenamePDF))
             else:
+                filenametxt = secure_filename(doc1.filename)
+                doc1.save(os.path.join(app.config['UPLOAD_FOLDER'], filenametxt))
                 file1 = request.files["file1"].read().decode("utf-8")
 
             if request.files["file2"].filename.endswith('.docx'):
                 file2 = docx2txt.process(request.files["file2"])
+                docName = secure_filename(doc2.filename)
+                doc2.save(os.path.join(app.config['UPLOAD_FOLDER'], docName))
             elif request.files["file2"].filename.endswith('.pdf'):
                 pdfReader = PyPDF2.PdfFileReader(request.files["file2"])
                 pageObj = pdfReader.getPage(0)
-                file2 = pageObj.extractText()
+                doc2 = pageObj.extractText()
+                pdfName = secure_filename(doc2.filename)
+                file2.save(os.path.join(app.config['UPLOAD_FOLDER'], pdfName))
             else:
+                txtName = secure_filename(doc2.filename)
+                doc2.save(os.path.join(app.config['UPLOAD_FOLDER'], txtName))
                 file2 = request.files["file2"].read().decode("utf-8")
             
 
@@ -236,8 +251,8 @@ def create_app(test_config=None):
         # Highlight files
         highlights1 = highlight(file1, regexes)
         highlights2 = highlight(file2, regexes)
-        argsFileName = request.files["file1"].filename
-        image = create_wordcloud_from_file(argsFileName)
+        argsFileName = doc1.filename
+        image = create_wordcloud_from_file(f'{os.getenv("UPLOAD_DIR")}/{argsFileName}')
 
         # Output comparison
         return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, image=image)
@@ -332,6 +347,3 @@ def create_app(test_config=None):
             return redirect('/extensiveReport')
 
     return app
-
-
-    
