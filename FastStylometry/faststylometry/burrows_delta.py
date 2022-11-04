@@ -154,5 +154,8 @@ def calculate_burrows_delta(train_corpus: Corpus, test_corpus: Corpus, vocab_siz
             test_author_idx].abs().mean(axis=1)
 
     df_delta = pd.concat(deltas, axis=1)
+    
+    df_delta.to_csv('./output.csv', index=False)
 
     return df_delta
+
