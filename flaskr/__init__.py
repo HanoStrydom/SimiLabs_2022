@@ -94,6 +94,8 @@ def create_app(test_config=None):
 
     @app.route('/home')
     def home():
+        if 'loggedin' not in session:
+            return render_template('auth/authLogin.html')
         return render_template('home/home.html')
     
     @app.route('/auth/authLogin',methods =['GET', 'POST'])
@@ -120,9 +122,14 @@ def create_app(test_config=None):
 
     @app.route('/logout')
     def logout():
-        session.pop('loggedin', None)
-        session.pop('id', None)
-        session.pop('username', None)
+        # session.pop('loggedin', None)
+        # session.pop('id', None)
+        # session.pop('username', None)
+        # session['loggedin'].clear()
+        # session['id'].clear()
+        # session['user'].clear()
+        for key in list(session.keys()):
+            session.pop(key)
         return redirect(url_for('authLogin'))
 
     @app.route('/auth/authRegister', methods=('GET', 'POST'))
@@ -152,18 +159,26 @@ def create_app(test_config=None):
 
     @app.route('/QuickText')
     def QuickText():
+        if 'loggedin' not in session:
+            return render_template('auth/authLogin.html')
         return render_template('text/QuickText.html')
 
     @app.route('/ExtensiveText')
     def ExtensiveText():
+        if 'loggedin' not in session:
+            return render_template('auth/authLogin.html')
         return render_template('text/ExtensiveText.html')
 
     @app.route('/stylometry')
     def stylo():
+        if 'loggedin' not in session:
+            return render_template('auth/authLogin.html')
         return render_template('stylometry/stylo.html')
 
     @app.route('/reports')
     def report():
+        if 'loggedin' not in session:
+            return render_template('auth/authLogin.html')
         return render_template('reports/report.html')
 
     @app.route('/help')
@@ -173,6 +188,8 @@ def create_app(test_config=None):
     #Report Links Begin
     @app.route('/quickReport', methods=['GET'])
     def quickReport():
+        if 'loggedin' not in session:
+            return render_template('auth/authLogin.html')
         return render_template('reports/quickReport.html')
 
     @app.route('/extensiveReport', methods=['GET'])
@@ -181,6 +198,8 @@ def create_app(test_config=None):
 
     @app.route('/styloReport', methods=['GET'])
     def styloReport():
+        if 'loggedin' not in session:
+            return render_template('auth/authLogin.html')
         return render_template('reports/styloReport.html')
 
     #Report Links End
@@ -188,6 +207,8 @@ def create_app(test_config=None):
     # Upload File
     @app.route('/QuickText', methods=['GET','POST'])
     def compare():
+        if 'loggedin' not in session:
+            return render_template('auth/authLogin.html')
         """Handle requests for /compare via POST"""
         # Read files
         if not request.files["file1"] or not request.files["file2"]:
@@ -335,6 +356,8 @@ def create_app(test_config=None):
     # Upload Folder
     @app.route('/ExtensiveText', methods=['GET','POST'])
     def upload_folder():
+        if 'loggedin' not in session:
+            return render_template('auth/authLogin.html')
         if request.method == 'POST':
             if 'files[]' not in request.files:
                 flash('No file part')
