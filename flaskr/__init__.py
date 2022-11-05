@@ -40,7 +40,7 @@ def create_app(test_config=None):
     # Gets the current directory
     # path = os.getcwd()
     # UPLOAD_FOLDER = os.path.join(path, os.getenv('UPLOAD_DIR'))
-    UPLOAD_FOLDER = os.getenv('UPLOAD_DIR')
+    UPLOAD_FOLDER = os.getenv('UPLOAD_IMG')
     app.config['MYSQL_HOST'] = os.getenv('MYSQL_HOST')
     app.config['MYSQL_USER'] = os.getenv('MYSQL_USER')
     app.config['MYSQL_PASSWORD'] = os.getenv('MYSQL_PASSWORD')
@@ -273,7 +273,7 @@ def create_app(test_config=None):
         wordcloud = WordCloud().generate(file1)
         # wordcloud.to_file("wordcloud.png")
         # save wordcloud image to the static/Wordcloud folder
-        imgPath = f"{os.getenv('UPLOAD_IMG')}"
+        imgPath = os.getenv('UPLOAD_IMG')
         print(imgPath)
         wordcloud.to_file(f"{imgPath}SimiLabs_2022/flaskr/static/images/WordCloud/wordcloud.png")   
         return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2)
