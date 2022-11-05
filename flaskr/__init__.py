@@ -271,8 +271,12 @@ def create_app(test_config=None):
         print(f'File 1: {file1}')
         print(f'File 2: {file2}')
         wordcloud = WordCloud().generate(file1)
-        wordcloud.to_file(f"wordcloud.png")
-        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, image="../../../wordcloud.png")
+        # wordcloud.to_file("wordcloud.png")
+        # save wordcloud image to the static/Wordcloud folder
+        imgPath = f"{os.getenv('UPLOAD_IMG')}"
+        print(imgPath)
+        wordcloud.to_file(f"{imgPath}SimiLabs_2022/flaskr/static/images/WordCloud/wordcloud.png")   
+        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2)
 
     def highlight(s, regexes):
         """Highlight all instances of regexes in s."""
