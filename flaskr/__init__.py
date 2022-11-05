@@ -284,14 +284,13 @@ def create_app(test_config=None):
         # Calculate the similarity score between the two documents
         similarity = [file1,file2]
         similarity = [sentence.lower().split(" ") for sentence in similarity]
-        percentage = round(jaccard_similarity(similarity[0], similarity[1])*100,2)
-        print(f'Jaccard Similarity: {jaccard_similarity(similarity[0], similarity[1])}')
+        percentage = round(jaccard_similarity(similarity[0], similarity[1])[0]*100,2)
+        color = jaccard_similarity(similarity[0], similarity[1])[1]
 
-        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarity=percentage)
+        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarity=percentage, color=color)
 
     def highlight(s, regexes):
         """Highlight all instances of regexes in s."""
-
         # Get intervals for which strings match
         intervals = []
         for regex in regexes:
