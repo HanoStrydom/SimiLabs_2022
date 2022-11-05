@@ -110,9 +110,9 @@ def create_app(test_config=None):
             cursor.execute('SELECT * FROM accounts WHERE username = %s', ([username]))
             account = cursor.fetchone()
             if account is None:
-                msg = 'Incorrect username.'
+                msg = 'Ivalid credentials!'
             elif not check_password_hash(account['password'], password):
-                msg = 'Incorrect password.'
+                msg = 'Invalid credentials!'
             if msg == '':
                 session['loggedin'] = True
                 session['id'] = account['id']
@@ -141,11 +141,11 @@ def create_app(test_config=None):
             cursor.execute('SELECT * FROM accounts WHERE username = % s', ([username]))
             account = cursor.fetchone()
             if account:
-                msg = 'Account already exists !'
+                msg = 'Account already exists!'
             elif password != password2:
                 msg = 'Passwords do not match!'
             elif not username or not password or not password2:
-                msg = 'Please fill out the form !'
+                msg = 'Please fill out the form!'
             else:
                 cursor.execute('INSERT INTO accounts VALUES (NULL,% s, % s)', ([username], [generate_password_hash(password)]))
                 mysql.connection.commit()
