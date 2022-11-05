@@ -22,6 +22,7 @@ from dotenv import load_dotenv
 from werkzeug.security import check_password_hash, generate_password_hash
 from PIL import Image
 from wordcloud import WordCloud
+from flaskr.quicksimilarity import jaccard_similarity
 
 load_dotenv()
 
@@ -275,14 +276,18 @@ def create_app(test_config=None):
         # Highlight files
         highlights1 = highlight(file1, regexes)
         highlights2 = highlight(file2, regexes)
-        print(f'File 1: {file1}')
-        print(f'File 2: {file2}')
         wordcloud = WordCloud().generate(file1)
         # wordcloud.to_file("wordcloud.png")
         # save wordcloud image to the static/Wordcloud folder
         imgPath = os.getenv('UPLOAD_IMG')
-        wordcloud.to_file(f"{imgPath}SimiLabs_2022/flaskr/static/images/WordCloud/wordcloud.png")   
-        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2)
+        wordcloud.to_file(f"{imgPath}SimiLabs_2022/flaskr/static/images/WordCloud/wordcloud.png")  
+        # Calculate the similarity score between the two documents
+        similarity = [file1,file2]
+        similarity = [sentence.lower().split(" ") for sentence in similarity]
+        percentage = round(jaccard_similarity(similarity[0], similarity[1])*100,2)
+        print(f'Jaccard Similarity: {jaccard_similarity(similarity[0], similarity[1])}')
+
+        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarity=percentage)
 
     def highlight(s, regexes):
         """Highlight all instances of regexes in s."""
