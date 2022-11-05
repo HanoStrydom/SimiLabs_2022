@@ -221,9 +221,13 @@ def create_app(test_config=None):
                 file1 = docx2txt.process(doc1)
             elif doc1.filename.endswith('.pdf'):
                 pdfReader = PyPDF2.PdfFileReader(doc1)
-                pageObj = pdfReader.getPage(0)
+                count = pdfReader.numPages
+                file1 = ""
+                for i in range(count):
+                    page = pdfReader.getPage(i)
+                    file1 += page.extractText() 
                 filenamePDF = secure_filename(doc1.filename)
-                file1 = pageObj.extractText()
+                # file1 = pageObj.extractText()
             else:
                 filenametxt = secure_filename(doc1.filename)
                 doc1.seek(0)
@@ -236,17 +240,20 @@ def create_app(test_config=None):
                 file2 = docx2txt.process(doc2)
             elif doc2.filename.endswith('.pdf'):
                 pdfReader = PyPDF2.PdfFileReader(doc2)
-                pageObj = pdfReader.getPage(0)
+                count = pdfReader.numPages
+                file2 = ""
+                for i in range(count):
+                    page = pdfReader.getPage(i)
+                    file2 += page.extractText() 
                 pdfName = secure_filename(doc2.filename)
-                file2 = pageObj.extractText()
             else:
                 txtName = secure_filename(doc2.filename)
                 doc2.seek(0)
                 file2 = doc2.read().decode("utf-8")
             
 
-        except Exception:
-            abort(400, "invalid file")
+        except Exception as e:
+            abort(400, f"invalid file: {e}")
 
         # Compare files
         if not request.form.get("algorithm"):
@@ -274,7 +281,6 @@ def create_app(test_config=None):
         # wordcloud.to_file("wordcloud.png")
         # save wordcloud image to the static/Wordcloud folder
         imgPath = os.getenv('UPLOAD_IMG')
-        print(imgPath)
         wordcloud.to_file(f"{imgPath}SimiLabs_2022/flaskr/static/images/WordCloud/wordcloud.png")   
         return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2)
 
