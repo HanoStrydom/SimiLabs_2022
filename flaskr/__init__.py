@@ -4,7 +4,7 @@ from pydoc import doc
 from types import MethodDescriptorType
 
 import re
-from flask import Flask, render_template, request,flash,redirect, url_for,abort, request, session 
+from flask import Flask, render_template, request,flash,redirect, url_for,abort, request, session
 from werkzeug.utils import secure_filename
 from werkzeug.datastructures import  FileStorage
 from werkzeug.exceptions import default_exceptions, HTTPException
@@ -122,14 +122,11 @@ def create_app(test_config=None):
 
     @app.route('/logout')
     def logout():
-        # session.pop('loggedin', None)
-        # session.pop('id', None)
-        # session.pop('username', None)
-        # session['loggedin'].clear()
-        # session['id'].clear()
-        # session['user'].clear()
+        # protecting your api endpoints
         for key in list(session.keys()):
             session.pop(key)
+        # response.delete_cookie('session')
+        session.clear()
         return redirect(url_for('authLogin'))
 
     @app.route('/auth/authRegister', methods=('GET', 'POST'))
@@ -217,9 +214,10 @@ def create_app(test_config=None):
             doc1 = request.files["file1"]
             doc2 = request.files["file2"]
 
-            #Code to convert files to text - Thank you copilot for the help
+            # Extracting text from alleged document
             if doc1.filename.endswith('.docx'):
                 filenamedoc = secure_filename(doc1.filename)
+                # saves the file to your specified uploaded directory 
                 doc1.save(os.path.join(app.config['UPLOAD_FOLDER'], filenamedoc))
                 file1 = docx2txt.process(doc1)
             elif doc1.filename.endswith('.pdf'):
@@ -233,7 +231,8 @@ def create_app(test_config=None):
                 doc1.save(os.path.join(app.config['UPLOAD_FOLDER'], filenametxt))
                 doc1.seek(0)
                 file1 = doc1.read().decode("utf-8")
-
+            
+            # Extracting text from comparsion document
             if doc2.filename.endswith('.docx'):
                 docName = secure_filename(doc2.filename)
                 doc2.save(os.path.join(app.config['UPLOAD_FOLDER'], docName))
@@ -274,12 +273,15 @@ def create_app(test_config=None):
         # Highlight files
         highlights1 = highlight(file1, regexes)
         highlights2 = highlight(file2, regexes)
+        # get filename of alleged doc
         argsFileName = doc1.filename
+        # create and save the wordcloud image to specified directory
         image = create_wordcloud_from_file(f'{os.getenv("UPLOAD_DIR")}/{argsFileName}')
         print(f'File1: {file1}')
-        print(f'File2: {file1}')
+        print(f'File2: {file2}')
 
         # Output comparison
+        # insert into line below if using wordcloud: image=image
         return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, image=image)
 
     def highlight(s, regexes):

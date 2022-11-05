@@ -9,6 +9,7 @@ def create_wordcloud_from_file(filename):
     plt.axis("off")
     splitName = filename.split("/")
     imgName = splitName[len(splitName)-1]
+    # remove extra slash from string path directory
     extension = filename.split(".")
     extname = extension[len(extension)-1]
     derivedName = imgName.replace(f'.{extname}',"")
