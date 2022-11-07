@@ -15,6 +15,7 @@ import nltk
 nltk.download('punkt')
 import docx2txt
 import sys
+import docx
 import PyPDF2
 from flask_mysqldb import MySQL
 import MySQLdb.cursors
@@ -23,6 +24,7 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from PIL import Image
 from wordcloud import WordCloud
 from flaskr.quicksimilarity import calc_cosine_similarity,jaccard_similarity
+from flaskr.extractmetadata import getMetaDataDoc,getMetaDataPDF
 
 load_dotenv()
 
@@ -290,9 +292,16 @@ def create_app(test_config=None):
             similarity = [file1,file2]
             similarity = [sentence.lower().split(" ") for sentence in similarity]
             percentage = round(jaccard_similarity(similarity[0], similarity[1])[0]*100,2)
-            color = jaccard_similarity(similarity[0], similarity[1])[1]         
+            color = jaccard_similarity(similarity[0], similarity[1])[1] 
+        if doc1.filename.endswith('.docx'):
+            docmeta = docx.Document(doc1)  
+            metadata_dict = getMetaDataDoc(docmeta)
+            meta_data = [metadata_dict["author"],metadata_dict["created"],
+            metadata_dict["last_modified_by"],metadata_dict["modified"]]      
+        elif doc1.filename.endswith('.pdf'): 
+            meta_data = getMetaDataPDF(doc1)
 
-        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarity=percentage, color=color)
+        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarity=percentage, color=color, metadata = meta_data)
 
     def highlight(s, regexes):
         """Highlight all instances of regexes in s."""
