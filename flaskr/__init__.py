@@ -22,7 +22,7 @@ from dotenv import load_dotenv
 from werkzeug.security import check_password_hash, generate_password_hash
 from PIL import Image
 from wordcloud import WordCloud
-from flaskr.quicksimilarity import calc_cosine_similarity
+from flaskr.quicksimilarity import calc_cosine_similarity,jaccard_similarity
 
 load_dotenv()
 
@@ -282,8 +282,12 @@ def create_app(test_config=None):
         imgPath = os.getenv('UPLOAD_IMG')
         wordcloud.to_file(f"{imgPath}SimiLabs_2022/flaskr/static/images/WordCloud/wordcloud.png")  
         # Calculate the similarity score between the two documents
-        percentage = round(calc_cosine_similarity(file1, file2)[0]*100,2)
-        color = calc_cosine_similarity(file1, file2)[1]
+        if (algo == "cosine"):
+            percentage = round(calc_cosine_similarity(file1, file2)[0]*100,2)
+            color = calc_cosine_similarity(file1, file2)[1]
+        else: 
+            percentage = round(jaccard_similarity(file1, file2)[0]*100,2)
+            color = jaccard_similarity(file1, file2)[1]           
 
         return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarity=percentage, color=color)
 
