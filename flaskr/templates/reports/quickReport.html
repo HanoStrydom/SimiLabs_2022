@@ -48,8 +48,30 @@ body {font-family: "Lato", sans-serif}
 <div style="display: flex;justify-content: center;align-items: center;">
     <span>Percentage similarity: <p style="color: {{color}};">{{ similarity }}%</p></span>
 </div>
-<div>
-    <p style="text-align: center;">{{metadata}}</p>
+<div style="width: 100%">
+    <!-- <p style="text-align: center;">{{metadata}}</p> -->
+    <table style="display: flex;justify-content: center;align-items: center;width:100%;">
+        <tr style="border:2px solid black;text-align: center;">
+          <th style="border:2px solid black;width:30%;text-align: center;">
+            Author
+          </th>
+          <th style="border:2px solid black;width:30%;text-align: center;">
+            Date Created
+          </th>
+          <th style="border:2px solid black;width:30%;text-align: center;">
+            Last Modified Author
+          </th>
+          <th style="border:2px solid black;width:30%;text-align: center;padding: 30px 100px;">
+            Date Modified
+          </th>
+        </tr>
+        <tr style="border:2px solid black">
+          <td style="border:2px solid black;width:30%;text-align: center;">{{ metadata[0] }}</td>
+          <td style="border:2px solid black;width:30%;text-align: center;">{{ metadata[1] }}</td>
+          <td style="border:2px solid black;width:30%;text-align: center;">{{ metadata[2] }}</td>
+          <td style="border:2px solid black;width:30%;text-align: center;">{{ metadata[3] }}</td>
+        </tr>
+      </table>
 </div>
 <br>
 <br>
