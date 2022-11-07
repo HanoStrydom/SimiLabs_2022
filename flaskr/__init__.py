@@ -206,6 +206,7 @@ def create_app(test_config=None):
     # Upload File
     @app.route('/QuickText', methods=['GET','POST'])
     def compare():
+        errMessage = ""
         if 'loggedin' not in session:
             return render_template('auth/authLogin.html')
         """Handle requests for /compare via POST"""
@@ -282,14 +283,14 @@ def create_app(test_config=None):
         imgPath = os.getenv('UPLOAD_IMG')
         wordcloud.to_file(f"{imgPath}SimiLabs_2022/flaskr/static/images/WordCloud/wordcloud.png")  
         # Calculate the similarity score between the two documents
-        if (algo == "cosine"):
+        if request.form.get("textsimilarity") == "cosine":
             percentage = round(calc_cosine_similarity(file1, file2)[0]*100,2)
             color = calc_cosine_similarity(file1, file2)[1]
-        else: 
+        elif request.form.get("textsimilarity") == "jaccard": 
             percentage = round(jaccard_similarity(file1, file2)[0]*100,2)
-            color = jaccard_similarity(file1, file2)[1]           
+            color = jaccard_similarity(file1, file2)[1]          
 
-        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarity=percentage, color=color)
+        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarity=percentage, color=color, message=errMessage)
 
     def highlight(s, regexes):
         """Highlight all instances of regexes in s."""
