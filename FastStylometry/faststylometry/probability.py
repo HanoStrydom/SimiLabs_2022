@@ -71,4 +71,6 @@ def predict_proba(train_corpus: Corpus, test_corpus: Corpus) -> pd.DataFrame:
 
     df_probas.index = df_delta.index
 
+    df_probas.to_csv('./csvFiles/probabilities_output.csv', index=False)
+
     return df_probas
