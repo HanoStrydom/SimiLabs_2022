@@ -287,10 +287,12 @@ def create_app(test_config=None):
             percentage = round(calc_cosine_similarity(file1, file2)[0]*100,2)
             color = calc_cosine_similarity(file1, file2)[1]
         elif request.form.get("textsimilarity") == "jaccard": 
-            percentage = round(jaccard_similarity(file1, file2)[0]*100,2)
-            color = jaccard_similarity(file1, file2)[1]          
+            similarity = [file1,file2]
+            similarity = [sentence.lower().split(" ") for sentence in similarity]
+            percentage = round(jaccard_similarity(similarity[0], similarity[1])[0]*100,2)
+            color = jaccard_similarity(similarity[0], similarity[1])[1]         
 
-        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarity=percentage, color=color, message=errMessage)
+        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarity=percentage, color=color)
 
     def highlight(s, regexes):
         """Highlight all instances of regexes in s."""
