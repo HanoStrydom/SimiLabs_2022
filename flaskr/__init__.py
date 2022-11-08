@@ -279,11 +279,16 @@ def create_app(test_config=None):
         # Highlight files
         highlights1 = highlight(file1, regexes)
         highlights2 = highlight(file2, regexes)
+        
+        #Word Cloud
         wordcloud = WordCloud().generate(file1)
-        # wordcloud.to_file("wordcloud.png")
-        # save wordcloud image to the static/Wordcloud folder
         imgPath = os.getenv('UPLOAD_IMG')
         wordcloud.to_file(f"{imgPath}SimiLabs_2022/flaskr/static/images/WordCloud/wordcloud.png")  
+        
+        wordcloud2 = WordCloud().generate(file2)
+        imgPath = os.getenv('UPLOAD_IMG')
+        wordcloud2.to_file(f"{imgPath}SimiLabs_2022/flaskr/static/images/WordCloud/wordcloud2.png")       
+        
         # Calculate the similarity score between the two documents
         if request.form.get("textsimilarity") == "cosine":
             percentage = round(calc_cosine_similarity(file1, file2)[0]*100,2)
