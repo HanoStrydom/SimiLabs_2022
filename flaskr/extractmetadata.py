@@ -10,6 +10,12 @@ def getMetaDataDoc(doc):
     metadata["modified"] = prop.modified
     return metadata
 
+def getRowColor(author, lastModifiedBy):
+    if(author == lastModifiedBy):
+        return "w3-light-grey w3-hover-green"
+    else:
+        return "w3-light-grey w3-hover-red"
+
 def getMetaDataPDF(pdf):
     author = ""
     created_date = ""
@@ -24,4 +30,4 @@ def getMetaDataPDF(pdf):
             created_date = data[metadata]
         if(metadata == '/ModDate'):
             last_modified_date =  data[metadata]
-    return [author, created_date, last_modified_date]
+    return [author, created_date, last_modified_date,], 

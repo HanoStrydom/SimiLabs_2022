@@ -24,7 +24,7 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from PIL import Image
 from wordcloud import WordCloud
 from flaskr.quicksimilarity import calc_cosine_similarity,jaccard_similarity
-from flaskr.extractmetadata import getMetaDataDoc,getMetaDataPDF
+from flaskr.extractmetadata import getMetaDataDoc,getMetaDataPDF, getRowColor
 
 load_dotenv()
 
@@ -297,11 +297,16 @@ def create_app(test_config=None):
             docmeta = docx.Document(doc1)  
             metadata_dict = getMetaDataDoc(docmeta)
             meta_data = [metadata_dict["author"],metadata_dict["created"],
-            metadata_dict["last_modified_by"],metadata_dict["modified"]]      
+            metadata_dict["last_modified_by"],metadata_dict["modified"]]    
+            rowColor = getRowColor(meta_data[0], meta_data[2])  
+            print(meta_data[0], " " ,meta_data[2], " " ,rowColor)
         elif doc1.filename.endswith('.pdf'): 
             meta_data = getMetaDataPDF(doc1)
+            # rowColor = getRowColor(meta_data[0], meta_data[2])  
+            # print(meta_data[0], " " ,meta_data[2], " " ,rowColor)
 
-        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarity=percentage, color=color, metadata = meta_data)
+        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarity=percentage,
+        color=color, metadata = meta_data, rowColor = rowColor)
 
     def highlight(s, regexes):
         """Highlight all instances of regexes in s."""

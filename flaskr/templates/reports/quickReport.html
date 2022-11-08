@@ -9,7 +9,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet"/>
+
+<!--Table css-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- __ -->
+
 <link rel="stylesheet" href="/static/home.css">
+
 
 <style>
 body {font-family: "Lato", sans-serif}
@@ -27,10 +34,47 @@ body {font-family: "Lato", sans-serif}
 <br>
 
 <h1> Quick Text Report</h1>
+<br>
+<br>
+<div style="display: flex;justify-content: center;align-items: center;">
+  <span style="font-weight: 700">Percentage similarity: <p style="color: {{color}};">{{ similarity }}%</p></span>
+</div>
+<div class="w3-container">
+  <table class="w3-table-all">
+      <tr>
+        <th width: 100px>
+          Author
+        </th>
+        <th>
+          Date Created
+        </th>
+        <th>
+          Last Modified Author
+        </th>
+        <th>
+          Date Modified
+        </th>
+      </tr>
+      <tr class="{{rowColor}}">
+        <td>{{ metadata[0] }}</td>
+        <td>{{ metadata[1] }}</td>
+        <td>{{ metadata[2] }}</td>
+        <td>{{ metadata[3] }}</td>
+      </tr>
+    </table>
+</div>
+
 <!-- Test Doc -->
 <div>
-
+  <div>
+    <h2 style=" float: left;margin-left: 8em"> Suspected Document  </h1>
+  </div>
+  
+  <div>
+    <h2 style=" float: right; margin-right: 8em"> Comparison Document  </h1>
+  </div>
 </div>
+
 
 <!-- Suspect Doc -->
 <div class="container-fluid">
@@ -43,36 +87,7 @@ body {font-family: "Lato", sans-serif}
             <pre>{{ file2 | safe }}</pre>
         </div>
 </div>
-<br>
-<br>
-<div style="display: flex;justify-content: center;align-items: center;">
-    <span>Percentage similarity: <p style="color: {{color}};">{{ similarity }}%</p></span>
-</div>
-<div style="width: 100%">
-    <!-- <p style="text-align: center;">{{metadata}}</p> -->
-    <table style="display: flex;justify-content: center;align-items: center;width:100%;">
-        <tr style="border:2px solid black;text-align: center;">
-          <th style="border:2px solid black;width:30%;text-align: center;">
-            Author
-          </th>
-          <th style="border:2px solid black;width:30%;text-align: center;">
-            Date Created
-          </th>
-          <th style="border:2px solid black;width:30%;text-align: center;">
-            Last Modified Author
-          </th>
-          <th style="border:2px solid black;width:30%;text-align: center;padding: 30px 100px;">
-            Date Modified
-          </th>
-        </tr>
-        <tr style="border:2px solid black">
-          <td style="border:2px solid black;width:30%;text-align: center;">{{ metadata[0] }}</td>
-          <td style="border:2px solid black;width:30%;text-align: center;">{{ metadata[1] }}</td>
-          <td style="border:2px solid black;width:30%;text-align: center;">{{ metadata[2] }}</td>
-          <td style="border:2px solid black;width:30%;text-align: center;">{{ metadata[3] }}</td>
-        </tr>
-      </table>
-</div>
+
 <br>
 <br>
 <div style="display: flex;justify-content: center;align-items: center;">
