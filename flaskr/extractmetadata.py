@@ -1,5 +1,6 @@
 import docx
 import PyPDF2
+from datetime import datetime
 
 def getMetaDataDoc(doc):
     metadata = {}
@@ -29,6 +30,11 @@ def getMetaDataPDF(pdf):
             author = data[metadata]
         if(metadata == '/CreationDate'):
             created_date = data[metadata]
+            created_dt = datetime.strptime(created_date.replace("'", ""), "D:%Y%m%d%H%M%S%z")
+            createdDate = created_dt.strftime("%Y-%m-%d %H:%M:%S")
         if(metadata == '/ModDate'):
             last_modified_date =  data[metadata]
-    return [author, created_date, last_modified_date]
+            last_dt = datetime.strptime(created_date.replace("'", ""), "D:%Y%m%d%H%M%S%z")
+            lastDate = last_dt.strftime("%Y-%m-%d %H:%M:%S")
+    return [author, createdDate, "UNKNOWN", lastDate]
+

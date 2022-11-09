@@ -307,13 +307,15 @@ def create_app(test_config=None):
             meta_data = [metadata_dict["author"],metadata_dict["created"],
             metadata_dict["last_modified_by"],metadata_dict["modified"]]    
             rowColor = getRowColor(meta_data[0], meta_data[2])  
-            print(meta_data[0], " " ,meta_data[2], " " ,rowColor)
+            # print(meta_data[0], " " ,meta_data[2], " " ,rowColor)
         elif doc1.filename.endswith('.pdf'): 
             doc1.save(os.path.join(app.config["UPLOAD_PDF"], doc1.filename))
             pdfPath = os.getenv('UPLOAD_PDF')+doc1.filename
-            meta_data = getMetaDataPDF(pdfPath)
+            listMetaData = [getMetaDataPDF(pdfPath)[0],getMetaDataPDF(pdfPath)[1],
+            getMetaDataPDF(pdfPath)[2],getMetaDataPDF(pdfPath)[3]]
+            meta_data = listMetaData
             rowColor = getRowColor(meta_data[0], meta_data[2])  
-            print(meta_data[0], " " ,meta_data[2], " " ,rowColor)
+            # print(meta_data[0], " " ,meta_data[2], " " ,rowColor)
 
         return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarity=percentage,
         color=color, metadata = meta_data, rowColor = rowColor)
