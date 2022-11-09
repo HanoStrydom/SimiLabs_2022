@@ -26,6 +26,7 @@ from wordcloud import WordCloud
 from flaskr.quicksimilarity import calc_cosine_similarity,jaccard_similarity
 from flaskr.extractmetadata import getMetaDataDoc,getMetaDataPDF, getRowColor
 
+# NB!!! Remember to gitignore the .env file!
 load_dotenv()
 
 HOST = ''
