@@ -294,14 +294,14 @@ def create_app(test_config=None):
         wordcloud2.to_file(f"{imgPath}SimiLabs_2022/flaskr/static/images/WordCloud/wordcloud2.png")       
         
         # Calculate the similarity score between the two documents
-        if request.form.get("textsimilarity") == "cosine":
-            percentage = round(calc_cosine_similarity(file1, file2)[0]*100,2)
-            color = calc_cosine_similarity(file1, file2)[1]
-        elif request.form.get("textsimilarity") == "jaccard": 
-            similarity = [file1,file2]
-            similarity = [sentence.lower().split(" ") for sentence in similarity]
-            percentage = round(jaccard_similarity(similarity[0], similarity[1])[0]*100,2)
-            color = jaccard_similarity(similarity[0], similarity[1])[1] 
+        # Cosine Similarity
+        percentageCosine = round(calc_cosine_similarity(file1, file2)[0]*100,2)
+        colorCosine = calc_cosine_similarity(file1, file2)[1]
+        # Jaccard Similarity 
+        similarity = [file1,file2]
+        similarity = [sentence.lower().split(" ") for sentence in similarity]
+        percentageJaccard = round(jaccard_similarity(similarity[0], similarity[1])[0]*100,2)
+        colorJaccard = jaccard_similarity(similarity[0], similarity[1])[1] 
         if doc1.filename.endswith('.docx'):
             docmeta = docx.Document(doc1)  
             metadata_dict = getMetaDataDoc(docmeta)
@@ -318,9 +318,9 @@ def create_app(test_config=None):
             rowColor = getRowColor(meta_data[0], meta_data[2])  
             # print(meta_data[0], " " ,meta_data[2], " " ,rowColor)
 
-        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarity=percentage,
-        color=color, metadata = meta_data, rowColor = rowColor)
-
+        return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarityJac=percentageJaccard,
+        similarityCos=percentageCosine,colorCos=colorCosine, colorJac = colorJaccard , metadata = meta_data, rowColor = rowColor)
+        
     def highlight(s, regexes):
         """Highlight all instances of regexes in s."""
         # Get intervals for which strings match
