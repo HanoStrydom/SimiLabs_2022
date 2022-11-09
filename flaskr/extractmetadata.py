@@ -20,7 +20,8 @@ def getMetaDataPDF(pdf):
     author = ""
     created_date = ""
     last_modified_date = ""
-    pdfFile = PyPDF2.PdfFileReader(open(pdf,'rb'))
+    # pdfFile = PyPDF2.PdfFileReader(open(pdf,'rb'))
+    pdfFile = PyPDF2.PdfReader(open(pdf,'rb'))
     data = pdfFile.getDocumentInfo()
     print(data)
     for metadata in data:
@@ -30,4 +31,4 @@ def getMetaDataPDF(pdf):
             created_date = data[metadata]
         if(metadata == '/ModDate'):
             last_modified_date =  data[metadata]
-    return [author, created_date, last_modified_date,], 
+    return [author, created_date, last_modified_date]

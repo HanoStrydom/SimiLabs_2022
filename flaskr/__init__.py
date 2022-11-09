@@ -44,6 +44,7 @@ def create_app(test_config=None):
     # path = os.getcwd()
     # UPLOAD_FOLDER = os.path.join(path, os.getenv('UPLOAD_DIR'))
     UPLOAD_FOLDER = os.getenv('UPLOAD_IMG')
+    UPLOAD_PDF = os.getenv('UPLOAD_PDF')
     app.config['MYSQL_HOST'] = os.getenv('MYSQL_HOST')
     app.config['MYSQL_USER'] = os.getenv('MYSQL_USER')
     app.config['MYSQL_PASSWORD'] = os.getenv('MYSQL_PASSWORD')
@@ -55,6 +56,8 @@ def create_app(test_config=None):
         os.mkdir(UPLOAD_FOLDER)
 
     app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+    app.config['UPLOAD_PDF'] = UPLOAD_PDF
+    
     ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'docx'])
     app.config["TEMPLATES_AUTO_RELOAD"] = True
 
@@ -306,9 +309,10 @@ def create_app(test_config=None):
             rowColor = getRowColor(meta_data[0], meta_data[2])  
             print(meta_data[0], " " ,meta_data[2], " " ,rowColor)
         elif doc1.filename.endswith('.pdf'): 
-            meta_data = getMetaDataPDF(doc1)
-            # rowColor = getRowColor(meta_data[0], meta_data[2])  
-            # print(meta_data[0], " " ,meta_data[2], " " ,rowColor)
+            doc1.save(os.path.join(app.config["UPLOAD_PDF"], f"flaskr/PDFs/{doc1.filename}"))
+            meta_data = getMetaDataPDF(doc1.filename)
+            rowColor = getRowColor(meta_data[0], meta_data[2])  
+            print(meta_data[0], " " ,meta_data[2], " " ,rowColor)
 
         return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarity=percentage,
         color=color, metadata = meta_data, rowColor = rowColor)
