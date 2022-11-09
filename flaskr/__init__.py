@@ -309,8 +309,9 @@ def create_app(test_config=None):
             rowColor = getRowColor(meta_data[0], meta_data[2])  
             print(meta_data[0], " " ,meta_data[2], " " ,rowColor)
         elif doc1.filename.endswith('.pdf'): 
-            doc1.save(os.path.join(app.config["UPLOAD_PDF"], f"flaskr/PDFs/{doc1.filename}"))
-            meta_data = getMetaDataPDF(doc1.filename)
+            doc1.save(os.path.join(app.config["UPLOAD_PDF"], doc1.filename))
+            pdfPath = os.getenv('UPLOAD_PDF')+doc1.filename
+            meta_data = getMetaDataPDF(pdfPath)
             rowColor = getRowColor(meta_data[0], meta_data[2])  
             print(meta_data[0], " " ,meta_data[2], " " ,rowColor)
 
