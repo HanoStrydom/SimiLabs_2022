@@ -1,0 +1,94 @@
+1.	Business information
+•	Business name: Netflix
+•	Business address: 100 Winchester Circle Los Gatos, CA 95032
+•	Telephone number: (408) 540 3700
+•	Email: info@mailer.netflix.com
+•	Main activities of Netflix: Netflix is an entertainment business. They maintain and expand Netflix on google play store, app store, Apple TV and websites. They carefully developed subscription plans namely basic, standard and premium. Each subscription plan gives access to movies, series and shows, but the account size differ. Every month they upload new movies, series or shows and recommend movies, series and shows to users based on what the users watch. They retain customer base. 
+Business functions: General Management, Human Resources, Administration, Marketing and Financial. 
+Business processes: Operations, Information Security, Customer Service, Procurement, Sales and Operations Planning
+•	Organizational structure: Netflix Inc.’s has a U-Form organizational structure which is relatively flat but centers on a hierarchical form with modifications which means that things in the business are arranged according to the importance of activities, people or things. 
+•	The following is the main functional groups of Netflix’s organizational structure: 
+Legal, CEO, Talent, Finance, Content, Product, Communications 
+Information Systems used within Netflix
+Businesses need information systems to store, collect, process, and provide information as output can must be used to help a business. There are different types of information systems namely: a management information system, a transaction processing system, a decision support system, a communications and collaboration system, an expert system and an office automation system.  
+A transaction processing system (TPS) is used within Netflix to capture and process data about business transactions. Used when customers pay a fee every month. 
+A management information system (MIS) is used within Netflix to capture data about their users by collecting and storing data on what a user has previously watched and what they like to watch. The MIS uses the data to predict what type of shows and movies the users will be interested in. 
+A decision support system (DSS) is used within Netflix to help make decisions like the colour palette used to design program covers, to develop marketing strategies and create original content. They also use a DSS to determine the subscription fees every month. 
+An expert system is used within Netflix. Netflix uses a computer program to determine what series, movies or shows a user will enjoy. This computer program acts like a person who has expert information and experience in this field. 
+Software development methodologies used and Project management approaches
+Netflix’s vision revolved around fluidity, iteration and evolution. Netflix uses an agile methodology simply because it is the future. They use continuous iteration of development and testing on the software development process.  The process has different stages. Changes happen often and the developers can go back and change things. Netflix uses this methodology simply because it’s faster and this methodology is required today because of rapid change in the business environment. Netflix is focused on hiring senior engineers and some might think of Netflix as eighty small engineering teams. Engineers work together. Some engineering teams use agile methodology and others don’t. 
+Netflix uses the Scrum framework because of how exponentially the entertainment business environment changes. They are thus able to quickly complete products and tasks to respond to customers’ demands. Netflix uses the agile approach which means they perform tasks in fast iterations to perform system maintenance every two weeks. Netflix uses Python programming language for its full content lifecycle. 
+Security used within the IT systems of Netflix
+Netflix uses different types of security to protect its IT systems. Confidential data like billing information is protected by security encryption. Netflix uses pre-encoded Digital Rights Management to secure their video streams. Netflix ensures that users’ passwords must be at least eight characters long, a combination of, numbers, and symbols and using upper- and lower-case letters. Netflix also uses physical security at its headquarters like locking doors, security guards, security cameras, bullet proof glass and biometric security. Netflix also ensures that their systems and computers are protected by using anti-virus software, firewalls, a VPN and keeping their software updated and changing passwords regularly. Netflix uses Python programming language to perform tasks like security automation. 
+The use of social media within Netflix:
+Netflix’s social media tactics are incredible! Their main platform is Facebook where they use geo-targeting for their different pages, they split content into the regions offering relevant information to the different users. They post information about new movies, series and/or shows available to watch. Netflix also uses Twitter and Instagram. Netflix also sends emails to users notifying them when new movies, series and/or shows will be available to watch.   
+3.	IS/IT architectural aspects 
+Network layers and network technologies
+•	Netflix uses Physical network layers like cables. These cables transmit data
+•	Data link layers are also used like switches, this layer is the protocol layer in Netflix’s programs that is used to handle the movement of data into and out of a physical link in a network. This layer defines the format of data on the network.
+•	Cluster computing is used to increase efficiency by using lots and lots of computers and connecting them via a LAN cable to act as a single powerful machine that is used to solve complex problems faster and to increase the processing speed.
+•	Network layers are used like IP and routers. The OSI model breaks down network communication into seven different layers: Physical layer, applications layer, datalink layer, presentation layer, network layer, transport layer, session layer, 
+•	Fiber Distributed Data Interface (FDDI) is used to transfer data at a very high speed because the network is a high bandwidth channel based on optical transmissions. 
+Servers
+Netflix stores their movies, series and shows across a vast number of servers worldwide. Netflix uses the internet to stream movies, series and/or shows from their servers to the users’ screens. Netflix’s content travels from their servers to the world wide web to the users’ ISP network. Netflix uses Amazon Web Services (AWS) for computing and storage needs. This server allows Netflix to become more agile, to innovate faster, and to lower costs. Netflix uses 
+Database Management Systems
+Database systems are essential to Netflix because these database systems communicate information related to the business sales transactions, customer profiles, content inventory and marketing activities. Netflix uses DynamoDB and NoSQL database Cassandra for their distributed databases to store information, such as profile information, billing information, content they provide to users and stores information on what users have watched. Netflix also uses MySQL. 
+System software used to develop systems
+Netflix uses the following software to develop its systems:
+•	Billing software 
+•	MySQL which is a DMS used to store data.
+•	Gluster, which is an open source platform for public and private cloud storage. 
+•	Hive
+•	Chukwa
+•	Security software
+•	Backup software 
+Diagram
+ 
+4.	Other IS aspects
+Security
+Netflix’s headquarters are protected by physical security like security guards, bullet proof glass, alarms, locked doors to control who has access to computers and biometric security. Netflix’s information systems are protected by anti-virus software, firewalls and a VPN. Netflix uses a secure encrypted site to allow users to pay their subscription fee.
+
+Backup
+A backup occurs when a person or company makes copies of data and stores the copies on different devices. A variety of things can cause data loss namely file corruption, theft, human failure, human error, computer viruses etc. Netflix uses hardware backups and digital backups. Netflix uses Hard Drives and iCloud. 
+
+Communication between stakeholders
+There are different effectively ways to communicate with stakeholders and that includes:
+•	Project summary report 
+•	Lunch meetings 
+•	Schedule a conference call
+•	Schedule a meeting 
+Managers communicate with their stakeholders in the following ways:
+•	Giving results to stakeholders
+•	Create transparency
+•	Build relationships with stakeholders 
+
+Competitive advantage that businesses can use
+Businesses compete with each other on a day to day basis, consumers want to get the best quantity, and quality of goods and services at the lowest price possible. Competition boosts innovation. When a business has an advantage over other businesses because they offer greater value to consumers by not pricing services and/or products too high or by providing greater services and/ products that justifies higher prices is known as a competitive advantage. Netflix has the best pricing compared to other entertainment companies. Netflix offers different packages with a price range from R99 to R169 a month. 
+
+5.	 Five important and or new things that I have learnt
+1)	Databases are very important for businesses and must be used to store, search, sort, change and/or delete any kind of information. Databases are the future and it’s replacing the old way of doing things like writing information in a book.
+2)	A business needs to back its data up for safety. A business never knows when hardware failures, file corruption, theft or human errors will occur and thus a business needs to schedule backups to prevent data from being lost. 
+3)	Security is essential for a business. Protecting the physical business, but also protecting the information systems and data of the business, is crucial. 
+4)	For a business to expand itself it needs an Information system. An IS saves a lot of time and money.
+5)	I learned how an entertainment business such as Netflix works. How its IS works and how the framework is designed. 
+
+
+
+
+
+
+
+References
+Singh, H., 2020. Netflix - How It (Actually) Works : Insights For Network Managers & Owners. [online] Preseem. Available at: <https://www.preseem.com/2018/04/netflix-behavior-wireless-network/> [Accessed 15 September 2020].
+Plixer. 2020. Network Layers Explained: OSI & TCP/IP Models [With Examples]. [online] Available at: <https://www.plixer.com/blog/network-layers-explained/> [Accessed 15 September 2020].
+Help Center. 2020. How Does Netflix Stream Videos?. [online] Available at: <https://help.netflix.com/en/node/85> [Accessed 15 September 2020].
+Medium. 2020. How Netflix Works, Explained. [online] Available at: <https://medium.com/hd-pro/how-netflix-works-explained-b99da0164120> [Accessed 15 September 2020].
+ioSafe. 2020. What Are The 3 Types Of Backup? - Full, Incremental, Differential - Iosafe. [online] Available at: <https://iosafe.com/data-protection-topics/3-types-of-backup/#:~:text=Now%20that%20you%20understand%20the,backup%2C%20and%20forever%20incremental%20backup.> [Accessed 15 September 2020].
+Whitten, J. 2020. Systems Analysis and Design Methods. 7th ed. NY,United States: McGraw-Hill, Inc.Professional Book Group 11 West 19th Street New York, NY,United States.
+
+	
+  	
+
+
+
+

@@ -1,0 +1,1237 @@
+
+Re-engineering an enterprise resource planning system: Methodologies, frameworks, and processes.
+JG Visagie
+31594883
+
+Research Paper for the Scripture submitted in partial fulfilment of the requirements for the degree Bachelor of Science (Honours) in computer science and information technology at the North-West University
+
+
+Supervisor: Mrs E.S. Campher
+Date of submission: 30/10/2022
+Version: 1.0 
+TABLE OF CONTENTS
+ABSTRACT	1
+RESEARCH PROPOSAL	3
+CHAPTER 1	3
+1	INTRODUCTION	3
+2	BACKGROUND TO STUDY	3
+2.1.1	What is an ERP system?	3
+2.1.2	Re-engineering of systems	4
+2.1.3	Frameworks architecture	4
+2.1.4	Software architecture	5
+2.1.5	Agile Development Process	6
+2.1.6	Database assessment	6
+2.1.7	Conclusion	7
+3	PROBLEM STATEMENT	7
+4	PARADIGMATIC PERSPECTIVE	8
+4.1.1	Research paradigm	8
+4.1.2	Interpretivism	9
+4.1.3	Design Science	10
+5	RESEARCH AIM AND OBJECTIVES	13
+5.1	Research aim	13
+5.2	Research objectives	13
+5.2.1	Primary objectives	13
+5.2.2	Theoretical objectives	13
+5.2.3	Empirical objectives	14
+6	APPROACH TO PROJECT MANAGEMENT AND PROJECT PLAN	14
+6.1	Scope	15
+6.1.1	Project requirements	15
+6.1.2	Development Platform	15
+6.2	Limitations	16
+6.2.1	Time	16
+6.3	Risk analysis	16
+6.4	Project Plan	18
+7	RIGOUR / VALIDITY & RELIABILITY	19
+8	ETHICAL CONSIDERATIONS	19
+9	PRELIMINARY CHAPTER DIVISION	20
+9.1	Chapter 1: Introduction	20
+9.2	Chapter 2: Literature Study	20
+9.3	Chapter 3: Documentation regarding the artefact	21
+9.4	Chapter 4: Collecting, processing and presentation of data	21
+9.5	Chapter 5: Results	21
+9.6	Chapter 6: Conclusion	21
+10	EXECUTIVE SUMMARY	21
+LITERATURE STUDY	23
+CHAPTER 2	23
+1	INTRODUCTION	23
+2	USER INTERFACE DESIGN	24
+2.1	Importance of user interface	24
+2.2	What is considered a good UI design?	25
+2.3	What is Usability?	25
+2.3.1	ISO 9241-11:2018: Definitions and concepts	26
+2.4	User-centred design	28
+2.4.1	ISO 9241-210: Human-Centred design for interactive systems	29
+2.5	Involving end-users	32
+3	FEEDBACK DURING DEVELOPMENT	34
+4	PROTOTYPING	36
+5	APPROACH TO MIGRATING LEGACY SYSTEMS TO WEB-BASED SERVICES	40
+5.1.1	The reason for migration and reverse engineering	40
+5.1.2	A proposed approach	42
+6	MICROSOFT POWER PLATFORM	44
+7	CONCLUSION	48
+CHAPTER 3	49
+3	ARTEFACT DOCUMENTATION	49
+3.1	Artefact Description	49
+3.2	Development Cycle documentation	50
+3.2.1	Legacy system analysis	50
+3.2.2	Business Processes	51
+3.2.3	Reports	54
+3.2.4	Prototyping Data collection	74
+3.3	The life cycle followed and its different phases: The Agile Methodology	75
+3.3.1	Agile development lifecycle	75
+3.3.2	Final iteration administration application screenshots	79
+3.3.3	Final iteration technician application screenshots	86
+CHAPTER  4	91
+4	RESULTS	91
+4.1	Agile software development methodology	91
+4.2	Prototyping	92
+4.3	ISO 9241-210	92
+4.4	Legacy system analysis	93
+4.5	Microsoft Power Platform	93
+CHAPTER 5	94
+5	REFLECTION AND QUESTIONS	94
+5.1	What did you learn while completing this project?  Refer to the decisions that you took and evaluate them.  Analyse the strong and weak points of the product and the process that you followed.  What would you do differently?	94
+5.2	Did you achieve the objectives that you set for the project?  Discuss.	95
+5.3	How successful were you in managing the project and meeting target dates?  Discuss.	95
+5.4	Reflection	95
+BIBLIOGRAPHY	98
+APPENDIX A	100
+
+LIST OF FIGURES
+Figure 6 1 :	Project Development Gantt chart	18
+Figure 2 1 The star life cycle	33
+Figure 5 1 Framework deployed for migration	42
+Figure 4 Solution Functions	50
+Figure 5 Create a Quote	51
+Figure 6 Create Additional Cost Screen	59
+Figure 7 Create Inventory Type Screen	60
+Figure 8 Create Customer Screen	60
+Figure 9 Create Employee Screen	60
+Figure 10 Create Inventory Item Screen	61
+Figure 11 Create Job Type Screen	61
+Figure 12 Create Project Screen	62
+Figure 13 Quotation Entry Screen	62
+Figure 14 Create Stock Bought Screen	63
+Figure 15 Create Stock Take Screen	63
+Figure 16 Create New Supplier Screen	63
+Figure 17 Create Additional Cost Screen	64
+Figure 18 Create Time Entry Screen	65
+Figure 19 Create Quantity Material Used Screen	65
+Figure 20 Main Menu	79
+Figure 21 Quote Management Screen	80
+Figure 22 Quote Info Input Screen	80
+Figure 23 Quote Info View Screen	81
+Figure 24 Project Management Screen	81
+Figure 25 Project Info Input Screen	82
+Figure 26 Project Info View Screen	82
+Figure 27 Administration Timesheet Management Screen	83
+Figure 28 Inventory Management Screen	83
+Figure 29 Inventory Input Screen	84
+Figure 30 Customer Manage Screen	84
+Figure 31 Customer Input Screen	85
+Figure 32 Technician Home Screen	86
+Figure 33 Timesheet Management Screen	87
+Figure 34 Timesheet Input Screen	88
+Figure 35 Project Browse Screen	89
+Figure 36 Project View Screen	90
+
+
+ 
+
+LIST OF TABLES
+Table 6 1: Risk Analysis table	17
+Table 8 1: Ethical Principles	20
+Table 2 1 Examples of results from human-centred design activities	32
+Table 5 1 Mapping deployed for migration	42
+Table 5 Old quote input compared to new quote input	52
+Table 6 Old inventory input compared to new inventory input	54
+Table 7 Old Timesheet entry compared to new timesheet entry	55
+Table 8 Old Administration processes input compared to new processes input	59
+Table 9 Identified Data Structure compared to new Data Structure	74
+Table 10 Agile Development Process.	75
+
+
+ 
+ABSTRACT
+This study is concerned with identifying and utilising various methodologies, frameworks and processes that can contribute to the successful re-engineering of an Enterprise Resource Planning (ERP) system for the Instrument Maker Department. This study was conducted using design science research and focuses on the Agile software development methodology, prototyping, ISO 9241-210, ISO 9241-11, User-Interface design and the importance of communication and feedback. The identified methodologies, frameworks and processes were utilised during the creation of the artefact to determine the various influences, advantages and disadvantages of the above stated methodologies, frameworks, and processes. The identified methodologies, frameworks and processes contributed significantly to the successful re-engineering of the ERP system. The identified shortcomings of the previous legacy system were identified and the requirements were determined while working closely with stakeholders. The artefact addresses the shortcomings and expands on the functionality of the ERP system while continuously satisfying all the identified requirements.
+Hierdie studie is gemoeid met die identifisering en benutting van verskeie metodologieë, raamwerke en prosesse wat kan bydra tot die suksesvolle herontwerp van 'n Enterprise Resource Planning (ERP) stelsel vir die Instrument Maker Departement. Hierdie studie is uitgevoer met behulp van ontwerpwetenskapnavorsing en fokus op die Agile sagteware-ontwikkelingsmetodologie, prototipering, ISO 9241-210, ISO 9241-11, Gebruikerkoppelvlakontwerp en die belangrikheid van kommunikasie en terugvoering. Die geïdentifiseerde metodologieë, raamwerke en prosesse is tydens die skepping van die artefak gebruik om die verskillende invloede, voordele en nadele van die bogenoemde metodologieë, raamwerke en prosesse te bepaal. Die geïdentifiseerde metodologieë, raamwerke en prosesse het aansienlik bygedra tot die suksesvolle herontwerp van die ERP-stelsel. Die geïdentifiseerde tekortkominge van die vorige nalatenskapstelsel is geïdentifiseer en die vereistes is bepaal terwyl daar nou saam met belanghebbendes gewerk is. Die artefak spreek die tekortkominge aan en het die funksionaliteit van die ERP-stelsel uitgebrei terwyl dit deurlopend aan al die geïdentifiseerde vereistes voldoen word. 
+RESEARCH PROPOSAL 
+CHAPTER 1
+1	Introduction 
+This study involves the investigation of various frameworks, methodologies and processes that aid in the re-engineering of an Enterprise Resource Planning (ERP) system. Re-engineering an ERP system will aid in the reduction of time spent on various processes within a micro-enterprise. A case study will be utilised in order to create an environment in which various frameworks, methods, and processes can be implemented and tested.
+In this chapter, an overview of the study and the approach to formulating and solving the research question will be provided. Background context will be provided such as research relating to the field of study, what some of the gaps in literature were, and description of the research environment.
+The following section will provide an overview of the paradigm used along with the various other methodologies as well as a brief description of the aims and goals of this study. The section will also provide information on the various stages of the development lifecycle along with the various technology stacks used to design and develop the system.
+2	Background to study
+In order to effectively re-engineer a system, this study will conduct extensive research that will determine how frameworks, methodologies and processes function, and what frameworks, methodologies and processes should be used when re-engineering a system. These frameworks, methodologies and processes serves as a key factor in the success of information systems.
+2.1.1	What is an ERP system?
+An Entity Resource Planning system is a type of software that tries to cooperatively integrate all of the enterprise’s functional units (Abd Elmonem et al., 2016). Klaus et al. (2000), asserts that an ERP system can be viewed as a key component, within the company’s infrastructure, that produces solutions for the corporation. These solutions aim to combine all of a company’s activities and services in order to give a holistic view of the company. Abd Elmonem et al. (2016) states that ERP systems have undergone a lot of evolution in conjunction with the upgrading of processes over time in order to improve their functionality and integration capabilities. Abd Elmonem et al. (2016) provides the following benefits of ERP Systems:
+•	Lower upfront costs
+•	Lower operating costs
+•	Scalability
+•	Improved accessibility and usability
+•	Rapid implementation
+2.1.2	Re-engineering of systems
+Valverde et al. (2012:3) states that people and processes interact in a complicated way in an Enterprise Information Technology system. Solutions for managing the complicated Information Technology (IT) landscape do not exist solely in the realm of technology. One of the most difficult scenarios many businesses face today is maintaining and modernising outdated systems. They are grappling with the challenge of upgrading these systems while maintaining day-to-day operations. Legacy systems, despite their age, continue to provide a competitive advantage by supporting unique business processes and storing priceless knowledge and historical data (Valverde et al., 2012).
+2.1.3	Frameworks architecture
+Valverde et al. (2012:4) asserts that companies must consider merging web-based applications with their existing applications as Web Technology evolves. In the mainframe, service-oriented architecture (SOA) can be utilised to integrate the systems. Web-based applications running on an application server become service consumers, while mainframe programs become service providers. SOA alone is not sufficient enough to achieve business agility. Managing the complexity of the applications that power the services is burdensome. The following are the characteristics of this approach’s solution framework:
+•	Modular and pluggable for architecture business and system component integration;  
+•	Reuse in terms of design and code patterns;
+•	Use model-driven approach and code generation in the development process;  
+•	Test infrastructure for unit testing, component integration testing and service testing; and  
+•	Adapt an agile development process.
+2.1.4	Software architecture
+According to Valverde et al. (2012:4), it is not difficult to program a single module for a set of independent functions. In fact, a skilled programmer may produce a substantial amount of code in a short period of time. When thousands of programs must work together to fulfil business operations, various problems can occur. Maintenance becomes a challenging task. Adding more modules to the system would add to its complexity and exacerbate the problem. To enable business and IT agility, the entire complexity of the IT system must be resolved and controlled. It is necessary to have the correct software architecture. Netherwood (2010) states that architecture is essential because it (cited by Valverde et al., 2005): 
+•	Controls complexity
+•	Enforces best practices 
+•	Provides consistency and uniformity
+•	Communicates skills needed
+•	Reduces Risks
+•	Enables re-use
+Valverde et al. (2012:5) further asserts that architecture is described to be the rules, heuristics and patterns governing:
+•	Partitioning the problem and the system to be built into discrete pieces 
+•	Techniques used to create interfaces between these pieces
+•	Techniques to manage overall structure and flow
+•	Techniques used to interface the system to its environment
+•	Appropriate use of development and delivery approaches, techniques and tools.
+Valverde et al. (2012:5) further expresses that methods, standards, tools, frameworks, policies, and management directives are all part of an architecture. A proper architectural design, together with its supporting infrastructure, is important to an IT project’s success.
+2.1.5	Agile Development Process
+One of the primary goals of re-engineering an existing IT system, as stated by Valverde et al. (2012), is to increase business and IT agility. Scott, cited by Valverde et al. (2012:6), asserts that software development is approached in an evolutionary and iterative manner through the agile development process which promotes the focus on adaption to change. The notion is a good fit for increasing business and IT agility. Concrete requirements are identified as the development process progresses through successive prototype implementations in an agile development methodology (Valverde et al., 2012).
+2.1.6	Database assessment
+Fong (2021:7) states that because of the recent rapid advancements in database technology, more DBMS are being installed in a variety of enterprises. Many firms must convert to a new technology in order to compete, save costs, and standardize operational procedures. This led to the conclusion that a strategy for assessing the quality of transformed databases is required. The following criteria are drawn from software engineering and database technology requirements:
+•	Integrity - To ensure domain integrity, only syntactically and semantically valid data should be saved in databases.
+•	Trace-ability – An intuitive database design should support trace-ability throughout the entire project
+•	Consistency - Data is frequently replicated in distributed database systems to improve performance and availability.
+•	Correctness - A database is correct if it accurately describes the external objects and processes it is meant to represent.
+•	Completeness - When a database schema represents all important features of the application domain, it is said to be complete.
+•	Efficiency - If a database schema can handle any processes on the component schema and provides both timely and accurate data access for a given set of queries and transactions, it is considered an efficient design.
+2.1.7	Conclusion
+This section describes some of the key factors that aid in the re-engineering process of information systems. Valverde et al. (2012:4) states that technology is ever-changing and advancements in software development occur frequently. Consequently, the methodologies and frameworks that contribute to the success of re-engineering should be frequently evaluated and revised to ensure that it meets industry standards. This begs the question, what methodologies, frameworks and processes should be used during the re-engineering of information systems.
+3	Problem statement
+Established in 1952, the instrument-maker department of the North-West University has since grown exponentially. The instrument-making department is classified as a specialised academic service. They are responsible not only for their role in the development of specialised scientific and mechanical equipment, but also boasts a scientific glassblowing facility. They offer their expertise in design and manufacturing of research equipment. Not only that, the instrument-making department also service and repair scales, microscopes and various other equipment.
+In 2021, the Instrument-making department approached the BMI centre to request the design and development for an ERP System that would help reduce some of the tedious and repetitive tasks that takes place within the department. These tasks range from generating quotes for projects, managing labour hours of staff, and managing the stock required for projects.
+Unfortunately, the system designed by the BMI centre did not satisfy all the business requirements specified by the head of the department and various features do not work as intended. Some aspects of the user interface are not in line with industry standards and the complexion of some functions are too high for a standard user to utilise. Because of this, the staff have resorted to previous practices which are highly inefficient and which lead to valuable time being wasted. 
+This has led to the conclusion that staff members find the current system to be too complicated to utilise all of its functions and that proper training on how to use the system should be a requirement for all employees before using the system. 
+The head of the department has stated that the ability to update key values within the system should be a priority as the previous system did not allow it. In addition, the head of the department has also expressed his interest in the design of a mobile application that would enable his employees to record time spent on various activities such as working hours, lunch or a custom activity unique to the employee.
+In order to address these problems, an attempt to re-engineer the previous ERP system created by the BMI centre in order to address the various problems described by the head of the department and to successfully incorporate all the business requirements.
+4	Paradigmatic perspective
+To successfully and effectively conduct the research required for this paper, research will be conducted according to an interpretivist based approach, while utilising the guidelines and framework laid out in the research paradigm known as Design Science in Information Systems.
+4.1.1	Research paradigm
+A research paradigm, is a theoretical framework which influences the way in which a researcher analysis information and draws conclusions based on the research conducted (Mackenzie & Knipe, 2006). Paradigms are crucial because they supplement beliefs and dictates what should be studied, and how the interpretation of the results should be conducted (Kivunja & Kuyini, 2017:27).
+
+According to Guba and Lincoln (2005:193), a paradigm consists of three important elements. These elements are known as epistemology, ontology, and methodology.
+
+Epistemology originated from the Greek word episteme, which means knowledge. Simply stated, in terms of research, epistemology is utilized to explain how individuals know something, and how we understand reality and facts (Kivunja & Kuyini, 2017:27) 
+
+Scotland (2012:5) asserts that Ontology is concerned with assumptions that constitutes what is reality, in other terms, what we are perceiving. Researchers must take a stand on their perceptions of how things are and how they work in the real world.
+
+The third and final element is methodology. Keeves (1997:18) states that the term methodology, is a comprehensive phrase that refers to the study design, methods, approaches, and processes utilized in a well-planned investigation to learn something new.
+
+In conclusion, a research paradigm is essential when conducting research as it serves as the backbone of our thinking. As a result and based on the type of research that will be conducted, this study will utilise Interpretivism and Design Science as the research paradigm.
+4.1.2	Interpretivism
+Interpretivism is inherently a qualitative research method which utilises data recorded by the researcher from first-hand observations, interviews, questionnaires, case studies, and artefacts (Creswell & Guetterman, 2018). These factors will provide various advantages during this study such as:
+•	First-hand experience involving the various business processes and environments in which the employees partake.
+•	The ability to receive feedback from employees when prototyping the artefact.
+•	Creates an environment in which the research that will be conducted can be implemented and tested within a case study.
+•	Supports the creation of the artefact that will be re-engineered and aids in the evaluation of said artefact.
+
+4.1.3	Design Science
+Hevner et al. (2004:76) stated that Design Science has hugely been influenced by the fields such as engineering and artificial intelligence. At its core, Design Science is believed to be a problem-solving paradigm that enables its users to creatively develop innovations that define the ideas, methods, technical capabilities, and products that may be used to effectively and efficiently analyse, design, implement, manage, and use information systems.
+
+Design science aims to solve various problems while strongly relying on characteristics such as creativity and persistence. The results of various studies are uploaded within the knowledge base and thus become best practices for others to use (Hevner et al., 2004:76). In short, design science research in information systems attempts to address various problems that contribute to the failure of information systems.
+
+These various problems are characterised by aspects such as unstable requirements and restrictions influenced by ill-defined environmental circumstances, or the dependence of various human cognitive and social abilities such as creativity or teamwork (Hevner et al., 2014:78)
+
+Design science provides us with 7 different guidelines to follow that will aid in our research endeavours. These guidelines are based on fundamentals such as knowledge and understanding of the problem. Subsequently, solutions to various problems can be derived during the creation of the artefact (Hevner et al., 2004:82). In short, the guidelines are as follow: 
+
+1)	Design as an Artefact
+The outcome of design-science research in IS is to address a crucial business problem by developing an artefact. The artefact should be documented thoroughly to aid with the implementation and application within the specified environment. The implementation of the artefact will provide insight into the feasibility of the design process and the various effects of the ERP system. As a result of this guideline, a case study will be conducted within which the ERP system will be re-engineered in order to increase its efficiency.
+2)	Problem relevance
+The goal of information system research is to gain knowledge and insight that will allow the development and implementation of technology-based solutions to previously unresolved and significant business issues. In terms of our study, the problem encountered is to determine what processes and frameworks should be followed to effectively and efficiently re-engineer the ERP system to meet the business requirements. The current ERP system fails at reducing the administrative burden that staff members face and does not increase the efficiency of the department.  Subsequently, the case study will aid our research endeavours by providing an environment in which we can test and implement various frameworks and processes in order to determine the most effective way of re-engineering the current ERP system to solve the business problem. 
+3)	Design Evaluation
+It is crucial to exhibit the effectiveness and efficiency of the artefact with the aid of proficient evaluations methods. In terms of this study, the various processes and frameworks used to re-engineer the system will be evaluated in conjunction with the artefact. The artefact should be evaluated based on the level of effectiveness and solutions it provides to the requirements supplied by the head of the department. The processes and frameworks will be evaluated based on the overall performance of the artefact when implemented in the case study. The evaluations will be conducted by members of staff from the Instrument maker department to provide their opinion.
+4)	Research contributions
+Effective design-science research must provide a significant contribution to the design artefact, design construction knowledge, or design assessment knowledge. In terms of this report, various journal articles will be reviewed to establish factors that contribute the success and failure of projects. These factors will be noted and incorporated during the re-engineering of the ERP system and later re-evaluated and documented for future use.
+5)	Research Rigor
+In both the development and evaluation of the intended artefact, research in design science necessitates the use of rigorous techniques. The efficient utilization of knowledge base foundations and research procedures will enable the creation of a rigours system. The foundation of this study will be based on the research of various processes and frameworks that will be implemented during the re-engineering process.
+6)	Design as a search process
+Design science is innately an iterative search process that aids in the discovery of an effective solution to the problem. In thus study, research will be conducted in order to identify which processes and frameworks will be the most effective in aiding with our development and research of the ERP system.
+7)	Communication of research
+Design-Science research must be presented to audiences in both the technical and management fields with relation to the study. At the end of this study, the discoveries made, and the developed artefact will be presented to the management and technical audiences that form part of the project.
+5	Research aim and objectives
+5.1	Research aim
+This study aims to re-engineer the ERP system used by the Insturmentmaker department in order to reduce the time spent on administrative duties.
+5.2	Research objectives
+5.2.1	Primary objectives
+The primary objective is to re-engineer the ERP system by identifying, researching and integrating frameworks, methodologies and processes that can aid in the development life cycle.
+5.2.2	Theoretical objectives
+The following theoretical objectives have been identified in order to aid in the accomplishment of the primary objective:
+•	Understand how Design Science can aid in our research endeavours.
+•	Identify and understand frameworks that can aid with the re-engineering of the ERP system
+•	Identify and understand design methodologies that can aid with the re-engineering of the ERP System
+•	Understand how the previous ERP system works and what its shortcomings were
+5.2.3	Empirical objectives 
+The following empirical objectives have been created in conjunction with the primary objective:
+•	Re-design the user interface to increase its effectiveness and usability in order to minimize the time spent when using the software
+•	Migrating the current systems to an online platform for easy use and accessibility.
+•	Re-design backend functions that do not satisfy the specified user requirements
+•	Provide various methods of data validation and verification
+•	Ensure the integrity of data stored
+•	Provide the ability to Insert, Update and Delete, various data values such as types of services, stock prices, and wages, among other things. 
+•	Increase the functionality of the labour management system by incorporating the newly established business requirements
+6	Approach to project management and project plan
+The goal of this project is to re-engineer the ERP system used by the Instrument maker department in order to reduce the administrative burden on employees. This will be achieved by researching the various processes and frameworks that contribute to the success of information systems. Subsequently, the project is divided into two phases, the first phases consist of compiling various journal articles, literature studies, and the in-depth documentation of the artefact being developed. The second phase is concerned with documenting the creation of the artefact while referencing the various steps and procedures described within the project lifecycle.
+6.1	Scope
+6.1.1		Project requirements
+The Insturmentmaker department requests that their ERP system be re-engineered because it fails to effectively reduce the workload of staff members. As such, the following requirements have been established:
+•	The ERP system should lower the amount of time spent on administrative work.
+•	The head of the department would like to have the ability to Update, Insert or Delete various types of jobs that employees complete.
+•	Introduction of staff performance measures.
+•	An android application to enable staff members to perform small tasks such as fulling in work hours or creating new projects.
+•	The ability to accurately store time sheet data
+•	An effective way of managing/removing duplicate projects
+•	The design of a more streamlined interface which is effective and easy to use when creating quotations 
+•	The ability to Insert, Update or delete new labour rates
+•	A rework of the supplier and stock functions to allow the ability to store different quotes based on suppliers.
+6.1.2	Development Platform
+This section will discuss the development platform that will be utilized during the development cycle. The main web application will be developed using Visual Studio and written in ASP.NET MVC. The coding languages JavaScript, PHP, HTML5, and CSS3 will be used in conjunction with ASP.NET MVC to aid in various different front-end development processes. The system will also require a database to function properly. The database will be hosted on an Amazon Web Service.
+6.2	Limitations
+6.2.1	Time
+This project takes place within the year 2022, with the starting date being the 21st of February. The project planning and research proposal must be submitted on the 21st of April, followed by the literature study on the 30th of June. The first demonstration of the artefact along with the poster will be on the 20th of October, and the final submission of the complete document is on the 27th of October.
+6.3	Risk analysis
+In this section, the risks and the various impacts that they can have on the business will be discussed. The first risk is concerned with overrunning the budget during the re-engineering of the ERP system. The probability of this risk occurring is low and the severity of the effects on the business if it occurs is moderate. The second risk is concerned with failure to complete the project within a given time. The probability of this risk occurring is perceived to be low but the consequences this risk will have on the business, if it occurs, is high. The third risk is concerned with the technical complexity of the ERP system. This is a very low-level risk which could have moderate effects on the business.
+ 
+Table 6 1: Risk Analysis table 
+Risk	Probability	Effect
+Budget	Low	Moderate
+Schedule	Moderate	High
+Technical Complexity	Low	Moderate
+6.4	Project Plan
+ 
+Figure 6 1 :	Project Development Gantt chart
+7	Rigour / Validity & reliability
+Hevner et al. (2004:80) asserts in the second guideline that functionality, completeness, consistency, accuracy, performance, reliability and other important qualities can all be assessed when it comes to IT artefacts. In this study, the assessment of the artefact will be conducted in the form of a case study. The case study will utilise dummy data which closely simulates data used within the Instrument maker department. This simulation will aid in determining the validity of information that the artefact produces. During the testing phase, the artefact will be refined in order to accurately produce and safely store the relevant data within the database. The opportunity for feedback will be given to stakeholders in order for them to evaluate the performance and effectiveness of the artefact.  
+8	Ethical considerations
+In the following section, the ethical principles and legal implications that can be found within this study will be discussed. The following table contains ethical principles, based on the guidelines set by the National Statistician’s Data Ethics Advisory Committee, which govern the use of data during this study:
+Ethical Principles
+Public Good	Data utilization of data provides clear advantages for users and serves the general good.
+Confidentiality and data security	The identity of the data subject is secured, information is kept confidential and secure, and the problem of consent is carefully considered.
+Methods and Quality	The dangers and limitations of new technologies are evaluated, and there is appropriate human oversight to ensure that the procedures used are compliant with established integrity and quality standards.
+Legal Compliance	The data and procedures utilized are compliant with South African regulations such as the POPIA Act, the Human Rights Act, and other common laws.
+Public views and engagement 	The public's opinions are examined in light of the data used and the research's perceived benefits.
+Transparency 	Data access, use, and sharing are transparent, and they are reported to the public in a clear and accessible manner.
+Table 8 1: Ethical Principles
+9	Preliminary chapter division
+9.1	Chapter 1: Introduction
+This chapter describes the problem under investigation as well as the research and system development approaches that will be used in the project plan to meet the aims and objectives established by the research question posed.
+9.2	Chapter 2: Literature Study
+Presentation of in-depth research on the research question as well as potential solutions to the question by evaluating various other journal articles and studies that relates to the research question.
+9.3	Chapter 3: Documentation regarding the artefact
+The artefact's documentation comprises a full description of the processes taken to create it, as well as the system development methodology and the various frameworks utilised in the development cycle.
+9.4	Chapter 4: Collecting, processing and presentation of data
+Describes the procedures for gathering, processing, and generating the information that will be provided to staff members via the created ERP system. This section will also contain information obtained during the case study, interviews and feedback based on prototyping.
+9.5	Chapter 5: Results
+This chapter aims to address the research question posed at the start of this study by referring to the various frameworks and methods gathered in the literature study and the information stated in Chapter 4
+9.6	Chapter 6: Conclusion
+Entails the conclusions from the study’s findings. This chapter will demonstrate that the research question has been addressed through achieving the goals and objectives identified.
+10	Executive Summary
+The Instrument maker department of the North West University requests the re-engineering of their entity resource planning system as it is currently ineffective at reducing the time spent on administrative work. The head of the department has specified various processes and functionalities that require re-engineering such as monitoring the performance of employees and accurately storing of measurements and other data captured by various business processes. The current ERP system will be re-engineered and migrated to an online application for easy accessibility. The main goal of this study is to identify the frameworks, methodologies and processes that will aid in the successful re-engineering of the ERP system to lower the amount of time spent on administrative processes. A case study will be utilised in order to simulate in environment that mimics the Instrument maker department in order to implement and test the artefact that will be designed. 
+ 
+LITERATURE STUDY
+CHAPTER 2
+1	Introduction
+This chapter entails a literature study that will focus on a broad spectrum of factors that contribute to the successful re-engineering of an ERP system. The study will focus on identifying and utilising methodologies, frameworks, and various processes that software developers can utilise to successfully re-engineer applications. The information identified will be utilised during the creation of the artefact. Re-engineering follows nearly identical processes in relation to normal software development and thus the study will focus on the software development cycle as a whole.
+To answer the research question, the first step is to identify what factors are contributing to the failure of software applications as a whole. The first factor that will be researched is user interface design. The user interface as a whole is constantly being used by end-users and contributes tremendously to the overall acceptance of software applications. Next, we will look at feedback from end-users and their involvement during the software development cycle. Feedback can be viewed as a critical source of information in conjunction with client interactions to increase the understanding of business requirements. 
+The next part of the study will then focus on prototyping which strongly relates to feedback. The subsequent part focuses on an approach that can be utilised to migrate a legacy system to a web application. The final section consists of information regarding the Microsoft Power Platform as an approach to re-engineering. 
+All the identified information is relevant to the creation of the artefact and can increase the successful re-engineering of a software application. This project contributes mainly to the field of Computer Science and Information Technology. The entire software development process is comprised of methodologies, processes and frameworks of which this study aims to identify crucially important ones.  
+
+
+2	User Interface design
+In this section, all aspects relating to the design of an intuitive and user-centred interface will be discussed in detail.  User Interface design is a large part of the re-engineering and software development fields and its acceptance can make or break a project. It is thus important that the subject be researched in order to understand how to effectively design interfaces with end-users in mind.
+2.1	Importance of user interface 
+As technology became cheaper and easier to produce, more people have started using it in their daily lives. Technology such as cell phones and personal computers are being used by individuals on a daily basis to communicate and perform various tasks. The study of how individuals interact with computer systems is known as Human-Computer Interaction (HCI). Various disciplines such as psychology, graphic design and computer science contribute to the ongoing study of HCI. Individuals interact with computer systems through the User Interface (UI). (Stone et al., 2005) 
+Computer applications contribute significantly to our daily lives without many people truly understanding the impact it has made. The UI is an essential component that enables users to interact with computer applications to achieve their goals. Each UI will differ from application to application depending on the functionality and type of application/system. For example, when using a personal computer, the individual will use a mouse and keyboard to interact with the user interface of the application. When using a cell phone, a touch screen will be utilised. Various applications will have different interface designs unique to their functionality. In terms of the UI, the application will either be suitable or unsuitable, considering how well the interface was designed. (Stone et al., 2005) 
+As stated earlier, a good UI design is important because of the extensive use of computers in our daily lives. In the past, when computers were still expensive, only certain professionals had access to computers. Early UI design consisted of command-line interfaces, which even to this day, required the user to have extensive knowledge of how to use the application. A large amount of time will be spent on understanding and learning how to use the application. However, since the decrease in prices and widespread increase in computer usage, professionals are no longer the primary users of computer systems. Subsequently, the subject of design and development of user interfaces for various people, in various environments, with different goals and abilities has risen. The success of UI design depends heavily on how easy it is for users to learn, use, and achieve their goals when utilising the application with minimum frustrations. (Stone et al., 2005)
+2.2	What is considered a good UI design? 
+A UI is considered to be of high quality when the interface promotes an easy, natural, and engaging interaction between the system and the user that enables the user to seamlessly complete their goals (Stone et al., 2005). General terms to describe a user interface are comprised of words such as good or bad. These words are subjective and can be used to describe the various aspects of UI design such as whether the colour scheme used is a good choice or whether the layout looks bad. Our main focus is whether a user interface is exceptional, mediocre or poor concerning its usability. 
+2.3	What is Usability? 
+To effectively describe the term usability in relation to HCI, our attention now turns to the standards published by the International Organization of Standardisation (ISO). ISO is an international standard development organisation which develops and publishes international standards (ISO, 2022). These standards allow companies to create competitive products and services at a high quality. ISO standards cover a wide variety of topics that relate to the development of software. The following section will focus more specifically on ISO 9241 which consists of the ergonomics of human-system interaction.
+2.3.1	ISO 9241-11:2018: Definitions and concepts
+ISO 9241-11:2018 offers a blueprint for comprehending the idea of usability and putting it to use with interactive systems, other types of systems, products, and services. The following definitions, as described in the guideline, are noteworthy concerning this study: 
+1.	Effectiveness
+“Accuracy and completeness with which users achieve specified goals.”
+
+
+2.	Efficiency
+“Resources used in relation to the results achieved. Typical resources include time, human effort, costs and materials.”
+3.	Satisfaction
+“Extent to which the user’s physical, cognitive and emotional responses that result from the use of a system, product or service meet the user’s needs and expectations.”
+4.	Accessibility
+“Extent to which products, systems, services, environments and facilities can be used by people from a population with the widest range of user needs, characteristics and capabilities to achieve identified goals in identified contexts of use.”
+5.	User experience
+“User’s perceptions and responses that result from the use and/or anticipated use of a system, product or service. Users’ perceptions and responses include the users’ emotions, beliefs, preferences, perceptions, comfort, behaviours, and accomplishments that occur before, during and after use. User experience is a consequence of brand image, presentation, functionality, system performance, interactive behaviour, and assistive capabilities of a system, product or service. It also results from the user’s internal and physical state resulting from prior experiences, attitudes, skills, abilities and personality; and from the context of use”.
+6.	Usability
+“Extent to which a system, product or service can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use.”
+
+
+The relevance of usability:
+•	Regular ongoing use, to enable users to achieve their goals effectively, efficiently and with satisfaction;
+•	Learning, to enable new users to become effective, efficient and satisfied when starting to use a system, product or service;
+•	Infrequent use, to enable users to be effective, efficient and satisfied, with the system on each reuse;
+•	Use by people with the widest range of capabilities;
+•	Minimizing the risk and the undesirable consequences of use errors; and
+•	Maintenance, in that it enables maintenance tasks to be completed effectively, efficiently and with satisfaction.
+Usability is relevant when designing or evaluating interactions with a system, product or service for the purpose of:
+•	Development;
+•	Procurement;
+•	Review or comparison; and
+•	Marketing and market research
+2.4	User-centred design 
+According to Stone (2005), user-centred design can be viewed as a technique that can be utilised during interface design and development. The technique aims to involve the end-users continuously throughout the duration of the interface design process. User-centred design focuses on understanding the end-users who will utilise the system in conjunction with understanding the tasks and environments concerning the end-user performing tasks. These environments can range from the end-users home to the office/workspace of the end-user. Stone further asserts that utilising a user-centred design approach will likely increase the application’s usability.
+ISO 13407, published in 1997, is an earlier publication that focuses on Human-Centred Design Processes for Interactive Systems. This standard stated that HCD was based on the following four main principles:
+1.	The continuous involvement of end-users;
+2.	A suitable distribution of function between end-users and the system;
+3.	The iteration of design solutions; and
+4.	Multidisciplinary design teams.
+HCD involves the following critical activities as described by ISO:
+1.	Comprehend and categorise the context of use;
+2.	Identify the intended  end-users and specific organisational demands;
+3.	Utilise prototyping; and
+4.	Review requirements and other feedback with the end-users/clients.
+Stone (2005) argues that the utilisation of standards such as ISO 13407 will ensure that the user experience will form part of the HCI development process. As discussed earlier in the usability section, ISO standards cover a wide variety of topics. For this section, we will turn our attention to ISO 9241-210. The main focus of this standard is human-centred design for interactive systems, which acts as a guideline to ensure usability, effectiveness and efficiency.
+2.4.1	ISO 9241-210: Human-Centred design for interactive systems
+The standard provides requirements and recommendations for human-centred design principles and activities throughout the entire development lifecycle. The standard decidedly recommends that this guideline should be utilised by employees in managerial positions. The standard is concerned with ways in which both hardware and software components, in relation to computers, can enhance human-system interaction.
+According to ISO (2019), Human-centred design is an approach to interactive systems development that aims to make systems usable and useful by focusing on the users, their needs and requirements, and by applying human factors/ergonomics, and usability knowledge and techniques. This approach enhances effectiveness and efficiency, improves human well-being, user satisfaction, accessibility and sustainability; and counteracts possible adverse effects of use on human health, safety and performance.
+ 
+The guideline provides the following definitions of frequently used terms:
+1.	Human-centred design
+Approach to systems design and development that aims to make interactive systems more usable by focusing on the use of the system and applying human factors/ergonomics and usability knowledge and techniques.
+2.	Ergonomics human factor
+Scientific discipline concerned with the understanding of interactions among humans and other elements of a system and the profession that applies theory, principles, data and methods to design to optimize human well-being and overall system performance.
+ISO (2019) asserts that utilising a human-centred approach to design and development has substantial economic and social benefits for users, employers and suppliers. Highly usable systems and products tend to be more successful in both technical and commercial aspects. Highly usable systems can aid in the reduction of costs associated with support when users can understand and use products without additional support. The following list entails examples in which the use of human-centred methods improved the overall quality:
+a)	Increasing the productivity of users and the operational efficiency of organisations;
+b)	Being easier to understand and use, thus reducing training and support costs;
+c)	Increasing usability (effectiveness, efficiency and satisfaction)
+d)	Increasing accessibility;
+e)	Improving user experience;
+f)	Reducing discomfort and stress; and
+g)	Contributing towards sustainability of objectives.
+ISO (2019) argues that the utilisation of an HCD can aid various aspects of the development lifecycle. Additionally, this approach can increase the likelihood of successfully completing the project on schedule and within budget. Utilising the correct human-centred methods can reduce the likelihood of the project failing to meet the stakeholder requirements or being rejected by the end-users.
+
+
+
+
+The following table contains examples of various results from HCD activities:
+Activities	Results from HCD	Examples of information contained in the results
+Understand and specify the context of use	Context of use description	•	User group profiles
+•	As-is scenarios
+•	Personas
+Specify the user requirements
+	a)	User needs description
+b)	User requirements specification	•	Identified user needs
+•	Derived user requirements
+•	Required design guidance
+
+Produce design solutions to meet these requirements
+	a)	User-system interaction specification
+b)	User interface specification
+c)	Implement user interface	•	Scenarios of use
+•	Low-fidelity prototypes
+•	High-fidelity prototypes
+Compare the designs to the requirements 	a)	Evaluation results
+b)	Conformance test results
+c)	Long-term monitoring results	•	Usability-test report
+•	Field report
+•	User survey report
+Table 2 1 Examples of results from human-centred design activities
+2.5	Involving end-users
+The views and opinions of end-users can provide vital information about their experience while utilising the system. Various strategies can be performed to obtain results and feedback from users. These strategies can range from simply observing employees in action at work to performing psychological-based user-modelling techniques or including a user representative in the design team. In addition, it is immensely important for end-users to partake in the testing and evaluation phases of the development cycle (Stone et al., 2005).
+
+ 
+Figure 2 1 The star life cycle
+The development cycle consists of various phases of design and development (Stone, 2005). Stone argues that the cycle should be an iterative process to include end-users in the process while being able to utilise various knowledge areas and expertise. The figure above is known as the star life cycle which was proposed by Hix and Hartson in 1993 (Cited by Stone et al., 2005).
+It is a well-known fact that the star life cycle promotes iteration (Stone, 2005). In reference to the figure, evaluation is at the centre of the star life cycle to represent the continuous evaluation that takes place during different phases of the development cycle. Evaluation is concerned with gathering feedback and responses from end-users. This can be achieved in a myriad of ways such as through feedback reports, interviews, questioners, and by observing end-users in their respective environments. In addition, Hix and Hartson (1993) assert that the star life cycle can be utilised equally in various development strategies such as top-down and bottom-up approaches (Cited by Stone et al., 2005).
+Stone (2005) provides the following examples of involving end-users during the different development phases:
+•	Early in development during requirement analysis: End-users can aid by providing requirements and discussing the problems encountered with legacy systems. The best time to observe employees is during this initial period and will provide important information such as the technical skills of the intended end-users.
+•	During prototyping: Testing prototypes on end-users will enable them to provide feedback based on their experiences with the computer system and other metrics such as performance capabilities. 
+•	During the final testing and optimisation period: This presents end-users with an additional opportunity to test the final product with the aid of surveys or questionnaires. Considering that this stage takes place at the end of the cycle, only minimal changes should be made relating to the additional end-user feedback.
+•	During training/post-delivery of product: During the training phases, the development team will be able to gather more feedback based on the user’s experience so far in addition to gathering reviews and feedback for future iterations.
+The importance of client involvement during the various development stages cannot be understated. Developing a usable, effective and efficient interface relies strongly on the involvement of end-users. Creating an interface that is widely accepted by end-users will significantly contribute to the successful re-engineering of an ERP system. There exist various standards and methodologies that can aid developers during the re-engineering process such as ISO and User-Centred design. These methods are fairly popular and can be viewed as best practices.
+3	Feedback during development
+As stated earlier, feedback is an immensely important subject concerning the successful re-engineering and development of applications. Feedback can provide valuable perspectives from end-users and serves as a communication channel between the development team and clients. Specific feedback activities are continuously mentioned in sections throughout this study.
+According to a blog post written by Daly (2016), gathering and analysing feedback provided by users is what makes agile software development lean. This engagement promotes a constant need to release early and develop software with end-users in mind. The results provided by user feedback can be utilised to better understand how to add more value to the software and how to improve user satisfaction.
+In addition to utilising general feedback practices, such as surveys, questionnaires and interviews, Daly (2016) argues that releasing a prototype version to a small group of users early on will increase the quality of feedback being received. This will enable employees to maintain the team's laser-like focus on the incremental value they could contribute by implementing a relatively narrow feature set that was founded on research and first hypotheses (Daly, 2016).
+Kreisber (2020) argues that customer feedback is extremely valuable for software development. Without client feedback, it would not have been possible to optimise the user experience of the software that is being developed. During both the discovery and validation phases of software development, this information is very crucial. Kreisber (2020) states that customer input will provide the following advantages:
+•	Improved quality
+A developer can enhance the quality of their software by paying attention to what their consumers have to say. Consumer input will help produce the best product at every level of development, but notably in the early stages.
+•	Identify issues
+As a result of client feedback, developers will be able to pinpoint software problems. Perhaps there is a bug that makes using the system unpleasant. Developers can present a more refined product when they work with their clients to identify problems with their software.
+•	Higher customer satisfaction
+Customers appreciate knowing that their concerns are taken seriously. They will appreciate that developers used their feedback to improve the software. Customers should feel valued and have their comments taken into consideration by developers. The customer will feel more invested in the software development process and are more likely to remain a customer in the long run.
+•	Better product decisions
+When a developer carefully considers customer feedback, they facilitate the growth of their business. This is because developers get to improve their software and stay ahead of the competition in terms of functionality and user experience.
+Kreisberg (2020) asserts that listening to customer feedback during the development will promote better decision making throughout the entire life cycle. The main takeaway is that developers can boost sales, promote more efficient development, and build stronger relationships with their clients when they pay attention to the feedback provided.
+Feedback is another crucial method that will be utilised during the development of the artefact. As stated earlier, the entire development process can benefit from constant feedback. This will ensure that all the requirements specified are sufficiently satisfied.
+4	Prototyping
+Software prototyping is an activity that involves the creation of a software application that closely mimics the final product but with less functionality to test specific aspects. A prototype can be vastly different from the final product. Prototyping in software development closely relates to prototyping in mechanical engineering. 
+The utilisation of prototyping can yield several advantages that contribute to the successful completion of the software development cycle (Martin, 2022). As stated earlier, prototyping will enable developers to gather feedback and the ability to compare solutions to the business requirements. Developers will be able to estimate whether or not deadlines and milestones will be met concerning the scope and budget (Grimm, 1998).
+According to Pacific Research Laboratories (2021), prototyping consists of 5 distinct phases namely: 
+1.	Define the vision
+In the initial starting phase, it is crucial for developers to determine their vision for the software solution. The activities in this phase can range from diagrams and framework architectures to technical and feasibility documents. Examples of important questions to ask during this phase:
+•	What problems will the solution solve?
+•	Who is this software intended for?
+•	What other options are available
+•	How much development time is required?
+•	What is the estimated cost of the project?
+These questions in conjunction with the overall vision and activities can produce critical information regarding the success and performance of the software solution.
+2.	Focus on key features
+A common mistake that occurs during development is developers developing a prototype identical to the end product containing all of its functionality. Developers should instead identify key features that require testing, such as the usability of the user interface or certain functions that enable employees to complete tasks. Some features can be viewed as less essential when in relation to prototyping.
+
+
+
+3.	Produce
+This particular phase will consume the greatest time compared to the other phases. This phase consists of developing the actual prototype. According to Martin, the various types of prototyping models that exist are the following:
+
+a)	Rapid throwaway prototypes 
+Rapid throwaway is founded on the requirements established by clients. This type of prototype has a short development time and is utilised to visually represent some of the specified requirements. Customer input influences the revision of the requirements established in order for developers to improve the future prototyping versions. As a result of this method, a developed prototype is discarded after the required information has been obtained and has a small impact on the final prototype.
+
+b)	Evolutionary prototype
+An evolutionary prototype is worked on and refined continuously in order to satisfy all the customer’s requirements. Feedback is crucial to successfully satisfy the requirements provided. This type of prototyping will help save a lot of time during development as the same prototype is constantly being worked on instead of starting over for each iteration. This model can support developers when utilising new or unfamiliar technology stacks as well as the ability to test each individual software function.
+
+c)	Incremental prototype
+This particular method takes the final product as a whole and individually categorises them for development as small prototypes. As the development cycle continues, these smaller prototypes are integrated within one another. This method can be utilised to reduce feedback time between end-users and the development team.
+
+d)	Extreme prototype
+Extreme prototyping is a method that is utilised during web development. The method consists of three phases namely:
+i.	Basic prototype that consists of HTML pages.
+ii.	Simulation of processes using dummy data and services layers.
+iii.	The services are integrated within the final prototype version. 
+
+4.	Test and refine
+After the development and prototype showcase, feedback from users should be analysed in order to determine ways to improve the system. This phase will enable developers to test the functionality in terms of performance, usability and will provide various software metrics.
+
+5.	Present
+Each prototype will have a different purpose and thus the presentation stage will be different for each prototype iteration. For instance, a proportion of prototype iterations will focus on the usability experience of end-users, whereas others might serve as a functionality test.
+Martin (2022) encourages the following practices which to look out for during the prototyping phase:
+•	I developer should utilise prototyping when the requirements are vague;
+•	It is crucial to perform planned and controlled prototyping;
+•	Regular meetings should be held with clients in order to establish clear communications, milestones and deadlines;
+•	Prototyping should start early on in the development cycle;
+•	Clients should assess and approve prototype iterations;
+•	It is important to specify the goals of each prototype in terms of functionality and scope; and
+•	Important features should be developed earlier on.
+Prototyping provides a wide range of developing solutions to problems encountered during the development phase. Martin (2022) argues that prototyping has the following advantages:
+•	End-users are continuously involved during the various stages of development. This enables developers to sort out any issues that may arise early on;
+•	Promotes effective communication between team members;
+•	Missing functionality can be identified;
+•	Incorrect functionality can be identified;
+•	Lowers the chance of software rejection;
+•	Identifies more challenging functions that need to be implemented; and
+•	Prototyping helps ascertain the customer’s needs.
+Prototyping is an effective method to involve end-users during the various development phases. Developers will be able to gain insight regarding requirements and various other specifications that contribute to the successful re-engineering and development of software applications. Prototyping will enable developers to fine-tune the system and ensure that it is functioning as intended. Prototyping will be utilised extensively during the development of the artefact.
+5	Approach to migrating legacy systems to web-based services
+The following section consists of information in regards to an effortless approach to migrating from legacy software systems to web services as proposed by Valverde (2012). Some aspects of this approach will contribute to the development lifecycle of the artefact. This section suggests the utilisation of different methods to ultimately achieve the goal of transforming a legacy system into a new updated version.
+5.1.1	The reason for migration and reverse engineering
+Valverde (2012) asserts that a crucial reason for the reverse engineering of legacy systems is to make them inter-operable. The Oxford dictionary defines interoperability as the ability of computer systems or software to exchange and make use of information. The advancement of technology has made it increasingly simple to transfer and exchange information between systems. Valverde (2012) further argues that, as a result of advancements, new features and methods can be integrated into legacy systems with the aid of reverse engineering. A key example is the ability to utilise the web-based application from any location that has access to the internet. (Valverde et al., 2012)
+Regardless of the intent, as far as legacy software systems are concerned, reverse engineering is the initial process to utilise. Chikofsky (1990) states that reverse engineering is the process of analysing a specific system to understand the system’s components and develop a higher level of abstraction of the interrelationships (cited by Valverde et al., 2012) 
+Djamel (2008) proclaims that with the increase in widespread accessibility of the internet in the current era, web applications is a rising solution to specific legacy systems. Web services are quickly becoming a promising technology for the development and use of software applications as well as the efficient automation of interactions between organisations (Cited by Valverde et al., 2012).
+Canfora (2006) states that by overcoming the limitations associated with interoperability, web services permit the integration of existing software systems by utilising the extensive infrastructure of the World Wide Web (WWW). This creates an opportunity to continue using established business functions and methods from legacy systems (Cited by Valverde et al., 2012). 
+Fenton and Pfleeger (1997) argue that software metrics information is very useful when reverse engineering a computer system. A software metric is a quantitative measure that can be allocated to a system, component or process to determine its effectiveness and efficiency (Cited by Valverde et al., 2012). 
+Systa (2000) claims that the maintenance and re-engineering of large software systems are known to be complex, time-consuming, and expensive. These activities consists of a certain degree of risk which relates to the task of program comprehension and understanding (Cited by Valverde et al., 2012).
+5.1.2	A proposed approach
+ 
+Figure 5 1 Framework deployed for migration
+
+Artefacts	Migration target system
+Input/output	Client-side GUI
+Business-specific logic	Application server
+Reusable components or functionalities	Web service server
+Data	File or database server
+Table 5 1 Mapping deployed for migration
+The proposed approach kicks off with a simple mapping procedure of the legacy system to support the migration to web services. The approach requires a deep understanding of the legacy system at a higher level of abstraction. Cornella-Dorda (2000) asserts that these abstractions can be derived from an analysis of this system or its documentation. The modernization of legacy systems can be categorised into the white box and black box families. The initial family is based on the knowledge of the legacy system’s source code, while the latter does not require the analysis of source system code (cited by Valverde et al., 2012). A black box approach can utilise the framework shown above to provide a suitable solution.
+Bisbal (2009) proposed three categories of solutions, namely, redevelopment, wrapping and migration. These solutions are variably integrated within the method proposed by Valverde (2012), to provide an effective solution. Canfor (2006) defines wrapping as a black box modernization technique that can be utilised for the effective migration of legacy systems onto new platforms. This is achieved by encapsulating the original system with a software layer that replaces the original interface with a new modernised version (cited by Valverde et al., 2012).
+Valverde (2012) proclaims that in terms of software support for web services, .Net and J2EE are two of the best platforms that provide extensive support for web applications and web services. In addition, languages such as C++ and Javascript are easily integrated within .Net systems to further enhance their capabilities.
+The main goal of the proposed solution method is to retain the functionality present in legacy systems and with the aid of .Net and its various capabilities, it can be migrated to a web service. .Net provides the ability to visualise web services in an easy-to-understand manner and is compliant with a large sum of high-level languages. The main factor that determines the success of this method is the thorough understanding of the legacy system and its functionality to successfully map the different components, relationships and functionality. Zhou (2008) argues that considering the importance of software metrics in forward software development, it is safe to assume that software metrics can be equally as important for reverse engineering (cited by Valverde et al., 2012). The proposed solution attempts to incorporate software metrics to promote the effective migration from a legacy system to a web service. Although several metrics exist, only a select few will be utilised during the re-engineering process.
+The methods discussed above have been continuously improved and researched. The utilisation of these methods can aid in various development phases and provides valuable insight. As technology advanced, so did the need for easily accessible applications from different environments. This research contributes to the understanding of how to approach re-engineering challenges. 
+6	Microsoft Power Platform
+The Microsoft Power Platform is a combination of applications that can aid developers in the automation of processes, creation of solutions, data analysis, and the ability to develop virtual agents. As a result of the increase in the flow of data, the concept of the Power Platform was envisioned to aid and support the various tasks and processes in relation to data. Power Platform is based on the idea that businesses may use data to their advantage and gather insights to power smart business processes (Paracha, 2021).
+Paracha (2021) asserts that the Power Platform consists of the following four major components:
+1.	Power BI
+Power BI provides insights with the aid of interactive real-time dashboards that focus on the specific information required by users. Power BI provides the user with the ability to perform tasks and gain insight regardless of where the data is stored. Power BI combines and connects all the stored data in order to provide users with a collective view of the entire business.
+Developers can design and develop smart insights and combine them with decision-making processes to make the correct decisions based on the data supplied by the interactive real-time dashboard. Power BI includes a natural language query model that can be utilised to better understand the data and further mine information from the data.
+
+2.	Power Apps
+The philosophy behind Power Apps is to build applications that don't require months of work and extensive development. Users of Power Apps can create both extremely low-code and no-code applications. Power App is a very complex and intelligent type of application that incorporates the logic of your business and can be built with very little code. These programmes, along with the other Power Platform offerings, can be utilised on a variety of devices, including mobile phones running iOS or Android, laptops, tablets, desktops, and anyplace where you can access the internet.
+Developers can create highly personalised activities that can provide users with an immersive experience from starting with your data and data model and going all the way to the client’s business processes in addition to building model-driven or canvas apps that can be utilised across different platforms.
+
+Power Apps and the overall Power Platform heavily emphasise security. High enterprise security, administration, and control are available in Power Apps, and developers can manage them with Azure Active Directory to implement multifactor authentication settings. In essence, developers can manage your data through the admin centre, giving you the full experience to centrally manage your apps across your organisation as well as what has been deployed outside the organisation. Developers can have complete audit logs, use available analytics, or put data loss prevention policies in place.
+
+3.	Power Automate
+Process automation is made possible by Power Automate, formerly known as Microsoft Flow, and allows for the elimination of simple manual activities as well as any potential for human error. Power Automate is an effective workflow automation solution that enables developers to link various systems and transform data. You can operate on several Microsoft systems and there is only one source of truth. With the aid of Power Automate, developers can create and automate business processes for all of your installed apps and services. These can range from straightforward automation to more complex situations like branch creation or having several trigger responses and trigger actions.
+
+4.	Power Virtual agents
+Power Virtual Agents are sophisticated virtual assistants that can converse and perform a lot of the tasks that developers might otherwise have to carry out manually or hire someone else to complete.
+Project Portfolio Management (2021) argues that utilising Microsoft Power Platform will yield the following advantages during the development cycle:
+I.	Combine all the users’ business activities on a single platform
+In the digital age, data is everything, thus it is essential to ensure that all of your data is correct and readily available to avoid departmental silos and process bottlenecks. You may combine all of your Office 365 applications with additional external data sources using Microsoft Power Platform's end-to-end capabilities to provide seamless administration of enterprise data. It provides developers with a complete 360-degree view of everything occurring within your project portfolio.
+
+II.	Enhance data accuracy and value
+With the aid of Microsoft Power Apps, businesses may create custom apps with form fields that are tailored to their particular requirements. No matter the external data source or application, Microsoft Power Platform ensures that data flows smoothly with the aid of Power Automate. However, acquiring and using data is just the beginning. The ability to draw insightful conclusions from data and perform data-based activities in response is what gives data its true value. Power BI quickly creates all of those crucial visualisations so that businesses don't overlook opportunities within their initiatives.
+
+III.	Streamlines process and improves overall business productivity
+Power Automate makes it possible to digitise and automate monotonous operations, freeing up the development team's time to concentrate on project-related activities that bring value.
+
+IV.	Brings extensive cost savings
+According to a 2021 Forrester report, Power Apps and Power Automate save the cost and time of application development by 70%. According to a 2019 edition of the research report, organisations may easily remove any additional service subscriptions, such as vendor application subscriptions, thanks to Power Apps, which reduces licencing costs by over 50% for organisations. Microsoft Power Platform provides a plethora of cost benefits across the entirety of the project portfolio when adding in all the additional time and resource savings through user-friendly platforms and data.
+
+V.	Simplifies compliance management
+As businesses continue to value the environment and social aspects more, there will be a greater need for accountability and compliance. However, staying current and making sure every procedure is followed can be difficult. Organizations can ensure that these procedures are being followed with Power Automate and Power Apps since they have total control over the data collection procedure and outcomes. As a result, showing compliance is significantly simpler, and adjustments are simple to make if compliance standards change.
+
+VI.	Streamlines reporting activities
+Power BI allows for the quick and easy generation of all required reporting, visualisation, and dashboards. Furthermore, after all operations are consolidated onto the Microsoft platform, reports can be filtered to take into account the precise input fields or requirements your team would require.
+
+VII.	Facilitates remote working and multi-device functionality
+Many older apps lack the capacity to fully manage the integration of online and mobile applications. Microsoft Power Platform provides team members with the ability to remotely communicate with other team members. In addition, team members will be able to effortlessly gain access to a project regardless of their device.
+The use of Microsoft Power Platform will greatly reduce the time and effort required to re-engineer and develop software applications. It provides the ability to effortlessly migrated data from legacy systems along with certain functionalities and processes. Projects that are developed using Power Platform tend to be more successful and is supported by various other Microsoft services.
+
+7	Conclusion
+This literature study focused on researching methods, frameworks and processes that can be utilised during re-engineering. The study focused on User interface design, feedback, prototyping and other methods discussed to utilise during the re-engineering process. The combined use of all these methods, frameworks and processes aim to positively influence the development cycle in order to effectively re-engineer a system. These methods will be tested during the development of the artefact. The development of the artefact will generate the knowledge required to answer the research question. Research has shown that there exists a vast amount of methods, frameworks and processes that can be utilised, but some will be more applicable than others considering each individual challenge and environment.
+In conclusion, this chapter has addressed the second part of the research paper which is concerned with identifying methodologies, frameworks and processes that can aid developers during the re-engineering process. This chapter provides insight into some of the methods available to developers and explains the fundamental need for these methods. The successful re-engineering and development of software applications via the utilisation the discussed methods can contribute greatly to the success of re-engineering.
+ 
+CHAPTER 3
+3	Artefact Documentation
+In this chapter, a thorough description of the artefact and its functionality is described, the various phases throughout the development cycle is discussed, and a description of the development of the artefact is provided. 
+3.1	Artefact Description
+The utilisation of Design Science Research has aided in the identification of the various methodologies, frameworks, and procedures, which led to the successful development of a solution that consists of two applications. The first application will be utilised by management and provides the following functionalities: 
+•	Quotation management.
+•	Project management.
+•	Timesheet management.
+•	Inventory management.
+•	Customer management.
+The second application will be utilised by the technicians of the Instrument Makers on their mobile devices and will provide them with the following abilities:
+•	Employee timesheet entry management.
+•	Project information.
+ 
+ 
+Figure 4 Solution Functions
+
+The artefact is classified as an ERP system. Oracle provides the following definition of an ERP system: A form of software that is used by enterprises to manage routine business operations like accounting, purchasing, project management, risk management and compliance, and supply chain management. 
+The artefact will aid the Instrument Makers in managing the various processes within their department. The artefact will aid with planning, budgeting, forecasting and the ability to generate performance and financial reports.
+3.2	Development Cycle documentation
+3.2.1	Legacy system analysis
+Initial, the development processes started by conducting a legacy system analysis of the previous system that was utilised by the Instrument makers. The initial assessment revealed that the application was written in visual basic, the application had a counter-intuitive interface, and the application was severely complex to utilise. An extensive review of the accompanying documentation took place in order to better understand how the application was supposed to be utilised. This is a good example of why it is important to supply sufficient documentation as it will aid users in better understanding how the application works and how to use it.
+
+3.2.2	Business Processes 
+Further analysis of the documentation and application revealed the various business processes and functionality intended to be executed by the application. The following is a list of the business processes and functionalities identified: 
+A.	Quotations features
+Quote generation consists of using the following information:
+•	Captured data
+•	List of material
+•	Labour information
+o	Hours worked
+•	Purchased external components
+Data Tables:
+•	Quote
+ 
+Figure 5 Create a Quote
+
+Old Quote input data	New Quote input data
+Project (Drop Down)	Customer Name (Drop Down)
+Job (Drop Down)	Project Description
+Labour hours	Estimated Labour Hours
+Quote Accepted	Project Cost
+Service Costs	Quote Status (Drop Down)
+Fixed Rate Service (Drop Down)	Additional Cost Description 1
+Quantity fixed services	Additional Cost 1
+	Additional Cost Description 2
+	Additional Cost 2
+	Additional Cost Description 3
+	Additional Cost 3
+	Additional Cost Description 4
+	Additional Cost 4
+	Additional Cost Description 5
+	Additional Cost 5
+	Additional Info
+	Attachments
+Table 5 Old quote input compared to new quote input
+The information is used by the application to find similar historic processes to aid in the calculation of costs. When a new quote is created, the use of inventory items will also be calculated. Management has the ability to generate reports based on quotes which can be viewed as a summary per quote which specifies:
+•	Materials
+•	Labour
+•	Additional Costs
+•	Material costs
+•	Labour costs
+•	Additional Costs
+•	Total costs
+This report/summary can be exported to an excel spreadsheet.
+ 
+Management can compare a quote to its actual value. This report compares the estimated costs and the actual costs for a specific project. Using the drop-down lists, it is possible to select a specific project and a matching quote.
+The result is a table with information on the total material cost, labour cost and additional cost for the specified project and matching quotation. When the export button has been the information in the table is stored in a user-specified directory in a Microsoft Excel spreadsheet format. This allows the user to perform additional calculations (such as Actual vs. Expected cost overrun) if needed.
+
+B.	Inventory management
+The process initiates when a quote is accepted, the IM then determines if they have the required materials on hand. After the service has finished, the residual materials will be captured for stock-taking purposes. The stock-taking process starts with the counting of the current stock, the stock levels are then captured, and reports are generated that can be accessed at any given time to check inventory levels.
+Data tables:
+•	Stock take
+•	Inventory list
+•	Quantity used
+Buying and storing of new inventory
+The process involves the create new stock bought form that has the following data entries:
+Old inputs	New inputs
+Date purchased	Material
+Supplier	Item Category
+Inventory Item	Item Detail 1
+Cost/Item Ex vat	Item Detail 2
+VAT (%)	Item Size
+Quantity	Size Unit of Measure
+Length/Units	Size note
+Width	Comment
+Notes (Large textbox)	Standard Length (mm)
+	Standard Width of Diameter (mm)
+	Standard Height (mm)
+	Standard Interior Diameter (mm)
+	Standard Thickness/Wall (mm)
+	Item Length Measured (m)
+	Item Width Measured (m)
+	Full Units Counted
+	Quantity Unit of Measure
+	Quantity Scapped
+	Unit price incl VAT
+	VAT
+	Source Quantity on hand value excl VAT rounded
+Table 6 Old inventory input compared to new inventory input
+3.2.3	Reports
+The legacy system provides the ability to generate reports based on the inventory on hand within the department. 
+C.	Labour processes
+The labour process flow consists of assigning a technician to a job, capturing the hours worked on a project by an employee, and finally completing the assigned job. The data table utilised for labour processes is the Time Entry table.
+The form contains the following data entries:
+Old input	New input
+Employee	Employee
+Project (Ability to select from active projects)	Project Description (Drop Down)
+Job	Job Type
+Job description	Time Start
+Labour hours	Time Stop
+Date Done (DateTime)	Weekend date (Selected automatically)
+Fixed rate service (Drop Down) (Checkbox?)	Additional Activity 1
+Quantity fixed service	Additional Activity 1 Start
+	Addition Activity 1 Stop
+	Additional Activity 2
+	Additional Activity 2 Start
+	Addition Activity 2 Stop
+	Additional Activity 3
+	Additional Activity 3 Start
+	Addition Activity 3 Stop
+Table 7 Old Timesheet entry compared to new timesheet entry
+A report can be generated which will provide information on hours worked per project and hours worked per month. Furthermore, a report can be generated which specifies the income per month. This report calculates the total amount of money generated by projects.
+
+D.	Admin functions
+The administration has the ability to create, update and delete records within the application. The administration is able to create the following records along with their data inputs:
+Old input process	Old input	New input process	New input
+Additional costs (Project or quote)		Additional costs added during the quote creation	Additional Cost Description 1
+	The user should specify the project, description, hours/quantity, and cost		Additional Cost 1
+	The user should specify the quote, description, hours/quantity, and cost		Additional Cost Description 2
+			Additional Cost 2
+			Additional Cost Description 3
+			Additional Cost 3
+			Additional Cost Description 4
+			Additional Cost 4
+			Additional Cost Description 5
+			Additional Cost 5
+			
+Inventory category			
+	Name of category		
+Customer		Customer	
+	Customer name		Customer name
+	Internal (Checkbox)		Internal (Checkbox)
+	Faculty if internal		Faculty if internal
+	Department if internal		Department if internal
+	Address		Address
+	Contact person		Contact person
+	Contact number		Contact number
+	Email address		Email address
+Employee		Employee	
+	Employee number		The management of the instrument makers are no longer required to create and store employee information within the application because Employee information is obtained through each respective employee’s Microsoft account provided by the university. 
+	Name		
+	Surname		
+	Telephone		
+	Cell phone		
+	Email address		
+	Job title		
+	Office number		
+	Current employee (checkbox)		
+			
+Fixed rate service		Fixed rate service	
+	Name		Management specifies the fixed rate service during the creation of quote
+	Fixed cost per unit		
+Inventory item			
+	Name		
+	Category (Dropdown)		
+	Unit of measurement		
+	Type (Dropdown)		
+			
+Job type			The technician specifies the job type during the Time entry processes on the technician application.
+	Job type		
+	Internal rate per hour		
+	External rate per hour		
+			
+Project			Project ID
+	Customer (dropdown)		Quote ID
+	Description		Project Description
+	Date received (DateTime)		Project Status
+	Target Date (checkbox plus DateTime)		Date Received
+	Quote		Target Date
+	Primary Technician (dropdown)		Date Finished
+	Status (dropdown)		Main Technician
+	Date finished (DateTime)		Created by
+	Quote		Modified
+	Quote quantity		Project Image
+	Stock bought		Attachments
+	Stock		
+	Inventory type		
+	Name		
+			
+Suppliers			The current solution does not currently keep track of supplier informatioln
+	Name		
+	Web address		
+	Phone number		
+	Notes		
+Table 8 Old Administration processes input compared to new processes input
+
+ 
+Figure 6 Create Additional Cost Screen
+ 
+Figure 7 Create Inventory Type Screen
+ 
+Figure 8 Create Customer Screen
+ 
+Figure 9 Create Employee Screen
+ 
+Figure 10 Create Inventory Item Screen
+ 
+Figure 11 Create Job Type Screen
+ 
+Figure 12 Create Project Screen
+ 
+Figure 13 Quotation Entry Screen
+ 
+Figure 14 Create Stock Bought Screen
+ 
+Figure 15 Create Stock Take Screen
+ 
+Figure 16 Create New Supplier Screen
+In conjunction with creation, the administration can also update and delete all the respective records discussed above.
+E.	Technician functions
+The application provides technicians with the ability to create records for the additional project costs, Time Entry and quantity used tables. The input consists of the following:
+ 
+Figure 17 Create Additional Cost Screen
+
+ 
+Figure 18 Create Time Entry Screen
+ 
+Figure 19 Create Quantity Material Used Screen 
+
+F.	Identified data structure compared to the new data structure
+Old Table	Old Columns/Data	New Table	New Columns/Data
+Time Entry	Employee_ID	IM-Time Entry	Time_Entry_ID
+	Project_ID		Employee
+	Project_Description		Project ID
+	Job_Type		Project Description
+	Labour_Hours		Job Type
+	Date_Done		Time Start
+	Service_Costs		Time Stop
+	Fixed_Rate_Service		Weekend date
+	Quantity_Fixed_Service		Timesheet approval
+			Created by
+			Modified by
+			Modified
+			Created
+			Additional Activity 1
+			Additional Activity 1 Start
+			Addition Activity 1 Stop
+			Additional Activity 2
+			Additional Activity 2 Start
+			Addition Activity 2 Stop
+			Additional Activity 3
+			Additional Activity 3 Start
+			Addition Activity 3 Stop
+			Total hours spent on project
+			Total hours spent on additional activities
+			Total Calculated time
+			
+Customer	Customer ID	IM- Customer	Customer_ID
+	Customer Name		Customer Name
+	Internal/External		Customer Relation
+	Faculty		Faculty 
+	Department		Department
+	Address		Address
+	Contact Person		Contact Person
+	Contact Number		Contact Number
+	E-mail Address		E-mail Address
+			
+Employee	Employee_ID		
+	Employee Nr		
+	Employee Name		
+	Employee Surname		
+	Employee Telephone Nr		
+	Employee Cellphone Nr		
+	Employee E-mail Address		
+	Job Title		
+	Office Number		
+	Current Employee		
+			
+Fixed Rate Service	Fixed Rate Service ID		
+	Fixed Rate Service		
+	Fixed cost per Unit		
+			
+Inventory Type	Type ID	IM-Inventory Control	Inventory_ID
+	Type Name		Material
+			Item Category
+Inventory List	Inventory Item Name		Item Detail 1
+	Type Name		Item Detail 2
+	Category		Item Size
+	Unit of Measure		Size Unit of Measure
+	Std Length		Size note
+	Std Width		Comment
+	Size		Standard Length (mm)
+			Standard Width of Diameter (mm)
+			Standard Height (mm)
+			Standard Interior Diameter (mm)
+			Standard Thickness/Wall (mm)
+			Item Length Measured (m)
+			Item Width Measured (m)
+			Full Units Counted
+			Quantity Unit of Measure
+			Quantity Scapped
+			Unit price incl VAT
+			VAT
+			Source Quantity on hand value excl VAT rounded
+			
+Job	Job ID		
+	Job Type		
+	Rate p/h		
+			
+Project	Customer Name	IM-Projects	Project ID
+	Project Description		Quote ID
+	Project Status		Project Description
+	Date Received		Project Status
+	Target Date		Date Received
+	Date Finished		Target Date
+	Quote		Date Finished
+	Handling Fee		Main Technician
+	Main Technician		Created by
+			Modified
+			Project Image
+			Attachments
+			
+Quantity used	Project Description		
+	Job Type		
+	Inventory Item Name		
+	Length/Units		
+	Width		
+	Quantity Used		
+	Date Used		
+	Full sheets Cut		
+			
+Quotes	Project Description	IM-Quotes	Quote ID
+	Job Type		Project ID
+	Labour Hours		Project Description
+	Quote Accepted		Customer Name
+	Service Costs		Contact Person
+	Fixed Rate Service		Contact Number
+	Quantity Fixed Services		E-Mail Address
+			Estimated labour hours
+Quotes Quantity	Project-Job		Additional Cost Description 1
+	Inventory Item Name		Additional Cost 1
+	Length/Units		Additional Cost Description 2
+	Width		Additional Cost 2
+	Quantity Used		Additional Cost Description 3
+			Additional Cost 3
+Stock Bought	Supplier Name		Additional Cost Description 4
+	Quantity Ex Full		Additional Cost 4
+			Additional Cost Description 5
+Suppliers	Supplier Name		Additional Cost 5
+	Supplier Webaddress		Project Cost
+	Phone Number		Additional Infor
+	Notes		Quote Status
+			Modified By
+			Total Project Cost
+			Project Created
+Table 9 Identified Data Structure compared to new Data Structure
+3.2.4	Prototyping Data collection
+The first official prototype was demonstrated on 12/09/2022 to the head of the Instrument maker department and an end-user (referred to as the stakeholders going forward). During this demonstration, the various forms that have been developed were showcased and discussed in detail with stakeholders. This provided stakeholders with the opportunity to submit feedback and ask questions relating to development. Valuable information regarding data input was received and a new level of clarity was achieved. The quotation management features were redesigned based on the feedback generated from the first prototyping event, some data inputs were changed, and the SharePoint list was slightly modified. This is an example where the utilisation of Microsoft Power Platform was advantageous in development. The consensus was that development is progressing as expected and that the system will adhere to the requirements and successfully complete the required tasks.
+The second prototyping event took place online on 12/10/2022 and was attended by stakeholders of the Instrument maker department. In this meeting, the final new features were showcased, and a review of the solution took place in order to ensure that the requirements will be satisfied and that the redesign of the quotation management features of the solution has been implemented successfully according to the needs of stakeholders. The consensus was that the quotation management
+
+3.3	The life cycle followed and its different phases:
+The Agile Methodology 
+Agile project management is currently one of the most popular techniques because of its versatility and progressive nature. It was introduced in 2001 by the Agile Manifesto, which was initially developed for software development. Agile project management evolved over time and became a popular choice for many project managers, regardless of the industry (KissFlow, 2021).
+Agile was chosen as the software development methodology because it enables developers to deliver superior quality products, increased customer satisfaction, increased flexibility and reduced risks (Wrike, 2022).
+
+
+3.3.1	Agile development lifecycle
+ 
+Table 10 Agile Development Process (Wrike, 2022).
+ 
+
+1.	Concept
+The initial phase of agile development is known as the concept phase. In this phase, project stakeholders will formulate the scope, goals and requirements of the software application. 
+
+Initially, a stakeholder meeting was hosted with the respective stakeholders of the Instrument Makers. In this meeting, the stakeholders described the various requirements and functionality that the application should satisfy and poses. Once a general understanding of the project scope, goals and requirements was established, a discussion concerning the legacy system took place in which various shortcomings and problems were identified. The discussion of the legacy system led to a better understanding of what stakeholders require their application to do as well as insight into why stakeholders are unsatisfied with the legacy system.
+
+2.	Inception
+The second phase is known as the Inception phase, frequently referred to as the requirements identification phase, where stakeholders further iterate on the requirements, scope, and goals of the application. The development team can start working on the architecture as well as the development of the initial mock-up interface.
+
+During this phase, the design and development of the first interface commenced on Microsoft Power Platform. The interface was developed in accordance with the requirements established by stakeholders in conjunction with the feedback and analysis of the legacy system. Throughout this phase, frequent communication with stakeholders was maintained in order to ensure that the requirements and goals are fully understood and will be satisfied by the planned application.
+
+3.	Iteration
+The third phase of the agile development process is known as iteration, frequently referred to as development. This phase is known to be the longest phase as it consists of most of the development relating to the solution. During this stage, the various requirements of the previous stages will be combined to develop the various iterations of the application. The iterations undergo several reviews and revisions to improve the application until the final iteration is produced. This ensures that the application being developed is in line with what stakeholders require.
+
+First iteration
+The first iteration of the artefact consisted of two applications with the following functionalities:
+	Mobile application:
+•	Timesheet management
+Desktop application:
+•	Quote management
+•	Project management 
+•	Timesheet management
+•	Customer management
+The first iteration was based on the various requirements provided by stakeholders. The iteration’s functionality was still being developed and expanded upon but provided stakeholders with a general idea of the artefact being developed. Stakeholders provided feedback on the first iteration during the first prototyping session. Stakeholders indicated that the Quote management functionality was slightly different from the requirements and did not fully satisfy their needs. Stakeholders requested additional functionality in the form of inventory management in relation to the desktop application as well as extended mobile application functionality which consisted of providing technicians with the ability to view information about the projects they are currently working on. 
+Second iteration
+The second iteration was refined and improved based on feedback provided by stakeholders during prototyping. Changes were made to the Quote management functionality as well as small adjustments to the timesheet management functionality. Small changes were made to the user interface in order to better satisfy the requirements and to create a more streamlined interface. The second iteration implemented the inventory management functionality. Various business processes, logic and business rules were implemented and refined. Small changes were made to the respective SharePoint lists. Stakeholders indicated that the changes made from the first iteration align more with their needs and requirements.
+
+
+Third iteration
+The third iteration is the final iteration of the artefact. The third iteration has been refined according to feedback and requirements provided by stakeholders in the second prototyping meeting. The artefact consisted of the following features and functionalities:
+Mobile application:
+•	Timesheet management
+•	Project Details
+
+Desktop application:
+•	Quote management
+•	Project management 
+•	Timesheet management
+•	Inventory management
+•	Customer management
+
+3.3.2	Final iteration administration application screenshots
+ 
+Figure 20 Main Menu
+
+ 
+Figure 21 Quote Management Screen
+ 
+Figure 22 Quote Info Input Screen
+
+ 
+Figure 23 Quote Info View Screen
+ 
+Figure 24 Project Management Screen
+
+
+ 
+Figure 25 Project Info Input Screen
+ 
+Figure 26 Project Info View Screen
+
+
+ 
+Figure 27 Administration Timesheet Management Screen
+ 
+Figure 28 Inventory Management Screen
+
+ 
+Figure 29 Inventory Input Screen
+ 
+Figure 30 Customer Manage Screen
+
+
+ 
+Figure 31 Customer Input Screen
+
+3.3.3	Final iteration technician application screenshots
+ 
+Figure 32 Technician Home Screen
+ 
+Figure 33 Timesheet Management Screen
+ 
+Figure 34 Timesheet Input Screen
+ 
+Figure 35 Project Browse Screen
+ 
+ 
+Figure 36 Project View Screen
+4.	Release
+The fourth phase of the agile process consists of various quality assurance tests and training of Employees. The application code is checked to ensure that clean code is written, and potential bugs are addressed. Employees will be trained to utilise the solution to its full potential and any other issues will be addressed by the development team. 
+
+In-person meetings were scheduled with the stakeholders of the Instrument Makers to provide training to the staff members of the Instrument Makers. During these training sessions, staff members and the development team performed and tested the various functionalities of the solution. The opportunity was given to staff members to ask questions relating to the utilisation of the solution.
+
+5.	Maintenance
+The SDLC's maintenance phase begins once the product is fully operational. Software upgrades, corrections, and replacements are all examples of software maintenance.
+Upgrading or integrating software applications with newly deployed systems by the client is a common requirement. Additional testing of the software or version upgrades is frequently required. Errors or faults that surfaced during the maintenance phase might need to be fixed during subsequent software testing. During the maintenance phase, software performance monitoring is also provided.
+
+6.	Retirement
+The final phase of the Agile Development process is known as the Retirement phase. The retirement phase's main goal is to successfully take a system out of service. Today's enterprises must successfully complete this task without significantly disrupting their everyday organisational business demands. As legacy systems are rejected and new systems take their place, this is a severe problem that most organisations must deal with.
+
+CHAPTER  4
+4	Results 
+In this chapter, the results and conclusion derived from the literature study and development of the artefact will be discussed in detail. The section will review the contribution of Agile software development, Prototyping, ISO 9241-210: Human-centred design for prototyping, Legacy System Analysis and Microsoft Power Platform.
+4.1	Agile software development methodology
+The utilisation of Agile as the software development methodology has proven to be successful in various stages of development and contributed significantly to the successful development of the solution. The utilisation of agile has led to the development of a solution of high quality that was refined during the numerous iterations of the solution. Agile enabled the development team to rapidly develop iterations which were showcased to stakeholders to ensure that the solution satisfy all their requirements and provided them with the ability to submit feedback. Feedback is crucial during development because it will provide insight into different aspects relating to stakeholders, their needs, and the requirements of the application.  Throughout the development project, communication with stakeholders took place continuously to ensure a higher level of customer satisfaction. Communication is one of the most important aspects of agile and contributes immensely to the success of a project.
+
+4.2	Prototyping
+Prototyping has contributed significantly to the successful development of the solution and allowed the development team to accurately assess the solution’s usability, accuracy, usefulness, performance and viability. Prototyping has led to the discovery of design flaws and bugs earlier on in the development cycle and provided the ability to identify improvements that can be made. Earlier detection of flaws and bugs can save time later in development. Prototyping formed part of the main feedback component in the development cycle. The various prototyping meetings provided stakeholders with the ability to test and critique the currently developed functions of the solution. As stated previously, feedback contributes significantly to the successful development of the artefact. Prototyping allowed for various verification and validation tests during development. The various processes, logic and business rules could be tested to ensure that the data being produced is valid and accurate.
+4.3	ISO 9241-210
+ISO standards provide various guidelines, frameworks and processes on different topics relating to application development, engineering, quality management standards and environmental management standards (ISO, 2022). The utilisation of ISO 9241-210 provided insight into the best ways of developing a user interface that is effective, efficient, constant, and adheres to the regulations set out by ISO. ISO 9241-210 contributed significantly to the successful development of the User Interface utilised within the solution.
+ISO standards are expensive to obtain and could severely impact the budget of a project. ISO standards consist of a large number of resources and will require a fully committed team to understand and correctly implement ISO standards within an organisation.
+4.4	Legacy system analysis
+The legacy system analysis that was conducted, provided insight into the different functionalities of the application, identification of the data structure, various inputs in the application, identification of unsatisfied requirements and various other aspects. The legacy system analysis provided a better understanding of the goals that need to be achieved and enabled comprehension of the complicated structures. The legacy system analysis identified redundant columns and tables within the data structure which was utilised to implement improvements to the data structure. The system analysis provided the ability to identify potential risks and threats to the processes. As a result, the legacy system analysis led to increased productivity and higher customer satisfaction
+4.5	Microsoft Power Platform
+The utilisation of Microsoft Power Platform to develop the solution proved to be advantageous in several ways. Microsoft Power Platform enabled the development team to develop the different iterations in a short amount of time. As a result, the development time was reduced, and the solution could easily be modified to better address stakeholder requirements. Microsoft Power Platform provides the ability to easily develop and test applications which led to the early discovery and solving of bugs and other issues raised by stakeholders.
+Some features need to be expanded upon in Microsoft Power Platform as complex applications might not work as intended or lack the correct functionality to implement the required features. Microsoft Power Platform should be utilised to develop medium-complexity applications.
+CHAPTER 5 
+5	Reflection and Questions
+5.1	What did you learn while completing this project?  Refer to the decisions that you took and evaluate them.  Analyse the strong and weak points of the product and the process that you followed.  What would you do differently?
+
+During the course of this study, various frameworks, methods and procedures were researched and implemented during the development of the artefact to determine which frameworks, methods and procedures can contribute to the successful re-engineering of an ERP system. I have learned that there are several ways in which a developer can attempt to re-engineer an application. The choice of frameworks, methods and procedures are largely influenced by the organisation for which the application is being developed, what type of application is being developed and what the requirements of the application are. The utilisation of the Agile software development methodology, prototyping, legacy system analysis, ISO standards, and Microsoft Power Platform during the development cycle proved to have a positive influence on the successful development of the solution. The solution utilised Microsoft SharePoint as its main data source which has proven to be less effective than Microsoft Dataverse would have been. Microsoft SharePoint has limited features compared to Microsoft Dataverse although Microsoft SharePoint is a free service and Microsoft Dataverse requires licensing. Microsoft Dataverse should have been utilised instead of Microsoft SharePoint.
+
+5.2	Did you achieve the objectives that you set for the project?  Discuss.
+The study successfully achieved the goals it set out to achieve along with a concrete answer to the research question. Feedback from the Instrument Makers and the various tests, which were conducted during development and prototyping, concluded that the application effectively and efficiently satisfies the needs and requirements specified by the stakeholders of the Instrument Makers. The goal of the artefact was to identify whether the researched methods can contribute to the successful re-engineering of an ERP system. Each individual method and process stated above can be utilised to contribute to the successful re-engineering of an ERP system.
+
+5.3	How successful were you in managing the project and meeting target dates?  Discuss.
+The utilisation of Microsoft Power Platform, in conjunction with Agile Software development and Prototyping, promoted faster development which led to the project being developed on schedule in relation to the established target dates and project plan.
+
+5.4	 Reflection
+This research paper initiated with the submission of a research proposal in which the following information was provided:
+•	Project description
+•	Problem description and background context
+•	Aims and objectives
+•	Procedures and Methods that will be utilised
+•	Project Plan
+•	Descriptions of development platform, resources and environments that will be used
+•	Ethical and legal implications
+•	Provisional Chapter division
+The next part of the research is a literature study which consisted of research relating to the various methodologies, frameworks, and processes which can be utilised to successfully re-engineer an ERP system. The literature study focused on:
+•	User Interface design, 
+•	feedback during development, 
+•	prototyping, 
+•	Approach to migrating legacy systems to web-based services
+•	ISO standards
+•	Microsoft Power Platform
+The literature study aided in identifying methodologies, frameworks and processes which could be utilised during re-engineering and provided the necessary insight into how and why these methodologies, frameworks and processes are crucial during the re-engineering processes.
+The next phase consisted of utilising the information identified in the literature study to develop an artefact that will aid in answering the research question. The artefact consisted of different requirements provided by the Instrument Maker department and was developed in Microsoft Power Platform. During development, prototyping was utilised to showcase development progress and generate feedback from stakeholders to ensure the highest level of client satisfaction. The artefact went through various iterations during development in order to refine and test the various capabilities required to satisfy the requirements.
+The final phase consisted of demonstrating the final iteration of the artefact along with key aspects of the research conducted during this study to stakeholders from the university. During this time, stakeholders asked various questions relating to the research conducted, development of the artefact, and the artefact in general.
+
+
+
+BIBLIOGRAPHY 
+Abd Elmonem, M.A., Nasr, E.S. & Geith, M.H. 2016. Benefits and challenges of cloud erp systems – a systematic literature review. Future Computing and Informatics Journal, 1(1):1-9. https://www.sciencedirect.com/science/article/pii/S2314728816300599 
+Alan R. Hevner, S.T.M., Jinsoo Park, Sudha Ram. 2004. Design science in information systems research. MIS Quarterly, 28(1):30. 
+Creswell, J. & Guetterman, T. 2018. Educational research: Planning, conducting, and evaluating quantitative and qualitative research. 6th. 
+Daly, L. 2016, How feedback helps you develop better software: Insights from the jira mobile team [Blog post]. https://www.atlassian.com/blog/software-teams/how-to-collect-feedback-for-software-development Date of access: 27 June 2022.
+Fong, J. 2021. Information systems reengineering, integration and normalization: Heterogeneous database connectivity. Springer Nature.
+Grimm, T. 1998. The human condition: A justification for rapid prototyping. Time Compression Technologies, 3, Date of access: 26 June 2022. 
+Guba, E.G. & Lincoln, Y.S. 2005. Paradigmatic controversies, contradictions, and emerging confluences. In. The sage handbook of qualitative research, 3rd ed. Thousand Oaks, CA: Sage Publications Ltd. pp. 191-215. 
+ISO. 2018. Ergonomics of human-system interaction. ISO.
+ISO. 2019. Ergonomics of human-system interaction. ISO.
+Keeves, J.P. 1997. Educational research, methodology and measurement : An international handbook. 2nd ed. New York, N.Y. : Pergamon.
+Kivunja, C. & Kuyini, A.B. 2017. Understanding and applying research paradigms in educational contexts. International Journal of Higher Education, 6(5), 
+Kreisberg, S. 2020, Importance of customer feedback in software development [Blog post]. https://sharewell.eu/why-customer-feedback-is-important-when-it-comes-to-software-development/ Date of access: 25 June 2022.
+Laboratories, P.R. 2021, Understanding the 5 stages of prototyping [Blog post]. https://www.pacific-research.com/understanding-the-5-stages-of-prototyping-prl/ Date of access: 25 June 2022.
+Mackenzie, N. & Knipe, S. 2006. Research dilemmas: Paradigms, methods and methodology. Issues in Educational Research, 16:193-205. 
+Management, P.P. 2021, Top 10 benefits of microsoft power platform [Blog post]. https://pmo365.com/top-10-benefits-of-microsoft-power-platform/ Date of access: 27 June 2022.
+Martin, M. 2022, Prototyping model in software engineering: Methodology, process, approach [Blog post]. https://www.guru99.com/software-engineering-prototyping-model.html Date of access: 27 June 2022.
+Microsoft. Microsoft power platform. https://powerplatform.microsoft.com/en-gb/ Date of access: 27 June 2022.
+Paracha, Z. 2021, What is the power platform [Blog post]. https://www.encorebusiness.com/blog/what-is-the-power-platform/ Date of access: 27 June 2022.
+Statistics, U.K. 2022. Ethics in statistics and research. https://uksa.statisticsauthority.gov.uk/the-authority-board/committees/national-statisticians-advisory-committees-and-panels/national-statisticians-data-ethics-advisory-committee/ Date of access: 27 April 2022.
+Stone, D.L. 2005. User interface design and evaluation.  (The morgan kaufmann series in interactive technologies).
+Valverde, R., Talla, M. & Global, I.G.I. 2012. Information systems reengineering for modern business systems: Erp, supply chain and e-commerce management solutions. 
+Oracle. 2019. What is an ERP system.  https://www.oracle.com/in/erp/what-is-erp/ Date of access: 10 October 2022.
+Kissflow. 2021. The 9 Key Benefits of Using the Agile Methodology. https://kissflow.com/project/agile/benefits-of-agile/ Date of access: 10 October 2022.
+Wrike. 2022. The Agile Software Development Life Cycle. https://www.wrike.com/agile-guide/agile-development-life-cycle/ Date of access: 10 October 2022.
+Study. 2022. Maintenance Phase in SDLC. https://study.com/academy/lesson/maintenance-phase-in-sdlc.html Date of access: 10 October 2022.
+
+ 
+APPENDIX A
+ITRI 671 Research ethics form: Honours project 
+Name: Hanno Visagie 
+Title of project: Re-engineering an enterprise resource planning system: 
+Methodologies, frameworks and processes. 
+Supervisor: Mrs S.E.S Campher 
+Starting and end dates of project:  24 Feb. – 30 Oct. 
+ 
+1. Have you read the information available related to research ethics (Chapter 5 of Researching Information Systems and Computing; BJ Oates and Chapter 13 of Writing for computer science, J Zobel; Manual for post graduate studies, available on efundi)? 	Yes X 	No 
+ 
+2. Do you make use of people as source of data in your project (for example the completion of questionnaires or evaluation of products)? 	Yes X 	No 
+ 
+ 		
+3. Are there any aspects of your research that you need permission from another party to use (for example use of property or tools)? If yes, provide more detail.  
+ 	Yes 
+ 	No 
+X
+ 
+4. Describe your research question and give a short description of your plans for the collection of data. 
+The aim of this research paper is to identify methodologies, frameworks and processes that can be used during the re-engineering of an enterprise resource planning system. 
+Feedback will be gathered continuously during prototyping and stakeholder evaluations. Feedback is a crucial part in this study and can be viewed as the collection of data.  The participants in thus study are part of the North-West University.
+ 
+ 
+5.	Describe how you plan to provide information about yourself and the goals of your research to participants. 
+The participants in this study are located within the university campus. In person meetings will be continuously held throughout the development cycle in order to obtain feedback. As a result of in person meetings, stakeholders will be given the opportunity to directly interact with the researchers to establish a professional relationship and communication channel.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+6.	Describe what methods you will use to get permission from participants in your study. 
+N/A
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+7. Will you be able to ensure that participants’ information will be used in an anonymous, private and confidential way? How? Feedback from end-users and stakeholders will be submitted anonymously. The identities of these people will not influence any of the results of the study. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 	Yes
+X	No 
+ 
+8. Are there any foreseeable risks of damage (physical, social or psychological) to participants or the environment? If you answer yes, give detail of the preventative measures you will follow. 
+ 
+ 
+ 
+ 
+ 
+ 	Yes 	No 
+X
+ 
+9. Are there any foreseeable risks to the NWU, for example lawful actions that may follow the research, or damage to the image of the university? If yes, give detail. 	Yes 	No 
+X
+ 
+10. Are there any other ethical issues that may occur during the execution of the research (for example conflicting interests)? If yes, provide detail and explain how you plan to handle them. 	Yes 	No 
+X
+ 
+ 
+ 
+ 
+ 		
+ 
+ 
+ 
+I declare that the information contained in this form is accurate. I have attempted to identify the risks that may arise in conducting this research and acknowledge my obligations and the rights of the participants. I confirm that the research will be conducted in line with all University, legal and ethical standards. 
+ 
+ 
+ 
+Name of student: Hanno Visagie 
+Signature: 
+Date:2022/08/25 
+ 
+
+ 
+Name of study leader: Mrs S.E.S Campher 
+Signature: 
+Date: 
+

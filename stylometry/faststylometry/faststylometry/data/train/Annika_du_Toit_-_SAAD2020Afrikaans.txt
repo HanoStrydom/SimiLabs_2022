@@ -1,0 +1,79 @@
+Entelect
+Du Toit, A 	31842534
+Research Assignment
+Contents
+Background information	1
+Address	1
+Main Activities	1
+Organization or management structure	1
+Information systems used within the business	2
+Security	3
+Social media	3
+Architectural Aspects	3
+Other aspect of business	5
+Outcomes	5
+Bibliography	6
+
+ 
+Background information
+
+Address
+
+ 
+Head Office
+Physical Address
+Unit 13, 2nd floor
+3 Melrose Boulevard
+Melrose Arch
+Johannesburg, South Africa
+ Postal Address
+PO Box 239
+Melrose Arch
+2076
+ 
+Cape Town Office
+Physical Address
+Unit 16, Ground Floor
+Southdowns Ridge Office Park
+Corner Nellmapius and John Vorster
+Centurion
+Physical Address
+Floor 3 Aurecon West, 1 Century City Drive,
+Waterford Precinct,
+Century City,
+Cape Town
+ 
+Tel: +27(0)11 994 3300
+Email: careers@entelect.co.za
+Main Activities
+Entelect is the best software engineering company in South Africa and provides customized software solutions that enable their clients throughout all types of industries to keep up with the rapidly changing demands of their business. They strive to deliver high quality software engineered solutions through honesty, integrity, and excellence. Even though they take project from any field of industry they are quite selective on the projects they work with. They want to work with something new and interesting that will challenge their ability of problem solving.
+Organization or management structure
+Entelect works as a team of the most highly qualified software engineers to achieve the goals of the organization. When a client presents their problem, Entelect is flexible with their approach to the problem and ensure quality work. By learning new skills for your toolbox and building your confidence by handling greater responsibilities within the company, you are expected to succeed with the role you have on your level of skills. There are different roles within the company from level 1 beginner engineer, level 2 intermediate, level 3 senior, all the way to the technical lead, solutions architect, development manager and eventually team leader. Their goal is to become the best software engineering and solutions company in the world by maintaining the highest employment standards. Entelect provide a fun and enjoyable working environment by embracing their values of honesty and integrity.
+Information systems used within the business
+Information systems use information technology to collect, process, store and provide useful information to support an organization and its employees, customers, suppliers, and partners (Whitten & Bentley, 2007). A business has different types of information systems, which include transaction processing systems that process and monitors the data of a transaction within the database system. Management information systems consists of the software and hardware of a business, that analyse the transaction data and produce the information to help manage the decision-making. Decision support systems support the actions of the decision makers by analysing massive amounts of data to solve problems. 
+Executive information systems support the senior executive management decision-making skills and their planning of the future goals for the business. Expert systems are a system that is incorporated with expert skills of solving complex problems and decisions with the knowledge they have. Communications and collaboration systems are used to read the verbal and nonverbal cues that are used to communicate our ideas between the internal and external people of an organization. Office automation system are used to improve the work between employees by collecting, processing, store, and pass on information through a computer-based system.
+Entelect may be a business that build information systems, but they also need their own systems to maintain a high-level quality. One of their most important systems they use is the Decision support system. This system is used by the business analysts to ensure high quality solutions and save time, effort, and money by analysing the information provided by the business. To ensure these analysts must attend regular workshops and training to improve their communication techniques, presentation skills and process modelling. Entelect also use the executive support system that helps improve the business and strive to the goals created by the executives. To help the decision support system, Entelect consult with the key stakeholder of a business to determine the focus area (Software, 2020). They provide a presentation of the outcomes after analysing the technical reviews, audits and assessments, strategy alignment and development operations.
+ For improving the communication between the employees, partners, and clients, Entelect have created portals within the business to support the communication and collaboration system (Software, 2020a). These portals give easy access to information of the analysis, design, and development of projects. A member can communicate via email, SMS, or any social media if they need any assistance. When Entelect approach a project, they process all the information and execute thorough planning for the solutions. These solutions are planned with phases; each phase must be completed before they start with the next phase. This is called the Waterfall approach; this is a great way to approach a project for it documents the problems well and the technology used within the system are studied and understood.
+Security 
+In the business of creating software, Entelect must be able to secure their systems properly. They use the 10 concerns of Open Web Application Security Project (OPWAS) to improve their solutions on a security basis. These 10 concerns are known as injection, broken authentication, sensitive data exposure, XML external entities, broken access control, security misconfiguration, cross-site scripting, insecure deserialization, using components whit known vulnerabilities and insufficient logging and monitoring. To work against these concerns, they have developed tactics to address their security. These tactics include to educate everyone in the business about the concerns by attending security awareness workshops. They also make security part of their way of work while they also automate their security testing with end to end code testing.
+Social media
+Entelect uses a variety of different kinds of social media to stay connected and inform the community of their business. They are available on Facebook @ https://web.facebook.com/EntelectSoftware/ and on Instagram @ https://www.instagram.com/entelectza/. They are also available on Twitter, LinkedIn, YouTube, and Glassdoor. 
+Architectural Aspects
+Entelect is a strong business that use Internet-Based Computing Architectures. This network computing system is a multitiered solution in which the presentation and presentation logic layers are implemented in client-side Web browsers (Whitten & Bentley, 2007). With this architecture it means that the business use cloud computing for their information systems. This means they make use of intranet. Intranet use the internet to combine your work, group work and enterprise computing. This intranet is hosted by a Web server. Entelect also make use of the database server that hosts their SQL database engine such as Oracle. 
+Data layering structure is used for storing, processing, and passing information. Data manipulation refers to the process of adjusting (inserting, deleting, and modifying) data. Application logic layering are used within a multitier architecture where application processing and data management functions are physically separated. Presentation logic layer is software that separates components of an application into separate logical layer. Presentation layer, this tier is the most important tier, it provides the presentation of the content through Graphical User Interface. This tier can be accessed by the client through their device like desktop, laptop, tablet etc. This presentation layer is important for Entelect, for everything they design must make the access to their information systems easier for the client.
+
+ 
+Other aspect of business
+As mentioned before, Entelect use a variety of concerns when it comes to security. They have ten concerns they focus on and learn of. These concerns are from a reliable resource named the Open Web Application Security Project (OWASP). OWASP is a dedicated organisation that works on improving the security of software (Software, 2020b). Entelect use a lot of information that is way they will need a backup in case something happens. That is why Conor Cunningham, an architect on the SQL team introduced a feature for SQL Server vNext, called the Query Store (Software, 2020c). This Query Store will keep record of all query performance continually in the background. The communication within the business has a huge role on how the teams work together. Team members may be a large distance away from each other, so they use a form of messaging and video conferencing. For their project purpose they use common tools like Jira and BitBucket. Communications between stakeholders are implemented from the portals that the business use. Entelect improve their overall competitive advantages by having a variety of partners such as, Phambili IT, Microsoft, Oracle, QlikView, Hortonworks, Power BI, Quantalytic, MyActive, BoardPAC and a few universities (Entelect, 2020).
+Outcomes
+Within the IT business there are a lot of constant change and you must be able to adapt and understand. There are different solutions to a problem, and you need to identify the best one for the situation. This may be an IT work field, but your knowledge will stretch over a vast field of industries as they come to you for a solution for their information systems. Within a business you need to stay on track and communicate about every situation with fellow teammates, to be the best there is. It is important to enjoy your work or you will not be able to produce your best work. This assignment I learned that project management and analysis are an important skill that should be learned when working within a business.
+
+ 
+Bibliography
+
+Entelect. (2020). Why Work at Entelect? [online] Available at: https://culture.entelect.co.za/. [Accessed 16 Sep. 2020].
+Software, E. (2020a). Entelect - Offerings. [online] Entelect.co.za. https://www.entelect.co.za/DisplayLink.aspx?group=Offerings&name=N/A#tab6. [Accessed 19 September 2020]. 
+Software, E. (2020b). Security tactics to minimise risks. [online] www.entelect.co.za. Available at: https://www.entelect.co.za/News/DisplayNewsItem.aspx?niid=65796.  [Accessed 20 Sep. 2020].
+Software, E. (2020c). A trio of conferences. [online] www.entelect.co.za. Available at: https://www.entelect.co.za/News/DisplayNewsItem.aspx?niid=44171.  [Accessed 23 Sep. 2020].
+Whitten, J.L. & Bentley, L.D. 2007. System Analysis and Design Methods. 7th ed. Boston: The McGraw-Hill Companies.
+

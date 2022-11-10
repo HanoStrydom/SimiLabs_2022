@@ -1,0 +1,318 @@
+
+
+
+
+
+
+ITRW 624 Assignment 2
+
+
+
+
+JG Visagie
+
+
+
+
+
+Supervisor:	Prof Neels Kruger
+
+
+
+Student number:
+31594883 
+TABLE OF CONTENTS (HEADING 0)
+1	INTRODUCTION	1
+2	PROBLEM STATEMENT	1
+3	LITERATURE STUDY	2
+3.1	Agile	2
+3.1.1	What is Agile development?	2
+3.1.2	Agile values and principles	2
+3.1.2.1	Values	2
+3.1.2.2	Scrum	3
+3.1.2.2.1	Scrum Framework	3
+3.1.3	Agile development compared to traditional development	3
+3.1.4	Strong points	4
+3.1.5	Weak points	6
+3.2	COBIT 2019 Framework	7
+3.2.1	Structure of COBIT Governance and Management Objectives	8
+3.2.2	Strengths	9
+3.2.3	Weaknesses	9
+3.3	PMBOK	10
+3.3.1	Strengths	11
+3.3.2	Weaknesses	11
+4	CASE STUDY	11
+4.1.1	Information about the companies	12
+5	ANALYSIS	14
+6	CONCLUSION	19
+BIBLIOGRAPHY	20
+
+ 
+Table 1 Comparison between traditional development and Agile Development	4
+Table 2 Impact of COVID-19 on organisations	15
+Table 3 Impact of COVID-19 on Project Management	15
+Table 4 Impact of COVID-19 on Software Development	16
+Table 5 Positive impact results of COVID-19	16
+Table 6 Software Development Methodologies utilised	17
+Table 7 Project Management Methodology utilised	18
+Table 8 Workload completed at company offices	18
+ 
+ 
+1	Introduction
+In this research assignment, various project management and development methodologies will be investigated in order to determine which methodologies are the most used in the South African IT industry in comparison to international industries. The methodology needs to satisfy and support the development team during the development of software applications in order to address the needs of stakeholders. 
+Shehzad et al. (2017) states that the rapid expansion of the software development industry is due to the exponential increase in universal demand for software applications by consumers in their daily activities. Angel et al. (2022) argues that the expanding usage of techniques in project development gave rise to the concept of a comparative study on project management and software development processes. Software development approaches relate to a group of techniques that must be combined to produce a methodical process. Development approaches have changed over time to reflect the times and new technologies. 
+2	Problem Statement
+The main problem that this research paper will aim to address is to explore the various software development methodologies and Project Management Methodology used locally by various companies in order to determine what the most popular methodologies are and how they compare to methodologies used on an international level. This study will also take into consideration how the Covid-19 pandemic has influenced and shaped software development methodologies and Project Management Methodologies and how we can adapt and stay ahead of these changes.
+There are many different software development methodologies and Project Management methodologies, each with distinct advantages and disadvantages. Each SDM and PMM is built on its distinct concepts and supports the many various domains across the development lifecycle. The benefits of employing an SDM and PMM outweigh the dangers and shortcomings related to it, making it a vital component that significantly contributes to the success of a development cycle.
+3	Literature study
+This literature study will focus on information of the various Project Management Methodology and software development methodologies, as well as some of their strong and weak points in order to provide a general understanding of the methodologies companies use and how future scenarios can influence the choice of Project Management Methodology and software development methodologies.
+3.1	Agile 
+3.1.1	What is Agile development?
+Agile is a broad term for a set of software development principles. It is a theoretical framework for software engineering that starts with the planning stage and progresses through incremental and iterative interactions throughout the course of the project's lifecycle until the deployment stage. Agile approaches' initial objective is to reduce overhead in the software development process while enabling the adoption of changes without endangering the process or requiring excessive rework.
+3.1.2	Agile values and principles
+The Agile Software Development manifesto provides the following values and principles to which Agile development should adhere and strive for:
+3.1.2.1	Values
+1)	Individuals and interactions over processes and tools:
+The first value in the manifesto suggests that it is incorrect to emphasise abstract formal processes and their technical environment as important factors in software development. Instead, communication, interaction, and the calibre of the human software developers that these factors serve should be prioritised.
+
+2)	Working software over comprehensive documentation:
+Although documentation is an essential and significant part of any agile software development process, the time and resources allocated to it must be managed and streamlined so as not to stifle the software development process.
+
+3)	Customer collaboration over contract negotiation:
+The purpose of agile software development is to adapt to changes in requirements at any stage. As a result, throughout any process, frequent customer feedback, negotiations, and collaboration with the development team are necessary to meet the customers' actual needs as opposed to those that can be satisfied through formal agreements and contracts. However, the agreements that detail how the software firm operates and the connection between the development team and its clients are still necessary.
+
+4)	Responding to change over following a plan:
+It may be required to add or remove some criteria as the software development process moves forward since both the developer and the customers will gain more knowledge and a deeper understanding of the system. Since achieving customer happiness is the ultimate objective, responding to changes in the development process life cycle is given priority in the Agile manifesto rather than adhering to a rigidly defined plan.
+
+3.1.2.2	Scrum
+Scrum is a methodology that enables people to work productively and creatively to deliver products with the highest potential value while addressing complex adaptive problems (Scrum, 2022).
+
+
+3.1.2.2.1	Scrum Framework
+Scrum is a simple framework that assists individuals, groups, and organisations in producing value by developing adaptable solutions to challenging issues. The Scrum Guide, written by the co-creators of Scrum Ken Schwaber and Jeff Sutherland, provides a clear and concise explanation of Scrum. The definition of Scrum can be found in this guide. Accountabilities, events, artefacts, and the rules that bring them all together make up this description of Scrum (Scrum, 2022).
+
+Scrum is easy. It is the antithesis of a large group of interconnected required components. The Scrum approach is not one. Empiricism is a scientific method that Scrum uses. Scrum uses a heuristic approach, respect for people, and self-organization to deal with unpredictability and solve complicated problems instead of a programmed algorithmic one. The illustration below shows Scrum in Action as it is taught by Ken Schwaber and Jeff Sutherland in their book Software in 30 Days, which covers the entire software development lifecycle (Scrum, 2022).
+ 
+3.1.3	Agile development compared to traditional development
+
+	Traditional Development	Agile Development
+Fundamental assumptions	Systems are fully specifiable, predictable, and are built through meticulous and extensive planning	High-quality adaptive software is developed by small teams using the principles of continuous design improvement and testing based on rapid feedback and change
+Management style	Explicit	Tacit
+Communication	Formal	Informal
+Development model	Life-cycle model (waterfall, spiral or some variation)	The evolutionary-delivery model
+Desired organisational form/structure	Mechanistic (bureaucratic with high formalization), aimed at large organizations	Organic (flexible and participative encouraging cooperative social action), aimed at small and medium-sized organizations
+Quality control	Heavy planning and strict control. Late, heavy testing	Continuous control of requirements, design and solutions. Continuous testing
+Table 1 Comparison between traditional development and Agile Development (Scrum, 2022) 
+
+3.1.4	Strong points
+Shahir et al. (2008) states that agile software development has the following strength points:
+ 
+1.	Promotes change
+Change is viewed as an ally rather than an adversary. The change enables more creativity and faster consumer value. Highsmith, cited by Shahir et al. (2008) argues that Agile approaches are well suited to projects with a high degree of task variety.
+
+2.	Satisfying stakeholders and users
+When stakeholders are included in the development team, their perspectives are considered when decisions are made, which often reduces the need for later rework. Users, on the other hand, consider themselves a part of the development team when their opinions are valued, and they are more likely to completely commit to moving the project forward.
+
+3.	Test-Driven
+Most Agile approaches prioritize coding and testing over research and design, to the point that many Agile methodologies develop test cases and test code before the real release begins. The key benefits of test-based coding include greater code maintainability, fewer inconsistencies, and better quality assurance.
+
+4.	Refactoring
+Refactoring is required and inevitable in Agile processes due to some of the distinguishing qualities of Agile approaches, such as their focus on code rather than design, the necessity for dynamicity and circulation of team members, and the demand for a highly flexible product. The major goals of refactoring in this context are to remove redundant and unneeded code, increase code simplicity, achieve flexibility without changing the system's functionality, and improve developer communication.
+Shubh and Gandhi (2012) further asserts more strength points of agile software development:
+1.	Requirements Inflation
+In traditional software development technologies, the numerous elements that are not identified at the start of the project endanger estimations and timetables for project progress. Rather than using change-prevention techniques, prioritization sessions are scheduled to enable worthwhile modifications to be implemented and previously planned features to be replaced if the business approves.
+
+2.	Early benefits to the user/business
+Agile technique provides an early glimpse of how the final product will seem and function. This aids in the completion of the user requirements.
+
+3.	Regaining the productivity of development
+When project schedules extend for a long period of time, the sense of urgency to work is often lacking, resulting in time lost in the early stages of the project that can never be recovered. In software projects, Agile techniques understand Parkinson's Law and the Student Syndrome. Work is time-boxed into reasonable iterations, and there is always a sense of urgency, thanks to short iterations.
+
+4.	Reduction of Employee “Bus-Factor”
+In the traditional model, the departure of important employees from the project team with vital information delays project development. To reduce the "bus factor," agile projects employ approaches such as common code ownership, pair programming, and frequent reporting during daily stand-ups, among others. The “bus factor” refers to the impact on the project if a key member is hit by a bus. Multiple team members communicate critical information when the "bus factor" is low, and the risk of staff turnover is minimal.
+
+5.	Elimination of Inherent scheduled flaws
+Software development is notoriously difficult to predict and schedule at first. When it comes to software projects, however, the team is strongly involved in planning and estimation through activities like the XP planning game. Working in short increments reveals the team's true velocity, which is obvious to all stakeholders who are now more invested in the project.
+
+6.	Conflicting requirements breakdown
+The idea of subject matter expert, ambassador user, or customer proxy is used in agile projects to play the function of product manager. The concept is that the group must be immediately available to answer inquiries and make project decisions, whereas traditional projects suffer from specification breakdown when no one owns the role and opposing assumptions or conclusions are made. To ensure that decisions are made on time, agile projects have some sort of product owner role integral to their core team structure.
+3.1.5	Weak points
+The following section will discuss some of the various weak points, as argued by Shubh and Gandhi (2012):
+1.	Not fully understanding the difference
+The major issue is that genuine Agile is hardly performed. Software engineers, development managers, and consultants frequently confuse Agile with its lowercase twin, agile, and believe that Agile is all about flexibility and lack of process. Above all, Agile is not anarchy. Despite what you may believe, it does not mean that everyone does anything they want and that there is no sense of organization.
+
+2.	Possibility of re-writing code during development
+Rework is frequently required in agile projects when the many components of the program are combined and forced to interact due to a lack of long-term planning and a lightweight approach to architecture. When two or more developers are out of sync, chunks of code may need to be rewritten, resulting in increased and higher rework expenses as the number of iterations grow.
+
+3.	The reliance on customer interaction
+Heavy Customer Interaction is one of the main benefits of Agile, but it can also be a drawback in specific circumstances, as reflected in the four principles. One thing to keep in mind about agile development teams is that they require a lot of attention.
+
+4.	Insufficient architectural planning
+Before the heart of the software is produced, a dependable software architecture and platform are chosen. Otherwise, there's a good probability that a lot of labour will be wasted away. Many larger companies isolate software architecture and platform selection from software development via corporate architecture and architectural roadmaps, which relieves the agile software team of some of the work. The agile software strategy, on the other hand, will oppose defining and dealing with architecture if the platform is unknown prior to the start of the project and the architectural approach is new or unproven.
+
+5.	Difficulty in coordination for large projects and organisations
+As an agile team grows, it becomes increasingly difficult to coordinate work due to its strong emphasis on contact, self-organizing client teams, vocal communication over written documentation, prototyping, and requirements flexibility.
+
+In continuation, Shahir et al. (2008) states the following additional weak points:
+1.	Ineffective communication and interaction methods
+Face-to-face contact is the most common sort of interaction in Agile techniques. Although other forms of communication are utilized to discuss ideas, the lack of models and recorded design leaves insufficient references in the event of conflicts or forgetting.
+
+2.	Global or distributed development obstacles
+Members of the development team work in close proximity to one another in Agile techniques, and some processes even need the entire team to be in the same room or building. Face-to-face contact, daily and weekly meetings, and human interactions all play an important part in the effectiveness of such operations.
+
+3.	High dependency on the development team
+Agile approaches are more people-oriented than process-oriented, as stated in the Agile Manifesto. As a result, circumstances arise in which teamwork issues become more challenging than they should be.
+
+4.	Misestimating Project time and budget
+Agile principles allow for frequent modifications to requirements; however, this affects project time and cost estimation. Furthermore, calculating the workload is challenging owing to the lack of modelling and design processes. In the lack of analytical class diagrams, for example, the number of classes to be implemented is frequently unknown until later phases. As a result, project managers are unable to plan effectively, and project plans must be revised frequently.
+
+
+3.2	COBIT 2019 Framework
+The following section is based on the information found within the COBIT 2019 Framework of Governance and Management Objectives.
+Best-practice frameworks have been established and advocated over time to aid in the understanding, design, and implementation of enterprise IT governance. COBIT 2019 expands on and integrates more than 25 years of research and development in this sector, not only incorporating new scientific discoveries but also operationalizing these ideas as practice.
+COBIT is a worldwide recognised set of tools that directors and IT specialists may use to guarantee that IT operations are in line with business objectives and goals (Zhang & Le Fever, 2013). 
+COBIT is an enterprise-wide framework for the governance and management of information and technology. Governance and management are clearly separated in the COBIT framework. These two fields include separate activities, necessitate different organizational structures, and have different goals.
+•	Governance will promote the following:
+o	To define balanced, agreed-upon enterprise objectives, the needs, conditions, and options of stakeholders are examined in detail.
+o	Prioritization and decision-making provide direction.
+o	Performance and compliance are assessed in relation to agreed-upon goals and objectives.
+•	To achieve enterprise objectives, management plans, builds, runs, and oversees activities in accordance with the governance body's instructions.
+o	Management in most businesses is the duty of executive management, which is led by the chief executive officer (CEO).
+COBIT outlines the processes, organisational structures, rules and procedures, information flows, culture and behaviours, skills, and infrastructure that goes into constructing and maintaining a governance system. COBIT describes the design factors that an organisation should consider when constructing a best-fit governance system. COBIT solves governance problems by collecting key governance components into governance and management objectives that can be controlled to the required competency levels.
+3.2.1	Structure of COBIT Governance and Management Objectives
+COBIT 2019 has 40 governance and management objectives divided into five areas, as previously stated.
+•	Governance domain
+•	Evaluate, Direct and Monitor (EDM)
+•	Management domains
+•	Align, Plan and Organize (APO) – Information and Technology’s (I&T) general organisation, strategy, and supporting operations are addressed.
+•	Build, Acquire and Implement (BAI) - Defines, acquires and implements I&T solutions, as well as their integration into business operations.
+•	Deliver, Service and Support (DSS) - Security, as well as the operational delivery and support of I&T services.
+Monitor, Evaluate and Assess (MEA) - examines I&T performance and compliance with internal performance targets, internal control objectives, and external obligations.
+
+3.2.2	Strengths 
+The following section will discuss the benefits of using the COBIT 2019 framework, as argued by Gallagher (2020)
+1.	Optimized IT governance
+COBIT 2019 assists firms in establishing measurable IT objectives as part of larger business plans. COBIT practitioners may also set up the essential controls and tools to assist IT managers in achieving their goals with the full force of their operations behind them. A variety of tools are included in the methodology to assist with this, including:
+•	The COBIT maturity model can be used to determine the level of performance that IT components must achieve in order to accomplish goals.
+•	Enhancing activities, which are recommended by the ISACA for identifying and removing flaws and limiting factors in COBIT implementations.
+
+2.	Alignment between IT and business goals
+There are a total of 40 Management and Governance Objectives in the COBIT core model. Practitioners study this extensive collection to select focal areas based on their own objectives, needs, and environment, among other factors. They can then create custom frameworks that are tailored to their vision of optimal IT governance.
+
+3.	Customizable to suit your priorities
+COBIT 2019 is ideal for organisations that already employ IT techniques. COBIT's 'Tactical Design Factors' is tailored to a user's preferences for technologies, models, and frameworks to utilise in their operations. These variables can be used by practitioners to create systems that accept such aspects while also maximising their coherence and synergy.
+
+3.2.3	Weaknesses
+The following section will discuss practical problems which are encountered when utilising COBIT as stated by Zhang and Le Fever (2013).
+1.	Complicated concepts and structure
+Various professionals and specialists within the field have acknowledged that understanding the COBIT framework is not an easy task. As previously shown, the framework is massive and consists of numerous objectives, goals, guidelines, and even a maturity model. To fully understand everything contained in the framework takes a long time. 
+
+2.	Lack of implementation guidance and proven benefits
+COBIT's general character makes it challenging for corporations to comprehend and implement. Although the COBIT Management Instructions and Implementation Guidelines state that COBIT must be tailored to a given environment, they do not offer actual ways or guidelines to help firms do so. Even though it was evident that a COBIT programme should be implemented, several executives agreed that they would rather focus on ITIL and ISO27000, which had a higher value.
+3.3	PMBOK
+The following section is based on information found within the Guide to the Project Management Body of Knowledge, written by the Project Management Institute. 
+The Project Management Body of Knowledge (PMBOK) is a collection of accepted terms and principles for project management. A Guide to the Project Management Body of Knowledge (PMBOK Guide), a book whose seventh edition was published in 2021, presents the body of knowledge as it develops through time. The Project Management Institute (PMI), which grants the CAPM and PMP credentials, oversaw the creation of this document. Much of the PMBOK Guide, including the critical path technique and work breakdown structure, is specific to project management. 
+The PMBOK Guide discusses general management in terms of organising, staffing, executing, and regulating an organization's operations broadly. Financial forecasting, organisational behaviour, management science, budgeting, and other planning techniques are some other management disciplines that cross over with the PMBOK Guide.
+Project managers and other stakeholders who work on or are involved with projects are guided in their actions and behaviours by the project management standard's project management principles. Understanding project management and how it supports desired objectives is made easier by the Project Management Standard. Any industry, location, size, or distribution strategy—such as predictive, hybrid, or adaptive—can use this standard. It describes the organisational structure of projects, including governance, potential roles, the project environment, and worries about the relationship between project-product management.
+The following SWOT section is based on information asserted by Buehring (2021)
+3.3.1	Strengths
+The PMBOK Guide's key strength is that it offers a wide range of useful tools and procedures. There are 132 tools and techniques detailed or mentioned in all. Although the PMBOK guide loosely describes many of the tools and techniques, the main attraction is that the PMBOK Guide asserts when these various tools and techniques should be utilised during project management. Another advantage is that the PMBOK Guide's knowledge categories can be dealt with independently of one another. In many cases of uncertainty, the PMBOK Guide provides extensive information on specific generic areas that will be encountered, such as communication management and schedule management.
+
+3.3.2	Weaknesses
+One of the PMBOK Guide's flaws is the absence of clear responsibilities for project management team members. This is a broad term that refers to project team members who are directly involved in project management tasks. The problem with the PMBOK Guide's approach is that many of these obligations may be overlooked simply because who is responsible is not clearly specified. The extremely elaborate and extensive descriptions of some of the aspects are a second flaw. Complexity is always a burden, not an aid, and as previously stated, anecdotal evidence suggests that the PMBOK Guide is not helping itself in this area. The PMBOK Guide, developed by North American authors, is written entirely from a North American perspective and does not always translate well to other cultures.
+4	Case Study
+To accurately satisfy the research question, I case study was conducted, where a questionnaire was utilised and distributed to various software development companies in South Africa. The questionnaire was answered by employees of the company, each with different roles and responsibilities. This approach will aid in accumulating the necessary information to deduce various results which will be displayed in tables and graphs below. The companies that were chosen to partake in the questionnaire were selected broadly and flexibly. Each company has a unique number of employees and focuses on different areas of work. This ensures that the information utilised is well-rounded and a good representation of the industry. The questions asked within the case study are focused on the impact that Covid-19 has had on employees and the company.
+
+4.1.1	Information about the companies
+The following information about each respective company was acquired from their websites.
+Integrity
+Integrity Software is a software company specialising in dynamic insurance management solutions tailor-made for the short-term insurance industry. Integrity Software has a firm foundation of business excellence, based on our proactive approach to client support, superior product knowledge, and the continual improvement of our products and services on offer. Integrity Software management solutions are designed around accounting functionality through policy and claims management rather than the other way around, allowing the optimal and efficiently auditable financial management of our partnered brokerages’ operations.
+Integrity software is a small company with a total number of employees ranging from 1 to 100. The employee which was interviewed is a developer. Integrity Software’s primary software development methodology is Agile, specifically scrum and DevOps. The company utilise Agile as their predominant project management methodology.
+
+IsoMetrix
+IsoMetrix is an award-winning risk management software developer, providing state-of-the-art solutions for EHS, ESG and GRC management. For over 25 years, global companies have trusted IsoMetrix to manage their environmental, health, safety, and sustainability risks. IsoMetrix eliminates siloed risk management by replacing multiple-point solutions with one integrated system. By breaking down the silos in risk management, our customers are empowered to proactively identify risks and prevent unwanted outcomes.
+IsoMetrix is a medium company with a total number of employees ranging from 101 to 500. The employee which was interviewed is an App Specialist. IsoMetrix’s primary software development methodology is Agile, specifically scrum. The company utilise Agile as their predominant project management methodology.
+Advance.IO
+Advance provides professional services over the entire spectrum of IT development disciplines, with complementary services such as IoT and related component manufacturing. Advance offers various services such as:
+•	Rapid application development services
+•	System integration
+•	Machine learning
+•	UI/VR/AR
+•	Cloud computing
+•	Internet of things (IoT)
+Advance is a medium company with a total number of employees ranging from 101 to 500. The employee which was interviewed is a Lead Developer. Advance’s primary software development methodology is Agile, specifically KanBan. The company utilise Agile as their predominant project management methodology.
+BBD
+Combining deep cross-sector experience with the latest innovations, BBD creates impactful and reliable tech solutions and provides guidance while offering thorough support that is tailored to what the organisation requires to meet their respective strategic business goals.
+BBD provides the following services to its clients:
+•	Digital Strategy
+•	Tech and business consulting
+•	Cloud enablement
+•	Software development
+•	System integration
+•	Maintenance and support
+•	UX/UI
+•	Orchestration and automation
+•	Risk toolkit
+•	AI-driven search
+BBD is a large company with a total number of employees ranging from 501 to 1000. The employee which was interviewed is a Lead Developer. BBD’s primary software development methodology is Agile. BBD utilises different Agile processes, namely Scrum, Rapid App Development, and DevOps. In addition, the Waterfall methodology is utilised in conjunction with Agile. The predominant project management methodology utilised is Waterfall and Agile.
+
+Sedibeng Districts office
+The Sedibeng District Municipality is a Category C municipality situated on the southern tip of the Gauteng Province and strategically located on the border of three other provinces, namely Free State, North-West and Mpumalanga.
+Vision: Building towards a developmental Metropolitan River City of choice.
+Mission: To promote and sustain Integrated Service Delivery that Enhances and Supports the municipality to achieve growth and development for its community.
+Goals:
+•	To promote efficient and effective Integrated Services that address the socioeconomic and environmental development imperatives of the Region.
+•	To Implement Prudent and Cost-effective Financial Management and Sustainability.
+•	To ensure Good Governance and sound management practices.
+•	To ensure effective Service Delivery.
+The questionnaire results supplied by the Sedibeng Districts offices provided some insights into which Project Management Methodologies are used and how Covid-19 has affected a branch of government. No software development takes place within the department. Although no development takes place, the branch still focuses on IT-related projects within the government. The Sedibeng Districts Municipality is a medium entity with a total number of employees ranging from 101-500. The employee role of the interviewee is IT Operations Manager. The predominant project management methodology utilised at the Sedibeng Districts Offices is PMBOK.
+
+5	Analysis
+The following analysis is based on the data received from the questionnaires answered by the companies discussed above.
+Since the start of the COVID-19 pandemic, the office experience of various developers and managers has shifted to a work-from-home environment. From meetings being held on zoom, to various phases of the development cycle being completed at home. As a result of more work being completed outside of company premises, various processes and guidelines are influenced by these factors and require a re-evaluation of how these methodologies function within a post-COVID-19 world.
+
+ 
+Table 2 Impact of COVID-19 on organisations
+ 
+Table 3 Impact of COVID-19 on Project Management
+ 
+Table 4 Impact of COVID-19 on Software Development
+
+ 
+Table 5 Positive impact results of COVID-19
+In reference to Tables 2, 3, 4 and 5, we can see that there is a clear indication that employees feel that COVID-19 has had an impact on their organisations. Most employees feel that COVID-19 has influenced the way in which project management and software development is conducted. The most interesting finding was that although COVID-19 has had a significant influence on companies, employees seem to feel that COVID-19 has positively affected the company. Table 5 consists of the total results of all the COVID-19 questions relating to a positive experience. We can see that many employees feel that COVID-19 has had a positive influence on project management, software development and general work/life experience.
+
+ 
+Table 6 Software Development Methodologies utilised
+In reference to table 6, which consists of the results in relation to the software development methodologies used by companies, we can see that majority of companies, regardless of size and field of work, prefer to utilise the many different Agile methodology variations.
+ 
+Table 7 Project Management Methodology utilised
+In reference to table 7, which consists of the results in relation to the Project Management Methodology used by companies, we can see that most companies utilise Agile as their Project Management Methodology in conjunction with Agile as their software development methodology. Interestingly, most employees stated that they can see a difference between Agile as a software development methodology and Agile as a project management methodology.
+ 
+Table 8 Workload completed at company offices
+In reference to table 8, which consists of results in relation to which location employees completed their work, we can see that before COVID-19 much of the work was completed on-site. When COVID-19 began, we can see that most employees started working from home or a different location, and after COVID-19 ended, we can see that most of the employees returned to the office. Although, the results show that more work is being done from a different location than the company offices.
+Considering all the results, we can conclude that COVID-19 has had a significant impact on employee work life, location of work, company software development methodologies, company Project Management Methodology, and the inner workings of the company. Although all is not lost because most employees believe to some extent that COVID-19 has positively influenced their companies and working experience.
+The questionnaire results show that Agile is the most popular among Project Management Methodology and software development methodologies, although the specific type of Agile methodology used might be different, the core concepts and values are still the same. As stated within the literature study, Agile is highly dependent on communication. COVID-19 has eliminated the possibility of meeting face-to-face with employees and clients which has played a large role in the way we communicate. Various communication tools have risen to aid with scenarios such as COVID-19. Agile can continue to be used during scenarios such as COVID-19 if the company successfully and effectively communicates with their employees via the various software that has been released in recent years.
+
+
+6	Conclusion
+The utilisation of Project Management Methodology and software development methodologies is essential for the successful development of projects. Various PROJECT MANAGEMENT METHODOLOGYs and SDMs are based on different principles, each contributing to each methodology’s uniqueness, techniques, and processes. The most utilised PROJECT MANAGEMENT METHODOLOGY and SDM is the combined use of Agile for both PROJECT MANAGEMENT METHODOLOGY and SDM. Agile remains fairly popular and will remain popular in the coming years. In the event that another COVID-19 scenario occurs, the successful utilisation of a methodology such as Agile will be highly dependent on the company’s ability to effectively and efficiently communicate with employees outside of the office.
+ 
+BIBLIOGRAPHY 
+Shehzad, B., Awan, K., 2017. Identification of Patterns in Failures of Software Projects. Journal of Information Science and Engineering, 33.
+Shahir, HM., Daneshpajouh, S., Ramsin. 2008. Improved Strategies for Agile Processes: A SWOT Analysis approach. Sixth International Conference on Software Engineering Research, Management and Applications.
+Shub, S., Gandhi, P. 2012, SWOT Analysis of Agile Methodologies. Procurement of the international conference on advances in Computer Science and Electronic Engineering.
+Zhang, S., Le Fever, H. 2013. An Examination of the Practicability of COBIT Framework and the Proposal of a COBIT-BSC Model. Journal of Economics, Business and Management. 1(4).
+Gallagher, P. 2020. What are the benefits of COBIT 2019? https://blog.goodelearning.com/subject-areas/cobit/what-are-the-benefits-of-cobit-2019/ Date of access: 14 Oct. 2022
+Buehring, S. 2021. The SWOT business analysis technique. https://www.knowledgetrain.co.uk/business-analysis/business-analyst-course/business-analysis-technique-swot Date of access: 14 Oct. 2022.
+Dyba, T., Dingsoyr, T. 2008. Empirical studies of agile software development: A systematic review. Information and Software Technology, 50(9-10).
+Al-Saqqa, S. Sawalha, S., Abdel-Nabi, H. Agile Software Development: Methodologies and Trends. International Journal of Interactive Mobile Technologies, 14(11):246.
+Anghel, I.I., Calin, R.S., Stanica, I.C., Tudose, C., Boiangiu, C.A. Software Development methodologies: A comparative analysis. U.P.B Science Bulletin, Series C, 84(3).
+Scrum. 2022. What is Scrum? https://www.scrum.org/resources/what-is-scrum Date of Access: 13 Oct. 2022.
+Agile Manifesto. 2001. Manifesto for Agile Software Development. https://agilemanifesto.org/ Date of access: 14 Oct. 2022.
+Integrity Software. 2022. About Us. integrity.co.za Date of Access: 15 Oct. 2022.
+Advance.IO. 2022. About us. Advance.io Date of Access: 15 Oct. 2022.
+IsoMetrix. 2022. About us. https://www.isometrix.com/about Date of Access: 15 Oct. 2022.
+Sedibeng Districts Office. 2022. About us. http://www.sedibeng.gov.za/ Date of Access: 15 Oct. 2022.
+BBD. 2022. About us. https://bbdsoftware.com/ Date of Access: 15 Oct. 2022.
+
