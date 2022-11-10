@@ -108,6 +108,7 @@ def create_app(test_config=None):
     
     @app.route('/auth/authLogin',methods =['GET', 'POST'])
     def authLogin():
+        session.clear()
         msg = ''
         if request.method == 'POST' and 'username' in request.form and 'password' in request.form:
             username = request.form['username']
@@ -132,13 +133,17 @@ def create_app(test_config=None):
     def logout():
         # protecting your api endpoints
         for key in list(session.keys()):
+            if session.key == "session":
+                session["session"].clear()
             session.pop(key)
         # response.delete_cookie('session')
         session.clear()
+        print(f"Session: {session['session']}")
         return redirect(url_for('authLogin'))
 
     @app.route('/auth/authRegister', methods=('GET', 'POST'))
     def register():
+        session.clear()
         msg = ''
         if request.method == 'POST' and 'username' in request.form and 'password' in request.form and 'password2' in request.form:
             username = request.form['username']
