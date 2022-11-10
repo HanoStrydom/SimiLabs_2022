@@ -54,6 +54,7 @@ def create_app(test_config=None):
     UPLOAD_FOLDER = os.getenv('UPLOAD_IMG')
     UPLOAD_PDF = os.getenv('UPLOAD_PDF')
     UPLOAD_REPORT = os.getenv('UPLOAD_REPORT')
+    UPLOAD_STYLO = os.getenv('UPLOAD_STYLO')
     
     app.config['MYSQL_HOST'] = os.getenv('MYSQL_HOST')
     app.config['MYSQL_USER'] = os.getenv('MYSQL_USER')
@@ -68,6 +69,7 @@ def create_app(test_config=None):
     app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
     app.config['UPLOAD_PDF'] = UPLOAD_PDF
     app.config['UPLOAD_REPORT'] = UPLOAD_REPORT
+    app.config['UPLOAD_STYLO'] = UPLOAD_STYLO
     
     ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'docx'])
     app.config["TEMPLATES_AUTO_RELOAD"] = True

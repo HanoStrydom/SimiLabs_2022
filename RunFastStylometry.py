@@ -82,7 +82,7 @@ def fastStyle():
     plt.xlabel("Burrows delta")
     plt.ylabel("Probability of same author")
     plt.title("Calibration curve of the Burrows Delta probability model\nUsing Logistic Regression with correction for class imbalance")
-    plt.savefig('./ReportImages/calibration.png', bbox_inches='tight')
+    plt.savefig('./flaskr/static/images/ReportImages/calibration.png', bbox_inches='tight')
 
 
     # In[ ]:
@@ -127,7 +127,7 @@ def fastStyle():
     plt.ylabel('True Positive Rate')
     plt.title('Receiver operating curve of the Burrows\' Delta classifier\noperating on entire books')
     plt.legend(loc="lower right")
-    plt.savefig('./ReportImages/operating_curve.png', bbox_inches='tight')
+    plt.savefig('./flaskr/static/images/ReportImages/operating_curve.png', bbox_inches='tight')
     # plt.show()
 
 
@@ -202,6 +202,6 @@ def fastStyle():
         plt.text(pca_matrix[i][0], pca_matrix[i][1],"  " + df_z_scores.index[i], alpha=0.5)
 
     plt.legend()
-    plt.savefig('./ReportImages/plot.png', bbox_inches='tight')
+    plt.savefig('./flaskr/static/images/ReportImages/plot.png', bbox_inches='tight')
 
     plt.title("Representation using PCA of works in training corpus")
