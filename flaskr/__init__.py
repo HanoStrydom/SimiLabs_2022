@@ -26,6 +26,8 @@ from wordcloud import WordCloud
 from flaskr.quicksimilarity import calc_cosine_similarity,jaccard_similarity
 from flaskr.extractmetadata import getMetaDataDoc,getMetaDataPDF, getRowColor
 
+from fpdf import FPDF
+
 # NB!!! Remember to gitignore the .env file!
 load_dotenv()
 
@@ -323,6 +325,8 @@ def create_app(test_config=None):
             rowColor = getRowColor(meta_data[0], meta_data[2])  
             # print(meta_data[0], " " ,meta_data[2], " " ,rowColor)
 
+        WriteToPDF(percentageJaccard, percentageCosine, meta_data[0], meta_data[2], meta_data[1], meta_data[3], doc1.filename)
+        
         return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarityJac=percentageJaccard,
         similarityCos=percentageCosine,colorCos=colorCosine, colorJac = colorJaccard , metadata = meta_data, rowColor = rowColor)
         
@@ -388,6 +392,45 @@ def create_app(test_config=None):
                 result += escaped
         return result
 
+    def WriteToPDF(JacSim, CosSim, Creator, Modifier, createDate, ModDate, fileName):
+        pdf = FPDF()
+        pdf.add_page()
+        pdf.set_font("Arial", size = 15)
+        
+        
+        
+        PlagJac = ""
+        PlagCos = ""
+        PlagCreate = ""
+        
+        if(JacSim > 30):
+            PlagJac = "The student most likely plagiarized the document according to the Jaccard Similarity Score"
+        else:
+            PlagJac = "The student most likely did not plagiarize the document according to the Jaccard Similarity Score"    
+        
+        if(CosSim > 30):
+            PlagCos = "The student most likely plagiarized the document according to the Cosine Similarity Score"
+        else:
+            PlagCos = "The student most likely did not plagiarize the document according \n to the Cosine Similarity Score"
+                    
+        if(Creator != Modifier):
+            PlagCreate = "The student that created the document is not the same as the student that modified the document"
+        else:
+            PlagCreate = "The student that created the document is the same as the student that modified the document"
+        
+        pdf.multi_cell(200, 10, txt = "Plagiarism Report for: " + fileName, align = 'C')
+        pdf.multi_cell(200, 10, txt = "Jaccard Similarity Score: " + str(JacSim), align = 'L')
+        pdf.multi_cell(200, 10, txt = "Cosine Similarity Score: " + str(CosSim), align = 'L')
+        pdf.multi_cell(200, 10, txt = "The student that created the document: " + str(Creator), align = 'L')
+        pdf.multi_cell(200, 10, txt = "Date Created: " + str(createDate), align = 'L')
+        pdf.multi_cell(200, 10, txt = "The student that last modified the document: " + str(Modifier), align = 'L')
+        pdf.multi_cell(200, 10, txt = "Date Last Modified: " + str(ModDate), align = 'L')
+        pdf.multi_cell(200, 10, txt = "Conclusion: ", align = 'C')
+        pdf.multi_cell(200, 10, txt = str(PlagJac), align = 'L')
+        pdf.multi_cell(200, 10, txt = str(PlagCos), align = 'L')
+        pdf.multi_cell(200, 10, txt = str(PlagCreate), align = 'L')
+
+        pdf.output(dest="F", name="C:/Users/hanos/OneDrive/Desktop/TestCode/Report.pdf")
 
     @app.errorhandler(HTTPException)
     def errorhandler(error):
