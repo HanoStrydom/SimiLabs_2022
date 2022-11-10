@@ -9,9 +9,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="/static/home.css">
+<link rel="stylesheet" href="../../static/styloReport.css">
+
 
 <style>
-body {font-family: "Lato", sans-serif}
+body {font-family: "Lato", sans-serif;overflow-y: scroll;}
 .mySlides {display: none}
 </style>
 
@@ -25,10 +27,40 @@ body {font-family: "Lato", sans-serif}
 <br>
 <br>
 
+<h1> Stylometry Report</h1>
 
-
-<h1> Quick Text Report</h1>
-<p> Choose a file to continue working on:</p>
+<div style="border: 3px solid black;margin: 5px 50px 10px 50px;">
+<div class="row">
+    <div class="column">
+      <!-- <img src="img_snow.jpg" alt="Snow" style="width:100%"> -->
+      <span><p>Burrow's Delta Score for Source Document</p></span>
+      <img src="../../static/images/WordCloud/wordcloud.png" alt="WordCloud.png" style="display: block;margin-left: 210px;margin-right: 300px;width: 500px; height: 250px;margin-bottom: 25px" >
+    </div>
+    <div class="column">
+      <!-- <img src="img_forest.jpg" alt="Forest" style="width:100%"> -->
+      <span><p>Author Probability</p></span>
+      <img src="../../static/images/WordCloud/wordcloud.png" alt="WordCloud.png" style="display: block;margin-left: 210px;margin-right: 300px;width: 500px; height: 250px;margin-bottom: 25px" >
+    </div>
+</div>
+<div class="row">
+    <div class="column">
+      <!-- <img src="img_mountains.jpg" alt="Mountains" style="width:100%"> -->
+      <span><p>Calibration Curve</p></span>
+      <img src="../../static/images/WordCloud/wordcloud.png" alt="WordCloud.png" style="display: block;margin-left: 210px;margin-right: 300px;width: 500px; height: 250px;margin-bottom: 25px" >
+    </div>
+    <div class="column">
+        <!-- <img src="img_mountains.jpg" alt="Mountains" style="width:100%"> -->
+        <span><p>ROC (Receiver Operating Characteristic) Curve</p></span>
+        <img src="../../static/images/WordCloud/wordcloud.png" alt="WordCloud.png" style="display: block;margin-left: 210px;margin-right: 300px;width: 500px; height: 250px;margin-bottom: 25px" >
+    </div>
+</div>
+    <div class="row">
+        <div class="column">
+            <span><p style="text-align: center;"> PCA-Derived Coordinates</p></span>
+            <img src="../../static/images/WordCloud/wordcloud.png" alt="WordCloud.png" style="display: flex;margin-left: 600px;margin-right: 300px;width: 500px; height: 250px;margin-bottom: 25px">
+        </div>
+    </div>
+</div>
 
 <!-- End Page Content -->
 
