@@ -25,6 +25,8 @@ from PIL import Image
 from wordcloud import WordCloud
 from flaskr.quicksimilarity import calc_cosine_similarity,jaccard_similarity
 from flaskr.extractmetadata import getMetaDataDoc,getMetaDataPDF, getRowColor
+# delete if not working
+from flask import send_from_directory
 
 from fpdf import FPDF
 
@@ -48,6 +50,8 @@ def create_app(test_config=None):
     # UPLOAD_FOLDER = os.path.join(path, os.getenv('UPLOAD_DIR'))
     UPLOAD_FOLDER = os.getenv('UPLOAD_IMG')
     UPLOAD_PDF = os.getenv('UPLOAD_PDF')
+    UPLOAD_REPORT = os.getenv('UPLOAD_REPORT')
+    
     app.config['MYSQL_HOST'] = os.getenv('MYSQL_HOST')
     app.config['MYSQL_USER'] = os.getenv('MYSQL_USER')
     app.config['MYSQL_PASSWORD'] = os.getenv('MYSQL_PASSWORD')
@@ -60,6 +64,7 @@ def create_app(test_config=None):
 
     app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
     app.config['UPLOAD_PDF'] = UPLOAD_PDF
+    app.config['UPLOAD_REPORT'] = UPLOAD_REPORT
     
     ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'docx'])
     app.config["TEMPLATES_AUTO_RELOAD"] = True
@@ -326,6 +331,7 @@ def create_app(test_config=None):
             # print(meta_data[0], " " ,meta_data[2], " " ,rowColor)
 
         WriteToPDF(percentageJaccard, percentageCosine, meta_data[0], meta_data[2], meta_data[1], meta_data[3], doc1.filename)
+        # pdfDownloadPath = f"{UPLOAD_REPORT}PlagiarismReport.pdf" 
         
         return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarityJac=percentageJaccard,
         similarityCos=percentageCosine,colorCos=colorCosine, colorJac = colorJaccard , metadata = meta_data, rowColor = rowColor)
@@ -396,9 +402,7 @@ def create_app(test_config=None):
         pdf = FPDF()
         pdf.add_page()
         pdf.set_font("Arial", size = 15)
-        
-        
-        
+    
         PlagJac = ""
         PlagCos = ""
         PlagCreate = ""
@@ -430,7 +434,14 @@ def create_app(test_config=None):
         pdf.multi_cell(200, 10, txt = str(PlagCos), align = 'L')
         pdf.multi_cell(200, 10, txt = str(PlagCreate), align = 'L')
 
-        pdf.output(dest="F", name="C:/Users/hanos/OneDrive/Desktop/TestCode/Report.pdf")
+        pdf.output(dest="F", name=UPLOAD_REPORT + "PlagiarismReport.pdf")
+        
+    @app.route('/GenerateReport/<path:filename>', methods=['GET', 'POST'])
+    def download(filename):
+        # Appending app path to upload folder path within app root folder
+        uploads = os.path.join(app.config['UPLOAD_REPORT'])
+        # Returning file from appended path
+        return send_from_directory(directory=uploads, path=filename, as_attachment=True)
 
     @app.errorhandler(HTTPException)
     def errorhandler(error):
