@@ -29,13 +29,15 @@ body {font-family: "Lato", sans-serif}
 <!-- <p> Choose a file to continue working on:</p> -->
 
 <div class="form-center">
-    <form method="post" action="/ExtensiveText" enctype="multipart/form-data">
+    <form method="post" action="/stylometry" enctype="multipart/form-data">
       <dl>
         <p>
+          <p>Student Name and Surname</p>
+          <input type="text" name="studentname" id="studentname" required autocomplete="off" class="input" style="margin-right: 210px;">
           <p>Upload Source Document</p>
-          <input type="file" name="files[]" multiple="true" autocomplete="off" required class="input">
+          <input type="file" name="file1" required autocomplete="off" class="input">
           <p>Upload Additional Document to Corpus (Optional) </p>
-          <input type="file" name="comparison" autocomplete="off" required class="input">
+          <input type="file" name="comparison" autocomplete="off" class="input">
         </p>
       </dl>
         <p>

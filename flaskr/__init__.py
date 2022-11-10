@@ -25,10 +25,13 @@ from PIL import Image
 from wordcloud import WordCloud
 from flaskr.quicksimilarity import calc_cosine_similarity,jaccard_similarity
 from flaskr.extractmetadata import getMetaDataDoc,getMetaDataPDF, getRowColor
-# delete if not working
+
 from flask import send_from_directory
 
 from fpdf import FPDF
+
+# Delete if broken
+from RunFastStylometry import fastStyle
 
 # NB!!! Remember to gitignore the .env file!
 load_dotenv()
@@ -186,12 +189,6 @@ def create_app(test_config=None):
             return render_template('auth/authLogin.html')
         return render_template('text/ExtensiveText.html')
 
-    @app.route('/stylometry')
-    def stylo():
-        if 'loggedin' not in session:
-            return render_template('auth/authLogin.html')
-        return render_template('stylometry/stylo.html')
-
     @app.route('/reports')
     def report():
         if 'loggedin' not in session:
@@ -219,7 +216,55 @@ def create_app(test_config=None):
             return render_template('auth/authLogin.html')
         return render_template('reports/styloReport.html')
 
-    #Report Links End
+    @app.route('/stylometry', methods=['GET','POST'])
+    def stylo():
+        if 'loggedin' not in session:
+            return render_template('auth/authLogin.html')
+        
+        if request.method == 'POST':
+            #code to convert a PDF to text file
+            if not request.files["file1"]:
+                abort(400, "missing file")
+            try:
+                name = request.form["studentname"]
+                print(name)
+                doc1 = request.files["file1"]
+                doc1.encoding = 'utf-8'
+                
+                # Extracting text from alleged document
+                if doc1.filename.endswith('.docx'):
+                    filenamedoc = secure_filename(doc1.filename)
+                    file1 = docx2txt.process(doc1)
+                elif doc1.filename.endswith('.pdf'):
+                    pdfReader = PyPDF2.PdfFileReader(doc1)
+                    count = pdfReader.numPages
+                    file1 = ""
+                    for i in range(count):
+                        page = pdfReader.getPage(i)
+                        file1 += page.extractText() 
+                    filenamePDF = secure_filename(doc1.filename)
+                else:
+                    filenametxt = secure_filename(doc1.filename)
+                    doc1.seek(0)
+                    file1 = doc1.read().decode("utf-8")
+                
+                #open text file
+                text_file = open("data/test/"+name+"_-_"+os.path.splitext(doc1.filename)[0]+".txt", "w", encoding="utf-8")
+                
+                #write string to file
+                text_file.write(file1)
+                
+                #close file
+                text_file.close()
+                
+                fastStyle()
+                return render_template('reports/styloReport.html')
+        
+            except Exception as e:
+                # abort(400, f"invalid file: {e}")
+                print(e)
+        return render_template('stylometry/stylo.html')
+
 
     # Upload File
     @app.route('/QuickText', methods=['GET','POST'])
@@ -490,5 +535,6 @@ def create_app(test_config=None):
             print(stdNum)
             print(stdName)
         return render_template('reports/extensiveReport.html')
+
 
     return app
