@@ -429,10 +429,23 @@ def create_app(test_config=None):
         pdf.multi_cell(200, 10, txt = "Date Created: " + str(createDate), align = 'L')
         pdf.multi_cell(200, 10, txt = "The student that last modified the document: " + str(Modifier), align = 'L')
         pdf.multi_cell(200, 10, txt = "Date Last Modified: " + str(ModDate), align = 'L')
+        
+        pdf.cell(200, 10, txt = " ", ln = 5, align = 'C')
+        
         pdf.multi_cell(200, 10, txt = "Conclusion: ", align = 'C')
         pdf.multi_cell(200, 10, txt = str(PlagJac), align = 'L')
         pdf.multi_cell(200, 10, txt = str(PlagCos), align = 'L')
         pdf.multi_cell(200, 10, txt = str(PlagCreate), align = 'L')
+        
+        pdf.ln(200)
+        
+        pdf.cell(200, 10, txt = " ", ln = 1, align = 'C')
+        pdf.cell(200, 10, txt = "Word Cloud Suspect", ln = 1, align = 'L')
+        pdf.image(f"{os.getenv('UPLOAD_IMG')}SimiLabs_2022/flaskr/static/images/WordCloud/wordcloud.png", w = 100, h = 50)
+        
+        pdf.cell(200, 10, txt = " ", ln = 1, align = 'C')
+        pdf.cell(200, 10, txt = "Word Cloud Suspect", ln = 1, align = 'L')
+        pdf.image(f"{os.getenv('UPLOAD_IMG')}SimiLabs_2022/flaskr/static/images/WordCloud/wordcloud2.png", w = 100, h = 50)
 
         pdf.output(dest="F", name=UPLOAD_REPORT + "PlagiarismReport.pdf")
         
