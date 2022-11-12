@@ -34,11 +34,14 @@ def fastStyle():
 
 
     # In[ ]:
+    import dataframe_image as dfi
 
 
     calculate_burrows_delta(train_corpus, test_corpus, vocab_size = 50)
     print(calculate_burrows_delta(train_corpus, test_corpus, vocab_size = 50))
     print(type(calculate_burrows_delta(train_corpus, test_corpus, vocab_size = 50)))
+    dfi.export(calculate_burrows_delta(train_corpus, test_corpus, vocab_size = 50), './flaskr/static/images/ReportImages/delta_score.png')
+
 
 
     # In[ ]:
@@ -54,10 +57,11 @@ def fastStyle():
 
 
     # In[ ]:
-
+    import dataframe_image as dfi
 
     predict_proba(train_corpus, test_corpus)
     print(predict_proba(train_corpus, test_corpus))
+    dfi.export(predict_proba(train_corpus, test_corpus), './flaskr/static/images/ReportImages/author_probability.png') 
 
 
     # In[ ]:

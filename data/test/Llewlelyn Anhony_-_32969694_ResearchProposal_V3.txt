@@ -1,0 +1,408 @@
+Stream data from Arduino to streaming platform to perform data analytics on dashboard
+
+
+
+
+
+L. ANTHONY
+
+32969694
+
+
+
+Research proposal for the Dissertation submitted in partial fulfillment of the requirements for the degree Bachelor of Sciences in Computer Science and Information Systems at the North-West University
+
+
+
+
+
+	Supervisor:	Prof. R. Goede
+
+	Co-supervisor:	N/A
+
+
+
+
+
+Date of submission:  2 May 2022
+
+Version: 3.0
+
+
+
+
+
+Table of contents
+
+1	Introduction	1
+
+2	Background to study	1
+
+3	Problem statement	2
+
+4	Paradigmatic perspective	3
+
+4.1	Critical Realism (CR)	3
+
+5	Research aims and objectives	4
+
+5.1	Research aim	4
+
+5.2	Research objectives	4
+
+6	Research methodology	5
+
+6.1	Design Science Research (DSR) and Study Design	5
+
+7	Approach to Project Management and Project Plan	6
+
+7.1	Scope	6
+
+7.2	Limitations	6
+
+7.3	Risk Analysis	8
+
+7.4	Project Plan	10
+
+8	Provisional Chapter Division	10
+
+9	Executive Summary	11
+
+Bibliography	13
+
+Annexure A: Data collection tool (TOC_HEADING sTYLE)	15
+
+annexure B: informed consent (TOC_HEADING sTYLE)	15
+
+Annexure C: recruitment material (TOC_HEADING sTYLE)	15
+
+
+
+
+
+
+
+
+List of Tables
+
+		Table 1: Summary of Methodological Principles for Conducting CR-based Case Study Research	4
+
+
+
+
+
+List of Figures
+
+Figure 1:  Information Systems Research Framework (Hevner et al., 2004:80)	5
+
+Figure 2: Project Plan	11
+
+
+
+
+
+
+
+
+
+Introduction
+
+The purpose of this study is to obtain knowledge on how to read sensory input from an Arduino R3 Uno as a stream and send it to a streaming platform (Kafka is preferable in this study). To undertake data analysis, the data must be translated into a pivot-table format and displayed on a dashboard (preferably Desktop Tableau) after it has been stored on the platform. Based on the results of the tableau, one must be able to make certain business decisions as a result of the analysis. Thus, the study focuses on the design and implementation of an artefact that can receive sensory input, store data received as streams and display the results in a tableau in order to perform analytics. Experiences and observations should be documented and used as recommendations for designing and implementing an IoT system, as well as providing insights into how to approach difficulties from a different perspective. Sections that will follow is a background of the study, which provides an overview of the existing literature that concerns this study, as well as a description and goals of this study. The problem statement provides a more in-depth overview of the study and what problems this study aims to solve. The paradigmatic perspective mentions the research paradigm applicable to this study and its essence. Methods within the paradigmatic perspective will be discussed that helps to conduct research. Aims and objectives of the study will be discussed: the main goals of the study and tasks that flows from the main goals. The research methodology implemented in the study will be discussed, wherein the artefact and lifecycle of the project is a key aspect. Methods on how to sample data and conduct research will be discussed. The approach to project management and the project plan involves the scope, limitations and risks associated with the study. The project plan will be a Gantt Chart that lists activities/tasks that needs to be completed during the entire lifecycle of the project. A provisional chapter division will be provided that provides the framework for the literature study. Finally, an executive summary will be provided that provides an overall “conclusion” of the study.
+
+Background to study
+
+In recent years, the Internet of Things (IoT) concept has been widely adopted within a variety of disciplines, ranging from the industry to smart cities (Calvillo-Arbizu et al., 2021:1). In the health sector, IoT enables new healthcare delivery scenarios as well as the collecting and analysis of real-time health data via sensors so that better judgments can be made on how to solve health issues (Calvillo-Arbizu et al., 2021:1). This sector, however, is complex and involves a number of technological obstacles (Calvillo-Arbizu et al., 2021:1). Despite the abundant literature on the subject, IoT applications in healthcare just scratch the surface of the sector's needs (Calvillo-Arbizu et al., 2021:1). The majority of IoT technologies are multipurpose and must be customized to meet the specific needs of each industry (Calvillo-Arbizu et al., 2021:1). These requirements are frequently overlooked in health IoT-driven solutions, and there happens to be no systematic evaluation of the burgeoning literature from the standpoint of health IoT-driven solutions (Calvillo-Arbizu et al., 2021:1).
+
+As indicated by Calvillo-Arbizu et al. (2021:4), extensive research and material does exist on IoT topics, specifically the healthcare sector. A total of 12108 items were found after searching databases (Calvillo-Arbizu et al., 2021:4). After the process of removing duplicates (3 602 papers), the remaining literature were sorted by title (5 934 papers) and abstract (2 376 papers were excluded) (Calvillo-Arbizu et al., 2021:4). The contents of the resulting papers were examined in order to identify literature studies that were beyond the scope of the sector (Calvillo-Arbizu et al., 2021:4). Out of all the resulting articles, 86 were found to be eligible for review (Calvillo-Arbizu et al., 2021:4). Although extensive research on IoT topics exists, literature studies on the design and implementation of IoT and streamed data applications are limited and the complexity of IoT systems restricts potential applications, and rarely current IoT solutions gets deployed real-time (Calvillo-Arbizu et al., 2021:8).
+
+Based on the abovementioned literature study, this study examines how to receive sensory input from an Arduino R3 Uno and read the input as a stream to the Kafka streaming platform and identify and demonstrate an area of application. Gaps in the healthcare industry might have to be researched, and the artefact should contribute to fill the gap of that sector. After the data streams are contained on the platform, the data needs to be converted into a pivot-table format and displayed in a tableau (dashboard) in order to perform data analysis. From the analysis one has to be able to make some business decisions based on the results from the tableau. Design Science will be applied to this study, which means errors will be documented as well as the progress made in order to provide a meaningful perspective of the knowledge gained by designing and building the artefact. The overall objective of this study is to design and develop an artefact that implements a streamed database/platform via sensory input, to provide meaningful information from the data received. 
+
+It is rather apparent that a different approach will have to be followed and different literature studies might have to be examined to design and implement an IoT data streaming and tableau analysis-based application in order to build a knowledge base on how to successfully receive sensory input from an Arduino R3 Uno and read the input as a stream to the Kafka streaming platform. 
+
+Problem statement
+
+This study is done to contribute to a knowledge base on how to design and implement an IoT system. As mentioned in the background of the study, few IoT systems gets deployed real-time. The relevant question is how to stream data from sensory input via using an Arduino to the Kafka streaming platform and convert the data into a pivot-table format. How should one then transfer the formatted data to a dashboard (like Tableau Desktop) and perform data analytics? To put the problem another way: What tools/developer environment should be researched and used in order to design and implement an effective/efficient IoT System? The study should contribute to the effort of enabling more IoT systems to get deployed in the future, smart and automated systems should eventually become a daily occurrence in the future generation’s everyday lives, such as breathing or walking. This study aims to find a different perspective on how to implement and design an IoT system, contributing to gaps currently in this research area. This research should enable junior developers and individuals with little to no experience in the IoT or software development field to quickly setup and run an IoT system. The study aim to provide very simplistic documentation as well as tools and architecture to design and implement an IoT system. As such anyone should be able to build and deploy their very own IoT system with just a few instructions and guidelines. The study should provide documentation on how to resolve errors within an IoT system or how to find a different approach to resolve an obstacle when trying to design and implement an IoT system. 
+
+Paradigmatic perspective
+
+Critical Realism (CR)
+
+Ontology describes the nature of objects being studied, nature and qualities of a variety of entities that exist, as well as whether reality exists objectively or subjectively with regards to people observing the reality (Wynn & Williams, 2008:4). Critical realism is based on three essential beliefs: objective reality, stratified ontology, and an open systems perspective (Wynn & Williams, 2008:4). Epistemology focuses on acceptable truths/beliefs via specifying criteria and defining the process of how to perform assessment on assertions compiled by researchers (Wynn & Williams, 2008:7). The way knowledge claims are presented, how they are evaluated for truth or validity, and how they are weighed against existing knowledge are all determined by one's epistemological beliefs (Wynn & Williams, 2008:7). CR aims to explain reality as objective through a researcher’s observations/interpretations/examinations (Wynn & Williams, 2008:7). Knowledge assertions created by researchers are based on identifying components of reality that must exist in order for certain phenomena within a system to occur (Wynn & Williams, 2008:7). CR aims to explain rather than to predict or comprehend complex phenomena (Wynn & Williams, 2008:7). Both observability and unobservability within systems plays an important role in CR research (Wynn & Williams, 2008:7). 
+
+The table below gives a summary of the methodologies typically implemented in a CR study:
+
+Table 1: Summary of Methodological Principles for Conducting CR-based Case Study Research 
+
+
+
+Source: (Wynn & Williams, 2008:10)
+
+
+
+Research aims and objectives
+
+Research aim
+
+To build a knowledge base on how to design and implement a solution to receive sensory input from an Arduino R3 Uno and read the input as a stream to the Kafka streaming platform. The knowledge base must serve as learning material for future generations on how to build a functional IoT system
+
+Research objectives
+
+To build an Arduino Uno R3 that are able to receive sensory input (via temperature/moisture or motion scanners for example) 
+
+To conduct a literature study and write a thesis that substantiates the research (design and implementation of IoT system)
+
+To identify and demonstrate an area of application for the IoT System
+
+To document findings and progress on designing and implementing the IoT System
+
+To document errors and obstacles while trying to design and implement the IoT System
+
+
+
+Research methodology
+
+Design Science Research (DSR) and Study Design
+
+According to Peffers et al. (2007), Design Science is a methodology or paradigm which can be used to develop and assess IT artefacts, the artefacts themselves aimed at resolving identified organizational issues. DSR entails a thorough process of designing artefacts to solve observable problems, as well as contributing to research, evaluating the planned designs, and communicating the results from observance and experiences to relevant audiences (Peffers et al., 2007:49). Typical artefacts produced using the DSR methodology includes instantiations, methods, models and constructs, to name a few (Peffers et al., 2007:49). To sum up: any product created with an incorporated solution in mind to an extensively researched topic is included in this description (Peffers et al., 2007:49). The methodology that will be used to conduct this study is Design Science Research that falls under the Critical Realism paradigm. The goal of this research is to learn how to design and implement a real-time IoT system. Another important aspect of this study is to contribute to a knowledge base on how to design and implement an effective IoT system that can be deployed real-time. Experiences and observations should be documented, and they should serve as guidelines on how to successfully design and setup an IoT system, while also providing insights on how to tackle problems by looking at a different angle. The following figure demonstrates the DSR framework:
+
+
+
+Figure 1:  Information Systems Research Framework (Hevner et al., 2004:80)
+
+To conclude on this section: the study will be more empirical by nature and will contribute to a knowledge base on how to design and implement an IoT system, while documenting the experiences in designing and implementing the solution as well as to document obstacles or errors that occurred during the design/implementation of the artefact. The documentation on the obstacles/errors should be able to guide the user to quickly setup their own IoT system, and when the user does have a problem to implement the system according to guidelines, they should be able to get an alternative perspective on solving a problem based on the documentation. 
+
+
+
+Approach to Project Management and Project Plan
+
+Scope
+
+To identify and demonstrate a use case for an Internet of Things real-time system.
+
+Conduct a literature review and produce a thesis that backs up findings (design and implementation of IoT system)
+
+To develop a knowledge foundation on how to design and implement a solution that receives sensory input from an Arduino R3 Uno and reads it as a stream into the Kafka streaming platform. Future generations must be able to learn how to design a functional IoT system from the knowledge base.
+
+To build an Arduino Uno R3 that can accept sensory information (for example, via temperature/moisture sensors or motion scanners) 
+
+To identify the right sensors for the identified use-case
+
+To create the best circuitry for the Arduino.
+
+To gain a better understanding of the Kafka streaming platform (features and implementations)
+
+To send data from sensors to the Kafka streaming platform.
+
+Using Tableau Desktop, convert data stored on Kafka into a pivot-table format and move the data to a dashboard.
+
+To explore the Tableau Desktop environment and techniques for data visualisation and analytics
+
+To perform analytics on the data on the dashboard via data visualisation techniques. Based on the results of the analysis, one should be able to make an informed business decision
+
+To document findings and progress on designing and implementing the IoT System
+
+To document errors and obstacles while trying to design and implement the IoT System
+
+To write a program/script that generates enough data that can be streamed and provides meaning when analytics is performed
+
+Limitations
+
+According to Watt (2014:14), limitations and constraints of projects typically include the following:
+
+Cost
+
+A budget that has been approved, which covers all the necessary completion costs (Watt, 2014:14). Because many initiatives receive money or subsidies with rigorous contract terms,, project managers must strike a balance between not running out of funds and not underspending inside companies (Watt, 2014:14). Budget preparations that aren't well-executed can lead to a number 99 scramble to spend the funds available (Watt, 2014:14). Cost is ultimately a limiting constraint for almost all projects: few projects can go beyond budget without requiring a remedial step (Watt, 2014:14).
+
+Scope
+
+What functionality the project should provide and the end goal of the project (Watt, 2014:14). Project outcomes are explicitly defined as well as the processes that go into creating them (Watt, 2014:14). It is the project's raison d'être and goal (Watt, 2014:14). Scope limitations can cause a project to fail, and scope creeping cause extra strain on the project’s time frame.
+
+Quality 
+
+Combination of the performance criteria and stipulated standards that must be met by the project's products in order to provide the intended functionality (Watt, 2014:14). The product must deliver on its promises, solve a known problem, and give the expected benefit and value. (Watt, 2014:14). Other performance standards must be met, including maintainability, dependability and availability as well as a good conclusive result (Watt, 2014:14). The practice of evaluating overall project performance on a regular basis to verify that the project satisfies the essential quality requirements is known as quality assurance (QA). (Watt, 2014:14).
+
+Risk
+
+External events, in most cases, will have a negative impact on your project (Watt, 2014:14). Risk is defined as how likely an event will occur as well as the foreseen impact on the project if the risk does occur (Watt, 2014:14). If a risk happens to be a foreseen possibility, and the consequences of the risk are  extremely disastrous , one should classify the event as a risk and implement a proactive risk management plan (Watt, 2014:14).
+
+Resources
+
+Any assets that are needed to complete the project's tasks (Watt, 2014:14). Usually resources consist of funds, facilities, equipment, people or any other type of asset (usually labour is not included) that is necessary to view a project activity as being successfully completed (Watt, 2014:14). One can speculate how a project can be negatively affected if inadequate resources are assigned to a project.
+
+Time
+
+The time frame needed to complete a project (Watt, 2014:14). One of the most common project oversights is time (Watt, 2014:14). Missed deadlines and incomplete deliverables are evidence of this (Watt, 2014:14). The proper control of the schedule necessitates the precise identification of tasks to be completed, as well as accurate estimates of their durations, sequence, and allocation of personnel and other resources (Watt, 2014:14). Vacations and holidays should be considered while planning a project to include slack times (Watt, 2014:14).
+
+Risk Analysis
+
+According to (Pries-Heje et al., 2014:63), there are six classes used to identify risks that can occur within project management when using a DSR methodology, and each of the classes contains a number of risks that should be considered:
+
+Business Needs
+
+This class includes the identification, selection, and development understanding the business needs which includes problems and requirements, This also involves problem analysis and assessing alternatives (Pries-Heje et al., 2014:63). The following potential risks have been identified as a result of this activity's analysis:
+
+Problems that have no meaning to the stakeholder (Pries-Heje et al., 2014:64).
+
+Struggling to grasp the problem and the context it occurs within (Pries-Heje et al., 2014:64).
+
+Incompatible stakeholder interests (some of which may or may not come to light) (Pries-Heje et al., 2014:64).
+
+Grounding
+
+Searching, recognizing, and understanding relevant information (recovered from the body of human knowledge that has been recorded) (Pries-Heje et al., 2014:63). The following potential risks have been identified as a result of this activity's analysis:
+
+Incomprehension and/or failing to understand relevant existing research. Failing to comprehend the situation and excessive dependence on personal experience or imagination (Pries-Heje et al., 2014:64).
+
+Incomprehension and/or failing to understand existing design science research used to study problem-solving technology, i.e., a lack of understanding how technology works (Pries-Heje et al., 2014:64).
+
+Incomprehension and/or failing to understand important natural and behavioural science research that forms the base theories about understanding the essence of the problem and how to solve the problem (Pries-Heje et al., 2014:65).
+
+Building and designing artefacts
+
+Construct design theories, including instantiations (hypothetical solutions to solve business needs or problems, theories about the solutions) (Pries-Heje et al., 2014:63). (Pries-Heje et al., 2014:63). The following potential risks have been identified as a result of this activity's analysis:
+
+Development of an uninstantiated (conjectural) solution that cannot be easily incorporated (being able to actually implement the solution) (Pries-Heje et al., 2014:65).
+
+Development of a hypothetical solution that cannot solve the problem, i.e., the artefact cannot be implemented in real life and has a lot of socio-technical problems (Pries-Heje et al., 2014:65).
+
+Developing a hypothetical solution that fails to solve the problem, i.e., requires excessive resource expenditures (Pries-Heje et al., 2014:65).
+
+Assess design artefacts and provide evidence for design theories or expertise.
+
+The following potential risks have been identified as a result of this activity's analysis:
+
+Tacit requirements (which cannot be disclosed by definition) are not addressed while evaluating solution technology, resulting in the solution technology failing to meet those requirements (Pries-Heje et al., 2014:66).
+
+While any or all of the relevant needs are not surfaced, they are not addressed when evaluating the solution technology, resulting in the technology failing to meet those specifications (Pries-Heje et al., 2014:66).
+
+Misalignment of specifications to Information Systems Design Theory (ISDT) meta-requirements results in the IDST being tested and an embodiment of the meta-design being evaluated in a circumstance where none of them should be used (Pries-Heje et al., 2014:66).
+
+Artefact dissemination and use
+
+Disseminate new artefacts, design theories, and knowledge to individuals and organizations for practical applications in order to meet business needs (Pries-Heje et al., 2014:64). The following potential risks have been identified as a result of this activity's analysis:
+
+A solution's implementation in practice does not work at all (Pries-Heje et al., 2014:67).
+
+Misunderstanding the solution's suitable context and constraints (Pries-Heje et al., 2014:67).
+
+Misunderstanding how to implement the solution (Pries-Heje et al., 2014:67).
+
+Knowledge additions
+
+Publish new design artefacts and theories, and design knowledge that has practicality in order to tackle or improve business needs and problems (Pries-Heje et al., 2014:64). The following potential risks have been identified as a result of this activity's analysis:
+
+Impossibility of publishing or presenting research findings (Pries-Heje et al., 2014:67).
+
+Low-importance research is published (Pries-Heje et al., 2014:67).
+
+Publication of erroneous study findings (Pries-Heje et al., 2014:67).
+
+Project Plan
+
+
+
+Figure 2: Project Plan
+
+
+
+Provisional Chapter Division
+
+Chapter 1: Introduction
+
+The introductory chapter contains the following sub-sections:
+
+ Project Description
+
+ Problem Description and Background
+
+ Goals and Objectives of Research
+
+ Methods and Procedures followed to conduct Research
+
+ Approach to Project Management and Project Plan
+
+ Description of development platform, tools and environments to be used.
+
+ Ethical/Legal implications and how to approach these issues
+
+Chapter 2: Literature Study
+
+The background of the project will be examined more attentively here, a more accurate explanation of the artefact and how it will be developed.
+
+Chapter 3: Development of Project and Documentation surrounding the Artefact 
+
+The chapter contains the following sub-sections:
+
+																Description of Project
+
+																The Life Cycle and the different Phases of the Project
+
+																Description of the Development of the Project
+
+																
+
+Chapter 4: Collection and Processing of Data
+
+Methods of investigation and how the data acquired will be processed
+
+
+
+Chapter 5: Results
+
+The results of the methods of investigation and an overall conclusion will be indicated here
+
+
+
+Chapter 6: Recommendations
+
+The chapter contains the following sub-sections:
+
+. Collection of the raw data obtained from the artefact
+
+. Data processing via decision tree techniques
+
+Chapter 7: Reflection
+
+Chapter 8: Conclusion and final article
+
+The final document will be addressed and finalised here. A comprehensive document can be created by combining all of the aforementioned chapters.
+
+Executive Summary
+
+The purpose of this study is to figure out how to read sensory information from an Arduino R3 Uno as a stream and send it to a streaming platform (as mentioned in the Introduction, the Kafka streaming platform is preferable). The data must be translated into a pivot-table format and displayed on a dashboard after it has been stored on the platform (ideally Desktop Tableau). Based on the tableau's conclusions, one should be able to make specific business decisions based on the analysis' results. The study focuses on the development and implementation of an artefact that can receive sensory input, store data as streams, and show the results in a tableau for analytics. Another important aspect of this study is that it should contribute to a body of knowledge on how to develop and implement a real-time IoT system. Experiences and observations should be documented and used as recommendations for designing and implementing an IoT system, as well as providing insights into how to approach difficulties from a different perspective. This study falls under the Critical Realism paradigm, and the study will also focus on the events occurring within the IoT system (artefact). Documenting events, experiences and observations is an important part of this study. This study is objective by nature, even though there are events and causes which cannot easily be explained by humans. The methodology that will be implemented to conduct this study is Design Science Research, which is empirical by nature. Field studies, experiments and simulations will have to be conducted in order to design and implement a real-time IoT system.
+
+
+Bibliography 
+
+Calvillo-Arbizu, J., Román-Martínez, I. & Reina-Tosina, J. 2021. Internet of things in health: Requirements, issues, and gaps. Computer Methods and Programs in Biomedicine, 208:10. https://pdf.sciencedirectassets.com/271322/1-s2.0-S0169260721X00119/1-s2.0-S0169260721003059/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGcaCXVzLWVhc3QtMSJIMEYCIQCutOKqqL6eXZBTJIasOuVDtFwbWL1DjHJWEuxh0UsmNAIhALBftqKyTfRCH%2BYxSMp9X%2F76%2F8Hg6m0p%2BiBLMgpgbdH6KoMECPD%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQBBoMMDU5MDAzNTQ2ODY1IgyuzzUXtw2o5GQ1JjQq1wMhvW7maydVyvFu75Ngcj8uwqL82D8BEE7saqEbGSaN9vuyRODbRr5GV0Bo0H%2FPshnq7DpamtCNP%2BhH%2FZBwSmhm9x21qCOCavp3WPOvwTPDLTf40az27cXR5Wjq8vUFo09jWoLPDQcRSD9ypLwVdKwucs3PMns%2BwA7ObQdcNkTkbmXYPjpK0wr9ojDy2YrZderk5R4nxv%2FBpOMKADH%2Bf9y1%2BavRLI9dX7bVQ9%2BQLPD84Vi1%2F7akNTUShUNjpsJQ8jJtXLZMLOZU9XLdC2P8TKA6sgG6sYrdDhufJ6swke1XVkmS2xbS7YArCdTPQLZv%2BqtBVt0yVUWo%2FTmbUnOAOVKfdspf9h8QhOxA6v7v%2BUofUzeynWzeSFVEqnUQ5UDZ2PwXSzOEQPrMRrqXtU5AaOufevlU02bFGRK1CWyrM3aRNLiVjr7mNpgUf5s8CgEMZ2izzL3ZG8D4hMBqbaU46GPi0vbRRi6ubhnOqTt2SdEY26SzJVSqoHcDLORLq2qAh49%2FWB2iqsbyuItoRP%2Be6GjF3LeO8ZQY%2FAww%2BG2CMDr%2FsRd4Y%2FresnoHCcoFWvf1w4r38wngcO0kKNgngAYijk3XzufohorBBnXuzZyvU13cPt8Wcwc%2FD2owu96RkgY6pAE4yCyY7ESoq3MpFk4dLPxUbzOG3ztbirDWsLh5ERd6XLG9mPx1htFNKlMiH9O6ThmNDjRzipPzhTSAbc%2B6kkoefmHi3fIvVGD%2FdCSy7iSyPh8Vr5wbM5mVV7XbSvSVVArhxtj0CkJmu1imPtsSy5IIxD7jtCWuKakblv1qMt3cvNWiPOHdKYhmXxM7J5IHO4wAcWhtaVpRt%2FPAnVuuNndLJnE%2FpQ%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220330T152803Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY7GVZDV62%2F20220330%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=605513627a266fcde7bb5176dac31cd5c5feb73e57034fb5d000f82b8817d261&hash=06b53f1ef3e3d89026e42623e8ca80f8b6f65886ebd6b26712ae0b21b3e4865a&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0169260721003059&tid=spdf-b7fc9008-21ad-4812-a944-ca2efc01c7ee&sid=0a3a4cbe9cf12145704ad262997e9dac20f1gxrqb&type=client&ua=560753520109555053&rr=6f41df771d970552 Date of access: 30 March 2022. 0.1016/j.cmpb.2021.106231
+
+
+
+Peffers, K., Tuunanen, T., Rothenberge, M.A. & Chatterjee, S. 2007. A design science research methodology for information systems research. Journal of Management Information Systems, 24(3):45-77. https://moodle.ufsc.br/pluginfile.php/4227088/mod_resource/content/1/PEFFERS%20A%20Design%20Science%20Research%20Methodology%20JMIS%20%282007%29.pdf Date of access: 27 Apr. 2022. 10.2753/MIS0742-1222240302
+
+Pries-Heje, J., Venable, J. & Baskerville, R. 2014. Rmf4dsr: A risk management framework for design science research. Scandinavian Journal of Information Systems, 26(1):57-82. http://iris.cs.aau.dk/tl_files/volumes/volume26/Pries-Heje-etal-26-1.pdf Date of access: 27 Apr. 2022. 
+
+
+
+Watt, A. 2014. Project management. 2.  British Columbia: BCcampus Open Education. Available from: https://opentextbc.ca/projectmanagement/ Date of access: 28 Apr. 2022. 
+
+
+
+Wynn, J., Donald E. & Williams, C.K. 2008. Critical realism-based explanatory case study research in information systems. Paper presented at the Association for Information Systems
+
+AIS Electronic Library (AISeL), Paris. https://core.ac.uk/download/pdf/301346934.pdf Date of access: 26 Apr. 2022.
+
+
+
+
+Annexure A: Data collection tool (TOC_HEADING sTYLE)
+
+annexure B: informed consent (TOC_HEADING sTYLE)
+
+Annexure C: recruitment material (TOC_HEADING sTYLE)
+
+iii
+
+i
+
+21
