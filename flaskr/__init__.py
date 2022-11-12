@@ -355,7 +355,12 @@ def create_app(test_config=None):
         wordcloud2 = WordCloud().generate(file2)
         imgPath = os.getenv('UPLOAD_IMG')
         wordcloud2.to_file(f"{imgPath}SimiLabs_2022/flaskr/static/images/WordCloud/wordcloud2.png")       
-        
+
+        # Algorithms Description
+        CosineTooltip = "The accuracy for this algorithm works better for smaller documents (<1000 words)"
+        JaccardTooltip = "The accuracy for this algorithm works better for bigger documents (>10000 words)"
+
+
         # Calculate the similarity score between the two documents
         # Cosine Similarity
         percentageCosine = round(calc_cosine_similarity(file1, file2)[0]*100,2)
@@ -385,7 +390,8 @@ def create_app(test_config=None):
         # pdfDownloadPath = f"{UPLOAD_REPORT}PlagiarismReport.pdf" 
         
         return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarityJac=percentageJaccard,
-        similarityCos=percentageCosine,colorCos=colorCosine, colorJac = colorJaccard , metadata = meta_data, rowColor = rowColor)
+        similarityCos=percentageCosine,colorCos=colorCosine, colorJac = colorJaccard , metadata = meta_data, rowColor = rowColor , 
+        JaccardTooltip = JaccardTooltip, CosineTooltip = CosineTooltip)
         
     def highlight(s, regexes):
         """Highlight all instances of regexes in s."""
