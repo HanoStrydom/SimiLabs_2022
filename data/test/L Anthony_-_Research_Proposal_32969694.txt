@@ -1,0 +1,696 @@
+READING DATA TO THE KAFKA STREAMING PLATFORM VIA SENSORY INPUT FROM AN ARDUINO AND CREATING A TABLEAU TO ANALYSE DATA
+
+
+
+
+
+
+
+
+
+
+
+
+
+Llewellyn Anthony
+
+32969694
+
+BSc Hons in IT 2022
+
+
+
+
+
+Supervisor: Prof. R. Goede
+
+Computer Science and Information Systems
+
+Potchefstroom Campus NWU
+
+
+
+
+
+
+INDEX
+
+
+
+		i.	Notation and Style	2
+
+		ii.	Project Description	2
+
+		1.	Problem Description and Background	2
+
+		2.	Goals and Objectives	2
+
+		3.	How to achieve the goals and objectives	2
+
+		4.	Procedures and Methods	2
+
+		4.1	Research Paradigm	2
+
+		4.2	Data Collection	3
+
+		4.3	Artefact	3
+
+		5.	Approach to Project Management and Project Plan	3
+
+		6.	Description of Development Platform, Tools and	3
+
+	Environments	3
+
+		7.	Ethical and Legal Implications	3
+
+		8.	Preliminary Chapter Layout	3
+
+		9.	References	3
+
+		10.	Subject Group Computer Science and Information Systems	3
+
+		11.	References	3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Notation and Style
+
+The following notation will be used for references throughout the document:
+
+The Harvard Referencing Style 2020 as provided by the NWU will be used for referencing throughout the whole of the document. An example of in-text referencing using this style:
+
+asdasdasdassd
+
+Project Description
+
+This study examines how to receive sensory input from an Arduino R3 Uno and read the input as a stream to the Kafka streaming platform. After the data streams are contained on the platform, the data needs to be converted into a pivot-table format and displayed in a tableau in order to perform data analysis. From the analysis one has to be able to make some business decisions based on the results from the tableau. Design Science will be applied to this study, which means errors will be documented as well as the progress made in order to provide a meaningful perspective of the knowledge gained by designing and building the artefact. The overall objective of this study is to design and develop an artefact that implements a streaming database/platform via sensory input, to provide meaningful information from the data received.
+
+Problem Description and Background
+
+The purpose of this study is to obtain knowledge on how to read sensory input from an Arduino R3 Uno as a stream and send it to the Kafka streaming platform. To undertake data analysis, the data must be translated into a pivot-table format and displayed in a tableau after it has been stored on the platform. Based on the results of the tableau, one must be able to make certain business decisions as a result of the analysis. Thus, the study focuses on the design and implementation of an artefact that can receive sensory input, store data received as streams and display the results in a tableau in order to perform analytics.
+
+Goals and Objectives
+
+
+
+How to achieve the goals and objectives
+
+
+
+Procedures and Methods
+
+
+
+ Research Paradigm
+
+
+
+ Data Collection
+
+
+
+ Artefact
+
+
+
+Approach to Project Management and Project Plan
+
+
+
+
+
+Description of Development Platform, Tools and 
+
+Environments
+
+
+
+Ethical and Legal Implications
+
+Name: Llewellyn Anthony
+
+Title of Project: Arduino Kafka Streaming Project
+
+
+
+Have you read the information made available on research ethics (Chapter 5 of Researching Information Systems and Computing; BJ Oates and Chapter 13 of Writing for computer science, J Zoble; The Manual for Postgraduate Studies, available on eFundi)?
+
+Ja
+
+
+
+
+
+Nee
+
+
+
+Do you use people in your project as a source of data (for example for filling in questionnaires or evaluating products)?
+
+Ja
+
+
+
+Nee
+
+
+
+Is there any aspect of your research for which you need permission from another party, for example for the use of property or equipment? If Yes, provide more details.
+
+Ja
+
+Nee
+
+
+
+
+
+
+
+Describe your research question, and give a brief description of your data collection plans.
+
+
+
+How can I read data to the Kafka streaming platform via sensory input from an arduino and creating a tableau to analyse data using the most effective and efficient methods?
+
+Sources of data collection include books, journals, the Internet, articles on the planned research question, as well as decision trees and Gant map. Other methods include questionnaires.
+
+
+
+Describe how you plan to disclose information about yourself and the part of your research to participants.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Describe how you would go about obtaining permission from participants involved in the research.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Will you be able to assure participants that their information will be kept anonymous, private and confidential? Provide details on how you plan to handle it
+
+
+
+The participant will be notified as soon as the information gets disclosed and then each participant can decide whether he/she wants to allow it.
+
+
+
+Ja
+
+
+
+
+
+Nee
+
+
+
+
+
+
+
+
+
+
+
+
+Is there any foreseeable risk of harm (physical, social or psychological) to participants or the environment? If the answer is Yes, details must be given of preventive measures that will be followed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ja
+
+Nee
+
+
+
+
+
+
+
+Is there any risk to the NWU, such as legal actions as a result of the research or damage to the university's reputation? If Yes, provide more details.
+
+Ja
+
+Nee
+
+
+
+
+
+
+
+
+
+  Are there any other ethical issues that may arise during the conduct of the research (e.g. conflict of interest)? If Yes, provide more details and explain how you plan to resolve the ethical issues.
+
+Ja
+
+Nee
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Name: Llewellyn Anthony
+
+Handtekening: 
+
+Date: 01/04/2022 
+
+
+
+
+
+Naam van studieleier: Prof. Roelien Goede
+
+Handtekening:
+
+Date: 01/04/2022
+
+
+
+Name of additional supervisor:
+
+Signature:
+
+Date:
+
+
+
+Preliminary Chapter Layout
+
+
+
+References
+
+There are no sources in the current document.
+
+
+
+Subject Group Computer Science and Information Systems
+
+Research Proposal for Honours Project
+
+
+
+The student and the supervisor must consult the Manual for Postgraduate Studies before writing the research proposal. The Manual for Postgraduate Studies explains in detail what is expected of each of the subheadings below. The research proposal should not be longer than 5 pages.
+
+The Subject Group requires that the research proposal be submitted using this form and in the format below. Please complete computer-wise.
+
+Student’s initials, surname and studentnumber:
+
+Initials
+
+L
+
+Surname      
+
+Anthony
+
+Studentnumber
+
+32969694
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Degree student is enrolled for:
+
+
+
+BSc Computer Science and Information Technology
+
+
+
+Name of supervisor
+
+Initials and Surname
+
+Prof R. Goede
+
+
+
+Proposed Title 
+
+Reading data to the Kafka streaming platform via sensory input from an Arduino and creating a tableau to analyse data
+
+
+
+
+
+Problem statement and motivation
+
+
+
+Give the theme and connect it with gaps in the literature and recent research on it. Indicate the research question, why it is relevant and how the research will attempt to answer the question.
+
+
+
+Alhoewel meeste mense en onderrigleiers dink afstandsonderrig is ŉ nuwe ding is dit volgens (Erthal, 2005) glad nie ŉ nuwe verskynsel in die wêreld van onderrig nie, en bestaan al vanaf die 1700’s. Kathleen Harting definieer dat afstandsonderrig eers in bestaan gekom het nadat die pos diens ontwikkel is as gevolg van die rede dat daaglikse lesse aan afstandstudente gepos kan word elke week (Harting, 2005).  Yoany Beldarrain het die volgende gesê, “Distance education emerged in response to the need of providing access to those who would otherwise not be able to participate in face-to-face courses”. (Beldarrain, 2006). Volgens hom het die vinnige groei van afstandsonderrig meer en deel gegroei in webgebaseerde onderrig en is dit een van die maklikste en beste maniere om die tipe onderrig toe te pas en aan te bied.
+
+
+
+Volgens Tina Wilson word daar afstandsonderrig toegepas veral op die volgende persone (Wilson, 2008): 
+
+																Van die nie-tradisionele opvoedkundige agtergronde.
+
+																Persone wat konstant reis.
+
+																In indiensneming.
+
+																
+
+																En uit onderverteenwoordigende groepe soos:
+
+																Die kwesbaar.
+
+																Diegene met gestremdhede.
+
+																Die huis gebind.
+
+																Diegene met familie afhanklikes.
+
+																Diegene uit lae sosiale - ekonomiese groepe.
+
+																Diegene wat skuiling van 'n ander land.
+
+																Die bejaardes.
+
+																Diegene van minderheid etniese groepe.
+
+																Diegene in die tronk.
+
+																
+
+Sellulêre toestelle word al hoe meer gebruik vir afstandsonderrig veral in Suid – Afrika as gevolg van die feit dat landlyne en internet modems ensovoorts baie meer probleme en aftuie het as wat selfone of tablette het (Visser & Simonson, 2008).
+
+
+
+Afstandsonderrig word in ŉ verskeidenheid van instellings gebruik vir ŉ wye verskeidenheid van doeleindes. Universiteite gebruik dit om die aantal studente wat toegang het tot hoër onderwys  te verhoog. Maatskappye gebruik dit weer om hulle werkers se vaardighede op hoogte te hou van vinnige bevordering in tegnologie en hulle dan volgens dit te gradeer. Individuele gebruik dit vir hulle eie professionele ontwikkeling en om hulle loopbaan te verbeter. Die regering gebruik dit om onderrig te lewer aan afgeleë gebiede wat dalk andersins nie bedien word nie (Michael & Joanne, 1998).
+
+
+
+Die aanvraag en druk vir afstandsonderrig styg grootliks. Dit is krities om dit te ondersoek as gevolg van die feit dat dosente nie die nodige opleiding het om dit aan te bied nie. Dit is ook onmenslik belangrik om te kyk na die moontlike maniere wat afstandsonderrig kan aanbied omdat die grootste probleem in die veld is. 
+
+
+
+  
+
+Research objectives and goals
+
+
+
+Provide the general and specific aspects that will be addressed in the research.
+
+Die doelwit van hierdie navorsing is om effektiewe metodes te bepaal vir afstandsonderrig.
+
+Om dit te doen, sal die volgende subdoelwitte voltooi moet word:
+
+Literatuurstudie oor afstandsonderrig, verskillende metodes, die voordele en nadele, geleenthede en beperkings van elk.
+
+Vergelyking van die verskillende metodes na aanleiding van bogenoemde literatuurstudie; en die keuse van een of meer metodes wat verder ondersoek sal word.
+
+Die ontwikkeling van ŉ artefak waar die mees effektiewe metodes toegepas word.
+
+Die evaluering van die artefak.
+
+Aanbevelings vir metodes wat gebruik kan word vir afstandsonderrig, veral waar programmering en ander praktiese toepassings ter sprake is.
+
+Op die oomblik word daar grootliks gebruik gemaak van “virtual classrooms” en interaktiewe video metodes. 
+
+Voordele van interaktiewe video’s:
+
+Dit verskaf leergeleenthede aan studente wat nie toegang het tot ŉ universiteit of skool nie.
+
+
+
+Dit kan ook toegang verskaf vir studente wat in gevaarlike gebiede bly of vir studente wat spesiale behoeftes het.
+
+
+
+
+
+Verskeie studente kan op dieselfde tyd deur een of meer studente geleer word en kan dus baie meer gerieflik wees.
+
+Nadele van interaktiewe video’s:
+
+Die feit dat interaktiewe video’s aanlyn is beperk ŉ groot aantal studente omdat daar nie internet toegang tot alle gebiede is nie.
+
+
+
+Die koste wat daarby betrokke is kan onmenslik groot word deur die loop van tyd.
+
+
+
+
+
+Die meerderheid van afstand dorpe buite ŉ universiteit of skool het ook die probleem van studente wat nie ŉ rekenaar, foon of tablet kan bekostig of te kan gebruik nie.
+
+
+
+Virtuele klaskamers het min of meer dieselfde voor en nadele aan verbonde en kan ook die leer van programmeringstale aand studente vergemaklik of selfs moeiliker maak (Ferriman, 2016).
+
+
+
+Die konsepte wat na gekyk moet word wanneer ŉ artefak geskep word vir hierdie probleem sluit die volgende in:
+
+Aktiewe leer – studente moet heeltyd besig bly om sodoende nie verveeld te raak nie.
+
+Visuele tekens en prente – om die aandag van die student te trek en te behou reg deur sy / haar leer siklus.
+
+Effektiewe kommunikasie .
+
+Geleide onderhoud.
+
+Visuele oefeninge – oefeninge wat die student se kennis toets oor die werk wat geleer is oor ŉ spesifieke taal.
+
+Navrae moet ondersteun word (Etadu, 2013).
+
+
+
+
+
+
+
+
+
+
+
+
+
+Basic hypothesis (where applicable)
+
+None
+
+
+
+Method of investigation
+
+Literature study
+
+Only indicate how and which literature will be used in the study, with some key references. A summary of the literature is not expected here.
+
+
+
+
+
+
+
+
+
+
+
+Research methods
+
+The intended design, data acquisition, hardware, procedures, data processing, sources of funding (but not a budget), mathematical methods, computer methods, etc.
+
+ŉ HTML en CSS ontwikkelingsplatform sal gebruik word om die webgebaseerde stelsel te ontwikkel. Met behulp van HTML en CSS kan ŉ kragtige gasheer platform soos Wordpress gebruik word om die finale artefak te skep en sodoende die beste stelsel moontlik te skep vir die gebruikers.
+
+
+
+Ander platforms wat in die stelsel vertoon gaan word sluit die volgende in:
+
+JAVA
+
+C#
+
+Gevorderde HTML
+
+Gevorderde CSS 
+
+Al die bogenoemde platforms vorm deel van oop bron sagteware  wat ook gratis sagteware beteken. Volgens Alfonso Fuggetta is gratis sagteware ŉ kwessie van vryheid en nie van prys nie, vryheid van gebruikers om dit te gebruik, te versprei, te kopieer asook om veranderings aan te bring (Fuggetta, 2003).
+
+
+
+Vraelyste gaan voor en na die gebruik van die artefak gebruik word om te bepaal wat die gebruikers se voorkeure is en wat die terugvoer is na die gebruik van die artefak.
+
+
+
+In hierdie studie gaan gebruik gemaak word van positivisme as gevolg van die feit dat vraelyste die hoof bron van data insameling is. Interne geldigheid is ook baie belangrik in positivisme en dit stem oor een met die gebruik van korrekte data wat aan die gebruikers oor gedra moet word om korrek te studeer. Die stelsel moet betroubaar wees anders gaan studente nie die stelsel gebruik nie (Oates, 2006). 
+
+
+
+
+
+Preliminary chapter layout
+
+Here it should be apparent that there was proper reflection on what the final product (mini-dissertation) will look like there. Give preliminary titles of the different chapters, with a brief outline of their planned content.
+
+Hoofstuk 1: Inleiding
+Die inleidende hoofstuk bevat die volgende sub-onderwerpe
+
+Projekbeskrywing
+
+Probleembeskrywing en agtergrond
+
+Doelstellings en doelwitte van projek
+
+Prosedures en metodes wat gevolg gaan word
+
+Benadering tot projekbestuur en projekplan
+
+Beskrywing van ontwikkelingsplatform, hulpmiddels en omgewings wat gebruik gaan word.
+
+Etiese en wetlike implikasies en hantering hiervan.
+
+Hoofstuk 2: Literatuurstudie
+
+Die agtergrond van die projek sal hier meer aandagtig ondersoek word, ŉ meer akkurate verduideliking van die artefak en hoe hy ontwikkel gaan word.
+
+Hoofstuk 3: Ontwikkeling van die projek en dokumentasie rondom artefak 
+
+
+
+Beskrywing van die projek
+
+																Die lewensiklus gevolg en die verskillende fases van die projek
+
+																Beskrywing van die ontwikkeling van die produk
+
+
+
+Hoofstuk4: Insameling en verwerking van data
+
+Die vraelyste gaan hier ingevul word voor en na die gebruik van die artefak deur studente.
+
+Hoofstuk 5: Resultate
+
+Die resultate van die vraelyste en die konklusie van die gebruik van die artefak gaan hier aangedui word.
+
+Hoofstuk 6: Aanbevelings
+
+Insameling van die rou data wat verkry is vanaf die artefak
+
+Verwerking van data deur besluitnemingsboom tegnieke
+
+Hoofstuk 7: Refleksie
+
+Hoofstuk 8: Gevolgrekking en finale artikel
+
+Die finale dokument gaan hier aangespreek en voltooi word. Met behulp van al die bogenoemde hoofstukke kan ŉ volledige dokument aanmekaar gesit word.
+
+
+
+
+
+References
+
+
+
+2

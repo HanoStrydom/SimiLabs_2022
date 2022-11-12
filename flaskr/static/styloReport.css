@@ -1,10 +1,11 @@
-.row {
+  .container {
     display: flex;
-    height: 50vh !important;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  
-  .column {
-    flex: 33.33%;
-    padding: 1px;
-    height: 100px;
+
+  img {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
   }
