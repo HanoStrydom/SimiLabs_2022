@@ -15,6 +15,13 @@
 <style>
 body {font-family: "Lato", sans-serif;overflow-y: scroll;}
 .mySlides {display: none}
+
+table, th, td {
+  border: 3px double black;
+  border-collapse: collapse;
+  padding: 15px;
+}
+
 </style>
 
 {% endblock %}
@@ -28,17 +35,21 @@ body {font-family: "Lato", sans-serif;overflow-y: scroll;}
 <br>
 
 <h1> Stylometry Report</h1>
+<div class = "container" style = "margin-bottom: 1em;margin: 5px 50px 10px 50px;">
+  <table>
+    <tr>
+      <td style="font-weight: 700;">Burrow's Delta Score for Source Document</th>
+      <td><a href="../../static/images/ReportImages/delta_score.png" target="_blank">Click Here</a></td>
+    </tr>
+    <tr>
+      <td style="font-weight: 700;">Author Probability</td>
+      <td><a href="../../static/images/ReportImages/author_probability.png" target="_blank">Click Here</a></td>
+    </tr>
+  </table>
+</div>
+<br>
+
 <div class="container" style="border: 3px solid black;margin: 5px 50px 10px 50px;">
-  <div>
-    <span><p>Burrow's Delta Score for Source Document</p></span>
-    <!-- <img src="../../static/images/ReportImages/delta_score.png" alt="burrows_delta.png" style="width: 500px;height: 400px;"> -->
-    <a href="../../static/images/ReportImages/delta_score.png">Click Here</a>
-  </div>
-  <div>
-    <span><p>Author Probability</p></span>
-    <!-- <img src="../../static/images/ReportImages/author_probability.png" alt="author_probability.png"  style="width: 500px;height: 400px;"> -->
-    <a href="../../static/images/ReportImages/author_probability.png">Click Here</a>
-  </div>
   <div>
     <span><p>Calibration Curve</p></span>
     <img src="../../static/images/ReportImages/calibration.png" alt="calibration.png">
