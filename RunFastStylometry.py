@@ -9,7 +9,6 @@ from faststylometry import load_corpus_from_folder
 from faststylometry import tokenise_remove_pronouns_en
 from faststylometry import calculate_burrows_delta
 from faststylometry import predict_proba, calibrate, get_calibration_curve
-#from faststylometry import convertTohtml
 
 def fastStyle():
     # In[ ]:
@@ -39,6 +38,7 @@ def fastStyle():
 
     calculate_burrows_delta(train_corpus, test_corpus, vocab_size = 50)
     print(calculate_burrows_delta(train_corpus, test_corpus, vocab_size = 50))
+    print(type(calculate_burrows_delta(train_corpus, test_corpus, vocab_size = 50)))
 
 
     # In[ ]:

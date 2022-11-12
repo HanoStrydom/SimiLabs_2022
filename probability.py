@@ -70,5 +70,6 @@ def predict_proba(train_corpus: Corpus, test_corpus: Corpus) -> pd.DataFrame:
         df_probas[df_delta.columns[test_author_idx]] = list(values)
 
     df_probas.index = df_delta.index
+    
 
     return df_probas

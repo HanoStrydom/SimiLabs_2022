@@ -1,9 +1,9 @@
 import operator
 from collections import Counter
 
+import dataframe_image as dfi
 import numpy as np
 import pandas as pd
-
 from faststylometry import Corpus
 
 
@@ -156,5 +156,6 @@ def calculate_burrows_delta(train_corpus: Corpus, test_corpus: Corpus, vocab_siz
             test_author_idx].abs().mean(axis=1)
 
     df_delta = pd.concat(deltas, axis=1)
+    dfi.export(df_delta, 'df_delta.png')
 
     return df_delta
