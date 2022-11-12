@@ -72,6 +72,8 @@ def fastStyle():
     import numpy as np
     x_values =  np.arange(0, 3, 0.1)
 
+    import matplotlib
+    matplotlib.use('agg')
     import matplotlib.pyplot as plt
 
 

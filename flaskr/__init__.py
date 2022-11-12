@@ -51,7 +51,7 @@ def create_app(test_config=None):
     # Gets the current directory
     # path = os.getcwd()
     # UPLOAD_FOLDER = os.path.join(path, os.getenv('UPLOAD_DIR'))
-    UPLOAD_FOLDER = os.getenv('UPLOAD_IMG')
+    UPLOAD_IMG = os.getenv('UPLOAD_IMG')
     UPLOAD_PDF = os.getenv('UPLOAD_PDF')
     UPLOAD_REPORT = os.getenv('UPLOAD_REPORT')
     UPLOAD_STYLO = os.getenv('UPLOAD_STYLO')
@@ -63,10 +63,10 @@ def create_app(test_config=None):
     mysql = MySQL(app)
 
     # insert if uploading to folder
-    if not os.path.isdir(UPLOAD_FOLDER):
-        os.mkdir(UPLOAD_FOLDER)
+    # if not os.path.isdir(UPLOAD_FOLDER):
+    #     os.mkdir(UPLOAD_FOLDER)
 
-    app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+    app.config['UPLOAD_IMG'] = UPLOAD_IMG
     app.config['UPLOAD_PDF'] = UPLOAD_PDF
     app.config['UPLOAD_REPORT'] = UPLOAD_REPORT
     app.config['UPLOAD_STYLO'] = UPLOAD_STYLO
@@ -303,7 +303,6 @@ def create_app(test_config=None):
             # Extracting text from comparsion document
             if doc2.filename.endswith('.docx'):
                 docName = secure_filename(doc2.filename)
-                doc2.save(os.path.join(app.config['UPLOAD_FOLDER'], docName))
                 file2 = docx2txt.process(doc2)
             elif doc2.filename.endswith('.pdf'):
                 pdfReader = PyPDF2.PdfFileReader(doc2)
