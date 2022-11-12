@@ -125,7 +125,6 @@ def create_app(test_config=None):
         if request.method == 'POST' and 'username' in request.form and 'password' in request.form:
             username = request.form['username']
             password = request.form['password']
-            # db = get_db()
             cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
             cursor.execute('SELECT * FROM accounts WHERE username = %s', ([username]))
             account = cursor.fetchone()
@@ -137,21 +136,10 @@ def create_app(test_config=None):
                 session['loggedin'] = True
                 session['id'] = account['id']
                 session['username'] = account['username']
-                msg = 'Logged in successfully !'
+                msg = 'Logged in successfully!'
                 return render_template('/home/home.html', msg = msg)
         return render_template('auth/authLogin.html', msg=msg)
 
-    @app.route('/logout')
-    def logout():
-        # protecting your api endpoints
-        for key in list(session.keys()):
-            if session.key == "session":
-                session["session"].clear()
-            session.pop(key)
-        # response.delete_cookie('session')
-        session.clear()
-        print(f"Session: {session['session']}")
-        return redirect(url_for('authLogin'))
 
     @app.route('/auth/authRegister', methods=('GET', 'POST'))
     def register():
@@ -173,13 +161,30 @@ def create_app(test_config=None):
             else:
                 cursor.execute('INSERT INTO accounts VALUES (NULL,% s, % s)', ([username], [generate_password_hash(password)]))
                 mysql.connection.commit()
-                msg = 'You have successfully registered !'
+                cursor.execute('SELECT * FROM accounts WHERE username = %s', ([username]))
+                account = cursor.fetchone()
+                session['loggedin'] = True
+                session['id'] = account['id']
+                session['username'] = account['username']
+                msg = 'Logged in successfully!'
                 return render_template('/home/home.html', msg = msg)
         elif request.method == 'POST':
             msg = 'Please fill out the form !'
         return render_template('auth/authRegister.html', msg=msg)
 
+    @app.route('/logout')
+    def logout():
+        # protecting your api endpoints
+        for key in list(session.keys()):
+            if session.key == "session":
+                session["session"].clear()
+            session.pop(key)
+        # response.delete_cookie('session')
+        session.clear()
+        print(f"Session: {session['session']}")
+        return redirect(url_for('authLogin'))
     @app.route('/QuickText')
+
     def QuickText():
         if 'loggedin' not in session:
             return render_template('auth/authLogin.html')
