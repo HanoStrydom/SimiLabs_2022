@@ -1,0 +1,195 @@
+Guidelines for project planning and research proposal.
+
+The research proposal will be chapter 1 in your final document. Use the template provided on eFundi. Details and examples available on eFundi.
+
+General guidelines
+Length:  approximately 8 to 15 pages.
+Font size:  10 to 12.
+Spacing:  1.5.
+
+
+Title
+It must describe the topic meaningfully and refer to the main aspects of the study as far as possible. The title must preferably not be longer than 12 words.
+
+
+
+First page
+Title of project
+Module code
+Name of student
+Degree and year, for example, BSc Hons 2022
+Name of supervisor(s)
+Subject group e.g. Computer Science and Information Systems 
+Potchefstroom Campus NWU
+
+
+
+Table of contents and page numbers
+
+
+
+Introduction
+A brief description of what the project is about and what it involves. Explain the aim of this chapter and mention the sections that will follow.
+
+
+Background
+
+Typically, the background of a study includes a review of the existing literature on the area of your research, leading up to your topic. Once you have discussed the contribution of other researchers in the field, you can identify gaps in understanding, that is, areas that have not been addressed in these studies. You can then explain how your study will address these gaps and how it will contribute to the existing knowledge in the field. Overview of related literature with key references.
+
+
+Problem description and background
+Description of research problem and its rationale. Justification for the proposed study.  
+A clear research question, and the extent to which this study will help to answer the research question or what the contribution will be to the field of research (expected outcomes).
+
+
+Paradigmatic perspective
+Mention the research paradigm and methods that will be used – provide justification.
+
+
+Aims and objectives of project
+Aims:  write down general statements regarding what you would like to achieve with this project.
+Objectives:  itemise the specific tasks that you will execute to achieve the aims.
+
+
+Research methodology  
+Mention the data collection mechanism and processing that will be done (if applicable).
+Mention the artefact that must be produced and the life cycle that will be followed (if applicable).
+Explain how this project is integrated with group members’ projects (if applicable).
+If this is a continuation of a previous project, an indication must be given of how it will be improved and expanded.
+
+
+Rigour / validity and reliability
+How do you intent to show that the appropriate process has been used, the findings come from the data and answer the research question.
+
+
+Ethical and legal implications and dealing with these
+What is the ethical implications of your research and how will you address this?
+
+
+Approach to project management and project plan 
+Include a comprehensive project plan – provide graphical representation (e.g. Gantt chart).
+State clearly the scope, limitations – also present risk analysis.
+Refer to responsibility and contribution of each group member.
+
+
+Provisional chapter division
+
+
+Summary 
+
+
+References
+
+
+
+ITRI671			Project plan and research proposal			 /100
+
+Student: L. ANTHONY 32969694
+
+Title: Stream data from Arduino to streaming platform to perform data analytics on dashboard
+
+Introduction
+A brief description of what the project is about and what it involves. Explain the aim of this chapter and mention the sections that will follow.
+
+/5
+
+5
+
+Background 
+Overview of related literature with key references. Gaps that have not been addressed in these studies. 
+
+/10
+
+
+
+9
+
+Problem statement 
+Rationale/description of problem.
+
+/5
+
+4
+
+Paradigmatic perspective
+Mention the research paradigm and methods that will be used and provide justification.
+
+/5
+
+5
+
+Aims and objectives of project
+Aims:  general statements. Objectives:  specific tasks to achieve the aims.
+
+/10
+
+10
+
+Research methodology 
+Research methods explained. Data collection and processing where applicable. Artefact and the life cycle that will be followed where applicable. Description of development platform, resources, and environments that will be used (where applicable).
+
+/10
+
+8
+
+Rigour / validity and reliability
+
+The student should show that he / she is aware of the importance of this, and how this will be addressed in this research.
+
+/5
+
+3
+
+Ethical and legal implications and dealing with these
+What is the ethical implications of this research and how will it be addressed?
+
+/5
+
+4
+
+Approach to project management and project plan 
+Comprehensive project plan, using graphical presentation.  Scope, limitations, and risks of project.  Responsibility of group members where applicable.
+
+/10
+
+7
+
+Provisional chapter division
+
+/5
+
+4
+
+References
+
+Are there sufficient references? Are there different types of references (e.g. articles, books, Internet etc.). Are there enough recent references? Is referencing done correct throughout the proposal / chapter? Is references listed in correct format?
+
+/10
+
+7
+
+Summary
+
+/5
+
+4
+
+Technical issues, language etc.
+
+Structure of the document, formatting, language, impact etc. 
+
+/15
+
+13
+
+
+
+Comments
+
+Leave open lines to organise your thoughts in introduction. Never submit a document with comments in as final assignment. Your risk assessment is too long. Refine your methodology to include the tools etc. which you are using – try not to give too much info not required. Your references are not quite enough. I the URL is so long, rather omit it.
+
+Overall, very well done! 83/100
+
+ 
+
+4
