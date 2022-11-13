@@ -291,6 +291,7 @@ def create_app(test_config=None):
             if doc1.filename.endswith('.docx'):
                 filenamedoc = secure_filename(doc1.filename)
                 file1 = docx2txt.process(doc1)
+                file1Length = len(file1.split())
             elif doc1.filename.endswith('.pdf'):
                 pdfReader = PyPDF2.PdfFileReader(doc1)
                 count = pdfReader.numPages
@@ -300,15 +301,18 @@ def create_app(test_config=None):
                     file1 += page.extractText() 
                 filenamePDF = secure_filename(doc1.filename)
                 # file1 = pageObj.extractText()
+                file1Length = len(file1.split())
             else:
                 filenametxt = secure_filename(doc1.filename)
                 doc1.seek(0)
                 file1 = doc1.read().decode("utf-8")
+                file1Length = len(file1.split())
             
             # Extracting text from comparsion document
             if doc2.filename.endswith('.docx'):
                 docName = secure_filename(doc2.filename)
                 file2 = docx2txt.process(doc2)
+                file2Length = len(file2.split())
             elif doc2.filename.endswith('.pdf'):
                 pdfReader = PyPDF2.PdfFileReader(doc2)
                 count = pdfReader.numPages
@@ -317,10 +321,12 @@ def create_app(test_config=None):
                     page = pdfReader.getPage(i)
                     file2 += page.extractText() 
                 pdfName = secure_filename(doc2.filename)
+                file2Length = len(file2.split())
             else:
                 txtName = secure_filename(doc2.filename)
                 doc2.seek(0)
                 file2 = doc2.read().decode("utf-8")
+                file2Length = len(file2.split())
             
 
         except Exception as e:
@@ -391,7 +397,7 @@ def create_app(test_config=None):
         
         return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarityJac=percentageJaccard,
         similarityCos=percentageCosine,colorCos=colorCosine, colorJac = colorJaccard , metadata = meta_data, rowColor = rowColor , 
-        JaccardTooltip = JaccardTooltip, CosineTooltip = CosineTooltip)
+        JaccardTooltip = JaccardTooltip, CosineTooltip = CosineTooltip,file1Length=file1Length, file2Length=file2Length)
         
     def highlight(s, regexes):
         """Highlight all instances of regexes in s."""
