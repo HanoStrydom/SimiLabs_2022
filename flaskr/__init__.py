@@ -29,9 +29,9 @@ from flaskr.extractmetadata import getMetaDataDoc,getMetaDataPDF, getRowColor
 from flask import send_from_directory
 
 from fpdf import FPDF
-
-# Delete if broken
 from RunFastStylometry import fastStyle
+
+from flaskr.countWords import countWords
 
 # NB!!! Remember to gitignore the .env file!
 load_dotenv()
@@ -286,6 +286,7 @@ def create_app(test_config=None):
         try:
             doc1 = request.files["file1"]
             doc2 = request.files["file2"]
+            
 
             # Extracting text from alleged document
             if doc1.filename.endswith('.docx'):
@@ -395,6 +396,9 @@ def create_app(test_config=None):
         WriteToPDF(percentageJaccard, percentageCosine, meta_data[0], meta_data[2], meta_data[1], meta_data[3], doc1.filename)
         # pdfDownloadPath = f"{UPLOAD_REPORT}PlagiarismReport.pdf" 
         
+        countWords(file1)
+        
+
         return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarityJac=percentageJaccard,
         similarityCos=percentageCosine,colorCos=colorCosine, colorJac = colorJaccard , metadata = meta_data, rowColor = rowColor , 
         JaccardTooltip = JaccardTooltip, CosineTooltip = CosineTooltip,file1Length=file1Length, file2Length=file2Length)
