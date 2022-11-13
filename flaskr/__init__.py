@@ -31,7 +31,7 @@ from flask import send_from_directory
 from fpdf import FPDF
 from RunFastStylometry import fastStyle
 
-from flaskr.countWords import countWords
+from flaskr.countWords import countWords1,countWords2
 
 # NB!!! Remember to gitignore the .env file!
 load_dotenv()
@@ -396,12 +396,23 @@ def create_app(test_config=None):
         WriteToPDF(percentageJaccard, percentageCosine, meta_data[0], meta_data[2], meta_data[1], meta_data[3], doc1.filename)
         # pdfDownloadPath = f"{UPLOAD_REPORT}PlagiarismReport.pdf" 
         
-        countWords(file1)
-        
+        countWords1(file1)
+        countWords2(file2)
 
+        #Read content from file and store in variable
+ 
+        CountWordstxt1 = open('./flaskr/WordCount/count.txt', 'r', encoding="utf8")
+        CountWordstxt2 = open('./flaskr/WordCount/count2.txt', 'r', encoding="utf8")
+
+        #Convert CountWords.txt to string
+        CountWords1 = CountWordstxt1.read()
+        CountWords2 = CountWordstxt2.read()
+
+
+        
         return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarityJac=percentageJaccard,
         similarityCos=percentageCosine,colorCos=colorCosine, colorJac = colorJaccard , metadata = meta_data, rowColor = rowColor , 
-        JaccardTooltip = JaccardTooltip, CosineTooltip = CosineTooltip,file1Length=file1Length, file2Length=file2Length)
+        JaccardTooltip = JaccardTooltip, CosineTooltip = CosineTooltip,file1Length=file1Length, file2Length=file2Length, Test1 = CountWords1, Test2 = CountWords2)
         
     def highlight(s, regexes):
         """Highlight all instances of regexes in s."""

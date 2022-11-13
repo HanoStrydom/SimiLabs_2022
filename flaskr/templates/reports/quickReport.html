@@ -134,17 +134,17 @@ body {font-family: "Lato", sans-serif}
   });
 </script>
 <br>
-<h2  style="float: left;margin-left: 27em;font-weight: 700"> Words Used Comparison </h2>
+<h2  style="float: left;margin-left: 20em;font-weight: 700"> Words Used Comparison </h2>
 <br>
-<div class="container-fluid">
+<div class="container-fluid" style="height: 60vh;">
   
   <div class="col-6" style="border: 3px solid black; margin: 5px 5px 5px 5px;float: left;background-color: white">
-      
+    <pre>{{ Test1 | safe }}</pre>
   </div>
 
   <!-- Report -->
   <div class="col-6" style="border: 3px solid black; margin: 5px 5px 5px 5px; float: right;background-color: white">
-      
+    <pre>{{ Test2 | safe }}</pre>
   </div>
 </div>
 
