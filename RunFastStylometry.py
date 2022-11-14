@@ -207,6 +207,8 @@ def fastStyle():
     for i in range(len(pca_matrix)):
         plt.text(pca_matrix[i][0], pca_matrix[i][1],"  " + df_z_scores.index[i], alpha=0.5)
 
+    plt.xlabel("Burrows Delta")
+    plt.ylabel('Probability of same author')
     plt.legend()
     plt.savefig('./flaskr/static/images/ReportImages/plot.png', bbox_inches='tight')
 
