@@ -596,8 +596,8 @@ def create_app(test_config=None):
                 UpdateStudent(stdNum, doc1.filename)
             elif request.form.get("ExtensiveText") == "CompareCorpus":
                 print("Compare Corpus")
-                CompareCorpus(stdNum, doc1.filename, boolean)
-                return render_template('reports/extensiveReport.html')
+                extensiveList = CompareCorpus(stdNum, doc1.filename, boolean)
+                return render_template('reports/extensiveReport.html',theList=extensiveList)
            
             print(stdNum)
            

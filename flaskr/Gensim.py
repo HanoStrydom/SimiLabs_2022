@@ -109,8 +109,19 @@ def CompareCorpus(stdNum, fileName, boolean):
     feauture_count = len(dictionary.token2id)
     index2 = similarities.MatrixSimilarity(tfidf[corpus], num_features=feauture_count)
     sim2 = index2[tfidf[vec_bow]]
-    for i in range(len(sim2)):
-        print('Document is similar to document %d: %.2f' % (i+1, sim2[i]))
+    resultlist = []
+    with open(pathJoin + '/Data/' + stdNum + '_docNames.txt') as f:
+        docNames = f.readlines()
+
+    docNames = [x.strip() for x in docNames]
+    for x in range(len(docNames)):
+            resultlist.append('TF-IDF model indicates the document is similar to ' + docNames[x] + 'with a score of: %.2f' % (sim2[x]))
+            resultlist.append('LSI model indicates the document is similar to ' + docNames[x] + 'with a score of: %.2f' % (sims[x]))
+                #for f in range(len(resultlist)):
+                    #print(resultlist[f])
+                    
+    # for i in range(len(sim2)):
+    #     print('Document is similar to document %d: %.2f' % (i+1, sim2[i]))
 
     print("TestMe:" + boolean)
     
@@ -132,6 +143,7 @@ def CompareCorpus(stdNum, fileName, boolean):
             docNames = open(pathJoin + '/Data/' + stdNum + '_docNames.txt', "w", encoding="utf-8")
             docNames.write(fileName + '\n')
             docNames.close()
+    return resultlist    
 
 """Update Student"""
 def UpdateStudent(stdNum, fileName):
