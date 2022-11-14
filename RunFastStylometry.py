@@ -17,7 +17,7 @@ def fastStyle():
     train_corpus = load_corpus_from_folder("data/train")
 
     train_corpus.tokenise(tokenise_remove_pronouns_en)
-    print(train_corpus)
+    # print(train_corpus)
 
 
     # In[ ]:
@@ -30,7 +30,7 @@ def fastStyle():
     # You can set pattern to a string value to just load a subset of the corpus.
 
     test_corpus.tokenise(tokenise_remove_pronouns_en)
-    print(test_corpus)
+    # print(test_corpus)
 
 
     # In[ ]:
@@ -38,8 +38,8 @@ def fastStyle():
 
 
     calculate_burrows_delta(train_corpus, test_corpus, vocab_size = 50)
-    print(calculate_burrows_delta(train_corpus, test_corpus, vocab_size = 50))
-    print(type(calculate_burrows_delta(train_corpus, test_corpus, vocab_size = 50)))
+    # print(calculate_burrows_delta(train_corpus, test_corpus, vocab_size = 50))
+    # print(type(calculate_burrows_delta(train_corpus, test_corpus, vocab_size = 50)))
     dfi.export(calculate_burrows_delta(train_corpus, test_corpus, vocab_size = 50), './flaskr/static/images/ReportImages/delta_score.png')
 
 
@@ -60,7 +60,7 @@ def fastStyle():
     import dataframe_image as dfi
 
     predict_proba(train_corpus, test_corpus)
-    print(predict_proba(train_corpus, test_corpus))
+    # print(predict_proba(train_corpus, test_corpus))
     dfi.export(predict_proba(train_corpus, test_corpus), './flaskr/static/images/ReportImages/author_probability.png') 
 
 

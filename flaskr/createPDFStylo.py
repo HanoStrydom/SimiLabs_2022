@@ -20,12 +20,12 @@ def WriteToPDFStylo(student_number):
         
         pdf.multi_cell(200, 10, txt = "Burrows delta score", align = 'C')
         pdf.multi_cell(200, 10, txt = "", align = 'L')
-        pdf.image(f"{os.getenv('UPLOAD_IMG')}SimiLabs_2022/flaskr/static/images/ReportImages/delta_score.png", w = 500, h = 50)
+        pdf.image(f"{os.getenv('UPLOAD_IMG')}SimiLabs_2022/flaskr/static/images/ReportImages/delta_score.png")
         pdf.multi_cell(200, 10, txt = burrows_delta, align = 'L')
         
         pdf.multi_cell(200, 10, txt = " ", align = 'C')
         pdf.multi_cell(200, 10, txt = "Authorship score", align = 'L')
-        pdf.image(f"{os.getenv('UPLOAD_IMG')}SimiLabs_2022/flaskr/static/images/ReportImages/author_probability.png", w = 500, h = 50)
+        pdf.image(f"{os.getenv('UPLOAD_IMG')}SimiLabs_2022/flaskr/static/images/ReportImages/author_probability.png")
         pdf.multi_cell(200, 10, txt = authorship_score, align = 'L')
 
         pdf.multi_cell(200, 10, txt = " ", align = 'C')
