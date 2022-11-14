@@ -26,7 +26,6 @@ def countWords1(doc):
             d[word] = 1
     counter = 0
     for key in sorted(d, key=d.get, reverse=True):
-        print(key, ":", d[key])
         with open('./flaskr/WordCount/count.txt', 'a', encoding="utf8") as f:
                 f.write(key + " : " + str(d[key]) + "\n")
                 counter = counter + 1
@@ -59,7 +58,6 @@ def countWords2(doc):
             d[word] = 1
     counter = 0
     for key in sorted(d, key=d.get, reverse=True):
-        print(key, ":", d[key])
         with open('./flaskr/WordCount/count2.txt', 'a', encoding="utf8") as f:
                 f.write(key + " : " + str(d[key]) + "\n")
                 counter = counter + 1

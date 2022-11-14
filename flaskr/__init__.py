@@ -364,8 +364,8 @@ def create_app(test_config=None):
         wordcloud2.to_file(f"{imgPath}SimiLabs_2022/flaskr/static/images/WordCloud/wordcloud2.png")       
 
         # Algorithms Description
-        CosineTooltip = "The accuracy for this algorithm works better for smaller documents (<1000 words)"
-        JaccardTooltip = "The accuracy for this algorithm works better for bigger documents (>10000 words)"
+        CosineTooltip = "The accuracy for this algorithm works better for smaller documents (<500 words)"
+        JaccardTooltip = "The accuracy for this algorithm works better for bigger documents (>500 words)"
 
 
         # Calculate the similarity score between the two documents
@@ -408,8 +408,6 @@ def create_app(test_config=None):
         CountWords1 = CountWordstxt1.read()
         CountWords2 = CountWordstxt2.read()
 
-
-        
         return render_template("reports/quickReport.html", file1=highlights1, file2=highlights2, similarityJac=percentageJaccard,
         similarityCos=percentageCosine,colorCos=colorCosine, colorJac = colorJaccard , metadata = meta_data, rowColor = rowColor , 
         JaccardTooltip = JaccardTooltip, CosineTooltip = CosineTooltip,file1Length=file1Length, file2Length=file2Length, Test1 = CountWords1, Test2 = CountWords2)

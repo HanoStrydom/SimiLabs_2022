@@ -1,0 +1,672 @@
+
+
+
+
+
+
+Project Management Methodologies and Failures
+
+
+
+
+H.L Strydom
+  orcid.org/0000-002-2362-6327
+
+
+
+
+
+Lecturer:	Prof. Neels Kruger
+
+
+
+
+
+Student number:
+31597793 
+TABLE OF CONTENTS
+ABBREVIATIONS	IV
+ABSTRACT	1
+CHAPTER 1 - INTRODUCTION	2
+1.1	Introduction	2
+1.2	Background to study	2
+1.3	Problem statement	2
+1.4	Aims and Objectives	3
+1.4.1	Aim	3
+1.4.2	Objectives	3
+1.4.2.1	Governance Framework	3
+1.4.2.2	Bodies of knowledge	3
+1.4.2.3	Methodologies	3
+1.5	Provisional Chapter Division	3
+CHAPTER 2  - LITERATURE REVIEW	4
+2	HEADING 1 WON’T PRINT.  DON’T DELETE – DOING SO WILL LEAD TO INCORRECT NUMBERING.	4
+2.1	Introduction	4
+2.2	Governance Framework	4
+2.2.1	Introduction	4
+2.2.2	COBIT Version	5
+2.2.2.1	COBIT 19	5
+2.2.2.2	Summary	8
+2.3	Bodies of Knowledge	9
+2.3.1	Introduction	9
+2.3.2	Process Groups	9
+2.3.3	Knowledge Areas	11
+2.3.4	Summary	13
+2.4	Methodologies	14
+2.4.1	Introduction	14
+2.4.2	PRINCE2 Methodology	14
+2.4.2.1	Introduction	14
+2.4.2.2	Structure	14
+2.4.2.3	Strengths (KnowledgeHut, 2022)	17
+2.4.2.4	Weaknesses	17
+2.4.2.5	Threats	18
+2.4.2.6	Opportunities	18
+2.4.2.7	Summary	18
+2.4.3	Agile Methodology	19
+2.4.3.1	Introduction	19
+2.4.3.2	Structure	19
+2.4.3.3	Strengths	20
+2.4.3.4	Weaknesses	20
+2.4.3.5	Threats	21
+2.4.3.6	Opportunities	21
+2.4.3.7	Summary	21
+2.4.4	Waterfall Methodology	22
+2.4.4.1	Introduction	22
+2.4.4.2	Structure	22
+2.4.4.3	Strengths (Sharma, 2021)	22
+2.4.4.4	Weaknesses	23
+2.4.4.5	Threats	23
+2.4.4.6	Opportunities	23
+2.4.4.7	Summary	23
+CHAPTER 3  - SUMMARY	24
+CHAPTER 4  - CONCLUSION	26
+BIBLIOGRAPHY	27
+
+ 
+LIST OF TABLES
+Table 1 - Abbreviations	iv
+Table 2 - Factors and Domains Map Table	6
+Table 3 - PRINCE2 Themes	16
+Table 4 - Goal Achievements	25
+ 
+LIST OF FIGURES 
+Figure 1 - Mapping of process groups and knowledge areas (PMI, 2017)	13
+Figure 2 - Waterfall Methodology Phases	22
+
+
+
+
+
+
+
+ABBREVIATIONS 
+Table 1 - Abbreviations
+ICT	Information and Communications Technology
+IT	Information Technology
+BOK	Body of Knowledge
+PMBOK	Project Management Body of Knowledge
+COBIT	Control Objectives for Information and Related Technologies
+ISACA	Information Systems Audit and Control Association
+ITIL	Information Technology Infrastructure Library
+ISO	International Organization for Standardization
+ITSM	Information Technology Service management 
+APO
+Align, Plan, Organize
+BAI
+Build, Acquire, Implement
+DSS
+Deliver, Service, Support
+MEA
+Monitor, Evaluate, Assess
+SWOT	Strengths,  Weaknesses, Opportunities, Threats 
+PRINCE2	Projects IN Controlled Environments
+
+
+
+
+
+ DEFINITIONS
+
+APO	“Addresses the overall organization, strategy and supporting activities for I&T” (ISACA, 2019).
+BAI	“Treats the definition, acquisition, and implementation of I&T solutions and their integration in business processes” (ISACA, 2019).
+DSS	“Addresses the operational delivery and support of I&T services, including Security” (ISACA, 2019).
+MEA	“Addresses performance monitoring and conformance of I&T with internal performance targets, internal control objectives and external requirements.” (ISACA, 2019).
+Hand-in-hand	“Closely associated or connected” (OxfordLanguages, 2022)
+
+
+
+
+
+
+
+
+
+ 
+ABSTRACT
+
+Projects management has been around for thousands of years. There are many project management methodologies that can be used in projects. A question that needs to be answered if whether there is a project management methodology that achieves the 3 goals of a successful project and will still be applicable in the next three to five years. 
+In this research paper there will be looked at a governance framework, body of knowledge, and 3 methodologies. A discussion is done about the structure of COBIT and PMBOK, and the importance of stakeholders, portfolios, programs, and projects. Afterwards are looked at three methodologies. A SWOT analysis is done on all three and determined that all three can be implemented to achieve the goals of a project, and still be applicable over the next three to five years.
+
+
+Keywords
+COBIT, PMBOK, SWOT Analysis, Agile, Waterfall, PRINCE2  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CHAPTER 1 - INTRODUCTION
+1.1	Introduction
+This research project seeks to identify the best relevant project management methodologies that can be utilized over the next three to five years, and to determine whether these methodologies really is applicable over this time period. Internal and external client requirements and  the forces the client represent needs to be considered. Organisations, portfolios, programs, and project managers will be discussed, and it will be made clear how it would maximise the opportunities and minimise the threats of the project management methodologies. 
+There will also be looked at governance frameworks and bodies of knowledge that comes with these methodologies, and that also needs to be addressed in order for a project to be called a success. 
+This Chapter will cover the background to the study, the problem statement, aims, objectives, provisional Chapter divisions, and finally a summary. 
+1.2	Background to study
+Projects management has been done for thousands of years. But only in the 1900’s, was project management formally defined and certain criteria had to be met (Kwak, 2005). Since then, numerous project management methodologies were created, each used for different projects. A lot of projects fail, even though these methodologies are followed perfectly. In order for a project to be called a success, three  goals needs to be met, namely: scope, time, and cost goals, also known as the budget. These are often called the triple constraints (Somers and Nelson, 2001). 
+A study was done, and it was determined that 16.2% of the projects part of the study has met these requirements. The same study showed that 31% of these projects outright failed (Alami, 2016). Using this information and statistics, it is clear that a large portion of projects and ICT innovations face shorter life spans or is rapidly replaced or declared obsolete. 
+1.3	Problem statement
+As stated in the study background, a large portion of projects fail, even though the methodologies are followed precisely. The question that needs to be answered, is whether projects fail because of outdated methodologies, or are there other underlying factors. 
+In this research project, a study will be done to determine whether there are project management methodologies that can be used over the next three to five years. 
+
+1.4	Aims and Objectives
+1.4.1	Aim
+The main aim of this project is to determine if there are project management methodologies that will be applicable over the next three to five years
+1.4.2	Objectives
+In order for the aim to be reached, certain objectives needs to be met:
+1.4.2.1	Governance Framework
+A clear governance framework should be chosen and discussed that will be used with certain methodologies. This will help with the audit of IT projects and making sure that best practice is achieved. 
+1.4.2.2	Bodies of knowledge
+These are standard guidelines for project management, making it easier for projects to be managed correctly. There are a few bodies of knowledge that can be used with project management methodologies, but only one will be chosen for the purpose of this study. 
+1.4.2.3	Methodologies
+A few project management methodologies will be named and discussed according to the governance framework and body of knowledge. A Strength, weakness, opportunity, and threats analysis, more commonly known as the SWOT Analysis, will be done on each methodology to determine which of these methodologies are applicable for the next three to five years.
+1.5	Provisional Chapter Division
+•	Chapter 1 - Introduction
+•	Chapter 2 - Literature Study
+•	Chapter 3 - Conclusion
+•	Chapter 4 - Recommendation
+•	Bibliography 
+
+
+
+
+
+
+CHAPTER 2  - LITERATURE REVIEW
+2	Heading 1 won’t print.  Don’t delete – doing so will lead to incorrect numbering.
+2.1	Introduction
+Several factors must be reviewed to determine whether there is a project management methodology that can be employed within the next three to five years. For the project to be adequately audited, there must be a governance framework in place, as well as the appropriate knowledge areas and processes given by a body of knowledge. 
+2.2	Governance Framework
+2.2.1	Introduction
+There are several governance frameworks, each with different definitions, scopes, approaches, goals, and focusses. Choosing a governance framework is very important, but it is more important to choose the right framework for the goals you want to achieve. Governance ensures that stakeholder needs are met, project direction and decision making is clear, and it is easy to monitor performance (ISACA, 2019).
+Some governance frameworks that are normally used in organisations are “Information Technology Infrastructure Library”, “Control Objectives for Information and Related Technologies” and “International Organization for Standardization”. From herein out it will be referred to as ITIL, COBIT and ISO. 
+ITIL’s main focus is on IT service Management, and has a service management lifecycle (Dabade, 2012). COBIT is a framework, created by ISACA, that contains the best practices for IT. It is the main framework for IT governance (Sahibudin et al., 2008) and focusses on the whole company, not just ITSM (Simplilearn, 2022). ISO provides thousands of standards that covers many areas, and it specifies how something should operate or interact (Heires, 2008). 
+For the purpose of this research, COBIT will be used as the governance framework because it widely used, and even considered by some as the best governance- and auditing framework. It also has the best integration with the body of knowledge and methodologies that will be discussed.
+It is also important to consider that the governance framework, body of knowledge and methodologies walks hand-in-hand and is not standalone terms. 
+
+2.2.2	COBIT Version
+There are 2 main COBIT frameworks that can be used as the governance framework. Either COBIT 5 or COBIT 19 can be used. 
+The main difference between the two is that COBIT 19 is a more simplified version of COBIT 5 and used the maturity rather than capability. COBIT 19 documentation is also provided, and therefore will used as the governance framework in this project.
+
+2.2.2.1	 COBIT 19
+Note*
+The COBIT 19 Document will be references a lot in this section, seeing it is the main governance framework documentation that will be used to ensure validity and reliability
+Structure
+COBIT 19 has 5 domains, 9 Critical success factors, and 40 processes. Each process has a set of activities and practices. Not all processes will be discussed, only these directly applicable to the research project. 
+
+Critical Success Factors
+There are 7 critical success factors that needs to be satisfied, these factors are also known as the COBIT components of a governance system (ISACA, 2019). The factors are Processes, Organizational Structure, Principles, Policies, Procedures Information, Culture, Ethics, Behaviour, people, skills, competencies, services, infrastructure and lastly applications. A project manager needs to make sure these success factors are satisfied when working on n project, and make sure the methodology is able to satisfy these factors. 
+
+Main Domains
+Stakeholders, portfolios, programs, and projects are all important factors that needs to be considered and discussed when doing project management and choosing a project management. Stakeholders, portfolios, programs, and projects are all part of the domains of COBIT 19.
+The four domains specified in the COBIT 19 framework are APO, BAI, DSS, MEA. These abbreviations are described in Table 1
+The following table maps the factors to the domains and specific processes.
+
+
+
+Table 2 - Factors and Domains Map Table
+Factors	Domain and Practice	Page in COBIT Document
+Stakeholders	APO11 - Managed Quality	125
+Portfolios	APO05 - Managed Portfolio	87
+Programs	BAI01 - Managed Programs	153
+Projects	BAI11 - Managed Projects	221
+Solution	BAI03 - Managed solutions
+identification and build	169
+
+Stakeholders
+Stakeholders are a key to any project because they are the people who invest in the company and projects. There are two types of investors, namely internal and external. Internal stakeholders can be the board members to project managers, where external stakeholders are the clients or investors outside the organization (Dunham, 2016). 
+Governance ensure stakeholder needs, and try to achieve the objectives that was defined with the stakeholders (ISACA, 2019).
+In APO11, it specifies that we need to define and communicate the requirements in the processes and procedures. This makes it possible to control, monitor, and use of practices and standards (ISACA, 2019) set in the governance framework, as well as the bodies of knowledge that will be explained in the next section. 
+The Business Goals needs to be aligned with the IT Goals, and these goals needs to be met in order to keep the stakeholders happy. They provide the funds for the project that is to be managed. It can either be internal stakeholders or external stakeholders. There also needs to be determined what the scope it for the project, and what the project needs to address in the business. Propper planning needs to be done during this section.
+
+Portfolios
+In APO05 it specifies that the goal is to optimise the performance of the overall portfolio of programs. This is where you change the priories and demand (ISACA, 2019). 
+Throughout this process, there will be determined where the funding will come from, and what it will be used for. 
+Some programs may have higher priority, and may need more funding, and the manager or CEO’s can allocate the funds and initiate programs. 
+This investment portfolio is very important, because this is where it is determined what the program and project budget
+ will be. As stated in Chapter 1, for a project to be a success it needs to be on time, according to budget and in scope. 
+Proper planning and management needs to be done, because the programs needs to be monitored and maintained.
+Programs
+This is where the programs from the investment portfolio is managed, and where the programs is coordinated in alignment with the organisation’s goals (ISACA, 2019). This is based on the standard program management approach. A few management practices will be looked at, and it will be made clear that this is very important when it comes to any project and show how it aligns with stakeholders needs and the portfolio, specifically the investment portfolio. 
+•	BAI01.01
+o	The manager should maintain a standard approach for program management. This enables governance, decision-making and delivery management activities. This ensures that there is focused on business- goals and values. 
+•	BAI01.02
+o	This is where a program is initiated, and where the benefits are confirmed, and authorization is obtained. An activity that occurs during this practice is the appointment of a dedicated manager. The manager is responsible for choosing the correct project methodology that will be used throughout this program and the projects thereof. 
+•	BAI01.03
+o	This is where the stakeholder engagement is managed. 
+As stated in the Stakeholders section, stakeholders can either be internal or external, and there needs to be a plan how to communicate with them throughout the life cycle of the projects. The PMBOK can be used in accordance with this section.
+•	BAI01.04
+o	This is where the program plan is developed and maintained. The program plan contains the programs projects. The success factors needs to be in this program plan, to make sure these success factors are satisfied during the programs. 
+
+Projects
+This is where the projects are managed that was initiated. It is based on the standard project management approach. The project outcomes are defined delays, cost and value erosion are reduced, by improving the communication between the manager and business or end users. This can be internal or external clients (ISACA, 2019). The project management approach is the methodology that the manager chooses for the specific project. These methodologies should cover the three goals that is needed to call a project a success: Time, budget, and scope. 
+Important practices under BAI11 are the following:
+
+•	BAI11.01
+o	This is where the manager should maintain a standard approach for project management. The manager should choose a project management methodology that will be used to achieve the three goals previously stated.  
+•	BAI11.02
+o	Ensure the stakeholders have a clear understanding of the scope  and the nature of the project. 
+•	BAI11.03
+o	There should be made sure the communication to the stakeholders are accurate and, consistent and timely. 
+•	BAI11.04
+o	A project plan should be developed and maintained that covers business and IT resources. This project plan can sometimes change during the project, depending on the methodology that is used
+
+Solution
+This is where people, processes and technologies are used in order to deliver products and services. (ISACA, 2019). According to the COBIT 19 framework it should be establish timely and cost-effective solutions, which is in line with the goals of a successful project. 
+
+2.2.2.2	Summary
+Making sure the project adhere to the processes and practices, will make it a lot easier to please stakeholders, and internal or external clients. Following these processes, will also help ensure the 3 goals of scope, time and budget will be achieved. Having a governance framework is very important when you want best practice in you company and make it easier to audit projects. 
+Unfortunately, “best practice” is predictable, and innovation is not. You cannot have best practice and be innovative during the project. 
+
+
+
+2.3	Bodies of Knowledge
+2.3.1	Introduction
+A body of knowledge can be defined as all the concepts, terminology, and actions that comprise a professional domain (Penzenstadler et al., 2013). 
+It is important for a manager of projects to use a set of skills and knowledge to ensure that customers, stakeholders, and other participants in the project are satisfied (PMI, 2017).
+There are a lot of different bodies of knowledge, but the main one used for project management is Project management body of knowledge, more commonly known as PMBOK. This body of knowledge is generally recognized as good practice (PMI, 2017), and we can link the good practise of PMBOK with the best practice of the COBID 19 framework. Again, everything links together. It is important to remember that a project is considered a success when it is on time, in budget and according to scope. Below the structure of PMBOK will be discussed, and it will be made clear how this body of knowledge can be used with the COBIT framework.
+The PMBOK has 5 process groups, 10 knowledge areas and 49 processes (Roussel, 2022).
+
+2.3.2	Process Groups
+The process groups are there to ensure the project objectives are met. The following is the 5 process groups and their definitions.
+
+•	Initiating
+o	During this process group, new projects and their scope are defined. A project manager will also be assigned to the project. Stakeholders are also identified. In the COBIT section of this research document, we Identified that it is important to satisfy the internal and external stakeholders. This allows for more opportunities and minimise the threads to the project. Keeping the stakeholders happy, also ensures that the funs available to the project may be increased if the project shows potential of being successful. Practice BAI01.03 of COBIT 19 refers to Manage Stakeholder engagement, that can be linked to this process group, more specifically Project Communications management in PMBOK. Practice BAI11.02 in COBIT 19, also states that there should be a common understanding of the scope among the stakeholders. 
+
+
+
+
+•	Planning
+o	During this process group, more in depth planning is done to establish the total scope. Objectives are also refined, and a plan is put in place to attain these objectives (PMI, 2017). An important COBIT 19 practise that can be linked to this process group is BAI11.04, where a project plan in developed, where the scope should be clearly defined. An activity under BAI11.04 also states that a project baseline should be established. This baseline includes the successful project goals: budget, time, and scope. During this process group, it is also important to decide on a project management methodology that will be used to ensure the goals are achieved. Project management methodologies will be later discussed, and a SWOT analysis will be done on these methodologies to decide whether those methodologies are applicable for the next three to five years.  
+
+•	Executing
+o	This is a very important process group, because this is where the project plan, and the methodology chosen for the project is executed. According to PMBOK, this process group is very important everything needed to meet the project requirements and objectives is done according to the plan designed in the previous process group. 
+
+•	Monitor and Control
+o	This process group handles the tracking, reviewing and regulating the processes and performance of projects, and identify any changes that should be made to the project plan (PMI, 2017). This can be linked to BAI11.04 of COBIT 19, where it was shown that the project plan should be maintained and can sometimes change during the project. 
+
+•	Closing
+o	This is where a project is formally closed or completed. Hopefully when following the COBIT 19 framework, the PMBOK and a project methodology that fits the project and scope, the project would be a success. 
+
+
+
+
+
+
+2.3.3	Knowledge Areas
+A knowledge area is a collection of processes that are associated with a certain topic in project management, and are used on almost all projects. (PMI, 2017). Below is a description of the 10 knowledge areas: To ensure reliability and validity, these knowledge areas are gathered from PMBOK.
+
+•	Project Integration management
+o	Identifies, defines, combines, unifies, and coordinates the many processes and project management activities inside the Project Management Process Groups (PMI, 2017). This enables the management of a project as a whole, and not bits and pieces (Roussel, 2022)
+•	Project Scope management
+o	Contains the processes necessary to guarantee that the project includes all of the work required to successfully complete the project (PMI, 2017). 
+•	Project Schedule Management
+o	This includes process that are required to understand the time commitment of the people working on the project. It also provides a timeframe of the project (Roussel, 2022). 
+•	Project Cost Management.
+o	This is the processes that determines the budget of each task. It should also include the where the funding is coming from, like the internal of external stakeholders, and what is being done with that money. 
+•	Project Quality Management
+o	Incorporates the procedures for implementing the organization's quality policy regarding the planning, management, control of project and product quality requirements in order to fulfil the expectations of stakeholders (PMI, 2017). This allows the result to be in line with the scope and expectations. 
+•	Project Resource Management
+o	Resources provided for the project must be managed correctly and efficiently to maximise the opportunities and complete the project successfully. 
+•	Project Communications management
+o	Involves the processes that the manager must follow to keep the stakeholders up to date and informed with what is happening during the project. This processes also required to ensure timely and appropriate planning (PMI, 2017).
+
+
+•	Project Risk Management
+o	Processes covered in this knowledge area enable the management to conduct a risk assessment, such as a SWOT analysis, in order to evaluate the potential risks associated with the project.
+•	Project Procurement Management
+o	This is the processes that is needed to purchase the products, services or results needed. A wise man one said that a manager should be able to know when to buy, build, modify or disregard a project or solution (Kruger, 2022). 
+•	Project Stakeholder Management
+o	This is the processes needed to identify everyone that can be affected by the project or impact the project. Stakeholders expectations must be met, and their impact on the project is very important (PMI, 2017). 
+
+Below is a mapping between the Process Groups, processes and the 10 knowledge areas. 
+
+ 
+Figure 1 - Mapping of process groups and knowledge areas (PMI, 2017)
+2.3.4	Summary
+Hopefully the above explanation of PMBOK shines light on how important it is for a manager to follow the body of knowledge. This PMBOK is applicable to almost any project, using any project methodology that will be discussed in the next part of this research. 
+Applying the processes in Figure 1 is very important for a manager to plan, cater and manage a project in order to maximise the opportunities, and minimise the threats. 
+
+
+
+
+ 
+2.4	Methodologies
+2.4.1	Introduction
+During a project, any of several project management methodologies can be implemented. The majority of managers feel it boils down to individual preference. In accordance with the COBIT 19 framework and the Project management body of knowledge, the primary objective of this section is to identify the most effective project management approach for usage over the next three to five years.
+PRINCE2, AGILE, and WATERFALL are three methodologies that are frequently employed in practice. A SWOT analysis will be conducted on each of the approaches to assess if they will maximize opportunities and minimize threats over the next years.
+
+A SWOT analysis is a technique for identifying the internal and external strengths, weaknesses, opportunities, and threats that affect a project. Strengths and Weaknesses are considered internal, while Opportunities and threats are considered external (Paquet, 2018).
+
+2.4.2	PRINCE2 Methodology
+2.4.2.1	Introduction
+PRINCE2 is a methodology that stand for “Projects IN Controlled Environments” (Wideman, 2002), and is a framework that divides projects into smaller, more manageable pieces. The project life cycle is managed by the seven processes of PRINCE2 (Malsam, 2021).  
+PRINCE2 has been around for about 30 years (ILXGroup, 2022).
+2.4.2.2	Structure
+It is important to know the structure and a basic working of this Methodology, to better understand the SWOT analysis done afterwards. 
+PRINCE2 has seven principles, seven themes and seven processes
+
+Seven principles (AXELOS, 2017):
+•	Continued Business Justification
+o	There must be a justifiable reason to start a project. An important document is the Business case. This document is used through the life cycle of the project.
+ 
+
+
+•	Learn from Experience
+o	It is important to learn from al the projects worked on. Learning past mistakes is very important to avoid making the same mistakes in future projects. 
+
+•	Roles and Responsibilities Are defined
+o	During a project, members can take on more than one role, and even share rolls. 
+
+•	Manage by Stages
+o	Using the PRINCE2 methodology, the project is divided into smaller parts call stages. After each stage is finished in the life cycle, the project plan is updated. 
+
+•	Manage by Exception
+o	Putting it plainly, this is how much authority each project member has in their area. These ‘authority’ is called tolerance and can be adjusted if exceeded. 
+
+•	Focus on Products
+o	The quality of the deliverables must be good. 
+
+•	Tailor to Suit Project Environment
+o	The PRINCE2 methodology must be tailored to fit the specific project. 
+ 
+Seven Themes (AXELOS, 2017):
+Table 3 - PRINCE2 Themes
+Themes	Description	Question answered
+Business Case	Linked to the business justification principle. Answers the question of why the project is important. 	Why?
+Organization	Linked to roles and responsibility principle. Answers the questions of who has what role in the project. 	Who?
+Quality	Linked to focus on product. Answers the question of what the quality is of the project. 	What?
+Plans	Answers the question of how the goals of the project is achieved	How?
+Risk	This theme is about identifying, assess and control uncertain events that may occur during a project. 	What if?
+Change	The question is answered of what impact the change has on the project and how to handle these changes	Impact?
+Progress	The project progression needs to be tracked, in order to stay on track to achieve the project goal of delivering the solution in time. 	Where are we now?
+
+
+Seven Processes (AXELOS, 2017):
+The processes of the PRINCE2 methodology is similar to the process groups in PMBOK. 
+The following are the seven processes:
+•	Starting a project
+o	A purpose for the project needs to be clear, and this contributes to the scope of the project. 
+•	Initiating a project
+o	At this stage, the project manager how the performance targets will be managed. 
+•	Directing a project
+o	This is the whole process from the beginning to the end of a project
+•	Controlling a stage
+o	The responsibility of the project manager to divide the project into smaller, more manageable stages.
+
+
+•	Managing Product delivery
+o	This is more about the communication between the managers and delivering deliverables.
+•	Managing stage boundaries
+o	 The project manager and the stakeholders reviews every stage.
+•	Closing a project
+o	Decommission the project
+
+2.4.2.3	Strengths (KnowledgeHut, 2022)
+•	Easy to stay on track
+o	One of the goals of a successful project is to deliver the project on time. Using PRINCE2, project is divided into smaller and more manageable stages, that makes it easier to accomplish in time.
+
+•	  Good Quality and Best Practice
+o	After each stage, the manager and stakeholders decide whether or not the outcomes are fulfilled. Using PRINCE2 along with a governance framework such as COBIT19 or ITIL, ensures best practice. 
+
+•	Reliable
+o	This is a very important advantage, because it plays a huge part in the project question of is there a methodology that is applicable for the next three to five years. PRINCE2 has been around for around 30 years, and according to PRINCE2.com, 88% of professionals said that this methodology helped them in their managing career (ILXGroup, 2022). 
+
+2.4.2.4	Weaknesses
+•	Documentation
+o	Although PRINCE2 allows for good quality projects, this methodology has a lot of documentation along with the project life cycle (KissFlow, 2021). 
+
+•	Difficult without training and guidance
+o	In order to apply PRINCE2 in a project, proper training and certification needs to be done, this can be expensive and time consuming (ILXGroup, 2022).
+ 
+2.4.2.5	Threats
+There are a lot of threats and risks that can be encountered during a project, but PRINCE2 has certain responses, to avoid and reduce these risks. Therefor the risks of this methodology is not as much as other methodologies. Common risks are bad defined scope, lack of communication and obsolete business case. Fortunately, PRINCE2 addresses this risks with its themes and processes. 
+
+Although most common risks and threats are accounted for, there are still some possible threats are:
+•	Performance
+o	A possible risk of this methodology is that the abundance of documentation, that can consume a lot of time, and affect the overall performance of the project. 
+•	Stakeholders
+o	Stakeholders plays a big part in project management, and stakeholders should be kept up to date with everything. Stakeholders may be difficult to and keep changing the scope of the project. 
+
+2.4.2.6	Opportunities
+•	Freedom
+o	There is more freedom for the management and developers to use the resources available, to finish the project. 
+
+2.4.2.7	Summary
+Using this methodology would allow the project to deliver according to budget but the possible risk of performance, the project might not be delivered on time. PRINCE2 is a methodology that works closely with governance frameworks, as well as a body of knowledge. Allowing managers to plan, cater and manage threats and weaknesses more closely. A big advantage though is that this project has been around for a very long time and is most likely to stay relevant and applicable for the following three to five years. 
+ 
+2.4.3	Agile Methodology
+2.4.3.1	Introduction
+During the agile methodology, the project is divided into stages or sprints, much like PRINCE2. This allows a project to be managed in smaller, more manageable sections. Agile methodology  allows products to be build incrementally and iteratively. This allows the product to change with the help of customer feedback. Customer involvement is very important. The agile manifesto was officially defined in 2001 and is still being used today (AgileManifesto, 2001). 
+2.4.3.2	Structure
+The agile methodology has 4 values and 12 principles. 
+
+Values (Schwalbe, 2019):
+•	Individuals and interactions over processes and tools
+•	Working software over comprehensive documentation
+•	Customer collaboration over contract negotiation
+•	Responding to change over following a plan
+
+Principles (Alliance, 2021):
+•	Satisfy the customer
+•	Changing requirements are welcome
+•	Frequently deliver working software
+•	Customers and developers must communicate and collaborate to create successful projects.
+•	Build projects around motivated individuals
+•	Face-to-face communication
+•	Functional software is the primary indicator of  progress
+•	Promote sustainable development
+•	Checking technical excellence and good design continuously enhances agility
+•	Simplicity
+•	Self-organizing teams
+•	Regular reflections on how to improve performance. 
+
+
+
+
+2.4.3.3	Strengths
+Most, if not all the following strengths are the same as the principles of the agile methodology. But for the purpose of this study, only a few strengths will be named (Shahir et al., 2008): 
+•	Changes are welcome
+o	In the Agile methodology, changes is welcome, because the project and product change depending on the users feedback. 
+•	Meeting stakeholders and client needs
+o	Seeing that after every print, the stakeholders and customer gives feedback, allows the stakeholders to be happy and participate in the project life cycle. This helps the goal of delivering the project in scope. 
+•	Iterative and Incremental development
+o	Help to frequently deliver working increments of the project. This helps with quality insurance.
+•	Rapid Development
+o	Another strength is that using the agile methodology, projects are usually done faster. Helping the goal of delivering a project in time. 
+
+2.4.3.4	Weaknesses
+Weaknesses in the agile methodology are not uncommon, these following are possible weaknesses when using the agile methodology (Shahir et al., 2008):
+•	Communications
+o	One of the principle states that one of the main communication methods is face-to-face. This can be very difficult in some projects. Especially with COVID making more and more projects online. 
+•	Customer Participation
+o	Even though customer and stakeholder participation can be considered as a strength, it can also be a weakness if the customer or stakeholders don’t want to be present all of the time. 
+•	Documentation
+o	Although a lot of documentation can be considered as a weakness, like in PRINCE2, a lack of documentation such as with Agile can be very bad, making it a lot harder for new developers joining the project later on
+
+
+2.4.3.5	Threats
+Certain limitations and threats associated with the Agile Methodology is as follows: 
+•	Lack of Interest
+o	In more traditional companies, managers does not want to use the Agile methodology, because it difficult for new developers to join ongoing projects (Shahir et al., 2008).
+•	Governance frameworks incorporation
+o	It is more difficult to incorporate the Agile methodology with the COBIT 19, than it is for example with PRINCE2. 
+2.4.3.6	Opportunities
+•	There are a lot of opportunities during the project to change the scope and adapt to the new feedback received from stakeholders.
+•	Team Empowerment (Sidra, 2017)
+o	Allowing the manager and developers to have the environment and support they need to accomplish the goals of the project 
+
+2.4.3.7	Summary
+Agile methodology is not a methodology typically used in traditional organisations. Agile methodology allows the project to be according to the scope, although it can change throughout the project, and keep the stakeholders involved and happy. It is more difficult for managers to plan, cater and manage the threats and opportunities, but not impossible.  
+2.4.4	Waterfall Methodology
+2.4.4.1	Introduction
+Unlike the Agile methodology, the waterfall methodology is a sequential or linear approach to project management. The project is divided into phases, and these phases are complete after one another, usually with the sign-off by stakeholders (Sherman, 2015). The waterfall methodology was established in 1970 and is still being used in practice today (Leeron Hooray, 2022). 
+
+2.4.4.2	Structure
+The structure of a Waterfall methodology is typically that of a project life cycle. 
+The waterfall methodology has 6 phases. 
+
+Figure 2 - Waterfall Methodology Phases
+Waterfall Phases Explained 
+Phase 1 	This phase is about understanding the project scope and definition. 
+Phase 2	More in-depth view of the scope and requirements, and an overall architecture is designed. 
+Phase 3	Parts of the project are developed and are integrated into the next phase.
+Phase 4	All the units developed in Phase 3 are integrated into the system after testing. 
+Phase 5	Once the product is functional, the product is released to the stakeholders or customers. 
+Phase 6	Modifications are made afterwards if defects are discovered or when the stakeholders have new requests. 
+
+2.4.4.3	Strengths (Sharma, 2021)
+•	Deadlines
+o	Seeing that the project are divided in specific phases, each phase has specific deadlines, making sure the project will be delivered in time. 
+•	Ease of Use
+o	The normal project life cycle and its phases is easy to understand. New developers can join during the development and be brought up to date quickly. 
+•	Easy to manage
+o	As a manager, it is easy to manage such project, because there are specific goals and deliverables, that won’t change after Phase 1. 
+2.4.4.4	Weaknesses
+•	Changes
+o	After Phase 1, where a scope is defined, and moves to Phase 2, the scope cannot be revisited and changed. 
+•	Little stakeholder and client interaction
+o	The only phase where stakeholders are involved is stage 1. There are a bigger chance that the stakeholders will be unhappy with the end product. 
+
+2.4.4.5	Threats
+•	Too rigid (ITPROJECTMETHODS, 2017)
+o	Traditional software companies may like this methodology, but other industries such as entertainment industries and start-up organizations prefer Agile, because it allows them to revise the scope and make changes where necessary
+
+2.4.4.6	Opportunities
+•	Improve future projects (Sidra, 2017)
+o	Due to adequate documentation in waterfall methodology, it may help to design comparable or even more improved projects in the future
+•	Discipline (ITPROJECTMETHODS, 2017)
+o	Because the developers and manager doesn’t have the same freedom as Agile methodology, rules are followed. 
+
+2.4.4.7	Summary
+The waterfall methodology is the preferred methodology for traditional organisations. Although this methodology allows the project to finish on time, it won’t necessarily be according to scope, seeing that the scope can only be defined in the first Phase of the life cycle, and cannot be revised. 
+As a manager standpoint, it is much easier to manage waterfall projects than it is for agile projects. 
+
+
+
+
+CHAPTER 3  - SUMMARY 
+Looking at the governance frameworks, bodies of knowledge and the methodologies sections of this research project, the following were made clear:
+
+Factors when implementing a methodology:
+1. Organization / Stakeholders
+•	Waterfall
+o	In the waterfall methodology, the scope in only defined in Phase 1. This makes it stakeholder engagement very little, and there is a bigger chance the stakeholders will be unhappy.
+•	Agile
+o	One of the principles of the Agile methodology is to satisfy the customer and stakeholders. After every print, feedback is given from the stakeholders and changes can be made accordingly.
+•	PRINCE2
+o	Much like the Agile methodology, a project are divided into more manageable parts called stages. After the stages, managers and stakeholders will review the results and make changes accordingly. 
+
+2. Portfolio
+•	Waterfall
+o	The budget is defined in the first Phase of the life cycle and cannot be changed throughout the project, making it much more likely to no complete the project on budget
+•	Agile and PRINCE2
+o	Although the budget is also defined in the beginning, with these two methodologies, the budget can be adjusted throughout the project, making it more likely to finish in budget. 
+ 
+3. Program
+•	Waterfall
+o	A program is much easier managed during this methodology, because a standard approach is followed. 
+•	Agile and PRINCE2
+o	It is more difficult to manage these programs but not impossible. 
+
+4. Project
+•	Waterfall
+o	This is quite the same as above with programs. Waterfall methodologies are easier managed. Waterfall methodologies are more used with smaller projects and more traditional organisations.
+•	Agile and PRINCE2
+o	More difficult to manage these projects but can be done. These methodologies are used in organisations that want to be more innovative and focus on the stakeholder needs rather than just finishing a project. 
+
+Goals of a successful project
+The table below indicates what methodologies are more likely to achieve the goals of finishing in time, on budget and according to scope. This is done via using the information in the SWOT analysis:
+Table 4 - Goal Achievements
+	PRINCE2	Agile	Waterfall
+In Time	Yes	Yes	Yes
+On Budget	Yes	Yes	Yes/No
+According to Scope	Yes	Yes	Yes/No
+
+NOTE*
+It is important to note that the table above are the researchers own opinion after looking at the SWOT analysis done on the methodologies. It is not set in stone. 
+
+ 
+CHAPTER 4  - CONCLUSION
+Considering the above factors and goals results got from the SWOT analysis, all these projects are able to complete projects on time, in budget and according to scope. The only real difference between these methodologies is that it is used in different environments. Waterfall is used in more traditional organizations, where PRINCE2 and Agile is used in more innovative, and entertainment organizations. 
+Internal and external stakeholders, portfolios, programs, and projects were discussed and shown how managers should look at the project methodologies to maximise the opportunities and minimise the threats. 
+Lastly, in every methodology, its age was states. All of these methodologies are older than 20 years, and they are all still in use. This answers the question of whether there is a methodology that will still be applicable over the next three to five years. 
+The answer is yes. 
+I believe most project management methodologies that can accomplish the 3 goals of a successful project will still be applicably within the next three to five years. It depends on management preference and the type of organisation that uses the methodology. 
+
+
+ 
+
+
+BIBLIOGRAPHY
+
+AGILEMANIFESTO. 2001. History: The Agile Manifesto [Online]. AgileManifesto.  [Accessed].
+ALAMI, A. 2016. Why do information technology projects fail? Procedia Computer Science, 100, 62-71.
+ALLIANCE, S. 2021. The Key Values and Principles of the Agile Manifesto [Online]. ScrumAlliance.  [Accessed].
+AXELOS 2017. Managing Succesful Projects with PRINCE2, The Stationery Office.
+DABADE, T. D. Information technology infrastructure library (ITIL).  Proceedings of the 4th National Conference, 2012. 25-26.
+DUNHAM, R. 2016. What Is COBIT [Online]. United States: Linford & Co.  [Accessed].
+HEIRES, M. 2008. The international organization for standardization (ISO). New Political Economy, 13, 357-367.
+ILXGROUP. 2022. What is PRINCE2 [Online]. United Kingdom: PRINCE2. Available: https://www.prince2.com/zar/what-is-prince2 [Accessed].
+ISACA 2019. COBIT® 2019 FRAMEWORK: GOVERNANCE AND MANAGEMENT OBJECTIVES. United States.
+ITPROJECTMETHODS. 2017. Agile and Waterfall – a SWOT analysis [Online]. ITPROJECTMETHODS.  [Accessed].
+KISSFLOW. 2021. PRINCE2 Methodology in Project Management – A Complete Overview [Online]. KissFlow.  [Accessed].
+KNOWLEDGEHUT. 2022. Prince2 Certification: Advantages and Disadvantages. Available from: https://www.knowledgehut.com/blog/project-management/prince2-certification-advantages-and-disadvantages.
+KRUGER, N. 2022. IRTI 614. In: STRYDOM, H. (ed.). NWU: Neel Kruger.
+KWAK, Y. H. 2005. A brief history of project management. The story of managing projects: An interdisciplinary approach, 1-9.
+LEERON HOORAY, C. B. 2022. What Is Waterfall Methodology? Here’s How It Can Help Your Project Management Strategy [Online]. USA: Forbes Advisor.  [Accessed].
+MALSAM, W. 2021. What Is PRINCE2? Principles, Aspects, Roles & Processes [Online]. ProjectManager. Available: https://www.projectmanager.com/blog/prince2-methodology [Accessed].
+OXFORDLANGUAGES 2022. Dictionary. Oxford Languages. United Kingdom: Oxford University Press.
+PAQUET, J. 2018. Agile SWOT [Online]. United States: MyAgilePartnet.  [Accessed].
+PENZENSTADLER, B., FERNÁNDEZ, D. M., RICHARDSON, D., CALLELE, D. & WNUK, K. The requirements engineering body of knowledge (rebok).  2013 21st IEEE International Requirements Engineering Conference (RE), 2013. IEEE, 377-379.
+PMI 2017. A guide to the project management body of knowledge (PMBOK guide) / Project Management Institute, United States, Project Management Institute.
+ROUSSEL, J. 2022. PMBOK: Project Management Body of Knowledge. KaiNexis Blog [Online].
+SAHIBUDIN, S., SHARIFI, M. & AYAT, M. Combining ITIL, COBIT and ISO/IEC 27002 in order to design a comprehensive IT framework in organizations.  2008 Second Asia International Conference on Modelling & Simulation (AMS), 2008. IEEE, 749-753.
+SCHWALBE, K. 2019. Information Technology Project Management, United States, Cengage.
+SHAHIR, H. Y., DANESHPAJOUH, S. & RAMSIN, R. Improvement strategies for agile processes: a SWOT analysis approach.  2008 Sixth International Conference on Software Engineering Research, Management and Applications, 2008. IEEE, 221-228.
+SHARMA, L. 2021. WaterFall Model [Online]. Tools QA.  [Accessed].
+SHERMAN, R. 2015. Project Management [Online]. ScienceDirect.  [Accessed].
+SIDRA. 2017. Waterfall vs Agile models: SWOT analysis.
+SIMPLILEARN. 2022. COBIT vs. ITIL®: The Ultimate IT Governance Framework Comparison [Online]. United States: Simplilearn. Available: https://www.simplilearn.com/cobit-vs-itil-article#what_is_itil [Accessed].
+SOMERS, T. M. & NELSON, K. The impact of critical success factors across the stages of enterprise resource planning implementations.  Proceedings of the 34th Annual Hawaii International Conference on System Sciences, 2001. IEEE, 10 pp.
+WIDEMAN, R. M. 2002. Comparing PRINCE2® with PMBoK®. AEW Services, Vancouver, BC, Canada, 13-16.
+
