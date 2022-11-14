@@ -11,6 +11,9 @@
 <link rel="stylesheet" href="/static/text.css">
 <link rel="stylesheet" href="/static/extensiveFooter.css">
 
+<link rel="stylesheet" href="../../static/tooltip.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
 <style>
 body {font-family: "Lato", sans-serif;}
 .mySlides {display: none}
@@ -49,7 +52,7 @@ body {font-family: "Lato", sans-serif;}
 <div class="form-center">
   <form method="post" action="/ExtensiveText" enctype="multipart/form-data">
     <h1> <u> Create Student </u> </h1>
-    <h2> Student Number: </h2> <input type="text" id="stdNum" name="stdNum" placeholder="12345678"> 
+    <h2> Student Number: </h2> <input type="text" id="stdNum" name="stdNum" placeholder="12345678" required> 
     <br>
     
     <p>Upload Comparison Document</p>
@@ -58,7 +61,10 @@ body {font-family: "Lato", sans-serif;}
     <br>
     <input type="radio" name="ExtensiveText" value="CreateStudent" checked> Create Student<br>
     <input type="radio" name="ExtensiveText" value="UpdateStudent"> Update Student<br>
-    <input type="radio" name="ExtensiveText" value="CompareCorpus"> Compare Corpus <br>
+    <input type="radio" name="ExtensiveText" value="CompareCorpus" id="ischecked"> Compare Corpus <br>
+    <br>
+    <input type="checkbox" id="extensiveBox" name="extensiveBox" value="extensiveBox" disabled>
+    <label for="extensiveBox" data-toggle="tooltip" title="Check the box to add the document to the corpus."> Add to corpus</label><br>
     <br>
     <p>
       <input type="submit" value="Submit">
@@ -83,7 +89,16 @@ body {font-family: "Lato", sans-serif;}
 <br>
 <br>
 
-
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="../../static/js/disablecheckbox.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
 
 
 <!-- End Page Content -->

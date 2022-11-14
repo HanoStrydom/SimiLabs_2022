@@ -34,6 +34,8 @@ from RunFastStylometry import fastStyle
 from flaskr.countWords import countWords1,countWords2
 from flaskr.Gensim import CreateStudent,UpdateStudent, CompareCorpus
 
+import shutil
+
 # NB!!! Remember to gitignore the .env file!
 load_dotenv()
 
@@ -551,9 +553,28 @@ def create_app(test_config=None):
         if 'loggedin' not in session:
                 return render_template('auth/authLogin.html')
         if request.method == 'POST':
+            # Clear the GensimTemp folder
+            folder = "./flaskr/GensimTemp"
+            for filename in os.listdir(folder):
+                file_path = os.path.join(folder, filename)
+                try:
+                    if os.path.isfile(file_path) or os.path.islink(file_path):
+                        os.unlink(file_path)
+                    elif os.path.isdir(file_path):
+                        shutil.rmtree(file_path)
+                except Exception as e:
+                    print('Failed to delete %s. Reason: %s' % (file_path, e))
+            
             stdNum = request.form['stdNum']
             doc1 = request.files["ExtensiveStudent"]
             doc1.save(os.path.join("./flaskr/GensimTemp/", doc1.filename))
+            
+            checked = request.form.getlist('extensiveBox')
+            boolean = ""
+            if(checked == ["extensiveBox"]):
+                boolean = "true"
+                print(boolean)
+
             
             if request.form.get("ExtensiveText") == "CreateStudent":
                 print("Create Student")
@@ -563,7 +584,7 @@ def create_app(test_config=None):
                 UpdateStudent(stdNum, doc1.filename)
             elif request.form.get("ExtensiveText") == "CompareCorpus":
                 print("Compare Corpus")
-                CompareCorpus(stdNum, doc1.filename)
+                CompareCorpus(stdNum, doc1.filename, boolean)
                 return render_template('reports/extensiveReport.html')
            
             print(stdNum)

@@ -1,0 +1,167 @@
+Assignment 4
+
+Neural Network training
+
+Hano Strydom
+
+Assignment 4
+
+Neural Network training
+
+Hano Strydom
+
+2022
+
+2022
+
+
+Table of Contents
+
+		1.	What is a neural network?	2
+
+	Supervised Learning:	2
+
+	Unsupervised Learning	2
+
+		2.	Neural Network Layers and Terms	2
+
+	Layers	3
+
+	Input Layer	3
+
+	Hidden Layer	3
+
+	Output Layer	3
+
+	Terms	3
+
+	Weights	3
+
+	Activation Function	3
+
+	Forward Propagation	4
+
+	Backward Propagation	4
+
+		3.	How does a neural network work?	4
+
+	Bibliography	5
+
+
+
+
+
+
+What is a neural network?
+
+Neural networks constitute a subset of machine learning and provide the basis of deep learning techniques (Education, 2020). Neural networks are inspired by the human brain and imitates how real neurons communicate with one another (Trask, 2019), and is also sometimes referred to  as Artificial neural networks. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 1 - AI Layers (Abdul Kadir et al., 2022)
+
+As shown above, Neural Network is a subset of Deep learning, which is a subset of machine learning  (Abdul Kadir et al., 2022). Machine learning have different types of learning, but according to Trask (2019), the two main types of learning is Supervised Learning and Unsupervised Learning. 
+
+Supervised Learning:
+
+Supervised learning aims to map inputs to outputs based on input-output pairings (Mahesh, 2020). Input and training output data are labelled, and the input-output training sample is called labelled training data (Liu & Wu, 2012). Supervised learning uses classification and regression methods (Ghahramani, 2003). 
+
+Unsupervised Learning
+
+Unsupervised learning uses unlabelled, unstructured noise to discover patterns in data (Ghahramani, 2003). Unsupervised learning clusters data using machine learning methods (Cios et al., 2007), like clustering the data into groups (Trask, 2019). 
+
+Neural Network Layers and Terms
+
+Several components and terminologies must be defined before understanding neural networks. Most neural networks consists out of at least three types of layers, namely: Input layer, hidden layer and the output layer (Maind & Wankar, 2014). 
+
+
+
+The following figure shows an example of a simple neural network consisting of the three layers:
+
+
+
+Layers
+
+Input Layer
+
+The input layer is the layer that receives the initial data for the neural network (Ognjanovski, 2019). 
+
+Hidden Layer
+
+Most calculations happen in the hidden layer. It is situated between the input layer and the output layer (Ognjanovski, 2019). Inputs to the network undergo nonlinear transformations via the hidden layers, through the use of weights and an activation function. 
+
+Output Layer
+
+The output layer is the final layer in the neural network where the predictions are obtained. The goal of the neural network is to train the network so that the output layer is the same as the output dataset (Trask, 2019). 
+
+Terms
+
+Weights
+
+Weights are parameters that transforms the input data within the networks hidden layers. Throughout the machine learning process, the weight values will change in order to find the perfect correlation between the input and output data. 
+
+Activation Function
+
+The nodes in the neural network can be seen as neurons, and the activation function is a function that decides whether or not these neurons should be activated (Baheti, 2022).  Activation functions are very important in neural networks, because without these functions the output signal would be a simple linear function which cannot learn and recognise complex mappings (Sharma et al., 2017).
+
+Forward Propagation
+
+A neural network produces predictions based on input data. This is because activations are propagated forward over the network (Trask, 2019).
+
+Backward Propagation
+
+Backpropagation is one of the most important concepts in neural networks. Simply put, backpropagation is the method of changing the weights of a neural network based on the error, in order to make the model more reliable (Johnson, 2022). 
+
+How does a neural network work?
+
+Simply put, a neural network finds the input-output correlation. This is done by taking all the previous terms and layers into consideration. The following explanation is how I understand neural network training, with the help of Trask (2019), and all other sources used throughout this report: 
+
+Firstly, an input layer receives input values, and an output layer predicts the final output. In-between these two layers is hidden layers that performs the computations. The amount of hidden layers and the amount of neurons/nodes each layer has, is up to the programmer, seeing as there is no specific answer. The neurons from one layer is connected to the neurons from the next layer through channels. Each channels is assignment a value named weights. 
+
+The input value is multiplied with these weights and their sum is send to the “ReLU” function also, known as the activation function. In an activation function, if the value is larger than 0, that value is returned, if it is lower, 0 is returned. This means the activation function decides which neurons is activated. An activated neuron transmits data to the neurons of the next layer through the channels mentioned previously. The data is propagated through the network and this is called forward propagation. In the output layer the neuron with the highest value fires and determines the output or prediction. The predicted output is compared with the actual output, and an error is determined by subtracting these two outputs with one another. The delta is the measure of how much higher or lower you want a node’s value to be to predict more accurately.
+
+Backpropagation is used to adjust the weights through the use of the delta values of previous layers and an alpha value, also known as the learning rate. Forward and backpropagation is repeated iteratively to change the weights to find the best correlation between the input layer and the output layer where the error is as close as possible to 0. 
+
+Training a model and finding the right amount of layers and nodes to use in each layer can takes weeks, months and maybe even years. It is a trial and error process. 
+
+Bibliography
+
+Abdul Kadir, N.H., Abdul Wahab, N.H., Meng, G.C., Lim, C., Sayed Aluwee, S.A.Z.B., Bajuri, M.N. & Harun, S.Z. 2022. A near infrared image of forearm subcutaneous vein extraction using u-net. In. Proceedings of the 6th International Conference on Electrical, Control and Computer Engineering. Springer. pp. 1093-1103.
+
+Baheti, P. 2022. Activation functions in neural networks. 2022/09/26.
+
+Cios, K.J., Swiniarski, R.W., Pedrycz, W. & Kurgan, L.A. 2007. Unsupervised learning: Clustering. In. Data Mining. Springer. pp. 257-288.
+
+Education, I.C. 2020. Neural network. https://www.ibm.com/cloud/learn/neural-networks Date of access: 2022/09/26.
+
+Ghahramani, Z. 2003. Unsupervised learning. In. Summer school on machine learning. Springer. pp. 72-112.
+
+Johnson, D. 2022. Back propagation in neural network: Machine learning algorithm. https://www.guru99.com/backpropogation-neural-network.html Date of access: 2022/09/26.
+
+Liu, Q. & Wu, Y. 2012. Supervised learning. Encyclopedia of the Sciences of Learning:3243–3245. 10.1007/978-1-4419-1428-6_451
+
+Mahesh, B. 2020. Machine learning algorithms-a review. International Journal of Science and Research (IJSR).[Internet], 9:381-386. 
+
+Maind, S.B. & Wankar, P. 2014. Research paper on basic of artificial neural network. International Journal on Recent and Innovation Trends in Computing and Communication, 2(1):96-100. 
+
+Ognjanovski, G. 2019. Everything you need to know about neural networks and backpropagation. https://towardsdatascience.com/everything-you-need-to-know-about-neural-networks-and-backpropagation-machine-learning-made-easy-e5285bc2be3a Date of access: 2022/09/26.
+
+Sharma, S., Sharma, S. & Athaiya, A. 2017. Activation functions in neural networks. towards data science, 6(12):310-316. 
+
+Trask, A.W. 2019. Grokking deep learning. United States of America: Manning Publications Co. .
+
+
+
+4 | Page

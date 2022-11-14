@@ -62,7 +62,7 @@ class read_multiplefiles(object):
 
 """Compare Corpus"""
          
-def CompareCorpus(stdNum, fileName):
+def CompareCorpus(stdNum, fileName, boolean):
     # Path
     path = os.getenv('UPLOAD_EXTENSIVE')
     pathJoin = os.path.join(path, stdNum)
@@ -110,26 +110,28 @@ def CompareCorpus(stdNum, fileName):
     index2 = similarities.MatrixSimilarity(tfidf[corpus], num_features=feauture_count)
     sim2 = index2[tfidf[vec_bow]]
     for i in range(len(sim2)):
-        print('Dcoument is similar to document %d: %.2f' % (i+1, sim2[i]))
+        print('Document is similar to document %d: %.2f' % (i+1, sim2[i]))
 
+    print("TestMe:" + boolean)
     
-    checkFile =  os.path.isfile(pathJoin + '/Corpus File/' + stdNum + '_corpus.txt')
-    if checkFile == True:
-        docCorpus = open(pathJoin + '/Corpus File/' + stdNum + '_corpus.txt', "a", encoding="utf-8")
-        docCorpus.write(result + '\n')
-        docCorpus.close()
-        #print('Document added to corpus')
-        docNames = open(pathJoin + '/Data/' + stdNum + '_docNames.txt', "a", encoding="utf-8")
-        docNames.write(fileName + '\n')
-        docNames.close()
-    else:
-        docCorpus = open(pathJoin + '/Corpus File/' + stdNum + '_corpus.txt', 'w', encoding="utf-8")
-        docCorpus.write(result + '\n')
-        docCorpus.close()
-        #print('Document added to corpus')
-        docNames = open(pathJoin + '/Data/' + stdNum + '_docNames.txt', "w", encoding="utf-8")
-        docNames.write(fileName + '\n')
-        docNames.close()
+    if (boolean == "true"):
+        checkFile =  os.path.isfile(pathJoin + '/Corpus File/' + stdNum + '_corpus.txt')
+        if checkFile == True:
+            docCorpus = open(pathJoin + '/Corpus File/' + stdNum + '_corpus.txt', "a", encoding="utf-8")
+            docCorpus.write(result + '\n')
+            docCorpus.close()
+            #print('Document added to corpus')
+            docNames = open(pathJoin + '/Data/' + stdNum + '_docNames.txt', "a", encoding="utf-8")
+            docNames.write(fileName + '\n')
+            docNames.close()
+        else:
+            docCorpus = open(pathJoin + '/Corpus File/' + stdNum + '_corpus.txt', 'w', encoding="utf-8")
+            docCorpus.write(result + '\n')
+            docCorpus.close()
+            #print('Document added to corpus')
+            docNames = open(pathJoin + '/Data/' + stdNum + '_docNames.txt', "w", encoding="utf-8")
+            docNames.write(fileName + '\n')
+            docNames.close()
 
 """Update Student"""
 def UpdateStudent(stdNum, fileName):
