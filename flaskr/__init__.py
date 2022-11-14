@@ -412,6 +412,9 @@ def create_app(test_config=None):
             meta_data = listMetaData
             rowColor = getRowColor(meta_data[0], meta_data[2])  
             # print(meta_data[0], " " ,meta_data[2], " " ,rowColor)
+        else: 
+            meta_data = ["UNKNOWN","UNKNOWN","UNKNOWN","UNKNOWN"]
+            rowColor = getRowColor(meta_data[0], meta_data[2])
 
         WriteToPDF(percentageJaccard, percentageCosine, meta_data[0], meta_data[2], meta_data[1], meta_data[3], doc1.filename)
         # pdfDownloadPath = f"{UPLOAD_REPORT}PlagiarismReport.pdf" 
@@ -550,7 +553,7 @@ def create_app(test_config=None):
         # Appending app path to upload folder path within app root folder
         uploads = os.path.join(app.config['UPLOAD_REPORT'])
         # Returning file from appended path
-        return send_from_directory(directory=uploads, path=filename, as_attachment=True)
+        return send_from_directory(uploads, filename, as_attachment=True)
 
     @app.errorhandler(HTTPException)
     def errorhandler(error):
