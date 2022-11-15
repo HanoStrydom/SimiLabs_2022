@@ -9,6 +9,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="/static/home.css">
+<script type="text/javascript" src="../../static/js/pdfobject.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="../../static/css/materialize.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="../../static/css/custom.css"/>
+<!-- <link type="text/css" rel="stylesheet" href=""/> -->
 
 <style>
 body {font-family: "Lato", sans-serif}
@@ -23,6 +28,18 @@ body {font-family: "Lato", sans-serif}
 <br>
 <br>
 <h1> This is the help page </h1>
+
+<button class="btn-floating btn-large waves-effect waves-light red" onclick="goLeft()"><i class="material-icons">chevron_left</i></button>		
+</div>
+<div class="bottom-right">
+<a class="btn-floating btn-large waves-effect waves-light red" onclick="goRight()"><i class="material-icons">chevron_right</i></a>		
+</div>
+<div id="pdfwindow"></div>
+<div id="contents" class="hide">{{contents}}</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../../static/js/materialize.js"></script>
+<script type="text/javascript" src="../../static/js/custom.js"></script>
 
 {% endblock %}
 
