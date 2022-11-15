@@ -25,7 +25,7 @@ from PIL import Image
 from wordcloud import WordCloud
 from flaskr.quicksimilarity import calc_cosine_similarity,jaccard_similarity
 from flaskr.extractmetadata import getMetaDataDoc,getMetaDataPDF, getRowColor
-
+import json
 from flask import send_from_directory
 
 from fpdf import FPDF
@@ -59,6 +59,7 @@ def create_app(test_config=None):
     UPLOAD_REPORT = os.getenv('UPLOAD_REPORT')
     UPLOAD_STYLO = os.getenv('UPLOAD_STYLO')
     UPLOAD_EXTENSIVE = os.getenv('UPLOAD_EXTENSIVE')
+    HELP_PAGE = os.getenv('HELP_PAGE')
     
     
     app.config['MYSQL_HOST'] = os.getenv('MYSQL_HOST')
@@ -78,6 +79,7 @@ def create_app(test_config=None):
     app.config['UPLOAD_REPORT'] = UPLOAD_REPORT
     app.config['UPLOAD_STYLO'] = UPLOAD_STYLO
     app.config['UPLOAD_EXTENSIVE'] = UPLOAD_EXTENSIVE
+    app.config['HELP_PAGE'] = HELP_PAGE
     
     ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'docx'])
     app.config["TEMPLATES_AUTO_RELOAD"] = True
@@ -212,7 +214,11 @@ def create_app(test_config=None):
 
     @app.route('/help')
     def help():
-        return render_template('help/help.html')
+        path = "C:/Users/Llewellyn/Desktop/SimiLabs_2022/flaskr/static/pdf/"   
+        a = os.listdir(path)
+        print(a)
+        text = json.dumps(sorted(a))
+        return render_template("help/help.html", contents = text) 
 
     #Report Links Begin
     @app.route('/quickReport', methods=['GET'])
