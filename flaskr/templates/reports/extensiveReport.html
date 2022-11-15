@@ -29,8 +29,14 @@ body {font-family: "Lato", sans-serif}
 
 <h1> Extensive Text Report</h1>
 <p> Choose a file to continue working on:</p>
-
-<p>{{theList}}</p>
+<div style="display: flex;justify-content: center;align-items: center;width: 80%;margin-left: 10em;border: 3px solid black;padding: 2em 2em 2em 2em;">
+    <ul>
+    {% for item in theList %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+    <!-- <p>{{theList}}</p> -->
+</div>
 
 <!-- End Page Content -->
 
