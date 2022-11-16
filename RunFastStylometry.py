@@ -12,20 +12,13 @@ from faststylometry import predict_proba, calibrate, get_calibration_curve
 
 def fastStyle():
     # In[ ]:
-
-
     train_corpus = load_corpus_from_folder("data/train")
 
     train_corpus.tokenise(tokenise_remove_pronouns_en)
     # print(train_corpus)
-
-
+    
     # In[ ]:
-
-
-    # Load Sense and Sensibility, written by Jane Austen (marked as "janedoe")
-    # and Villette, written by Charlotte Bronte (marked as "currerbell", Bronte's real pseudonym)
-
+    
     test_corpus = load_corpus_from_folder("data/test", pattern=None)
     # You can set pattern to a string value to just load a subset of the corpus.
 

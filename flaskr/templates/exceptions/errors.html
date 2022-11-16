@@ -1,0 +1,17 @@
+{% extends "home/home.html" %}
+
+{% block title %}Something went wrong{% endblock %}
+
+{% block main %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Something went wrong: {{ error }}</h1>
+            <hr>
+            <a href="/">Home</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

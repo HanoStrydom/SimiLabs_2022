@@ -1,0 +1,585 @@
+﻿
+
+
+
+
+
+
+The most used project management and software development methodologies in the South African ICT job market
+
+
+
+
+S Boshoff
+ 
+
+
+
+
+
+Supervisor:	Prof Neels Kruger
+Co-supervisor:	Mr Ricus Warmenhoven
+
+
+
+Student number:
+31775357
+
+TABLE OF CONTENTS
+CHAPTER 1  INTRODUCTION	1
+1	INTRODUCTION	1
+CHAPTER 2  TYPES OF SOFTWARE DEVELOPMENT METHODOLOGIES	2
+2	LITERATURE REVIEW OF SOFTWARE DEVELOPMENT METHODOLOGIES	2
+2.1	Waterfall	2
+2.1.1	Analysis phase	2
+2.1.2	Design phase	3
+2.1.3	Implementation phase	3
+2.1.4	Testing phase	3
+2.1.5	Maintenance phase	3
+2.1.6	Advantages	3
+2.1.7	Disadvantages	4
+2.2	Agile	4
+2.2.1	Extreme programming	5
+2.2.1.1	Practices	5
+2.2.1.2	Phases	6
+2.2.1.3	Characteristics	7
+2.2.2	Scrum	8
+2.2.2.1	Process	8
+2.2.2.2	Core values	8
+2.2.2.3	Characteristics	9
+2.2.3	Feature-driven development	9
+2.2.3.1	Core values	10
+2.2.3.2	Process	10
+2.2.3.3	Characteristics	10
+2.2.4	Lean development	11
+2.2.4.1	Principles	11
+2.2.5	Dynamic systems development	12
+2.2.5.1	Life cycle	12
+2.2.5.2	Principles	13
+CHAPTER 3  CASE STUDIES	15
+3	CASE STUDIES	15
+3.1	4Sight	15
+3.2	The Networkers	15
+3.3	Retro Rabbit	15
+3.4	Netville	16
+CHAPTER 4  COMPARISON OF CASE STUDIES	17
+4	COMPARISON OF CASE STUDIES	17
+CHAPTER 5  REFLECTION AND CONCLUSION	23
+5	REFLECTION AND CONCLUSION OF THE CASE STUDIES	23
+5.1	Software development methodology and project management methodology	23
+5.2	Impact of COVID-19 on the work environment	23
+5.3	Impact of COVID-19 on communication	24
+5.4	Conclusion	24
+REFERENCES	25
+
+
+LIST OF TABLES 
+Table 41:	Comparison of case studies	17
+
+
+vii
+CHAPTER 1  INTRODUCTION
+1 Introduction 
+This article discusses the different software development methodologies currently being used in the ICT (Information and Communications Technology) industry. A literature review will be given about various software development methodologies, as well as case studies of four organisations within the ICT industry. 
+
+The software development methodologies discussed are Waterfall and Agile, with five methodologies within the Agile structure.
+
+The organisations that will be discussed are 4Sight Holdings (BluESP), The Networkers, Retro Rabbit, and Netville. Interviews were held with employees of these organisations. The results will be analysed and discussed to determine the differences in project management and software development processes. This analysis will be used to determine the most used methodologies in the South African ICT market.
+CHAPTER 2  TYPES OF SOFTWARE DEVELOPMENT METHODOLOGIES
+2 Literature review of software development methodologies
+A software development methodology is a framework for organising, managing, and overseeing the creation of an information system (Sommerville (as cited by Bassil, 2012:1)).
+
+The administration of software development projects adheres to the fundamental principles of project management while also including specific aspects (Despa, 2014:37). A project manager for software development must cope with difficulties and obstacles unique to the IT sector.
+Additionally, there are advantages and strong points in software development that lessen the load of administration.
+2.1 Waterfall
+The first approach that is recognised as being specifically for software development is waterfall (Despa, 2014:41). It places a focus on rigorous preparation and produces thorough documentation. The Waterfall technique is a sequential, linear process in which each stage begins only after the one before it has ended. Deliverables are specific to each level. The Waterfall technique emphasises meticulous software planning and design and is predictable. The Waterfall model essentially consists of the following five phases: analysis, design, implementation, testing, and maintenance (Bassil, 2012:2).
+2.1.1 Analysis phase
+The behaviour of the programme that has to be built is entirely and thoroughly described during the analysis phase (Bassil, 2012:2). To identify both functional and non-functional requirements, system and business analysts are involved. Usually, use cases - which explain how users interact with the software - are used to create the functional requirements. Included in them are specifications for the goal, scope, perspective, functions, software attributes, user characteristics, interface requirements, and database requirements.
+
+The non-functional requirements, on the other hand, refer to the numerous standards, limits, and requirements put on the development and operation of the programme as opposed to specific behaviours (Bassil, 2012:2). Reliability, scalability, testability, availability, maintainability, performance, and quality standards are some of its characteristics.
+2.1.2 Design phase
+It is the planning and issue-solving process for a software solution (Bassil, 2012:2). To describe the strategy for a solution, which comprises algorithm design, software architecture design, database conceptual schema and logical diagram design, concept design, graphical user interface design, and data structure definition, it involves software developers and designers.
+2.1.3 Implementation phase
+Through programming and deployment, it refers to the transformation of business needs and design specifications into a tangible executable programme, database, website, or software component (Bassil, 2012:2). The database and text files are developed during this stage, and the actual code is written and assembled into a usable programme. In other words, it is the process of transferring all of the specifications and plans into a real-world setting.
+2.1.4 Testing phase
+The process of ensuring that a software solution complies with the original requirements and specifications and serves the intended purpose is often referred to as verification and validation (Bassil, 2012:2). In reality, validation is the process of evaluating software during or after the development process to determine whether it satisfies specific requirements, whereas verification is the process of evaluating software to determine whether the products of a given development phase satisfy the conditions imposed at the start of that phase. Additionally, the testing stage is where debugging is carried out, in which problems and system malfunctions are identified, fixed, and improved as necessary.
+2.1.5 Maintenance phase
+It is the process of changing a software product after delivery and deployment to enhance performance and quality, polish output, and fix problems (Bassil, 2012:2). This stage also allows for the performance of additional maintenance tasks such as software environment adaptation, user need accommodation and software reliability improvement.
+2.1.6 Advantages
+Bhuvaneswari and Prabaharan (2013:263) give the following advantages of the waterfall methodology:
+· It is simple to comprehend and use.
+· It strengthens constructive behaviours.
+· It lists milestones and deliverables, motivated by document guidelines for published documents.
+Shylesh (2017:536) adds to these advantages:
+· There is a distinct deliverable and evaluation procedure for each stage.
+· Each phase is handled and finished separately.
+· It works efficiently for small projects with clearly defined criteria.
+2.1.7 Disadvantages 
+Shylesh (2017:536) give the following disadvantages of the waterfall methodology:
+· Functional software only becomes available late in the cycle.
+· There are several hazards.
+· It is a subpar model for significant enterprises.
+· It is not appropriate for projects with continuously changing needs.
+· Phases make it difficult to gauge progress.
+· It is unable to handle shifting needs.
+· A project may be terminated by changing the scope during the process model.
+2.2 Agile 
+Software engineering communities have been debating the topic of how software development should be structured to provide quicker, better, and more affordable solutions for decades (Dybå & Dingsøyr, 2008:834). Several solutions for improvement have been put up, including numerous practical tools, techniques, and practices, as well as the standardisation and measurement of the software development process. Many of the improvements were suggested by seasoned practitioners, who called their techniques "agile software development" (Dybå & Dingsøyr, 2008:834).
+
+Agile methods focus on people and their ingenuity rather than systems to solve the problem of an uncertain world (Dybå & Dingsøyr, 2008:834). Agile approaches were created to welcome, rather than reject, quicker rates of change since agile development is about feedback and change (Williams & Cockburn, 2003:39).
+
+The practitioners who introduced many of the agile development methodologies wrote the "agile manifesto" in 2001 (Dybå & Dingsøyr, 2008:834). According to the manifesto, agile development should prioritise four essential ideals (Fowler & Highsmith, 2001:29):
+· Individuals and interactions are valued over processes and tools.
+· Working software is valued over comprehensive documentation.
+· Customer collaboration is valued over contract negotiation.
+· Responding to change is valued over following a plan.
+
+There are several different agile development methods, including extreme programming, scrum, feature-driven development, lean development, and dynamic systems development method (Abrahamsson et al., 2017:20).
+2.2.1 Extreme programming
+The issues brought on by the lengthy development cycles of conventional development models gave rise to extreme programming (Abrahamsson et al., 2017:20-21). It first began as a straightforward chance to complete the task using procedures that had been shown to be efficient in software development processes throughout the previous decades.
+
+Extreme programming is characterised by continuous integration and automated testing, frequent minor releases that take into account ongoing customer input, and a collaborative approach (Bell, 2001:1). These characteristics make it an unusually adaptable and powerful method for developing software. Extreme Programming (XP), once seen as extreme, is quickly gaining acceptance as a methodology that works particularly well for small teams with ambiguous or dynamic requirements, which comprises the bulk of projects in the current fast-paced software development industry.
+
+Long projects are handled by XP by being divided into a series of independent, one- to three-week mini-projects (Bell, 2001:8). In between each repetition:
+· customers choose which features to include,
+· the functionalities are added by programmers to make the applications fully deployable,
+· programmers and users build and maintain automated tests to prove that these functionalities exist, and
+· programmers adapt the system’s design to elegantly accommodate all of its features.
+2.2.1.1 Practices 
+Beck (1999:71) gives 13 practices that should be kept in mind during a project using XP:
+1. Planning game: customers use programmers' estimations to determine the size and timing of releases. only the functionality required by the tales in this iteration is implemented by programmers.
+2. Small releases: after a few months, the system is placed into operation before the entire issue is resolved. There are frequently new releases, ranging from daily to monthly.
+3. Metaphor: a metaphor or collection of metaphors that the client and programmers share to establish the design of the system.
+4. Simple design: the design always passes all tests, conveys all the programmers want to convey, has the fewest classes and functions feasible, and never duplicates any code. 
+5. Tests: unit tests are created minute by minute by programmers. These evaluations are gathered, and they must all pass. In an iteration, customers provide functional tests for the stories. Although practically speaking, occasionally a financial judgement must be taken weighing the cost of delivering a known fault against the cost of delay, all of these tests should be done.
+6. Refactoring: through modifications to the current design that maintain all the tests running, the system's design evolves.
+7. Pair programming: two individuals utilise a single keyboard, mouse, and screen to write all production code.
+8. Continuous integration: within a few hours, new code is merged with the running system. The system is completely rebuilt during integration, and all tests must succeed for the modifications to be kept.
+9. Collective ownership: every programmer updates any code, anywhere in the system, whenever they perceive a chance to do so.
+10. On-site customer: a customer works permanently with the group.
+11. 40-hour weeks: no one is permitted to put in a second straight week of overtime. Even occasional overtime utilised too regularly indicates more serious issues that need to be addressed.
+12. Open workspace: the staff works in a huge space with little cubicles around the walls. 
+13. Just rules: you agree to adhere to the regulations when you join an Extreme team. But they are only guidelines. As long as everyone on the team concurs on how they will evaluate the consequences of the modification, the rules can be changed at any moment.
+2.2.1.2 Phases 
+Beck (2000) also gives the following phases of XP:
+· Exploration phase: The story cards that the customers want to be released in the initial release are written out during the exploration phase. Each story card outlines a software feature that will be added. The project team also becomes acquainted with the equipment, methods, and technologies they will be using during the project. By creating a prototype of the system, the technology that will be utilised will be evaluated and the architecture options for the system are studied. The length of the exploration phase varies from a few weeks to a few months, mostly dependent on how comfortable the programmers are with the technology.
+· Planning phase: The stories are prioritised throughout the planning process, and the initial small release's material is decided. The timetable is established when the programmers determine how much work each narrative takes. The initial release timetable typically lasts no more than two months. It usually takes a few days to complete the planning stage.
+· Iterations to release phase: Before the first release, the systems go through several iterations throughout the iterations to release phase. The planning stage timeline is divided into several iterations that will take one to four weeks to complete. The first iteration builds a system with the overall system's architecture. This is accomplished by choosing the stories that will cause the system's overall structure to be built. The stories chosen for each iteration are determined by the customer. After each cycle, the customer-created functional tests are executed. The system is ready for production after the most recent iteration.
+· Productionising phase: Before the system can be deployed to the client, more testing and performance checks must be made during the productionising phase. New modifications might still be discovered at this stage, and a choice must be taken regarding whether to incorporate them in the current release. It may be necessary to shorten the iterations from three weeks to one week at this phase. The ideas and recommendations that were postponed are noted for subsequent adoption, maybe in the maintenance phase.
+· Maintenance phase: The XP project must produce fresh iterations while simultaneously maintaining the system in production once the initial release is ready for client usage. The maintenance phase necessitates an effort for customer support duties to accomplish this. Thus, once the system is in production, the development pace may slow down. It could be necessary to add new team members and modify the team structure during the maintenance period.
+· Death phase: When the client has no more stories to deploy, the death phase is about to begin. This necessitates that the system also fulfils the demands of the customer in other ways. Since there are no longer any modifications being made to the architecture, design, or code, this is the point in the XP process where the system's documentation is ultimately created. The system may potentially die if it fails to produce the required results or if it becomes too expensive to continue developing.
+2.2.1.3 Characteristics
+Cohen et al. (2004:14) provide the following characteristics of XP:
+· Team size: the size of the development team is restricted to the number of individuals who can fit in a single room, which is often agreed to be between 2 and 10. This is because the development team must be co-located.
+· Iteration length: of the Agile Methods under consideration, XP has the shortest suggested iteration period, 2 weeks.
+· Support for distributed teams: distributed teams are not encouraged by XP because of its emphasis on community and co-location.
+2.2.2 Scrum
+When Ken Schwaber initially introduced Scrum in 1996, he characterised it as a method that formalised the "do whatever it takes" approach and accepted the unpredictability of the software development process (Cohen et al., 2004:14). 
+2.2.2.1 Process
+Iterations (also known as sprints) for Scrum projects include the following (Cohen et al., 2004:14-16) (Highsmith & Highsmith, 2002:241-247):
+· Pre-sprint planning: The "release backlog" is where all system work that has to be done is maintained. Features and functionality from the release backlog are chosen during pre-sprint planning and added to the "sprint backlog," which is a prioritised list of tasks to be finished during the following sprint. Pre-sprint planning additionally sets a Sprint Goal to remind developers why the tasks are being performed and at what degree of detail to execute them because the activities in the backlog are often at a higher level of abstraction.
+· Sprint: After the pre-sprint preparation is finished, teams are given their sprint backlog and instructed to sprint to accomplish their goals. The sprint backlog's tasks are now frozen and cannot be changed for the rest of the sprint. Team members decide the projects they wish to work on and start the development process. Short daily meetings are essential to Scrum's success. Every morning, the team gathers for scrum meetings to improve communication, update management, customers, and developers on the project's status, pinpoint any issues, and keep everyone focused on the same objectives.
+· Post-sprint meeting: A post-sprint meeting is held after each sprint to assess project advancement and present the existing system.
+2.2.2.2 Core values
+Schwaber (1996) provides an overview of Scrum's core values as follows:
+· Small teams that focus on communication, efficiency, and the exchange of unwritten, unofficial information. adaptability to market (user/customer) or technological changes to guarantee the best product is generated.
+· Adaptability to market (user/customer) or technological changes to guarantee the best product is generated.
+· Frequently creating executables that can be examined, modified, tested, documented, and improved.
+· Dividing up tasks and team responsibilities into tidy, low-coupling divisions or packages.
+· Continuous testing and recording of a product as it is being created. 
+· The capability to declare something as finished anytime necessary.
+2.2.2.3 Characteristics
+Cohen et al. (2004:16) provide the following characteristics of Scrum:
+· Team size: teams of up to seven persons are formed from the development employees. A comprehensive team should at the very least consist of a developer, quality assurance engineer, and documenter.
+· Iteration length: although Schwaber initially advocated sprint durations of 1 to 6 weeks, durations are often maintained at 4 weeks.
+· Support for distributed teams: a project may consist of several teams that might easily be dispersed, even if Scrum's prescription does not specifically address distributed teams or offer built-in support.
+2.2.3 Feature-driven development
+Jeff DeLuca and Peter Coad's partnership in the late 1990s gave rise to feature-driven development (Cohen et al., 2004:18). The Singapore Project served as their signature endeavour. To save a failing, extremely intricate loan system, DeLuca was hired. Over 3500 pages of documentation without any code were the result of the previous contractor's two-year effort. DeLuca began from scratch and used Coad to help with the object modelling. They created the feature-oriented development methodology, or FDD, by combining their prior expertise.
+
+This lightweight, model-driven method is designed to provide frequent, observable, and functional outcomes (Pang & Blair, 2004:86). These processes are simple to follow and agile due to their lightweight properties. Another noteworthy aspect of FDD is that it somewhat modifies the concept of "feature," referring to it as a client-valued functionality that can be built in two weeks or less.
+2.2.3.1 Core values
+Highsmith and Highsmith (2002:151) give FDD’s core values:
+· To scale to larger projects, one needs a system for creating systems.
+· The finest method is one that is clear-cut and straightforward.
+· Each team member should be able to instantly see the reasoning behind each stage in the process.
+· "Process pride" may prevent the completion of the actual task.
+· To free team members to concentrate on results, good processes fade into the background.
+· The ideal lifecycles are brief, iterative, and feature-driven.
+2.2.3.2 Process
+Within FDD, there are 5 processes (Pang & Blair, 2004:87) (Cohen et al., 2004:18), namely:
+· Develop an overall model: creating a model is the first step in the FDD process. Members of the team and subject matter experts collaborate to construct a "walkthrough" version of the system.
+· Build a features list: the team then decides on a group of features that best reflect the system. Features are insignificant objects that the client sees as useful. They resemble XP story cards that were created in a language that was accessible to everybody. The development of features should be completed within ten days. Sub-features are created for features that take more than 10 days to complete.
+· Plan by feature: the priority feature list is then divided into "design packages," which are smaller subsections. A lead programmer is given authority for the design packages, while the other developers are given class ownership and responsibilities.
+· Design by feature: following the assignment of design packages, the iterative phase of the process starts. A subset of features that will take one to two weeks to implement is chosen by the lead programmer. 
+· Build by feature: these features are then constructed, tested, and incorporated after more thorough planning.
+2.2.3.3 Characteristics 
+Cohen et al. (2004:19) provide the following characteristics of FDD:
+· Team size: the size of the team fluctuates according to how complicated the current feature is. DeLuca emphasises the value of elite personnel, particularly modelling professionals.
+· Iteration length: no longer than two weeks.
+· Support for distributed teams: despite not having built-in support for remote situations, FDD is intended for numerous teams and should be flexible.
+2.2.4 Lean development
+Bob Charette founded Lean Development (LD), which is based on the 1980s success of Lean Manufacturing in the automotive sector (Cohen et al., 2004:19). While other Agile Methods aim to modify the development process, Charette contends that to be genuinely Agile, businesses must transform their top-down organisational structures. 
+
+There is significant discussion over the distinction between LD and Agile Software Development (Cawley et al., 2010:32). Agile methodologies are seen by us as supporting practices for the Lean software development philosophy.
+2.2.4.1 Principles
+Charette created the 12 LD principles, which are very similar to the Agile Manifesto (Highsmith & Highsmith, 2002:162-164):
+1. Satisfying the customer is the highest priority: the development team needs procedures for determining client priorities and for having others pay attention to their comments. Maximizing client satisfaction is the aim. Being unable to satisfy client expectations is seen as failing.
+2. Always provide the best value for money: software should provide customers with a new chance or assist them in resolving their issues at a fair price. The objective is value, not perfection. Value is the result of a product's features working together to satisfy a customer's demands at a certain time and cost.
+3. Success depends on active customer participation: a collaborative, team effort goes into active engagement. Customer involvement goes beyond simple "buy-in"; active involvement is crucial for change adaptation and making judgments about trade-offs in the present. 
+4. Every LD project is a team effort: because variety is so important for creative, quick-cycle development, multidisciplinary teams are required rather than solitary people. The more varied a team is, the harder it is to foster an environment where they can bond.
+5. Everything is changeable: the foundation of rigorous development techniques is the elimination of modifications through the early definition of requirements, followed by the management of any changes that do manage to creep in. According to LD, learning to adapt to changes rather than attempting to control them is a preferable course of action because requirements will inevitably alter over time. What types of adjustments could take place is a subject that is always posed in an LD attempt. 
+6. Domain, not point, solutions: most of the time, unique software is too pricey. Software that may be used by other firms, markets, and products distributes the cost and adds to the value equation. The concept of domain solutions sets LD apart.
+7. Complete, don’t construct: for the majority of application development teams, the buy rather than create strategy has long been an effective one. Enterprise resource planning system rollouts recently testified to this tendency. The idea also has a dimension of components and templates.
+8. An 80 per cent solution today instead of a 100 per cent solution tomorrow: markets are changing too quickly to offer complete solutions. Clients are usually always prepared to trade speed for functionality. Furthermore, research has indicated that more than 45% of a software application's capability is never used.
+9. Minimalism is essential: by reducing bureaucracy, keeping teams small and centralised, and maintaining a narrow focus on the product, LD aims to reduce waste.
+10. Needs determine technology: instead of choosing the technology first and subsequently the development goals, do the reverse. Because there are so many technological alternatives available today, it is simple to spend more time delivering business applications than changing technologies.
+11. Product growth is feature growth, not size growth: delivering change-tolerant features is the key to LD. The team should always evaluate how new features may affect business processes while reviewing them. The size of the product is not the problem.
+12. Never push LD beyond its limits: although LD is a framework motivated by a specific class of business challenges, it is not a magic solution.
+2.2.5 Dynamic systems development
+A formalisation of RAD (Rapid Application Development) approaches that emerged in the early to mid-1990s is the Dynamic Systems Development Method (DSDM) (Highsmith & Highsmith, 2002:138). DSDM was developed in England, has gained popularity in Europe, and is used by several sites in the United States. For many businesses, DSDM has proven to be a workable ASDE (Agile Software Development Ecosystem).
+2.2.5.1 Life cycle
+Cohen et al. (2004:20-22) give the following stages in the DSDM life cycle:
+· Pre-project: the pre-project phase certifies that the project is prepared to start, that finance is accessible, and that all necessary components are there for a successful project to start.
+· Feasibility study: the feasibility study should only last a few weeks. DSDM's suitability for the project should be determined at this phase, along with the customary feasibility tasks.
+· Business study: the business research phase emphasises strong teamwork and utilises a series of workshops run by skilled and empowered personnel who can swiftly pool their expertise and come to an understanding of the development's top priorities. The Business Area Definition, which identifies the users, markets, and business processes impacted by the system, is the phase's output.
+· Functional model iteration: the iteration of the functional model tries to expand upon the high-level needs found in the business study. The DSDM framework creates a series of risk-based prototypes before evolving them into the final system. This phase shares a methodology with the design and construction phase.
+· Design and build iteration: users receive a functioning system when the functional model prototypes have been finished, merged, and tested.
+· Implementation: the system is put into service during this phase. During implementation, an Increment Review Document is created that explains the system's current status. Either all requirements are met and the system may be deemed full, or functionality is lacking. The functional model, design and build, and implementation phases are repeated until the system is finished if there is still work to be done on it.
+· Post-project: this stage covers routine project clean-up and ongoing maintenance.
+2.2.5.2 Principles
+Any DSDM implementation must adhere to the nine principles listed below; failing to do so will contradict the framework's guiding principles and dramatically raise project risks (Voigt et al., 2004:2). In contrast, some of the phases in the DSDM project structure may be ignored or changed to match a specific project layout.
+1. Active user involvement is imperative: the DSDM project guidelines advise working continuously with a small, select collection of users rather than in sporadic workshops or review sessions, as opposed to working with a wide group of users. 
+2. Teams must be empowered to make decisions: transaction costs brought on by communication breakdowns between project participants and management need to be minimised if the project is to go forward as rapidly as feasible. 
+3. Focus on frequent delivery: results are often delivered, ensuring that problems are rapidly identified, are simple to correct, and are closer to their source. 
+4. Fitness for business is a criterion for accepted deliverables: as implied by the DSDM framework's name, its main goal is to provide software that is sufficient to address the business need without the need for additional improvements in a subsequent iteration.
+5. Iterative and incremental development is mandatory: the project's complexity has to be broken down into manageable feature packages, with each release adding new functionality until all of the business requirements are satisfied.
+6. All changes during development must be reversible: being adaptable necessitates that system configurations vary throughout the development of each increment as a result of shifting needs priority.
+7. Requirements are baselined at high-level: some high-level criteria need to be set to restrict how much flexibility requirements can have during the development process. This baseline, which should be seen as a requirements "freeze," is decided upon throughout the process' business study phase.
+8. Testing is integrated throughout the life cycle: testing is frequently requested throughout the design or implementation phase of the development process. Early testing is necessary for DSDM development. 
+9. Collaborative and cooperative approach: during DSDM projects, it is imperative to prevent division and promote collaboration between technical personnel and business employees since cooperation is essential for a DSDM project to be successful.
+
+
+
+CHAPTER 3  CASE STUDIES
+3 Case studies
+Employees from the organisations mentioned below were interviewed regarding how COVID-19 had an impact on how the organisations changed and adapted to working in a remote environment. The employees interviewed have different roles within their organisations, namely, developers, a project manager, and a CTO.
+3.1 4Sight 
+As a global, diversified technology company, its goal is to use its portfolio of 4IR technologies, human resources, and data-focused solutions to create, develop, implement, and expand solutions for its partners, which include both clients and vendors (4Sight, 2022).
+
+By utilising the goods and services offered by their Group, their partners may benefit from comprehensive digital transformation solutions across a variety of industrial verticals thanks to their business model (4Sight, 2022). An intentional "blue ocean" approach, consisting of the following:
+· Continuous innovation
+· Fostering partnerships
+· Managing the move to OPEX models
+· Unique bespoke business solutions
+· Software-as-a-service and annuity business models
+· Building the modern digital enterprise of the future
+· Embracing the modern digital economy
+3.2 The Networkers
+They are the best at comprehending how technology benefits humans (The Networkers, 2022). Systems for robust, secure, and stable networks promote interpersonal interaction and collaboration. All of their thoughts and deeds are driven by their client's desires, requirements, and preferences. They assist Their clients with difficult IT problems by thinking like them. Focus is key in this situation, and networking and security constitute their chosen "branch of sport".
+3.3 Retro Rabbit
+Retro Rabbit creates outstanding software (Retro Rabbit, 2022). They provide specialised solutions that foster brilliance and creativity. They produce innovative products and provide clients with the most comprehensive information technology design solution by fusing data science, human-centred design, and the most recent software development methodologies.
+
+They are the epitome of agile development, working directly with their clients to build a solution that will meet the needs of the users and is backed by their team of skilled professionals (Retro Rabbit, 2022). Their specialities include game creation, experience design, cloud computing, artificial intelligence, and mobile and web development. From engineering to big data to financial services, they have experience in every industry. 
+3.4 Netville
+Netville offers the best, most reliable IT solutions to businesses of all sizes (Netville, 2022). They think that businesses need trustworthy allies who can help them navigate the difficulties brought on by technological advancement in the rapidly changing technology sector. They provide services in the cloud, security, and mobility, to mention a few. Netville is run by one person, who does consultation work for other businesses.
+CHAPTER 4  COMPARISON OF CASE STUDIES
+4 Comparison of case studies
+Table 4-1 provides a comparison of the case studies. The results of the interviews will be provided in chapter 5.
+Table 41:	Comparison of case studies
+
+4Sight Holdings (BluESP) (Developer)
+4Sight Holdings (BluESP) (Project manager)
+The Networkers (CTO)
+Retro Rabbit (Developer)
+Netville (CEO)
+Company size
+Medium
+Medium
+Enterprise
+Medium
+Small
+Software development methodology
+Waterfall, Agile (Scrum)
+RAD, Prototyping, Waterfall, Agile (Scrum) 
+Agile (Scrum)
+Agile (Scrum)
+None
+Project management methodology
+Waterfall, Agile
+PMBoK, Waterfall, Agile, Waterfall and Agile hybrid
+Prince2, Six Sigma
+Agile
+None
+What type of software do you develop?
+Operational technologies and asset optimisation
+Operational technologies and asset optimisation
+Networking applications
+Web applications
+Cloud, security, and mobility
+Is there a separation of function and duty between project management and software development methodologies?
+Yes
+Yes, depending on the size of the project.
+No
+No
+No
+Pre-COVID-19 remote work
+No
+No
+No
+No
+No
+During COVID-19 remote work
+Yes
+Yes
+Yes
+Yes
+No
+Post-COVID-19 remote work
+Yes
+Yes
+Yes
+Yes
+Yes
+Did COVID-19 have an impact on the organisation?
+Yes 
+Yes
+Yes 
+Yes 
+No
+Did COVID-19 have an impact on the way project management was conducted?
+Yes
+No
+Yes
+Yes
+No
+Did COVID-19 have a positive impact on the way software development was conducted?
+Yes
+Yes
+No
+Yes
+No
+Did COVID-19 have a positive impact on organisational productivity?
+Yes
+Yes
+Yes
+Yes
+Yes
+Did COVID-19 have a positive impact on project management productivity?
+Yes
+No
+Yes
+No
+No
+Did COVID-19 have a positive impact on software development success?
+Yes
+No
+No
+Yes
+No
+Has working in an online environment been a positive experience?
+Yes
+Yes
+Yes
+Yes
+Yes
+Did COVID-19 have a significant impact on the people within software development and project management?
+Yes
+Yes
+No
+Yes
+No
+Did COVID-19 have a significant impact on the processes followed within the project development and management team?
+Yes
+Yes
+Yes
+Yes
+No
+Did COVID-19 have a significant impact on the technology used within the project development and management team?
+Yes
+Yes
+Yes
+Yes
+No
+Did COVID-19 have an impact on governance and strategy within the organisation?
+Yes
+Yes
+Yes
+Yes
+No
+Did COVID-19 have a positive impact on culture and maturity within the organisation?
+No
+Yes
+No
+Yes
+No
+Did COVID-19 have a positive impact on operations and services within the organisation?
+Yes
+Yes
+Yes
+No
+Yes
+Did Covid-19 have an impact on the technology infrastructure within the organisation?
+Yes
+Yes
+Yes
+Yes
+No
+Did Covid-19 have an impact on technology architecture within the organisation?
+Yes
+Yes
+Yes
+Yes
+No
+Could teams collaborate effectively with other teams online?
+Yes
+No
+Yes
+No
+Yes
+Is effective communication easy to handle in the online environment?
+Yes
+Yes
+Yes
+No
+Yes
+Has building relationships become easier in an online environment?
+No
+No
+No
+No
+No
+Was work-life balance easy to handle during COVID-19? 
+No
+No
+No
+No
+Yes
+Has managing distractions whilst in an online work environment been a problem?
+No
+No
+No
+No
+No
+Was security one of the sectors that were severely impacted by COVID-19?
+Yes
+Yes
+Yes
+Yes
+No
+Was your company well suited to deal with security threats that presented themselves due to working from home?
+Yes
+Yes
+No
+Yes
+Yes
+Were you skilled enough to deal with cyber threats during COVID-19?
+Yes
+Yes
+No
+Yes
+Yes
+Did security protocol change a substantial amount during COVID-19?
+Yes
+No
+No
+Yes
+No
+Did the organisation experience an increase in cyber-attacks during COVID-19?
+Yes
+Yes
+Yes
+No
+No
+Are there more security threats while working in an online environment?
+Yes
+No
+Yes
+Yes
+Yes
+Did employees have the training to identify and prevent cyber security attacks and risks?
+Yes
+Yes
+No
+Yes
+No
+Did employees use their own devices while working from home?
+Yes
+Yes
+Yes
+Yes
+Yes
+Were various cyber security tools used in the employee's home and work environment?
+Yes
+Yes
+No
+Yes
+Yes
+Is the software used regularly updated to prevent cyber-attacks?
+Yes
+Yes
+No
+Yes
+Yes
+Do the employees have anti-spyware software installed on their devices?
+Yes
+Yes
+No
+Yes
+Yes
+ 
+CHAPTER 5  REFLECTION AND CONCLUSION
+5 Reflection and conclusion of the case studies
+5.1 Software development methodology and project management methodology
+From the interviews conducted it seems that the most used software development methodology is Agile, specifically Scrum and the most used project management methodology is Agile. It seems that the methodology chosen depends on the size of the company and the project being worked on.
+
+Three of the four companies said that there is no separation of function and duty between project management methodologies and software development methodologies, one of which uses Agile for both methodologies, and another using a more structured approach to project management.
+
+Two of the four companies said that they believe COVID-19 had a positive impact on the way software development was conducted, both of which follow the Agile approach. While everyone said that COVID-19 had a positive impact on organisational productivity, only two interviewees said that it had a positive impact on project management productivity. Only the developer interviewees stated that COVID-19 had a positive impact on software development success.
+
+Three of the five interviewees stated that they believe COVID-19 had the biggest impact on people within software development and project management. Both interviewees that disagreed with that statement are in managerial positions.
+
+Four of the five interviewees stated that COVID-19 had a significant impact on the processes followed and the technology used within the project development and management team. They also stated that it had an impact on the governance and strategy within the organisations. The interviewee that disagreed with those statements is a sole proprietor and does not follow any project management or software development methodology. 
+5.2 Impact of COVID-19 on the work environment
+Everyone said that working in an online environment has been a positive experience. 
+
+All four companies said they mostly worked on-site before COVID-19, remotely during COVID-19, and remotely after COVID-19. They all had to use their own devices (such as internet connection and computers or laptops). 
+
+As well as with their indications of how the technologies they used changed, most companies are well equipped to do most work remotely, instead of going into the office every day.
+5.3 Impact of COVID-19 on communication 
+Three of the five interviewees stated that they could collaborate effectively with other teams and that communication is easy in an online environment. One of the interviewees that disagreed with the statements follows a pure Agile approach to both project management and software development, which is reasonable considering Agile relies heavily on communication.
+5.4 Conclusion
+Because of the changes that organisations adapted to during COVID-19, communication in an online environment has become easier to manage and is still being improved upon. Various technologies, such as Microsoft Teams, have been implemented in organisations to make online communication easier. 
+
+The ease at which teams can communicate with each other affects the main methodologies followed during projects. The fact that all of the interviewees work remotely even after it is not necessary anymore suggests that organisations have found effective means to communicate effectively with team members. 
+
+Considering the results of the interviews and the state of the world after COVID-19, any software development methodology can be followed so long as the teams have a means to effective communication, although the most used methodology is Agile, as it is very flexible and adaptable. Team members don’t need to be face-to-face during meetings for effective communication, thus Agile is the best methodology to use in the current economic climate.
+
+The project management methodology used depends on the size of the organisation and the type of projects they do. The bigger organisations use more structured methodologies such as Prince2 and PMBoK, while the smaller organisations use less structured methodologies such as Agile.
+
+
+
+REFERENCES
+4Sight. 2022. 4sight holdings: About. https://4sight.cloud/about Date of access: 11 Oct. 2022.
+Abrahamsson, P., Salo, O., Ronkainen, J. & Warsta, J. 2017. Agile software development methods: Review and analysis. 
+Bassil, Y. 2012. A simulation model for the Waterfall software development life cycle. International Journal of Engineering & Technology, 2(5), https://arxiv.org/ftp/arxiv/papers/1205/1205.6904.pdf 
+Beck, K. 1999. Embracing change with extreme programming. Computer, 32(10):70-77. 
+Beck, K. 2000. Extreme programming explained: Embrace change. Addison-Wesley Professional.
+Bell, J.T. 2001. Extreme programming. 
+Bhuvaneswari, T. & Prabaharan, S. 2013. A survey on software development life cycle models. International Journal of Computer Science and Mobile Computing, 2(5):262-267. 
+Cawley, O., Wang, X. & Richardson, I. 2010. Lean/agile software development methodologies in regulated environments–state of the art. In. International Conference on Lean Enterprise Software and Systems. Springer. pp. 31-36.
+Cohen, D., Lindvall, M. & Costa, P. 2004. An introduction to agile methods. Adv. Comput., 62(03):1-66. 
+Despa, M.L. 2014. Comparative study on software development methodologies. Database Systems Journal, 5(3):37-56. 
+Dybå, T. & Dingsøyr, T. 2008. Empirical studies of agile software development: A systematic review. Information and software technology, 50(9-10):833-859. 
+Fowler, M. & Highsmith, J. 2001. The agile manifesto. Software development, 9(8):28-35. 
+Highsmith, J.A. & Highsmith, J. 2002. Agile software development ecosystems. Addison-Wesley Professional.
+Netville. 2022. About netville. https://netville.co.za/ Date of access: 16 Oct. 2022.
+Pang, J. & Blair, L. 2004. Refining feature driven development-a methodology for early aspects. Early Aspects: Aspect-Oriented Requirements Engineering and Architecture Design, 86, 
+Retro Rabbit. 2022. Retro rabbit: About. https://www.linkedin.com/company/retro-rabbit/about/ Date of access: 11 Oct. 2022.
+Schwaber, K. 1996. Controlled chaos: Living on the edge. Cutter IT Journal, 9(4):X-16-16. https://nwulib.nwu.ac.za/login?url=https://search.ebscohost.com/login.aspx?direct=true&db=edselc&AN=edselc.2-52.0-3042882286&site=eds-live 
+Shylesh, S. 2017. A study of software development life cycle process models. In. National Conference on Reinventing Opportunities in Management, IT, and Social Sciences. pp. 534-541.
+Sommerville, I. 2011. Software engineering. 9th. Addison-Wesley.
+The Networkers. 2022. The networkers. https://www.thenetworkers.nl/ Date of access: 13 Oct. 2022.
+Voigt, B.J., Glinz, M. & Seybold, C. 2004. Dynamic system development method. Zurich: University of Zurich. 
+Williams, L. & Cockburn, A. 2003. Guest editors' introduction: Agile software development: It? S about feedback and change. Computer, 36(06):39-43. 
+
+8
