@@ -30,31 +30,18 @@ body {font-family: "Lato", sans-serif;}
 <br>
 
 <h1> Extensive Text Compare </h1>
-
-<!--
 <div class="form-center">
-  <form method="post" action="/ExtensiveText" enctype="multipart/form-data">
-    <dl>
-      <p>
-        <p>Upload Corpus Document</p>
-        <input type="file" name="files[]" multiple="true" autocomplete="off" required class="input">
-        <p>Upload Comparison Document</p>
-        <input type="file" name="comparison" autocomplete="off" required class="input">
-      </p>
-    </dl>
-      <p>
-        <input type="submit" value="Submit">
-      </p>
-    </form>
+  <form method="post" action="/DeleteStudent" enctype="multipart/form-data">
+    <h5> <u> Feedback </u> </h5>
+    <p> {{ExtensiveFeedback}} </p>
+  </form>
 </div>
--->
 
 <div class="form-center">
   <form method="post" action="/ExtensiveText" enctype="multipart/form-data">
     <h1> <u> Create Student </u> </h1>
-    <h2> Student Number: </h2> <input type="text" id="stdNum" name="stdNum" placeholder="12345678" required> 
+    <h3> Student Number: </h3> <input type="text" id="stdNum" name="stdNum" placeholder="12345678" required> 
     <br>
-    
     <p>Upload Comparison Document</p>
     <input type="file" name="ExtensiveStudent" autocomplete="off" required class="input">
     <br>
@@ -73,7 +60,23 @@ body {font-family: "Lato", sans-serif;}
   </form>
 </div>
 
-<div style="margin-bottom: 5em;"></div>
+<div class="form-center">
+  <form method="post" action="/DeleteStudent" enctype="multipart/form-data">
+    <h1> <u> Delete Student</u> </h1>
+    <h3> Student Number: </h3> <input type="text" id="dltStd" name="dltStd" placeholder="12345678" required>
+    <br>
+    <br>
+    <input type="submit" value="Delete">
+    <br>
+    <br>
+
+  </form>
+</div>
+
+
+
+<br>
+<br>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript" src="../../static/js/disablecheckbox.js"></script>

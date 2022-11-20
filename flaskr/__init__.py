@@ -32,7 +32,7 @@ from fpdf import FPDF
 from RunFastStylometry import fastStyle
 
 from flaskr.countWords import countWords1,countWords2
-from flaskr.Gensim import CreateStudent,UpdateStudent, CompareCorpus
+from flaskr.Gensim import CreateStudent,UpdateStudent, CompareCorpus, DeleteStudent
 from flaskr.createPDFStylo import WriteToPDFStylo
 import shutil
 
@@ -657,13 +657,16 @@ def create_app(test_config=None):
                     boolean = "true"
                     print(boolean)
 
-                
+                ExtensiveFeedback = ""
+
                 if request.form.get("ExtensiveText") == "CreateStudent":
                     print("Create Student")
                     CreateStudent(stdNum, doc1.filename)
+                    ExtensiveFeedback = "Student " + str(stdNum) + " is created"
                 elif request.form.get("ExtensiveText") == "UpdateStudent":
                     print("Compare Student")
                     UpdateStudent(stdNum, doc1.filename)
+                    ExtensiveFeedback = "Student " + str(stdNum) + " is updated"
                 elif request.form.get("ExtensiveText") == "CompareCorpus":
                     print("Compare Corpus")
                     extensiveList = CompareCorpus(stdNum, doc1.filename, boolean)
@@ -671,7 +674,21 @@ def create_app(test_config=None):
             
                 print(stdNum)
             
-            return render_template('text/extensiveText.html')
+            return render_template('text/extensiveText.html', ExtensiveFeedback = ExtensiveFeedback)
+        except Exception as e:
+            return render_template("exceptions/errors.html", error = e)
+
+    @app.route('/DeleteStudent', methods=['POST'])
+    def deleteStudent():
+        ExtensiveFeedback = ""
+        try:
+            if 'loggedin' not in session:
+                    return render_template('auth/authLogin.html')
+            if request.method == 'POST':
+                stdNum = request.form['dltStd']
+                DeleteStudent(stdNum)
+                ExtensiveFeedback = "Student " + str(stdNum) + " is deleted"
+            return render_template('text/extensiveText.html', ExtensiveFeedback = ExtensiveFeedback)
         except Exception as e:
             return render_template("exceptions/errors.html", error = e)
 

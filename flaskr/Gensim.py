@@ -8,6 +8,8 @@ from gensim.utils import simple_preprocess
 from gensim.corpora import MmCorpus
 import logging
 from flask import Flask, render_template, request, redirect, url_for, flash
+import PyPDF2
+import shutil
 
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.DEBUG)
 
@@ -17,6 +19,16 @@ def getText(filename):
     for para in doc.paragraphs:
         fullText.append(para.text)
     return "".join(fullText)
+
+def getPdfText(filename):
+    pdfFileObj = open(filename, 'rb')
+    pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
+    count = pdfReader.numPages
+    text = ""
+    for i in range(count):
+        pageObj = pdfReader.getPage(i)
+        text += pageObj.extractText()
+    return text
 
 def CreateStudent(stdNum, fileName):
     path = os.getenv('UPLOAD_EXTENSIVE')
@@ -29,9 +41,17 @@ def CreateStudent(stdNum, fileName):
     else:
         print("Directory already exists")
 
-    print("Filename" + fileName)
-    print("PathJoin: " + pathJoin)
-    result = ''.join(line.strip() for line in getText("./flaskr/GensimTemp/" + fileName).splitlines())
+    #print("Filename" + fileName)
+    #print("PathJoin: " + pathJoin)
+    if fileName.endswith('.docx'):
+        result = ''.join(line.strip() for line in getText("./flaskr/GensimTemp/" + fileName).splitlines())
+    elif fileName.endswith('.pdf'):
+        result = ''.join(line.strip() for line in getPdfText("./flaskr/GensimTemp/" + fileName).splitlines())
+        #print(getPdfText("./flaskr/GensimTemp/" + fileName))
+        #print(result)
+    else:
+        #print('File not supported')
+        return
     # print(repr(result))   
     
     #Write to Corpus File
@@ -88,14 +108,21 @@ def CompareCorpus(stdNum, fileName, boolean):
     # print("BoW corpus saved")
 
     lsi = models.LsiModel(corpus, id2word=dictionary, num_topics=2)
-    result = ''.join(line.strip() for line in getText("./flaskr/GensimTemp/" + fileName).splitlines())
-    print('--results--')
+    if fileName.endswith('.docx'):
+        result = ''.join(line.strip() for line in getText("./flaskr/GensimTemp/" + fileName).splitlines())
+    elif fileName.endswith('.pdf'):
+        result = ''.join(line.strip() for line in getPdfText("./flaskr/GensimTemp/" + fileName).splitlines())
+    else:
+        #print('File not supported')
+        return
+    # print(repr(result)) 
+    #print('--results--')
     #print(result)
-    print('----------Data----------')
+    #print('----------Data----------')
     vec_bow = dictionary.doc2bow(result.lower().split())
     vec_lsi = lsi[vec_bow]  # convert the query to LSI space
-    print(vec_bow)
-    print(vec_lsi)
+    #print(vec_bow)
+    #print(vec_lsi)
 
     from gensim import similarities
     index = similarities.MatrixSimilarity(lsi[corpus])  # transform corpus to LSI space and index it
@@ -149,7 +176,14 @@ def CompareCorpus(stdNum, fileName, boolean):
 def UpdateStudent(stdNum, fileName):
     path = os.getenv('UPLOAD_EXTENSIVE')
     pathJoin = os.path.join(path, stdNum)
-    result = ''.join(line.strip() for line in getText("./flaskr/GensimTemp/" + fileName).splitlines())
+    if fileName.endswith('.docx'):
+        result = ''.join(line.strip() for line in getText("./flaskr/GensimTemp/" + fileName).splitlines())
+    elif fileName.endswith('.pdf'):
+        result = ''.join(line.strip() for line in getPdfText("./flaskr/GensimTemp/" + fileName).splitlines())
+    else:
+        #print('File not supported')
+        return
+    # print(repr(result)) 
     #print(repr(result))
     
     #Write to Corpus File
@@ -170,4 +204,10 @@ def UpdateStudent(stdNum, fileName):
         docNames.write(fileName + '\n')
         docNames.close()
         #print('corpus updated')
-    
+
+"""Delete Student"""
+def DeleteStudent(stdNum):
+    path = os.getenv('UPLOAD_EXTENSIVE')
+    pathJoin = os.path.join(path, stdNum)
+    shutil.rmtree(pathJoin)
+    #print('Student deleted')
