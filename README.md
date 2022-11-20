@@ -10,12 +10,12 @@ Powered by:
 | Name | Role |
 | ------ | ------ |
 | [Ricus Warmenhoven] | Project Manager |
-| [Hanno Visagie] | Project Leader |
-| [Hano Strydom] | Prototype Lead |
-| [Llewellyn Anthony] | Development Lead |
-| [Michael Rosin] | Back-end Lead |
-| [Annika du Toit] | Database Administrator |
-| [Shené Boshoff] | Cloud Admin |
+| [Hanno Visagie] | Project Leader (Extensive Text)|
+| [Hano Strydom] | Full Stack Developer (Quick Text)|
+| [Llewellyn Anthony] | Development Lead (Quick Text)|
+| [Michael Rosin] | Back-end Lead (Stylometry)|
+| [Annika du Toit] | Back-end Developer (Extensive Text) |
+| [Shené Boshoff] | Back-end Developer (Stylometry)|
 
 # SimiLabs Goal
 The current requirements from the client (NWU Registrar), with Mr Zander Janse van Rensburg as the project overseeing manager, requires our company to design and build a modular workflow system that would assist lecturers in academics to identify and report academic misconduct cases according to standing NWU SOPS. The NWU Registrar must address plagiarism by evaluating each case individually and appointing experts to prepare technical reports. 
