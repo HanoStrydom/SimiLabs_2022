@@ -61,6 +61,7 @@ def create_app(test_config=None):
         UPLOAD_STYLO = os.getenv('UPLOAD_STYLO')
         UPLOAD_EXTENSIVE = os.getenv('UPLOAD_EXTENSIVE')
         HELP_PAGE = os.getenv('HELP_PAGE')
+        HELP_PDF = os.getenv('HELP_PDF')
         
         
         app.config['MYSQL_HOST'] = os.getenv('MYSQL_HOST')
@@ -81,6 +82,7 @@ def create_app(test_config=None):
         app.config['UPLOAD_STYLO'] = UPLOAD_STYLO
         app.config['UPLOAD_EXTENSIVE'] = UPLOAD_EXTENSIVE
         app.config['HELP_PAGE'] = HELP_PAGE
+        app.config['HELP_PDF'] = HELP_PDF
         
         ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'docx'])
         app.config["TEMPLATES_AUTO_RELOAD"] = True
@@ -245,7 +247,8 @@ def create_app(test_config=None):
     @app.route('/help')
     def help():
         try:
-            path = "D:/Uni 2022/ISE/Project/github similabs/SimiLabs_2022/flaskr/static/pdf/"   
+            path = os.getenv('HELP_PDF')
+            # path = "C:/Users/Llewellyn/Desktop/SimiLabs_2022/flaskr/static/pdf/" 
             a = os.listdir(path)
             print(a)
             text = json.dumps(sorted(a))
