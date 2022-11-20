@@ -308,6 +308,10 @@ def create_app(test_config=None):
                     print(name)
                     doc1 = request.files["file1"]
                     doc1.encoding = 'utf-8'
+
+                    doc2 = request.files["comparison"]
+                    doc2.encoding = 'utf-8'
+                    print("IsThisEmpty: " + str(doc2))
                     
                     # Extracting text from alleged document
                     if doc1.filename.endswith('.docx'):
@@ -325,18 +329,43 @@ def create_app(test_config=None):
                         filenametxt = secure_filename(doc1.filename)
                         doc1.seek(0)
                         file1 = doc1.read().decode("utf-8")
-                    
+
+                     # Extracting text from comparison document
+                    if(str(doc2) == "<FileStorage: '' ('application/octet-stream')>"):
+                        print("This is empty")
+                    else: 
+                        if doc2.filename.endswith('.docx'):
+                            filenamedoc = secure_filename(doc2.filename)
+                            file2 = docx2txt.process(doc2)
+                        elif doc2.filename.endswith('.pdf'):
+                            pdfReader = PyPDF2.PdfFileReader(doc2)
+                            count = pdfReader.numPages
+                            file2 = ""
+                            for i in range(count):
+                                page = pdfReader.getPage(i)
+                                file2 += page.extractText() 
+                            filenamePDF = secure_filename(doc2.filename)
+                        else:
+                            filenametxt = secure_filename(doc2.filename)
+                            doc2.seek(0)
+                            file2 = doc2.read().decode("utf-8")
+                        train_file = open("data/train/"+name+"_-_"+os.path.splitext(doc2.filename)[0]+".txt", "w", encoding="utf-8")
+                        train_file.write(file2)
+                        train_file.close()
+
                     #open text file
                     text_file = open("data/test/"+name+"_-_"+os.path.splitext(doc1.filename)[0]+".txt", "w", encoding="utf-8")
-                    
+        
                     #write string to file
                     text_file.write(file1)
-                    
+
                     #close file
                     text_file.close()
+
                     fastStyle()
                     WriteToPDFStylo(name)
                     print(request.path)
+
                     return render_template('reports/styloReport.html')
             
                 except Exception as e:
