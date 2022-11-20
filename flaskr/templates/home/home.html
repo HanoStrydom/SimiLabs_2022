@@ -8,11 +8,24 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/static/home.css">
+<link rel="stylesheet" href="../../static/home.css">
+<link rel="stylesheet" href="../../static/text.css">
+<link rel="stylesheet" href="../../static/extensiveFooter.css">
 
+<link rel="stylesheet" href="../../static/tooltip.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
+
+ol li {
+    font-weight:700;
+}
+
+ol li dt dl span{
+    font-weight: normal;
+}
+
 </style>
 
 {% endblock %}
@@ -24,15 +37,34 @@ body {font-family: "Lato", sans-serif}
 <br>
 <br>
 <br>
+<h1> SimiLabs 2022</h1>
+<br>
+
+<div style="margin: auto;display:flex;background-color: rgb(197, 202, 200);width: 35%;border: 3px solid black;padding: 2em 2em 0em 2em;">
+    <ol>
+        <li> <span> Text Compare </span></li>
+        <dt>- QuickText</dt>
+        <dl>&nbsp &nbsp &nbsp - Compare alledged document and a comparison document for text similarities</dls>
+        <dt>- ExtensiveText</dt>
+        <dl>&nbsp &nbsp &nbsp - Compare alledged document to a corpus for text similarities</dl>
+
+        <li>  <b> Stylometry </b></li>
+        <dl>&nbsp &nbsp &nbsp - Compare alledged document to a corpus to identify authorship </dl>
+
+        <li> <b> Reports </b></li>
+        <dl>&nbsp &nbsp &nbsp - Display the database report results (Next Release)</dl>
+
+        <li> <b> MORE </b></li>
+        <dt>- Help</dt>
+        <dl>  &nbsp &nbsp &nbsp - User Manual and the Technical Manual</dl>
+        <dt>- Log Out</dt>
+        <dl>  &nbsp &nbsp &nbsp - Log out of SimiLabs</dl>
+      </ol>
+</div>
+<br>
 
 
-
-
-<h1> Shortcut</h1>
-<p> Choose a file to continue working on:</p>
-
-<div style="margin-bottom: 55vh;"></div>
-
+<div style="margin-bottom: 6em;"></div>
 <!-- End Page Content -->
 
 

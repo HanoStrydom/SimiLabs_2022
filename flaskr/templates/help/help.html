@@ -27,29 +27,31 @@ body {font-family: "Lato", sans-serif}
 <br>
 <br>
 <br>
-<h1> This is the help page </h1>
 
-<!-- <button class="btn-floating btn-large waves-effect waves-light red" onclick="goLeft()"><i class="material-icons">chevron_left</i></button>		
-</div>
-<div class="bottom-right">
-<a class="btn-floating btn-large waves-effect waves-light red" onclick="goRight()"><i class="material-icons">chevron_right</i></a>		
-</div>
-<div id="pdfwindow"></div>
-<div id="contents" class="hide">{{contents}}</div> -->
-
+<h1> User Manual </h1>
 <style>
     .container{padding: 30px}
 </style>
-<div class="container">
+<div class="container" style="border: 2px solid black;background-color: rgb(197, 202, 200);">
     <embed src="../../static/pdf/SimiLabs_User_Manual.pdf" type="application/pdf" width="100%" height="700px">
 </div>
 
-<!-- <div  style="margin-bottom: 10em;"></div> -->
 
+
+<h1> Technical Manual </h1>
+<style>
+    .container{padding: 30px}
+</style>
+<div class="container" style="border: 2px solid black;background-color: rgb(197, 202, 200);">
+    <embed src="../../static/pdf/SimiLabs_User_Manual.pdf" type="application/pdf" width="100%" height="700px">
+</div>
+
+<div style="margin-bottom: 3em;"></div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="../../static/js/materialize.js"></script>
 <script type="text/javascript" src="../../static/js/custom.js"></script>
+
 
 {% endblock %}
 
