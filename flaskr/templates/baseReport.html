@@ -26,7 +26,7 @@
     {% elif request.path == "/stylometry" %}
       <a href="{{url_for('download', filename="styloReport.pdf")}}"> <button class="button buttonstyle"> <span>  Save  </span>  </button> </a>
     {% elif request.path == "/ExtensiveText" %}
-      <a href="{{url_for('download', filename="ExtensiveReport.pdf")}}"> <button class="button buttonstyle"> <span>  Save  </span>  </button> </a>
+      <a href="{{url_for('download', filename="PlagiarismReportExtensive.pdf")}}"> <button class="button buttonstyle"> <span>  Save  </span>  </button> </a>
     
     {% endif %}
   </div>

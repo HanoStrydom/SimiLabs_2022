@@ -2,7 +2,6 @@ from ipaddress import summarize_address_range
 import os, socket
 from pydoc import doc
 from types import MethodDescriptorType
-
 import re
 from flask import Flask, render_template, request,flash,redirect, url_for,abort, request, session
 from werkzeug.utils import secure_filename
@@ -27,14 +26,13 @@ from flaskr.quicksimilarity import calc_cosine_similarity,jaccard_similarity
 from flaskr.extractmetadata import getMetaDataDoc,getMetaDataPDF, getRowColor
 import json
 from flask import send_from_directory
-
 from fpdf import FPDF
 from RunFastStylometry import fastStyle
-
 from flaskr.countWords import countWords1,countWords2
 from flaskr.Gensim import CreateStudent,UpdateStudent, CompareCorpus, DeleteStudent
 from flaskr.createPDFStylo import WriteToPDFStylo
 import shutil
+import datetime
 
 # NB!!! Remember to gitignore the .env file!
 load_dotenv()
@@ -699,11 +697,46 @@ def create_app(test_config=None):
                 elif request.form.get("ExtensiveText") == "CompareCorpus":
                     print("Compare Corpus")
                     extensiveList = CompareCorpus(stdNum, doc1.filename, boolean)
+                    WriteToPDFExtensive(extensiveList,stdNum, doc1.filename)
                     return render_template('reports/extensiveReport.html',theList=extensiveList)
             
                 print(stdNum)
             
             return render_template('text/extensiveText.html', ExtensiveFeedback = ExtensiveFeedback)
+        except Exception as e:
+            return render_template("exceptions/errors.html", error = e)
+
+    def WriteToPDFExtensive(theList, stdNum, docName):
+        try:
+            pdf = FPDF()
+            pdf.add_page()
+            pdf.set_font("Arial", size = 15)
+
+            Description1 = """The application provides an LSI score and TD-IDF Score for each document within the specified student corpus."""
+            Description2 = """Both LSI score and TD-IDF scores are used to determine the similarity between the documents. """
+            Description3 = """The LSI calculation is based on the Latent Semantic Indexing (LSI) algorithm and should be used for smaller size documents (Documents containing less than 3 pages)."""
+            Description4 = """The TD-IDF calculation is based on the Term Frequency-Inverse Document Frequency (TD-IDF) algorithm and should be used for larger size documents (Documents containing more than 3 pages)."""
+            Description5 = """The scores range from -1 to 1 where -1 indicates that the documents are completely different and 1 indicates that the documents are completely similar."""
+            Description6 = """The LSI calculation method focuses on the individual words in the corpus whereas TD-IDF focuses on sentences and words."""
+            
+            pdf.multi_cell(200, 10, txt = "Extensive plagiarism Report for: " + stdNum + " for document: " + docName, align = 'C')
+            pdf.multi_cell(200, 10, txt = "Date the report was created: " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")), align = 'C')
+            pdf.cell(200, 10, txt = " ", ln = 5, align = 'C')
+            
+            pdf.multi_cell(200, 10, txt = "Conclusion: ", align = 'C')
+            
+            for i in theList:
+                pdf.multi_cell(200, 10, txt = str(i), align = 'L')
+                
+            pdf.cell(200, 10, txt = " ", ln = 5, align = 'C')
+            pdf.multi_cell(200, 10, txt = "Description of results: ", align = 'C')
+            pdf.multi_cell(200, 10, txt = Description1, align = 'L')
+            pdf.multi_cell(200, 10, txt = Description2, align = 'L')
+            pdf.multi_cell(200, 10, txt = Description3, align = 'L')
+            pdf.multi_cell(200, 10, txt = Description4, align = 'L')
+            pdf.multi_cell(200, 10, txt = Description5, align = 'L')
+            pdf.multi_cell(200, 10, txt = Description6, align = 'L')
+            pdf.output(dest="F", name=UPLOAD_REPORT + "PlagiarismReportExtensive.pdf")
         except Exception as e:
             return render_template("exceptions/errors.html", error = e)
 
