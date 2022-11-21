@@ -40,6 +40,7 @@ def CreateStudent(stdNum, fileName):
         os.mkdir(pathJoin + '/Data')
     else:
         print("Directory already exists")
+        
 
     #print("Filename" + fileName)
     #print("PathJoin: " + pathJoin)
@@ -187,6 +188,11 @@ def UpdateStudent(stdNum, fileName):
     #print(repr(result))
     
     #Write to Corpus File
+    if not os.path.exists(pathJoin):
+        os.mkdir(pathJoin)
+        os.mkdir(pathJoin + '/Corpus File')
+        os.mkdir(pathJoin + '/Data')
+                                
     checkFile =  os.path.isfile(pathJoin + '/Corpus File/' + stdNum + '_corpus.txt')
     if checkFile == True:
         docCorpus = open(pathJoin + '/Corpus File/' + stdNum + '_corpus.txt', "a", encoding="utf-8")
