@@ -59,7 +59,10 @@ flask run
 ```
 
 # Documentation
-Documentation can be found [here]
+- [Documentation]
+- [User Manual]
+- [Developer Manual]
+
 
 ## License
 - MIT
@@ -96,7 +99,9 @@ SOFTWARE.*
    [Annika du Toit]: <mailto: nikadt.42@gmail.com>
    [Shené Boshoff]: <mailto: sheneboshoff6@gmail.com>
    [GitBash]: <https://git-scm.com/downloads>
-   [here]: <https://github.com/ISE-Project-2022/Documentation>
+   [Documentation]: <https://github.com/ISE-Project-2022/Documentation>
+   [User Manual]: <https://github.com/ISE-Project-2022/Documentation/blob/main/SimiLabs_User_Manual_V1.1.pdf>
+   [Developer Manual]: <https://github.com/ISE-Project-2022/Documentation/blob/main/Developer_Manual_NightcoreMech_V1.1.pdf>
    [python]: <https://www.python.org/downloads/>
    [Visual Studio Code]: <https://code.visualstudio.com/download>
    [MySQL]: <https://dev.mysql.com/downloads/installer/>
