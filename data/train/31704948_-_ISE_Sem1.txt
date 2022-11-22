@@ -1,0 +1,395 @@
+
+
+
+
+
+Investigation of project management approaches, body of knowledge, and governance frameworks used to assist project managers at successfully completing projects
+
+
+Michael Joshua Rosin
+31704948
+
+ITRI 614
+B.Sc. Hons. Computer Science & Information Technology
+2022
+Potchefstroom Campus NWU
+
+
+Supervisor:	Prof Neels Kruger
+
+
+Date of submission: 16 May 2022
+
+Table of Contents
+1	ABSTRACT	1
+2	INTRODUCTION	1
+3	WATERFALL PROJECT MANAGEMENT METHODOLOGY	2
+3.1	Waterfall methodology SDLC	2
+3.2	Strengths	3
+3.3	Weaknesses	4
+3.4	Opportunities	4
+3.5	Threats	4
+3.6	When to use the Waterfall methodology	4
+3.7	When not to use the Waterfall methodology	5
+4	AGILE (RATIONAL UNIFIED PROCESS MODEL) PROJECT MANAGEMENT METHODOLOGY	5
+4.1	Agile (Rational Unified Process model) methodology SDLC	5
+4.2	Strengths	6
+4.3	Weaknesses	7
+4.4	Opportunities	7
+4.5	Threats	7
+4.6	When to use an agile methodology	8
+4.7	When not to use an agile methodology	8
+5	THE PROJECT MANAGEMENT INSTITUTE’S PROJECT MANAGEMENT BOOK OF KNOWLEDGE (PMI’S PMBOK)	9
+5.1	Five process Groups	9
+5.2	Knowledge Areas	10
+5.3	Benefits of PMBOK	12
+5.4	Limitations of PMBOK	13
+6	THE CONTROL OBJECTIVES FOR INFORMATION AND RELATED TECHNOLOGY (COBIT) FRAMEWORK	13
+6.1	COBIT framework	13
+6.2	Characteristics of the COBIT framework	14
+6.3	Benefits of implementing the COBIT framework	16
+6.4	The disadvantage of implanting the COBIT framework	16
+7	CONCLUSION	17
+8	BIBLIOGRAPHY	18
+
+
+ 
+LIST OF TABLES 
+Table 1 A comparison between Waterfall and Agile methodology	9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LIST OF FIGURES 
+Figure 1 Overall COBIT framework	14
+
+
+
+
+ 
+1	Abstract 
+There is a variety of project management approaches available, but none of them offer the same  benefits or strengths. While some excel in procedures and processes, others excel at cost management, soft skill development, and project management in challenging circumstances. Other project management approaches excel in communication, stakeholder management, product delivery management, risk management, and structure and governance approach adaptability. This study’s goal is to find out which project management methodologies is best applicable for the next three to five years by debating why organizations, project managers, portfolio, and a program should take notice and how they should plan for, manage, and cater to maximize all opportunities and minimize all threats associated with the project management methodologies that has been identified within this study. 
+
+2	Introduction 
+Project managers have seen over time that projects have common qualities that may be codified into a structural procedure, allowing them to manage projects more efficiently. Each project phase can usually be brought to a logical conclusion before the next begins, and each phase produces identifiable milestones or deliverables that serve as the beginning point for the next. At the conclusion of each phase, cost and schedule estimates, requirements, plans, and specifications should be revised and analysed, sometimes before determining whether or not to continue with the project (Charvat 2003).
+The effects of COVID-19 have put organizations’ capacity to deliver programs and projects to the test. Some programs and projects were able to adapt swiftly and successfully, with sponsors and managers able to switch to remote working, while others experience significant delays or even cancellations. Due to the circumstances during the pandemic, project managers must apply the best possible project management methodology, body of knowledge, and/or governance framework for a given project or program. 
+There are different types of project management methodologies, body of knowledge frameworks, and governance frameworks used in the world such as Waterfall, Kanban, Agile, Scrumban, Critical path method, PRINCE2, eXtreme programming (XP), Critical path method, Adaptive project framework (APK), Critical chain project management, six sigma,,  Rapid application development (RAD), PMBOK, COBIT, and ITIL. While Certain project management methodologies and bodies of knowledge are customized to specific industries or sectors, other project management methodologies are strong in practically all elements of project management, and some methodologies are strong in only a few aspects. The aim of this study is to determine which project management methodologies, bodies of knowledge, and governance frameworks are best suited for certain projects for the next three to five years. Different project management methodologies, bodies of knowledge, and governance frameworks will be examined by conducting a SWOT analysis. This study will be conducted will take into consideration the requirements of internal and external clients, and the forces they represent. Due to time and spatial constraints, this research study will be focused on two project management methodologies namely Waterfall and Agile, a body of knowledge framework such as PMBOK, and a governance framework such as COBIT.
+
+3	Waterfall Project Management Methodology 
+As the name indicates, the waterfall model is a sequential software development technique. The production cycle progresses progressively from one stage to the next. A series of phases must be completed one after the other (McCormick 2012). 
+3.1	Waterfall methodology SDLC
+Analysis, design, implementation, testing, and maintenance are the five steps of the Waterfall model (Bassil 2012). 
+Analysis phase
+A Software Requirements Specification is a precise and complete explanation of the behaviour of the software to be generated. All of the project’s requirements are assessed and documented in a specification document, and a feasibility study is conducted to see whether they are feasibly. Any limits or limitations that may affect the development process must be taken into account (Bassil 2012). 
+Design phase
+It’s the problem-solving process and planning for solutions for software (Bassil 2012). The requirements derived from the analysis phase are studied to successfully develop the software solution and prepare a blueprint design. This phase aids in the specification of system requirements, hardware, and the definition of overall system architecture.
+
+
+Implementation phase
+The programming and deployment of business demands and design specifications into a tangible executable program, database, software component, or website is referred to as the implementation step (Bassil 2012). The programmers are involved in this phase because they take the project requirements and specifications and develop the applications. 
+Testing phase 
+This phase is a technique for verifying that a software solution meets the original requirements and specifications while also accomplishing its intended aim (Bassil 2012). 
+Maintenance phase
+After the software product has been successfully been completed, delivered, and  installed, the maintenance phase involves refining output, fixing errors, and enhancing performance and quality (Bassil 2012).
+3.2	Strengths
+The advantages of the waterfall methodology are the following:
+•	Requirements are explicit before development starts (Balaji and Murugaiyan 2012). 
+•	Before going on to the following phase, each phase demands a certain duration to finish (Balaji and Murugaiyan 2012).
+•	It is simple to implement due to its linear model (Balaji and Murugaiyan 2012).
+•	The resources needed to put this approach into action are low (Balaji and Murugaiyan 2012).
+•	At each stage of development, appropriate documentation is followed(Balaji and Murugaiyan 2012).
+•	Errors are early detected (Amlani 2012). 
+•	Requirement specification documents are helpful in the future for code modification and project enhancement (Amlani 2012).
+•	Succeeding phases are dependent on the previous phase, therefore this technique allows for project timetable control (Amlani 2012).
+•	Each phase is distinct, and team members participating in each step verify that the stage is excellent before moving on to the next (Amlani 2012).
+•	When team members are distributed across the country or countries, this method may be quite effective (Amlani 2012).
+•	The waterfall approach requires fewer resources to implement than other methods (Amlani 2012). 
+•	There are no geographic boundaries which means that team members can work remotely (Amlani 2012).
+3.3	Weaknesses 
+The disadvantages of the waterfall methodology are the following:
+•	Many faults within a single-phase appears after the phase has been completed, therefore it results in an unorganised system (Balaji and Murugaiyan 2012).
+•	A modification to the requirement requested by the client will not be executed during the phase team members are currently working on (Balaji and Murugaiyan 2012).
+•	There’s no turning back. Team members can go back to the previous phase once is has been completed (Amlani 2012).
+•	It can be difficult to predict the amount of time necessary for various phases, and inaccurate assumptions might cause the project to miss its deadline (Amlani 2012).
+•	The project must be redone from the beginning if changes to the waterfall procedure are necessary (Amlani 2012).
+•	Because the client keeps adding requirements to the list, the software development time and cost will increase (Amlani 2012).
+•	Except for the team members who are in the current working phase, the remainder of the phase is idle (Amlani 2012).
+3.4	Opportunities 
+It will aid future endeavours. This indicates that similar programs might be developed in the future  due to appropriate documentation in waterfall models (Teamwork 2021). 
+3.5	Threats 
+Waterfall models are based on hardware. The Waterfall models have several flaws since it was portrayed as a damaged model (Teamwork 2021). 
+3.6	When to use the Waterfall methodology
+According to Teamwork (2021), the Waterfall methodology is best suited when the following occurs:
+•	The stakeholders already know what they want, and their requirements won’t change. 
+•	When a project is constant and predictable, which means the project will not alter. 
+•	When a project’s eventual purpose is well-defined and unlikely to alter. 
+3.7	When not to use the Waterfall methodology 
+According to Teamwork (2021), the Waterfall methodology mustn’t be an option to consider when the following occurs:
+•	There is a possibility that the project will alter. 
+•	There are uncertainties about the project requirements. 
+•	Throughout the process, continuous testing or adjustments are required. 
+
+4	Agile (Rational Unified Process model) Project Management Methodology 
+The capacity to move quickly is referred to as agility. The core of this software development method is an iterative and incremental method to software development. The needs and solutions were developed through collaboration among self-organising and cross functional teams. The most important part of this approach is customer happened, which is achieved through offering useful and simple software in an consistent and timely manner (McCormick 2012). 
+4.1	Agile (Rational Unified Process model) methodology SDLC
+Business modelling, requirements, analysis and design, implementation, test, configuration and change management, project management, environment, and deployment are the nine steps of the Agile model (Khan and Beg 2013). 
+Business modelling phase 
+Process of studying the business and understanding the company’s requirements (Khan and Beg 2013).
+Requirements phase
+During this phase, business requirements are translated into automated system behaviours (Khan and Beg 2013).
+Analysis and design phase
+Software architecture is designed from the business requirements during this phase (Khan and Beg 2013).
+	
+
+Implementation phase 
+Software is developed that adheres to the architecture and performs the essential functions (Khan and Beg 2013).
+Test phase 
+Ensure that the needed behaviours are present and that the required behaviours are proper (Khan and Beg 2013).
+Configuration and change management phase 
+Keeping track of the many versions of all the work items (Khan and Beg 2013).
+Project management phase 
+During this phase schedule and resources and managed (Khan and Beg 2013).
+Environment phase 
+The development environment is set up and maintained (Khan and Beg 2013).
+Deployment phase 
+After the software has passed all the tests, it is launched and made available to the customer.
+4.2	Strengths 
+The advantages of the agile (Rational Unified Process model) methodology are the following:
+•	This model is a complete methodology for developing software (Amlani 2012). 
+•	It’s a procedure with the ability to add other documents (Amlani 2012).
+•	It adapts to changing needs in order to satisfy the software’s requirements (Amlani 2012).
+•	It facilitates the iteration process, allowing to integrate code into the development life cycle with less time and effort 
+•	Development time is reduced due to reusable code (Amlani 2012).
+•	Due to a component-based architecture, debugging is easy (Amlani 2012).
+
+
+
+4.3	Weaknesses 
+The disadvantages of the agile (Rational Unified Process model) methodology are the following:
+•	Team member must be specialists in their respective industries to use this method (Amlani 2012).
+•	The process of development is too complicated and disorderly (Amlani 2012).
+•	Integration within big projects will cause problems during the testing phase  (Amlani 2012).
+•	It’s too complicated to learn and too difficult to apply (Amlani 2012).
+4.4	Opportunities 
+Iterative and incremental methodology 
+Throughout the life cycle, every component of development, including requirements and design, is examined. There is always a chance to move in a different direction when a team stops and re-evaluates the course of a project every two weeks, therefore an agile methodology is regarded as iterative or incremental since it focuses on such repletion of work cycles (Gandhi). 
+Inspect and adapt approach 
+This approach is the product of the iterative agile development technique, which allows developers to significantly cut both development time and cost to market by allowing teams to gather requirements while constructing the application (Gandhi).
+Rapid action development 
+By eliminating the usability constraints in traditional development, methodologies like agile and scrum may either improve or damage the quality of the user experience (Gandhi).
+4.5	Threats 
+Necessary documentation with a lack of structure 
+Various agile methods have an unstructured framework and are very prescriptive of crucial activities (Gandhi).
+Requires greater cultural change to adopt 
+If the needs of one area od code vary over time, several times the same programming is required (Gandhi).
+
+Tool to understand project velocity 
+It is impossible to develop an accurate estimate of the work effort required to provide a code because no one knows the entire requirements at the beginning of the project. Most agile techniques offer a better tool for understanding how a project works. By placing the software in the hands of the customers, agile methodologies allow for early identification of needs and project planning (Gandhi).
+4.6	When to use an agile methodology 
+An agile methodology is best suited when the following occurs: 
+•	When there is a possibility that a project will alter.
+•	When there are any uncertainties about the outcome of the solution.
+•	If the workflow needs to be rapid and flawless outcomes are less important than seeing rapid progress. 
+•	At every stage, the companies’ stakeholders or customers need to be involved. 
+4.7	When not to use an agile methodology 
+An agile methodology mustn’t be an option to consider when the following occurs:
+•	A lot of documentation is required. 
+•	A company lack self-motivated individuals. 
+•	A predictable deliverable is required from the start.
+•	When a company must adhere to stringent timelines or deliverables. 
+The following table illustrates the comparison between the Agile and Waterfall methodology:
+Table 1 A comparison between Waterfall and Agile methodology
+ 
+5	The Project Management Institute’s Project Management Book of Knowledge (PMI’s PMBOK) 
+The PMBOK was developed by the Project management Institute to assure a set of project management knowledge concepts. The goal is to assist a project manager in effectively completing a project. The PMBOK is a precise framework of ten knowledge categories, broken down into activities spanning five stages or process groups of the project life cycle, that are said to cover the amount of knowledge usually regarded as good practice in project management (Matos and Lopes 2013). 
+5.1	Five process Groups
+A process group is a logical collection of project management procedures that collaborate to achieve certain project objectives (A guide to the project management body of knowledge (PMBOK guide), 2022). Project management processes are categorised by the following process groups: 
+Initiating 
+This process group defines project success and lay out the plan of action. The project is approved, stakeholders are identified,  the scope is defined, and a project manager is assigned. Not every project will make it through the planning stage (A guide to the project management body of knowledge (PMBOK guide), 2022). 
+Planning 
+The planning process group includes actions such as identifying budgets, risks, and milestones that help refine the project’s scope. Project papers are created using a planning process known as progressive elaboration (A guide to the project management body of knowledge (PMBOK guide), 2022). 
+Executing 
+The goal of this phase is to prepare activities and communicate with stakeholder and sponsors. Most of the budget is spent during this phase (A guide to the project management body of knowledge (PMBOK guide), 2022). 
+
+
+
+Monitoring and Controlling 
+During this phase the project’s progress and performance is tracked, regulated, and assessed (A guide to the project management body of knowledge (PMBOK guide), 2022). 
+Closing 
+All deliverables are finished and formally transferred at this point, documents are preserved, signed off, and authorized (A guide to the project management body of knowledge (PMBOK guide), 2022). 
+5.2	Knowledge Areas
+Process groups are classified by knowledge areas. A knowledge area is a specified area of project management that is defined by the tools, inputs, techniques, processes, outputs, and practices that make up its components (A guide to the project management body of knowledge (PMBOK guide), 2022). The knowledge areas are:
+Project Integration Management 
+Multiple project management activities and processes inside this knowledge area are unified, coordinated, defined, and identified (A guide to the project management body of knowledge (PMBOK guide), 2022).
+Project Scope Management 
+This knowledge area contains the methods necessary to ensure that the project contains all of the work required to successfully complete the project (A guide to the project management body of knowledge (PMBOK guide), 2022).
+Project Schedule Management 
+This knowledge area includes processes for ensuring that the project is completed within a specified time frame (PMBOK guide), 2022).
+Project Cost Management
+This knowledge area includes techniques for estimating, financing, monitoring, planning, budgeting, funding, and controlling expenditures in order to complete the project on schedule and on budget (A guide to the project management body of knowledge (PMBOK guide), 2022).
+
+Project Quantity Management
+In order to meet stakeholders’ expectations, procedures for incorporating the organization’s quality policy into control, product and project quality requirements planning, and management are included (A guide to the project management body of knowledge (PMBOK guide), 2022).
+Project Resource Management 
+The methods for discovering, obtaining, and managing the resources needed to effectively finish the project are included (A guide to the project management body of knowledge (PMBOK guide), 2022).
+Project Communications Management 
+Procedure for collecting, producing, disseminating, managing, monitoring, storing, controlling, and retrieving are included (A guide to the project management body of knowledge (PMBOK guide), 2022).
+Project Risk Management 
+This knowledge area covers risk management planning, response execution, risk monitoring, identification, analysis, and project response planning (A guide to the project management body of knowledge (PMBOK guide), 2022).
+Project Procurement Management 
+Procedure for obtaining results from sources outside the project team are included (A guide to the project management body of knowledge (PMBOK guide), 2022).
+Project Stakeholder Management
+Includes identifying organisations, individuals, or groups who may have an impact on or be impacted by the project (A guide to the project management body of knowledge (PMBOK guide), 2022).
+5.3	Benefits of PMBOK
+The following advantages are available to various companies: 
+Standardization of the project management process 
+PMBOK essentially assists businesses in standardizing the implementation process for every project they undertake. With PMBOK, activities from various units may be examined to create standardized procedures, resulting in a more successful project management method (Erwin 2012). 
+Easy guide to project management steps
+The PMBOK guide makes it easy for all members of the company or project management team to accomplish their duties. Members of the team can quickly complete their portion of the project using the PMBOK as a guide (Erwin 2012).
+Provides documentation 
+Every step of the PMBOK contains processes and techniques that are documented. This is particularly valuable in establishing if procedures or approaches are effective in supporting the company in improving project management results  (Erwin 2012).
+5.4	Limitations of PMBOK
+The following are the limitations of PMBOK: 
+Generic framework
+The fact that processes and frameworks supplied by the PMBOK technique are general. They tend to come off as overly generic and not specialized enough for some enterprises or sectors, though, because they are supposed to be relevant to numerous organizations. This might lead to some unexpected issues during project planning (Jameson 2022). 
+PMBOK does not reward creativity 
+Because the PMBOK is designed to be general, it focuses on efficiency and effectiveness while also assuming that most users will follow the steps outlined. This implies that if employees depart from the plan, it might cause issues for everyone else because the framework works best when it is followed precisely (Jameson 2022).
+PMBOK values efficiency over communication 
+When operating a business, communication is crucial, but it is much more essential when implementing a project. The PMBOK technique emphasises efficiency and production at the expense of communication (Jameson 2022).
+
+6	The Control Objectives for Information and related Technology (COBIT) framework
+COBIT is a “trusted” open standard that is gradually being used by a wide spectrum of organisations throughout the world. COBIT is perhaps the most appropriate control framework for ensuring alignment between the usage of IT and an organization’s business goals, as it focuses on the business requirement that each control objective addresses (Ridley, Young et al. 2004). 
+6.1	COBIT framework
+COBIT allows managers to address the control gap for technical challenges, business risks, and needs by transferring responsibility to stakeholders. This framework enables the formulation of IT control rules and best practices at all levels of the organization. It is continually updating and harmonizing other guidelines and standards (Khther and Othman 2013). Figure 1 illustrates the overall COBIT framework. 
+ 
+Figure 1 Overall COBIT framework
+6.2	Characteristics of the COBIT framework
+Sheikhpour and Modiri (2012) have identified COBIT’s main characteristics as the following: 
+Business-focused 
+COBIT’s core subject is business-oriented. It is intended to be used not just by providers, auditors, IT service providers, and users, but also, and more crucially, by management and business process owners
+Information Criteria
+Information given to key business operations must meet a set of requirements, which are summarized as follows: 
+1.	Quality Requirements
+•	Effectiveness: Information must be relevant and applicable to the business process and supplied in a timely, accurate, consistent, and useable way
+•	Efficiency: Concerns the delivery of information through the most efficient utilisation of resources. 
+
+2.	Security Requirements 
+•	Confidentiality: Protecting sensitive information from unauthorized exposure is a concern. 
+•	Integrity: Concerns about the quality and completeness of data, as well as its validity considering company values and expectations. 
+•	Availability: This refers to information being available when the business process needs it today and in the future. It also involves the protection of critical resources and associated skills. 
+
+3.	Fiduciary Requirements 
+•	Compliance: Deals with following the rules, regulations, and contractual agreements that apply to the business process, such as externally imposed business requirements and internal policies. 
+•	Reliability: Concerns the disclosure of relevant information to enable management to administer the organisation and fulfil its fiduciary and governance obligations. 
+
+
+
+Process-Oriented
+COBIT splits IT governance into 34 processes that are organised into four domains, each with a high-level control aim. The following are the domains: 
+•	Plan and Organise 
+•	Acquire and Implement 
+•	Delivery and Support 
+•	Monitor and Evaluate 
+These domains correspond to IT’s conventional duty areas. The COBIT framework provides a standard language and reference process model for everyone in an organisation to observe and manage IT operations (Sheikhpour and Modiri 2012). 
+6.3	Benefits of implementing the COBIT framework
+The following are the benefits of implanting the COBIT framework:
+Aligns IT with organizational goals
+COBIT is a framework for ensuring that an organisation’s Information Technology is in sync with its business objectives. COBIT helps firms to connect Information Technology goals with bigger business goals, which is a difficult task (Henry 2020). 
+Efficiency and productivity 
+COBIT is built on generally acknowledged concepts for increasing IT efficiency and effectiveness. As a result, the same tools and approaches may be used to improve the system and process delivery across sectors and organisations of all sizes (Henry 2020).
+Provides governance and frameworks for IT organisations  
+Effective governance necessitates the organisation’s awareness of its surroundings and a focus on IT elements that support its objectives. By creating effective control mechanisms and process monitoring, COBIT allows firms to detect and mitigate IT-related risks. Because it is focused on applying an assessment metric throughout the whole business cycle, COBIT’s governance function is successful (Henry 2020).
+
+
+Helps organisations to comply with industry standards 
+By implementing COBIT, a company ensures that it is not only adhering to industry standards but also that both internal and external stakeholders are improving their abilities to meet industry requirements (Henry 2020).
+6.4	The disadvantage of implanting the COBIT framework
+Knowledge of the COBIT structure is required before it can be utilized as a tool to aid IT governance. COBIT usage has dropped from fourteen percent in 2008 to twelve point nine percent in 2010. Using these statistics we can draw a conclusion that COBIT is difficult to implement (Zhang, le Fever et al. 2013).
+
+7	Conclusion
+The correct project management approach may assist project managers to get the most out of their teams and elevate the project. Project management methodologies have helped many companies in succeeding in standardizing, structuring, and organizing work processes. This study has examined two different types of project management methodologies such as the Waterfall and Agile methodology, a body of knowledge framework namely PMBOK, and a governance framework namely COBIT. A SWOT analysis has been conducted for each methodology indicating the strengths, weaknesses, opportunities, and treats of the methodologies. 
+Although only these two methodologies have been examined there are a lot of methodologies out there to choose from. There is no “right” project management methodology to use, a project manager’s choice on choosing the best suitable methodology depends on the industry, allocated budget, the structure of the business, roles of members, timeline flexibility, the duration of the project, stakeholder involvement, customer involvement and the resources available. 
+By making use of a body of knowledge framework, businesses can unify project management processes across divisions and enable project managers to collaborate across enterprises using a common framework. Project managers can plan, cater, and manage projects, portfolios, and programs more efficiently by making use of a body of knowledge framework. These frameworks enable project managers to maximise all opportunities, and minimise all treats associated with the chosen project management methodology. A governance framework is also great at assists organisations with, risk management, IT strategy alignment, and regulatory compliance with business goals. 
+Through making use of an appropriate project management methodology, a body of knowledge framework and/or a governance framework, organisations can successfully complete projects within a specific time frame while maximising all opportunities and minimising all threats.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8	Bibliography
+Amlani, R. D. (2012). "Advantages and limitations of different SDLC models." International Journal of Computer Applications & Information Technology 1(3): 6-11.
+	
+Balaji, S. and M. S. Murugaiyan (2012). "Waterfall vs. V-Model vs. Agile: A comparative study on SDLC." International Journal of Information Technology and Business Management 2(1): 26-30.
+	
+Bassil, Y. (2012). "A simulation model for the waterfall software development life cycle." arXiv preprint arXiv:1205.6904 2.
+	
+Charvat, J. (2003). "Project management methodologies: selecting, implementing, and supporting methodologies and processes for projects."
+	
+Erwin, Z. (2012). "Benefits of PMBOK." Retrieved 11th May, 2022, from https://benefitof.net/benefits-of-pmbok/.
+	
+Gandhi, S. P. "SWOT Analysis of Agile Methodologies."
+	
+Henry (2020). "What are the benefits of cobit?". Retrieved 12th May, 2022, from https://ipsnews.net/business/2020/10/05/what-are-the-benefits-of-cobit/.
+	
+Jameson, J. (2022). "3 limitations of PMBOK and how to overcome them." from https://projectmanager.com.au/3-limitations-of-pmbok-and-how-to-overcome-them/?utm_source=rss&utm_medium=rss&utm_campaign=3-limitations-of-pmbok-and-how-to-overcome-them.
+	
+Khan, P. and M. S. Beg (2013). Extended decision support matrix for selection of sdlc-models on traditional and agile software development projects. 2013 Third International Conference on Advanced Computing and Communication Technologies (ACCT), IEEE.
+	
+Khther, R. A. and M. Othman (2013). "Cobit framework as a guideline of effective it governance in higher education: a review." International Journal of Information Technology Convergence and Services 3(1): 21.
+	
+Matos, S. and E. Lopes (2013). "Prince2 or PMBOK–a question of choice." Procedia Technology 9: 787-794.
+	
+McCormick, M. (2012). "Waterfall vs. Agile methodology." MPCS, N/A.
+	
+Ridley, G., et al. (2004). COBIT and its Utilization: A framework from the literature. 37th Annual Hawaii International Conference on System Sciences, 2004. Proceedings of the, IEEE.
+	
+Sheikhpour, R. and N. Modiri (2012). "An approach to map COBIT processes to ISO/IEC 27001 information security management controls." International Journal of Security and Its Applications 6(2): 13-28.
+	
+Teamwork (2021). "Which project management methodologies should you use?"  https://www.teamwork.com/project-management-guide/project-management-methodologies/ 2022.
+	
+Zhang, S., et al. (2013). "An Examination of the Practicability of COBIT Framework and the Proposal of a COBIT-BSC Model." Journal of Economics, Business and Management 1(4): 391-395.
+	
+

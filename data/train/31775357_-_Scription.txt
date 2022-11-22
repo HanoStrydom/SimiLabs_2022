@@ -1,0 +1,592 @@
+
+
+
+
+
+
+Planning a technical architecture for a micro-enterprise
+
+
+
+
+S Boshoff
+ 
+
+
+
+
+
+Supervisor:	Mrs. S.E.S Campher
+
+
+
+Graduation: 
+Student number: 31775357
+ 
+ABSTRACT
+In this study, the different options that a micro-enterprise has for an information technology (IT) architecture will be investigated. This will be done by using a case study of the Instrument-makers on the North-West University Potchefstroom campus. The world becomes more digital every year and as a result, more businesses have to adapt to become more digital. Enterprise architecture helps them with digitization. There is no commonly accepted architectural approach or representation among scholars and practitioners, but the five frameworks most commonly used are business architecture, information architecture, software architecture and technical architecture. In this study, the researcher investigates the enterprise and IT architecture and its components to find the most suitable technology architecture for a micro-enterprise. An artefact is developed in the form of a technical architecture using various methods and models that are discussed. The researcher followed the Design Science Research methodology.
+ 
+ABSTRAK
+In hierdie studie sal die verskillende opsies wat 'n mikro-onderneming vir 'n inligtingstegnologie (IT) argitektuur het, ondersoek word. Dit sal gedoen word deur gebruik te maak van 'n gevallestudie van die Instrument-makers te Noordwes-Universiteit Potchefstroom kampus. Die wêreld word elke jaar meer digitaal en gevolglik moet meer besighede aanpas om by te bly met die veranderinge. Ondernemingsargitektuur help hulle met digitalisering. Daar is geen algemeen aanvaarde argitektoniese benadering of voorstelling onder vakkundiges en praktisyns nie, maar die vyf raamwerke wat die meeste gebruik word, is besigheids argitektuur, inligtings argitektuur, sagteware argitektuur en tegniese argitektuur. In hierdie studie ondersoek die navorser die onderneming en IT argitektuur en hul komponente om die mees geskikte tegnologie argitektuur vir 'n mikro-onderneming te vind. 'n Artefak word ontwikkel in die vorm van 'n tegniese argitektuur deur gebruik te maak van verskeie metodes en modelle wat bespreek word. Die navorser het die ‘Design Science Research’ metodologie gevolg. 
+TABLE OF CONTENTS 
+CHAPTER 1  INTRODUCTION	1
+1	1
+1.1	Project description	1
+1.2	Problem description and background	1
+1.2.1	Background to study	1
+1.2.2	Problem description	3
+1.2.3	Research question	4
+1.3	Aims and objectives	4
+1.3.1	Research aim	4
+1.3.2	Research objectives	4
+1.4	Procedures and methods that will be used	5
+1.4.1	Paradigmatic perspective	5
+1.4.2	Research methodology	5
+1.5	Approach to project management and project plan	6
+1.5.1	Scope	6
+1.5.2	Limitations	6
+1.5.3	Risk analysis	6
+1.5.4	Project plan	7
+1.6	Ethical considerations	8
+1.7	Provisional chapter division	8
+1.7.1	Chapter 1: guidelines for project planning and research proposal	8
+1.7.2	Chapter 2: literature study on existing architectures and methods to create an architecture	8
+1.7.3	Chapter 3: development of the artefact and the artefact documentation	8
+1.7.4	Chapter 4: results	8
+1.7.5	Chapter 5: reflection	8
+CHAPTER 2  LITERATURE REVIEW	9
+2	9
+2.1	Introduction	9
+2.2	Architecture and enterprise architecture	9
+2.3	Bridging the gap between small and medium enterprises and enterprise architecture	10
+2.4	The Open group Architecture Framework (TOGAF)	11
+2.5	Enterprise architecture principles	11
+2.6	Common architecture principles	11
+2.6.1	Business principles (The Open Group, 2018:201-204):	12
+2.6.2	Data principles (The Open Group, 2018:205-209):	12
+2.6.3	Application principles (The Open Group, 2018:209-210):	13
+2.6.4	Technology principles (The Open Group, 2018:210-212):	13
+2.7	Architecture development method (ADM)	13
+2.8	Architecture content framework	14
+2.9	Enterprise continuum	14
+2.10	Architecture repository	15
+2.11	Cloud versus on site	15
+2.12	Cloud storage solutions	16
+CHAPTER 3  DEVELOPMENT OF ARTEFACT	18
+3	18
+3.1	Description of artefact	18
+3.2	Architecture development lifecycle	19
+3.2.1	Architectural requirements analysis:	20
+3.2.2	Architectural design	20
+3.2.3	Architectural documentation:	20
+3.2.4	Architectural evaluation	20
+3.3	Artefact development	20
+3.3.1	Architectural requirement analysis	20
+3.3.2	Architectural design	21
+3.3.3	Architectural documentation	23
+3.3.3.1	Data flow diagram	24
+3.3.3.2	Use case view	25
+3.3.4	Architectural evaluation	25
+CHAPTER 4  RESULTS	26
+4	26
+4.1	Technical skills and computer literacy of the users	26
+4.2	Financial feasibility	26
+4.3	Hardware availability	26
+4.4	Business requirements	27
+CHAPTER 5  REFLECTION	28
+5	28
+BIBLIOGRAPHY	29
+APPENDICES	32
+6	ETHICAL DECLARATION	32
+
+ 
+LIST OF TABLES 
+Table 2 1 Comparison of cloud storage and on-site storage	16
+Table 3 1 Comparison of Dataverse, Dataverse for Teams, and SharePoint lists (Microsoft, 2022d)	22
+ 
+LIST OF FIGURES 
+Figure 3 1 Technical architecture of canvas application	18
+Figure 3 2 Architecture development lifecycle	19
+Figure 3 3 Data flow diagram of architecture	24
+Figure 3 4 Use case view of architecture	25
+
+ 
+CHAPTER 1  INTRODUCTION
+1	
+1.1	Project description
+In this study, the different options that a micro-enterprise has for an information technology (IT) architecture will be investigated. Different solutions for each of the components in the IT architecture will be discussed and compared in terms of their cost, ease of use, advantages, and disadvantages. This will be done by using a case study. The Instrument-makers on the North-West University (NWU) Potchefstroom Campus do not have an IT architecture. The head of the business, Mr Thys Taljaard, has asked for advice to implement an architecture that will make their day-to-day operations more effective. 
+
+The formal definition of a micro-enterprise in South Africa published in the Government Gazette is a business with zero to ten full-time employees, and an annual total turnover of less than or equal to R10 million (Department of Small Business Development, 2019:111). The Instrument-makers fall within this category but due to the lack of studies on micro-enterprises, this study will be done from the perspective of small and medium enterprises.
+
+An artefact will be developed that will provide an architectural framework that meets all the business requirements.
+
+The researcher will provide background on the existing studies of IT architecture frameworks for small businesses, give a description of the project, and discuss the case study that will be used in this chapter. 
+1.2	Problem description and background
+1.2.1	Background to study
+The world becomes more digital every year and as a result, more businesses have to adapt to become more digital (Hafsi & Assar, 2016). Enterprise architecture (EA) helps them do that. EA has a lot of benefits such as creating transparency in the business’s state of operations to improve business processes and overall efficiency (Goerzig & Bauernhansl, 2018). These benefits can improve an SME’s business operations to be able to compete with bigger enterprises.
+
+According to Tang et al. (2004), there is no commonly accepted architectural approach or representation among scholars and practitioners. The five frameworks most commonly used are business architecture, information architecture, software architecture and technical architecture. Figure 2.1 shows the structure of the enterprise architecture, the IT architecture, and the technology architecture.
+
+
+Figure 2.1 Diagram of Enterprise Architecture Framework
+In this study, the enterprise and IT architecture and their components will be investigated to find the most suitable technology architecture for a micro-enterprise. A decision matrix will be given to Mr Taljaard to determine what the strategic objective of the business is, and what the most important business capabilities, business processes, and functional capabilities are. During the study, it will be determined whether these components are good measures to be used when creating an architectural framework.
+
+Bernaert et al. (2014) discuss the suggested method for bridging the gap between SMEs and enterprise architecture (EA) by presenting five adoption models for EA implementation in SMEs, namely the Technology Acceptance Model (TAM), the Method Evaluation Model, and Methodological Pragmatism. The TAM’s goal is to provide a general explanation of the factors that influence computer adoption that can be applied to a wide range of end computing technology and user demographics while also being cost-effective and logically justifiable (Davis et al., 1989:985). According to Rescher (cited by Bernaert et al. (2014:83)), Methodological Pragmatism holds that procedures have simply a pragmatic utility, not truth value. A technique cannot be true or untrue since it does not describe any external reality; it can only be successful or ineffective (Bernaert et al., 2014:83). For assessing information system design methodologies, Moody (2003) provided a theoretical model and related measuring instrument based on TAM and Methodological Pragmatism called the Method Evaluation Model.
+
+Haddara et al. (2022) describe the challenges that SMEs face when adopting cloud enterprise resource planning (ERP) systems. Some of the challenges mentioned by Haddara et al. (2022) are the following: 
+•	Existing cloud-ERP systems are limited in their customisation ability to suit the business requirements,
+•	data integration as most business’ data structures do not fit with the cloud-ERP systems – this leads to data loss and data inaccuracy,
+•	there is not sufficient training involved when implementing a cloud-ERP system, and
+•	data security risks.
+Drake and Turner (2022) discuss several different cloud databases available to use, namely Microsoft Azure SQL Database, Amazon Relational Database Service, Google Cloud SQL, IBM Db2 on Cloud, and Oracle. Their ease of use, pricing, advantages and disadvantages are debated.
+
+These literature studies will be discussed in more detail in chapter 2.
+
+Based on the research material consulted, it seems that most studies investigate implementation methods of EAs in SMEs. There are very few studies that investigate the components of each of the architectures within the EA model. This study will investigate the technology architecture components most suited for the micro-enterprise used in the case study.
+1.2.2	Problem description
+The Instrument-makers on the NWU Potchefstroom Campus have an administration system with a database. The system is not currently in use due to it not working correctly. The system is a desktop application and the database is hosted and maintained by the IT services on campus. The head of the department has asked for advice on how to manage this system in terms of IT architecture. The current architecture consists of using the NWU server for file sharing, data storage, and electronic messaging. The NWU server that the Instrument-makers use is located on the Potchefstroom Campus. It is managed by the IT services on campus. Mr Taljaard has expressed challenges with this environment as the IT services on campus are too busy to help with the problems that arise. The advantage of the current architecture is that IT professionals manage the server and the database used in the administration system. Implementing cloud services could make their architecture partially independent of NWU’s IT services. Should Mr Taljaard choose to implement cloud services, the database used for the administration system and the system itself will be hosted in the cloud and will not be maintained by the NWU. The disadvantage of this might be added costs, and the lack of technical support should the need arise.
+
+This study will investigate the most suitable IT architecture framework that will meet all the requirements set out by Mr Taljaard. This will be done by considering the components within the enterprise architecture and determining what the most suitable architectures for these components are and how they will influence the technical architecture that will be created for this business. The technical architecture will be represented by a diagram.
+1.2.3	Research question
+How do you consider components of an enterprise architecture to plan a technical architecture for a micro-enterprise?
+1.3	Aims and objectives
+1.3.1	Research aim
+This study aims to determine the best technical architecture to be used in the micro-enterprise identified in the case study. The study will investigate different components and architectures in the enterprise architecture while referring to the requirements set out by Mr Taljaard to determine the most suitable technical architecture.
+1.3.2	Research objectives
+•	Investigate different existing architectures to determine the most cost-effective and user-friendly option for a micro-enterprise.
+•	Present the options to Mr Taljaard so that an architecture can be chosen.
+•	Investigate the user-friendliness of the chosen architecture to ensure that the end-users are comfortable using it.
+•	Determine whether or not the end-users will need training on how to use the architecture.
+•	Implement the architecture and determine the success thereof.
+1.4	Procedures and methods that will be used
+1.4.1	Paradigmatic perspective
+This study will make use of design science research (DSR) as a paradigm and a research methodology. 
+
+Hevner and Chatterjee (2010) describe DSR as a research paradigm wherein a designer creates inventive artefacts to address concerns about human issues and further state that the developed artefacts are both helpful and essential to comprehending that issue. Hevner et al. (2004), March and Smith (1995), and Walls et al. (1992) all agree that DSR is a research paradigm. 
+1.4.2	Research methodology
+The research methodology that will be used in this study is the design science research methodology described by Hevner et al. (2004) and Peffers et al. (2007). Hevner et al. (2004) stated 7 guidelines to be followed when using the DSR methodology, while Peffers et al. (2007) stated the process to be followed when using the methodology. 
+
+The guidelines to be followed are the following: design as an artefact, problem relevance, design evaluation, research contributions, research rigour, design as a search process, and communication of research (Hevner et al., 2004:83). A well-understood business problem should be used to develop a useful and meaningful artefact that will solve the problem (Hevner et al., 2004:82-84). After developing an artefact, its utility, quality, and efficacy must be thoroughly proved through well-executed assessment techniques and must contribute to existing research in the applicable areas (Hevner et al., 2004:85-87). In both the development and assessment of the intended artefact, DSR necessitates the use of rigorous techniques (Hevner et al., 2004:87). Deciding on an effective artefact is often iterative and requires the abstraction and representation of acceptable methods, purposes, and rules (Hevner et al., 2004:88). When the artefact has been developed it must be presented to the relevant audiences (Hevner et al., 2004:90).
+
+The process to be followed is a nominal process sequence: identify the problem and provide motivation, define the objectives of a viable solution, design and develop an artefact, demonstrate the artefact, evaluate the effectiveness of the artefact, and communicate the results (Peffers et al., 2007:54). This process will be followed throughout this study.
+
+The artefact that will be developed is an architectural framework that is most suited to the business requirements. 
+1.5	Approach to project management and project plan
+1.5.1	Scope
+The artefact will be a technical architectural framework, consisting of a software and services architecture, an integration architecture, a physical data architecture, an infrastructure and network architecture, a security architecture, and a development and operations architecture. Within these architectures are several components, namely: software components, integration platforms, data, infrastructure/cloud, security capabilities, and development and operations capabilities. This framework will be implemented within the business whereafter an evaluation will be done to determine whether the architecture is useful.
+
+The business processes that will be considered to develop the architecture are the administration process, inventory management, and employee management.
+1.5.2	Limitations
+The limitations when implementing the artefact will be financial. The best solution might not fall within the Instrument-makers’ budget. They will choose the solution most feasible for them.
+1.5.3	Risk analysis
+Possible risks when implementing the artefact:
+1.	Data loss: when transferring data to a new platform, data loss or data corruption could occur.
+2.	Data theft: if the most effective solution is to use the cloud, data theft could occur if the database is hacked.
+Steps to be taken to mitigate the risks:
+1.	Data loss: most platforms that will be considered when developing the artefact have sufficient protocols for transferring data successfully. Should something go wrong, backups of the data will be available to use.
+2.	Data theft: to prevent data theft, the architecture will be developed to be secure with applicable encryption.
+1.5.4	Project plan
+
+1.6	Ethical considerations
+Any sensitive data that might be presented to the researcher during this research project will not be distributed or shared with anyone not related to the project. Measures will be taken to ensure the data and system that will be implemented will be safe and secure. 
+1.7	Provisional chapter division
+1.7.1	Chapter 1: guidelines for project planning and research proposal
+This chapter provides a brief description of what the project is about and what it involves, a background of existing literature relevant to the study, a problem description and background of the problem, a discussion of the research paradigm and methods that will be used, the aims and objectives of the project, the research methodology that will be followed, the rigour and validity that will answer the research question, the ethical and legal implications that the study has, and the approach to project management with a project plan.
+1.7.2	Chapter 2: literature study on existing architectures and methods to create an architecture
+This chapter will provide a brief project description, a problem description and background of the problem, the aims and objectives of the project, and a literature review of existing literature relevant to the study.
+1.7.3	Chapter 3: development of the artefact and the artefact documentation
+This chapter will describe the artefact, the life cycle followed, and a description of the development of the artefact.
+1.7.4	Chapter 4: results
+This chapter will provide the results of the effectiveness of the artefact after it has been implemented.
+1.7.5	Chapter 5: reflection
+This chapter will reflect on the project by the researcher.
+
+ 
+CHAPTER 2  LITERATURE REVIEW
+2	
+2.1	Introduction
+To create a technical architecture, it is important to consider the enterprise architecture as a whole, to understand what each component does and how the components work together. This literature review contains an overview of enterprise architecture, how it relates to small businesses, the international standard for enterprise architecture, and existing solutions that are available. 
+
+The following sections will be discussed in this chapter:
+•	Architecture and enterprise architecture to state exactly what enterprise architecture is,
+•	How to bridge the gap between small and medium enterprises and enterprise architecture, to provide an approach to developing an architecture, 
+•	Architecture frameworks that will be used to develop the architecture, 
+•	Methods that can be used to develop an architecture framework, and
+•	A comparison of a cloud versus on site architecture.
+2.2	Architecture and enterprise architecture
+The ISO/IEC/IEEE 42010:2011 standard is the internationally accepted standard for information systems. It defines the term architecture as “fundamental concepts or properties of a system in its environment embodied in its elements, relationships, and in the principles of its design and evolution” (ISO & IEC, 2011:2). Lankhorst (2009:2) compares the architecture of an information system in an organisation to the architecture blueprints used to design and build a building. The frame of reference when designing an architecture for a building is similar to what is needed when designing an architecture for an enterprise. The Open Group Architecture Framework (TOGAF) is an internationally recognised framework for designing architectures within organisations (The Open Group, 2018:xix). TOGAF will be discussed in more detail in section 2.4. The Open Group (2018:6) provides the following definition for an enterprise: “any collection of organizations that have common goals.” Combining what architecture and an enterprise are, the following definition can be given to enterprise architecture (Lankhorst, 2009:3): “a coherent whole of principles, methods, and models that are used in the design and realisation of an enterprise’s organisational structure, business processes, information systems, and infrastructure.”
+
+Business performance can be improved by allowing organisations to understand themselves holistically and integratedly in terms of their business processes, strategic direction, technological resources, and information flows through the use of enterprise architecture, a management and technology approach (Bernard, 2012:23). A company may manage the changeover from the present to the future operational states by creating current and future versions of this integrated view (Bernard, 2012:23).
+2.3	Bridging the gap between small and medium enterprises and enterprise architecture
+Bernaert et al. (2014) provide three adoption models to use when implementing EA in SMEs, namely the Technology Acceptance Model (TAM), the Method Evaluation Model, and Methodological Pragmatism. 
+
+Davis et al. (1989) introduced the TAM as a measurement scale for forecasting the user acceptance of technology, using perceived ease of use and perceived usefulness. Studies conducted by Davis et al. (1989) show that users prefer an application that provides the exact functionality they desire over ease of use, which is still true today as proven by studies by Sheppard and Vibert (2019). These studies show the importance of an application adhering to a user’s functional requirements. The application should be made to do exactly what a user requires. The functional capabilities of an EA are therefore very important when planning the technical architecture, as each component within the technical architecture should take the functional capabilities into account.
+
+Methodological Pragmatism assumes that a method is either effective or ineffective, it cannot be correct or wrong (Bernaert et al., 2014:83). All methods are intended to increase a task’s performance by improving the efficiency and effectiveness of the task. The efficiency can be improved by reducing inputs, and the effectiveness by improving the outputs.
+
+Moody (2003) created a theoretical model and related measuring instrument based on TAM and Methodological Pragmatism that evaluates methods based on certain constructs: actual efficiency, actual effectiveness, perceived ease of use, perceived usefulness, intention to use, and actual usage. This evaluation method is called the Method Evaluation Model. 
+
+Using the TAM and the Method Evaluation Model, EA can be adopted by SMEs by performing three tasks: increasing the perceived usefulness, increasing the perceived ease of use, and making sure the actual efficacy influences the perceived efficacy. Actual efficacy has an impact on perceived usefulness, and actual efficiency has an impact on perceived ease of use (Bernaert et al., 2014:86). TAM’s scale may be used to evaluate perceived usefulness and perceived ease of use. Developing EA techniques should be implemented and tested to improve the techniques (Bernaert et al., 2014:87). If the actual efficacy meets the user’s standards, the perceived usefulness will increase as the user will spread the positive impact EA has on SMEs.
+2.4	The Open Group Architecture Framework (TOGAF)
+TOGAF is a widely accepted framework for creating organisational architectures (The Open Group, 2018:xix). The TOGAF document is divided into five parts: the Architecture Development Method (ADM), ADM guidelines and techniques, the Architecture Content Framework, the Enterprise continuum and tools, and the Architecture Capability Framework (The Open Group, 2018:5). The TOGAF Standard supports the following common architecture domains: business architecture, data architecture, application architecture, and technology architecture (The Open Group, 2018:11-12).
+2.5	Enterprise architecture principles
+Principles are broad rules and guidelines that inform and support how an organisation approaches achieving its objective (The Open Group, 2018:197). They are meant to be durable and rarely changed. Principles may be simply one component of an organised collection of concepts that serve to define and guide the organisation collectively, including its values, activities, and outcomes. Principles may be created at various levels and within various areas, depending on the organisation.
+
+The creation and application of architecture are influenced by two important domains (The Open Group, 2018:197):
+•	Enterprise principles offer a foundation for corporate decision-making and guide the organization's approach to achieving its purpose.
+•	Architecture principles are a collection of rules that govern how architecture operates.
+2.6	Common architecture principles
+A rigid architecture may become less flexible if there are too many principles (The Open Group, 2018:201). Many companies prefer to keep the number of principles to between 10 and 20 and to only designate high-level ones.
+
+The following are common principles used in organisations when developing an architecture:
+
+2.6.1	Business principles (The Open Group, 2018:201-204):
+•	Primacy of principles: all enterprises within the organization must adhere to these information management guidelines.
+•	Maximise benefit to the enterprise: the enterprise as a whole is considered while making information management decisions to maximise benefits.
+•	Information management is everybody’s business: the enterprise as a whole participates in information management choices necessary to achieve business objectives.
+•	Business continuity: despite system outages, business activities are kept up.
+•	Common use applications: it is preferable to create enterprise-wide apps rather than create identical or redundant applications that are only offered to one entity.
+•	Service orientation: the architecture is centred on the creation of services that are designed to reflect the actual business operations that make up enterprise business processes.
+•	Compliance with law: processes for enterprise information management abide by all applicable laws, rules, and regulations.
+•	Information technology (IT) responsibility: ownership and implementation of IT infrastructure and processes that enables solutions to satisfy user-defined objectives for service levels, functionality, delivery schedules, and pricing within the scope of the IT organisation.
+•	Protection of intellectual property: intellectual property (IP) belonging to the business must be safeguarded. The IT architecture, implementation, and governance procedures must reflect this protection.
+
+2.6.2	Data principles (The Open Group, 2018:205-209):
+•	Data is an asset: data is an asset that the organisation values and is managed as such.
+•	Data is shared: users have access to the information they need to carry out their tasks, thus data is exchanged throughout business departments and organisations.
+•	Data is accessible: users can obtain data to carry out their tasks.
+•	Data trustee: A trustee is in charge of each data element's accuracy.
+•	Common vocabulary and data definitions: the definitions of data are available to all users and are uniform across the whole organisation.
+•	Data security: data is secured from misuse and disclosure by unauthorised parties. This includes, but is not limited to, the protection of pre-decisional, sensitive, source selection-sensitive, and proprietary information in addition to the conventional features of national security classification.
+2.6.3	Application principles (The Open Group, 2018:209-210):
+•	Technology independence: applications may run on a range of technology platforms since they are independent of particular technological decisions.
+•	Ease-of-use: utilising applications is simple. Users are unaware of the underlying technology, allowing them to focus on their current work.
+2.6.4	Technology principles (The Open Group, 2018:210-212):
+•	Requirements-based change: applications and technological advancements are only produced in response to business requirements.
+•	Responsive change management: enterprise information environment modifications are applied promptly.
+•	Control technical diversity: to keep the non-trivial cost of keeping knowledge of and communication across various processing environments to a minimum, technological variety is regulated.
+•	Interoperability: Standards that support data, application, and technological interoperability should be adhered to by software and hardware.
+2.7	Architecture development method (ADM)
+A tried-and-true approach for developing architectures is provided by the ADM that establishes an architectural framework, creates architecture content, transitions, and controls how architectures are realised (The Open Group, 2018:12). All of these tasks are completed as part of an iterative cycle for the continual creation and realisation of architecture, which enables companies to alter their businesses in a controlled way in response to opportunities and goals for the company. 
+
+There are ten phases within the ADM (The Open Group, 2018:12):
+1.	The preliminary phase outlines the preparatory and initiatory steps necessary to develop an architecture capability, such as customising the TOGAF framework and defining the architecture principles.
+2.	Architecture vision: The first stage of an architectural development cycle is described by this phase. It contains details on defining the project's scope, naming the parties involved, developing the architectural vision, and obtaining consent to continue the development of the architecture.
+3.	Business architecture: illustrates how the agreed-upon architecture concept is supported by the development of business architecture.
+4.	Information systems architecture: illustrates how a system architecture for information systems is created to support the agreed-upon architecture goal.
+5.	Technology architecture: describes the process used to create a technological architecture that supports the agreed-upon architecture goal.
+6.	Opportunities and solutions: identify delivery vehicles and carries out early implementation planning for the architecture that was developed in the earlier phases.
+7.	Migration planning: by completing a thorough Implementation and Migration Plan, this phase addresses how to transition from the Baseline to the Target Architectures.
+8.	Implementation governance: gives an architectural review on the execution.
+9.	Architecture change management: creates guidelines for managing the transition to the new architecture.
+10.	Requirements management: explores how architecture needs are managed across the ADM.
+2.8	Architecture content framework
+As a result of their work, architects implementing the ADM will create a variety of outputs (The Open Group, 2018:13). Major work products may be created, organised, and presented consistently thanks to the TOGAF Architecture Content Framework, which offers a structural model for architectural content. The three categories listed below are used by the Architecture Content Framework to categorise different types of architectural work products according to their intended use: 
+•	A contractually necessary item of work is known as a delivery and is afterwards officially approved by the stakeholders.
+•	An artefact is a piece of architectural work that explains a particular feature of architecture.
+•	When integrated with additional building blocks to create designs and solutions, a building block represents a (perhaps reusable) component of corporate capabilities.
+2.9	Enterprise continuum
+The Enterprise Continuum idea is part of the TOGAF standard and illustrates how generic solutions may be used and tailored to meet the needs of a specific business (The Open Group, 2018:15). It also provides a larger perspective for architects. As foundation architectures transition from being general to being organization-specific, the Enterprise Continuum, a perspective of the Architectural Repository, offers techniques for categorising architecture and solution artefacts. The Architecture Continuum and the Solutions Continuum are two complementary ideas that make up the Enterprise Continuum.
+2.10	Architecture repository
+The idea of an architecture repository, developed by the ADM and capable of storing different types of architectural output at different abstraction levels, supports the enterprise continuum (The Open Group, 2018:15). The TOGAF standard helps stakeholders and practitioners at all levels communicate and work together in this way.
+
+The following are the main elements of an architecture repository (The Open Group, 2018:17):
+•	The Architectural Metamodel, which also includes a metamodel for architecture content, illustrates how an architecture framework might be used organisationally.
+•	The criteria, procedures and structures that support the Architecture Repository's governance are defined by the Architecture Capability.
+•	The architecture landscape is a visual depiction of the assets that are currently distributed across the active company. To achieve different design goals, the landscape is likely to occur at many different levels of abstraction.
+•	The standards that new architectures must adhere to are recorded in the Standards Information Base, which may comprise industry standards, carefully chosen goods and services from vendors, or shared services that have previously been implemented inside the business.
+•	The Reference Library offers standards, templates, patterns, and other types of reference content that may be used to hasten the development of new corporate architectures.
+•	The Governance Log keeps track of governance activity throughout the company.
+•	All permitted architectural needs that have been approved by the Architecture Board are visible in the Architecture Requirements Repository.
+•	The SBBs that the company has planned or implemented to support the Architecture Landscape are represented architecturally in the Solutions Landscape.
+2.11	Cloud versus on site
+A business has two options for data storage: cloud storage or on-site storage. There are advantages and disadvantages to both. A business should weigh each carefully to decide which to use. Below is a comparison of cloud storage and on-site storage with eight factors that should be considered when choosing which type of storage to implement (Diamond, 2020):
+	Cloud storage	On-site storage
+Costs and maintenance	Monthly subscription costs include licensing fees and maintenance. Overall not expensive.	A large amount of upfront capital with maintenance costs thereafter. Generally very expensive.
+Security/threat protection	Security is included with a monthly subscription. Cloud storage is very safe and secure.	Requires experts to create a security system.
+Compliance 	Top cloud providers have teams who specialise in compliance.	Specialised knowledge is required to make sure the server is compliant with regulations.
+Scalability 	Scaling up is almost instantaneous.	It is expensive to expand the server.
+Reliability	An internet connection is needed to access the cloud storage. The server can be accessed from anywhere with an internet connection.	The server does not need an internet connection to work, which means employees have to be on-site to use it.
+Data backup	Cloud providers have many features to avoid data loss.	Data loss is a big risk. 
+Table 2 1 Comparison of cloud storage and on-site storage
+A study by Fisher (2018) and Jiyi Wu et al. (2010) justifies these comparisons. Fisher states that an on-premise server is more suitable for larger enterprises that can afford an IT team to manage and maintain it, while cloud computing is more suitable for smaller enterprises that do not have the resources (Fisher, 2018:2004).
+2.12	Cloud storage solutions
+Users of cloud computing may store their data on remote drives and access it from any location at any time (Jiyi Wu et al., 2010:381). For the maintenance of users' data and information, cloud storage systems are expected to adhere to a number of strict standards, including high availability, dependability, replication, data consistency, and performance. There are various options, and in addition to traditional remote access protocols or hosting for virtual or physical servers, many traditional hosted or managed service providers also provide block or file storage.
+
+Traditional hosted storage, such as services accessed through FTP, WebDAV, NFS/CIFS, or block protocols, is included in cloud storage (Jiyi Wu et al., 2010:381). These services can also be accessed locally or remotely from a hosted environment. This hosted storage solution has evolved into cloud storage, which encapsulates storage with more advanced namespaces, APIs, file or data location virtualization, and management tools.
+
+Cloud storage is a cloud computing approach that preserves data on the Internet and is provided by a cloud computing provider who manages and executes data storage as a service (AWS, 2022). Because it is available on demand with just-in-time capacity and price, there is no need to own and maintain your own data storage infrastructure. You get flexibility, durability, and "anytime, anywhere" data access as a result.
+
+Cloud storage is offered for sale by a third-party cloud provider; it is their property and operation, and it is distributed through the Internet in accordance with a pay-as-you-go business model (AWS, 2022). The volume, security, and durability of your data are managed by these cloud storage providers so that it is available to your applications from anywhere in the world with Internet access. Applications can directly access cloud storage using an API or through traditional storage protocols. Several businesses provide supplementary services in order to collect, handle, safeguard, and analyse data at scale.
+
+There is no need to spend money on hardware, storage, or potential future uses that might not occur with cloud storage (AWS, 2022). Users may add or remove capacity as needed, change performance and retention factors instantaneously, and only pay for storage that they really use. By automatically transferring less-used data to lower cost levels in accordance with auditable norms, even greater efficiencies can be attained.
+
+Types of cloud storage (AWS, 2022):
+•	Object storage: The enormous scalability and metadata features of object storage are frequently utilised by applications created on the cloud. Object storage options like Amazon Simple Storage Service (S3) are excellent for developing scale-and-flexibility-required modern applications from the ground up. They may also be used to import pre-existing data stores for analytics, backup, or archiving purposes.
+•	Block storage: Dedicated, low latency storage is frequently needed for each host by other enterprise applications like databases or ERP systems. This is comparable to a Storage Area Network (SAN) or direct-attached storage (DAS) (SAN). Each virtual server has choices for block-based cloud storage like Amazon Elastic Block Store (EBS), that offers the incredibly low latency required for high-performance applications.
+
+
+CHAPTER 3  DEVELOPMENT OF ARTEFACT
+3	
+3.1	Description of artefact
+The artefact created is the technical architecture of a Microsoft Power Apps solution for the Instrument-makers. A canvas app is a business application designed and built from a canvas in Microsoft Power Apps without using a conventional programming language to write the code (Microsoft, 2022a). The app follows a data-first approach, with the data sources being SharePoint lists. A list is a collection of data similar to a database table without the complexity of, for example, relationships and constraints (Schloemmer, 2020). Figure 3-1 is the graphical representation of the artefact.
+
+
+
+As a component of Microsoft Entra, Azure Active Directory (Azure AD) is a business identity service that offers single sign-on, multifactor authentication, and conditional access to protect against 99.9% of cyberattacks (Microsoft, 2022b). It contains user information of every staff member and student at the North-West University, as well as their security roles. This layer provides the basis for the security of the canvas app.
+
+The next layer consists of Microsoft SharePoint and Microsoft Power Platform. Microsoft SharePoint is a website creation tool used by businesses (Microsoft, 2022c). It serves as a safe location where you may store, arrange, share, and access data from any device. With the help of the robust apps on the Microsoft Power Platform, you can automate procedures, develop solutions, perform data analysis, and build virtual agents (Paracha, 2021).
+
+The third layer consists of Microsoft Office365, Microsoft Teams, Microsoft Power Apps, Microsoft Power Automate, and Microsoft Power BI. Reports can be created of the data in the lists by exporting them into Excel or Power BI. This provides the user with essential information to make business decisions. 
+3.2	Architecture development lifecycle
+The life cycle followed during the development of the artefact is the Architecture Development Life Cycle (ADLC). The steps that architecture goes through from its conception through its decommissioning are known as the architecture lifecycle, or Architecture Development Life Cycle (ADLC) (BTABoK, 2022). The ADLC offers a process for creating architecture and aids in the architect's comprehension and communication of the architecture's status. The architecture development lifecycle may be viewed as a comprehensive model that includes all of the tasks and outputs necessary to create a software architecture (Velasco-Elizondo & Cervantes, 2014:200). Figure 2-1 shows the graphical representation of the life cycle.
+ 
+Figure 3 2 Architecture development lifecycle
+
+
+The life cycle has four phases (Velasco-Elizondo & Cervantes, 2014:200):
+3.2.1	Architectural requirements analysis: 
+To employ architectural needs as a driving force in the design of the architecture, the architectural requirements analysis process encompasses the tasks of soliciting, evaluating, defining, and prioritising architectural requirements. The architectural drivers, which reflect the primary functional and non-functional needs, including quality attributes requirements and restrictions, are an example of a process output.
+3.2.2	Architectural design 
+The procedure used to support the architectural design phase of the architectural development lifecycle is focused on identifying and choosing the many structures that make up the architecture and that will satisfy the drivers identified in the architectural requirements analysis.
+3.2.3	Architectural documentation:
+The process of architectural documentation entails the creation of documents that outline the many structures that make up the architecture to effectively communicate it to the various system stakeholders. A collection of architectural views that describe the system's structures, the components that make it up, and the connections between them are a significant by-product of this process. A software architecture's details are difficult to convey in a single view, thus documenting the architecture entails producing a collection of pertinent views that may be divided into distinct categories.
+
+The architectural documentation technique used in this study is the 4+1 perspective model. The Logical View, Process View, Physical View, and Development View are among the five interconnected viewpoints taken into account by this methodology (Velasco-Elizondo & Cervantes, 2014:202). The Use Case perspective, around which the other views revolve, corresponds to the fifth view.
+3.2.4	Architectural evaluation
+The main goal of a software architecture assessment is to evaluate a software architecture design to see if it complies with the necessary architectural requirements.
+3.3	Artefact development
+3.3.1	Architectural requirement analysis
+During the first phase of the life cycle, an initial meeting was held with the client, Mr Thys Taljaard, to determine what the requirements for the architecture are. Elements that worked, did not work, and elements he would like to add were identified. 
+
+Based on the requirements a comparison was done to determine which technology to use. Microsoft Power Platform, Amazon Web Services, Google Cloud, and .NET were compared based on cost, ease of use, and the time it would take to implement the end product in the business. Microsoft Power Platform is the technology that was chosen based on the following advantages:
+•	Power Apps is low code, which means there is no need for coding in traditional programming languages, which would have been necessary had any of the other options been chosen. This also ensured that all of the requirements were met within the time constraint. The users also do not need a lot of training to change the application.
+•	The Microsoft environment is used within the North-West University, including Power Platform. As such, there is no cost to using Power Apps in the enterprise. 
+3.3.2	Architectural design
+After the technology was chosen, a decision had to be made on which data source to use: Dataverse, Dataverse for Teams, or SharePoint lists. Table 3-1 is a comparison of the three provided by Microsoft (Microsoft, 2022d).
+
+Considerations	Lists	Dataverse for Teams	Dataverse
+Types of data	Lists, File, Image	Relational, File, or Image	Relational, File, Image, Lake, Log, Dataverse Search
+Virtual tables
+Number of data types	15	23 (Currency is the basic version)	24 (Currency is the advanced version)
+Common Data Model	N/A	User table only	Full support
+Capacity	Up to 30M rows
+	Up to 1M rows
+
+A small number of files or images	No specified limit on rows.
+
+No specified limit of files or images.
+Data movement	Create from/Export to Excel	Dataflows In	Dataflows In/Out
+Server-side sync
+Synapse Integration (Bring Your Own Data Lake, Data Factory)
+Security	Owners, Members, Visitors, Designers, Approvers roles Customizable permissions	Owner, Member, Guest roles
+
+Share app with Azure AD group	Robust options to satisfy complex enterprise scenario requirements, such as roles, business units, auditing, CMK, hierarchical/field-Level security, and so on
+Clients	Lists, Teams1, custom code	Teams	Teams, Power Apps, Power Apps portals, Dynamics 365, custom code
+Guest limitations	Can't create or delete a list	Can't make, install, or edit apps	Must be in Azure AD using Azure B2B
+Pro developer capability	REST API
+Graph API	N/A	REST API
+Software Development Kit (SDK)
+Plug-in Support
+Integration (Event Hub, Service Bus, Webhook, Export to Lake) SQL Server Management Studio Integration
+Package and deploy	Package and deploy Lists	Single unmanaged solution per environment	Unlimited
+Additional capabilities	Calculations and rollups	N/A	Business workflows
+Business rules
+Calculations and rollups
+Mobile offline
+Table 3 1 Comparison of Dataverse, Dataverse for Teams, and SharePoint lists (Microsoft, 2022d)
+Because the architecture is for a micro-enterprise, it was decided that lists are adequate to satisfy the requirements. The data are not complex, nor is the amount of data so big that an unlimited number of rows is needed. 
+
+A canvas application is created using the data-driven approach. The application is automatically generated by selecting the data source for the application.
+
+The security within lists is straightforward to implement. You need only give permissions to users based on whether they are an Owner or a Member. An Owner has read and write access to all lists, while a Member can only read or write certain lists. Additional permissions for a specific user can be given for each list. 
+
+Reports are created by exporting a list to Microsoft Excel or Microsoft Power BI. This gives the user valuable information to make informed business decisions. Users at the enterprise who will use the reports are skilled enough in Excel to customize the reports how they want. 
+
+Microsoft Power Automate is used to create flows for automation. It speeds up some processes, such as the approval process of a timesheet entry, or creating custom IDs for new projects.
+
+The canvas applications, the lists, and the cloud flows are added to a solution, which is then shared with a Microsoft Teams group. The employees of the enterprise are added to that group with their user permissions, and they can then use the applications.
+3.3.3	Architectural documentation
+The 4+1 perspective model requires the following views for the documentation of an architecture: the logical view, the process view, the development view, the physical view, and the use case view. Previously generated artefacts are used to create these views (Velasco-Elizondo & Cervantes, 2014:202). Because this is the first version of the architecture, only a general data flow diagram and use case will be documented.
+3.3.3.1	Data flow diagram
+
+
+
+
+3.3.3.2	Use case view
+ 
+Figure 3 4 Use case view of architecture
+
+
+3.3.4	Architectural evaluation
+The chosen architecture was presented to Mr Taljaard. He agreed that the architecture meets all the business requirements and was approved to proceed to the software development stage.
+
+
+
+ 
+CHAPTER 4  RESULTS
+4	
+The research question that needs to be answered is how do you consider components of enterprise architecture to plan a technical architecture for a micro-enterprise?
+
+During this study, the following elements were identified that need to be considered when planning a technical architecture:
+•	The technical skills and computer literacy of the users,
+•	the financial feasibility of implementing the architecture,
+•	the availability of hardware needed to implement the architecture,
+•	the business requirements of the enterprise, and
+•	the existing architecture and licensing of available technologies.
+4.1	Technical skills and computer literacy of the users
+Two main users were identified during the study: the administrative user and the employee user. The administrator will need more technical skills than the employees, as they will need to create reports in Excel, and especially if they want to change anything in the applications. The employees only need to know how to use a smartphone.
+4.2	Financial feasibility
+The architecture comes at no cost to the enterprise because of the existing use of the Microsoft Power Platform environment on the premises. However, if the architecture were to be implemented at a micro-enterprise that does not use the Microsoft environment, the expenses would be costly. A feasibility study would have to be completed to decide if the architecture is worth implementing.  
+4.3	Hardware availability
+Because Microsoft Power Platform is cloud-based, no extra hardware is needed to implement the architecture. All the necessary hardware is already in use. Administrators need a computer with an active Internet connection, and employees need a smartphone with an active Internet connection. The applications can be used without an Internet connection, but the data will only be synced once the device is connected to the Internet.
+4.4	Business requirements
+Mr Taljaard required an architecture that would improve productivity, decrease the time spent on administrative tasks and generate reports for business decisions.  
+
+The time taken to complete a business process (such as filling in an employee timesheet) is much more effective because of the ease of use of the architecture.
+
+4.5	Existing architecture and available licensing of technologies
+The existing architecture was paper based. The administrative tasks and employee timesheets were completed on paper whereafter an administrator would enter the data into an Excel spreadsheet. 
+
+The Microsoft environment is available to staff and students of the North-West University without the need for paying additional licensing fees. This includes access to Power Platform. 
+ 
+CHAPTER 5  REFLECTION
+5	
+This project taught me how to identify a business problem and conduct research to solve it. I learned how to use different research methods to gain a deeper understanding of various concepts. 
+
+If I could do this project again, I would take a different approach. I would document decisions more frequently and try to understand architectural concepts at a much earlier stage. I struggled to properly understand what exactly I was doing with this project, but I did gain clarity as time went on. 
+
+I had the opportunity to work with new technologies that were used to implement the artefact, namely Microsoft Power Platform. I did not know of its existence nor how powerful it is until this project. It made me interested in low-code technologies and what can be done much quicker with less knowledge and skills than traditional programming languages such as C# and ASP.NET. 
+
+The project objectives changed throughout the study, but the end product did satisfy all of them. I stated that I would present Mr Taljaard with different options for an architecture, but I made decisions without him based on cost. All other options were too expensive to consider.
+
+All project deliverables were submitted on time, as I had a good schedule that I followed. I created a schedule at the beginning of the project that I adapted as my schedule for all other modules changed. It worked very well.
+
+The way the honours project is structured is adequate but can be improved. Not all target dates were made while keeping in mind the workload of other modules and their deadlines, but I believe most students could submit their deliverables in time, especially those who followed a strict schedule. 
+
+The classes need to be structured differently in terms of the topics of lectures and the dates of the lectures. We often had lectures on a topic weeks after it would have been beneficial.
+
+
+ 
+
+BIBLIOGRAPHY 
+Amazon Web Services (AWS). 2022. Cloud storage. https://aws.amazon.com/what-is-cloud-storage/ Date of access: 8 Jul. 2022.
+Bernaert, M., Poels, G., Snoeck, M. & Backer, M.D. 2014. Enterprise architecture for small and medium-sized enterprises: A starting point for bringing EA to SMEs, based on adoption models. In: Devos, J., Van Landeghem, H. & Deschoolmeester, D., eds. Information systems for small and medium-sized enterprises: State of art of IS research in SMEs. Berlin, Heidelberg: Springer. pp. 67-96. 
+Bernard, S. 2012. An introduction to enterprise architecture. 3rd. IN, Bloomington: AuthorHouse.
+BTABoK. 2022. Architecture lifecycle. https://itabok.iasaglobal.org/itabok3_0/architecture-lifecycle/ Date of access: 22 Oct. 2022.
+Davis, F.D., Bagozzi, R.P. & Warshaw, P.R. 1989. User acceptance of computer technology: A comparison of two theoretical models. Management Science, 35(8):982-1003. 
+Diamond, P. 2020. Cloud storage vs on-premises servers: 9 things to keep in mind. https://www.microsoft.com/en-za/microsoft-365/business-insights-ideas/resources/cloud-storage-vs-on-premises-servers Date of access: 19 Jul. 2022.
+Drake, N. & Turner, B. 2022. Best cloud databases in 2022. https://www.itproportal.com/guides/best-cloud-databases/ Date of access: 26 Apr. 2022.
+Fisher, C. 2018. Cloud versus on-premise computing. American Journal of Industrial and Business Management, 8:1991-2006. 10.4236/ajibm.2018.89133
+Goerzig, D. & Bauernhansl, T. 2018. Enterprise architectures for the digital transformation in small and medium-sized enterprises. Procedia Cirp, 67:540-545. 
+Haddara, M., Gothesen, S. & Langseth, M. 2022. Challenges of cloud-ERP adoptions in SMEs. Procedia Computer Science, 196:973-981. 10.1016/j.procs.2021.12.099
+Hafsi, M. & Assar, S. 2016. What enterprise architecture can bring for digital transformation: An exploratory study. In. 2016 IEEE 18th Conference on Business Informatics (CBI), Paris, France. IEEE. pp. 83-89.
+Hevner, A. & Chatterjee, S. 2010. Design science research in information systems. In. Design research in information systems: Springer. pp. 9-22. 
+Hevner, A.R., March, S.T., Park, J. & Ram, S. 2004. Design science in information systems research. MIS Quarterly, 28(1):75-105. 
+International Organization for Standardization (ISO) & International Electrotechnical Commission (IEC). 2011. Systems and software engineering - architecture description. Switzerland: ISO and IEC. (42010:2011).
+Jiyi Wu, Lingdi Ping, Xiaoping Ge, Ya Wang & Fu, J. 2010. Cloud storage as the infrastructure of cloud computing. In: Gong, M., ed. 2010 International Conference on Intelligent Computing and Cognitive Informatics, Malaysia. IEEE. pp. 380-383.
+Lankhorst, M. 2009. Enterprise architecture at work. 352. 3rd. Berlin: Springer.
+March, S.T. & Smith, G.F. 1995. Design and natural science research on information technology. Decision support systems, 15(4):251-266. 
+Microsoft. 2022a. What are canvas apps? https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/getting-started Date of access: 22 Oct. 2022.
+Microsoft. 2022b. Azure active directory (azure ad). https://azure.microsoft.com/en-us/products/active-directory/#overview Date of access: 22 Oct. 2022.
+Microsoft. 2022c. What is SharePoint? https://support.microsoft.com/en-gb/office/what-is-sharepoint-97b915e6-651b-43b2-827d-fb25777f446f Date of access: 22 Oct. 2022.
+Microsoft. 2022d. Comparing Microsoft lists, Dataverse for teams, and Dataverse. https://learn.microsoft.com/en-us/power-apps/teams/compare-data-sources Date of access: 22 Oct. 2022.
+Moody, D.L. 2003. The method evaluation model: A theoretical model for validating information systems design methods. In. European Conference on Information Systems, Naples, Italy. ECIS.
+Paracha, Z. 2021. What is the power platform? https://www.encorebusiness.com/blog/what-is-the-power-platform/ Date of access: 22 Oct. 2022.
+Peffers, K., Tuunanen, T., Rothenberger, M.A. & Chatterjee, S. 2007. A design science research methodology for information systems research. Journal of management information systems, 24(3):45-77. 
+Schloemmer, E. 2020. The power of SharePoint lists: 5 reasons why they are better than spreadsheets. https://www.contentformula.com/blog/sharepoint-lists-5-reasons-why-they-are-better-than-spreadsheets/#:~:text=A%20SharePoint%20list%20is%20simply,numbers%2C%20text%20and%20even%20images. Date of access: 22 Oct. 2022.
+Sheppard, M. & Vibert, C. 2019. Re-examining the relationship between ease of use and usefulness for the net generation. Education and Information Technologies, 24(5):3205-3218. 
+Tang, A., Jun, H. & Pin, C. 2004. A comparative analysis of architecture frameworks. Paper presented at the 11th Asia-Pacific Software Engineering Conference.
+The Open Group. 2018. The TOGAF standard. United States of America: The Open Group. (9.2).
+Velasco-Elizondo, P. & Cervantes, H. 2014. On software architecture processes and their use in practice. In. Agile estimation techniques and innovative approaches to software process improvement: IGI Global. pp. 198-218. 
+Walls, J.G., Widmeyer, G.R. & El Sawy, O.A. 1992. Building an information system design theory for vigilant EIS. Information systems research, 3(1):36-59. 
+
+ 
+APPENDICES
+6	Ethical declaration
+ITRI 671 Research ethics form: Honours project
+
+Name: Shené Boshoff
+Title of project: Planning a technical architecture for a micro-enterprise
+Supervisor: Susan Campher
+Starting and end dates of project:  24 February – 30 October
+
+1.	Have you read the information available related to research ethics (Chapter 5 of Researching Information Systems and Computing; BJ Oates and Chapter 13 of Writing for computer science, J Zobel; Manual for post graduate studies, available on efundi)?	Yes
+X	No
+
+2.	Do you make use of people as source of data in your project (for example the completion of questionnaires or evaluation of products)?	Yes
+X	No
+
+3.	Are there any aspects of your research that you need permission from another party to use (for example use of property or tools)? If yes, provide more detail. 	Yes
+	No
+X
+
+4.	Describe your research question and give a short description of your plans for the collection of data.
+Research question: how do you consider components of an enterprise architecture to plan a technical architecture for a micro-enterprise?
+Data will be collected through physical copies obtained by the owner of the company involved in the research project.
+
+5.	Describe how you plan to provide information about yourself and the goals of your research to participants.
+
+This information will be provided through an initial meeting set up by the project supervisor. The participants of the meeting is me, the owner of the company, and the project supervisor.
+
+
+
+
+
+
+
+
+6.	Describe what methods you will use to get permission from participants in your study.
+
+Written permission will be used.
+
+
+
+
+
+
+
+7.	Will you be able to ensure that participants’ information will be used in an anonymous, private and confidential way? How?
+
+I will not share the information with anyone outside of the participants of the project.
+	Yes
+X
+	No
+
+8.	Are there any foreseeable risks of damage (physical, social or psychological) to participants or the environment? If you answer yes, give detail of the preventative measures you will follow.
+
+
+
+
+
+	Yes	No
+X
+
+9.	Are there any foreseeable risks to the NWU, for example lawful actions that may follow the research, or damage to the image of the university? If yes, give detail.	Yes	No
+X
+
+10.	Are there any other ethical issues that may occur during the execution of the research (for example conflicting interests)? If yes, provide detail and explain how you plan to handle them.	Yes	No
+X
+
+
+
+
+
+
+
+
+I declare that the information contained in this form is accurate. I have attempted to identify the risks that may arise in conducting this research and acknowledge my obligations and the rights of the participants. I confirm that the research will be conducted in line with all University, legal and ethical standards.
+
+
+
+
+Name of student: Shené Boshoff
+Signature:  
+Date: 17/08/2022
+
+
+Name of study leader:
+Signature:
+Date:
+
+s

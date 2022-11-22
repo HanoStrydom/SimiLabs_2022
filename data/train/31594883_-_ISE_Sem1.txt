@@ -1,0 +1,425 @@
+
+
+
+
+
+
+Project management methodology analysis
+
+
+
+
+J.G. Visagie
+
+
+
+
+
+Supervisor:	Prof N. Kruger
+Co-supervisor:	Prof J.T. Janse van Rensburg
+
+
+
+Graduation: 
+Student number:
+31594883 
+TABLE OF CONTENTS (HEADING 0)
+1	INTRODUCTION	1
+2	BACKGROUND	2
+3	RELATED WORK	2
+3.1	Agile	2
+3.1.1	Principles	3
+3.1.2	Domains	3
+3.1.3	SWOT analysis	4
+3.1.3.1	Strong points	4
+3.1.3.2	Weak points	6
+3.1.3.3	Opportunities	7
+3.1.3.4	Threats	8
+3.2	COBIT 2019 framework	9
+3.2.1	Structure of COBIT Governance and Management Objectives	9
+3.2.2	Goals Cascade	10
+3.2.3	APO11 – Managed quality	10
+3.2.4	APO05 – Managed portfolio	11
+3.2.5	BAI01 – Managed Programs	11
+3.2.6	BAI11 – Managed projects	12
+3.2.7	SWOT analysis	13
+3.2.7.1	Strengths	13
+3.2.7.2	Weaknesses	13
+3.2.7.3	Threats	14
+3.3	PMBOK	14
+3.3.1	Project Management Knowledge Areas	14
+3.3.2	SWOT analysis	15
+3.3.2.1	Strengths	16
+3.3.2.2	Weaknesses	16
+3.3.2.3	Threats	16
+4	PROBLEM STATEMENT	16
+5	ANALYSIS.	18
+6	CONCLUSION	19
+BIBLIOGRAPHY	20
+
+ 
+LIST OF TABLES 
+Table 1 1:	This is the title of the table.  (CaptionTop_Tbl_Fig)	2
+Table 2 1:	This is the title of the table.  (CaptionTop_Tbl_Fig)	2
+Table 3 1:	This is the title of the table.  (CaptionTop_Tbl_Fig)	2
+Table 4 1:	This is the title of the table.  (CaptionTop_Tbl_Fig)	2
+ 
+LIST OF FIGURES 
+Figure 1 1:	This is the title of the figure.  (CaptionBot_Tbl_Fig)	2
+Figure 2 1:	This is the title of the figure.  (CaptionBot_Tbl_Fig)	2
+Figure 3 1:	This is the title of the figure.  (CaptionBot_Tbl_Fig)	2
+Figure 4 1:	This is the title of the figure.  (CaptionBot_Tbl_Fig)	2
+
+ 
+1	Introduction
+In this research assignment, various project management methodologies will be investigated in order to determine which methodologies will be most applicable in the coming years. It is important for the methodology to satisfy and support the development team during the development of software applications in order to address the needs of stakeholders. Shehzad et al. (2017) states that the rapid expansion of the software development industry is due to the exponential increase in universal demand for software applications by consumers in their daily activities. 
+
+Shehzad et al. (2017) further asserts that even with all improvements in software development technology, the global completion rate of software projects is about 30% - 40%. Glass (2001) argues that, in addition to traditional success criteria, there are other elements that pose a danger to software development. These vulnerabilities may be a root cause of failure, and the majority of them are not appropriately acknowledged to aid in their detection and mitigation. R. Zheng et al. (1997) states that project management, which is sufficiently supportive of software development, can help to mitigate these risks.
+
+This study will investigate the various strengths and weaknesses of Agile, The Control Objectives for Information and Related Technologies (COBIT) 2019 framework, and the Guide to Project Management Body of Knowledge (PMBOK). Introductory information, such as the structure, domains and principles, will be provided and explained.
+
+ 
+2	Background
+Charvat (2003) states that a methodology is defined as a set of instructions or concepts that may be customized to a particular circumstance and used. These rules may take the form of a to-do list in a project setting. A methodology can also be a specialized strategy, templates, forms, or even a project life cycle checklist.
+
+Charvat (2003) further states that methodology could be defined in various other ways such as: 
+•	A method for documenting a succession of steps and procedures that lead to a project's successful conclusion.
+•	A well-defined method for achieving a goal
+•	A set of methods, procedures, and standards that describe a synthesis of technical and management approaches for delivering a product, service, or solution.
+
+Project management has become a critical component of successful project delivery across all industries. Project management methodologies (PMM) can be used to increase the likelihood of reaching project goals, regardless of the industry or project size (Chin et al., 2010).  According to Chin et al. (2010) that which constitutes a project management methodology is not universally agreed upon. However, we can extract the components and specifications for a PMM from a thorough review of the many definitions, descriptions, and general discussions found in the literature.
+Chin et al. (2010) states that the following are various advantages to using a PMM:
+•	Establishes objectives and goals for the project
+•	Increase efficiency and effectiveness of business processes
+•	Greater adaptability and flexibility in applying experience acquired from one project to the next 
+•	Planning, identifying, and managing risks, problems, and complexities with more precision
+•	Ensures a higher level of standardization.
+3	Related work
+3.1	Agile
+For decades, software engineering circles have debated how to structure software development in order to offer faster, better, and less expensive solutions. Many solutions have been proposed, ranging from software process standardization and measurement to a variety of actual tools, approaches, and practices. Many of the recent proposals for improvement have come from experienced practitioners who refer to their processes as agile software development (Dyba & Dingsoyr, 2008). 
+Methods for agile software development, such as XP, Scrum, RUP, DSDM, form part of a collection of software development strategies developed by seasoned professionals (Agerfalk & Fitzgerald, 2006). Nerur et al. (2005) states that these approaches can be considered as a reaction against plan-based or traditional methods, which emphasize a rationalized, engineering-based approach, which claims that problems are fully specifiable and that optimal and predictable solutions exist for every problem. Rather than depending on systems, agile processes meet the challenge of an unpredictable world by focusing on people and their ingenuity (Nerur et al., 2005).
+Erickson (2005) provides the following definition of agility in context to software development: To promote quick responsiveness to changing surroundings, changes in user requirements, accelerated project deadlines, and the like, agility entails removing as much burden as possible from traditional software-development processes.
+3.1.1	Principles
+Cockburn and Williams (2000) asserts that agile approaches are designed to embrace, rather than reject, greater rates of change in the development processes.
+Dyba and Dingsoyr (2008) states that agile development is based on the following four principles:
+•	Individuals and interactions over processes and tools.
+•	Working software over comprehensive documentation.
+•	Customer collaboration over contract negotiation. 
+•	Responding to change instead of following a plan to some extent.
+
+3.1.2	Domains
+According to Keita (2020) there are six main domains when it comes to Agile project management. The following list contains these domains:
+1.	Value-driven delivery
+Every project has one basic purpose in mind: to provide value to the clients. Another aspect that can boost value is reducing risk by removing obstacles that can lower the value of a completed product. Agile initiatives are assigned several aspects of value-driven delivery. For example:
+•	Planning value
+•	Delivering value
+•	Confirming value
+•	Tracking and reporting value
+
+2.	Stakeholder engagement
+Customers, project managers, various business representatives, the Agile team, and other external vendors are among the stakeholders participating in a project. They add value to a project and can influence its workflow. Agile teams must maintain a consistent communication line with all stakeholders in the development process to keep it on track.
+
+
+3.	Improvement of team performance
+Team performance is Agile's third domain. Agile emphasises the formation of self-organized and independent teams in which team members are fully responsible for their duties. This gives team members more power and boosts performance. The success of a project is heavily dependent on the team. Each Agile project team should be made up of carefully selected team members who are participating in all aspects of the project.
+
+4.	Adaptive planning
+Before starting a project, the waterfall technique of software development required substantial planning. Teams discovered over time that client wants and market conditions are always changing, implying that old tactics would not produce adequate results. This Agile domain considers a flexible approach to planning that evolves with the project's progress.
+
+5.	Problem detection and resolution
+The fifth Agile domain focuses on identifying and resolving project issues. Any issues that team members encounter during the development process must be resolved so that any additional work resulting from the issue may be avoided, saving Agile teams both time and money.
+
+6.	Continuous improvement
+Using new perspectives to improve future iterations is the final agile domain area. This method of learning boosts the project's value and improves its functionality. At the end of each iteration, retrospective sessions are held to obtain input and assess what needs to be changed or updated in future iterations.
+3.1.3	SWOT analysis
+SWOT analysis is a strategic planning method that helps find possible solutions for accomplishing set objectives by examining and evaluating the strengths, weaknesses, opportunities, and threats that projects and commercial endeavours face. (Shahir et al., 2008)
+In this section, the various strong points, weak points, opportunities and threats of software development methodologies will be discussed.
+3.1.3.1	Strong points
+Shahir et al. (2008) states that agile software development has the following strength points:
+1.	Promotes change
+Change is viewed as an ally rather than an adversary. Change enables for more creativity and faster consumer value. Highsmith, cited by Shahir et al. (2008) argues that Agile approaches are well suited to projects with a high degree of task variety.
+
+2.	Satisfying stakeholders and users
+When stakeholders are included in the development team, their perspectives are considered when decisions are made, which often reduces the need for later rework. Users, on the other hand, consider themselves a part of the development team when their opinions are valued, and they are more likely to completely commit to moving the project forward.
+
+3.	Test-Driven
+Most Agile approaches prioritize coding and testing over research and design, to the point that many Agile methodologies develop test cases and test code before the real release begins. The key benefits of test-based coding include greater code maintainability, fewer inconsistencies, and better quality assurance.
+
+4.	Refactoring
+Refactoring is required and inevitable in Agile processes due to some of the distinguishing qualities of Agile approaches, such as their focus on code rather than design, the necessity for dynamicity and circulation of team members, and the demand for a highly flexible product. The major goals of refactoring in this context are to remove redundant and unneeded code, increase code simplicity, achieve flexibility without changing the system's functionality, and improve developer communication.
+Shubh and Gandhi (2012) further asserts more strength points of agile software developmnent:
+1.	Requirements Inflation
+In traditional software development technologies, the numerous elements that are not identified at the start of the project endanger estimations and timetables for project progress. Rather than using change-prevention techniques, prioritization sessions are scheduled to enable worthwhile modifications to be implemented and previously planned features to be replaced if the business approves.
+
+2.	Early benefits to the user/business
+Agile technique provides an early glimpse of how the final product will seem and function. This aids in the completion of the user requirements.
+
+3.	Regaining the productivity of development
+When project schedules extend for a long period of time, the sense of urgency to work is often lacking, resulting in time lost in the early stages of the project that can never be recovered. In software projects, Agile techniques understand Parkinson's Law and the Student Syndrome. Work is time-boxed into reasonable iterations, and there is always a sense of urgency, thanks to short iterations.
+
+4.	Reduction of Employee “Bus-Factor”
+In the traditional model, the departure of important employees from the project team with vital information delays project development. To reduce the "bus-factor," agile projects employ approaches such as common code ownership, pair programming, and frequent reporting during daily stand-ups, among others. The “bus factor” refers to the impact on the project if a key member is hit by a bus. Multiple team members communicate critical information when the "bus factor" is low, and the risk of staff turnover is minimal.
+
+5.	Elimination of Inherent scheduled flaws
+Software development is notoriously difficult to predict and schedule at first. When it comes to software projects, however, the team is strongly involved in planning and estimation through activities like the XP planning game. Working in short increments reveals the team's true velocity, which is obvious to all stakeholders who are now more invested in the project.
+
+6.	Conflicting requirements breakdown
+The idea of subject matter expert, ambassador user, or customer proxy is used in agile projects to play the function of product manager. The concept is that the group must be immediately available to answer inquiries and make project decisions, whereas traditional projects suffer from specification breakdown when no one owns the role and opposing assumptions or conclusions are made. To ensure that decisions are made on time, agile projects have some sort of product owner role integral to their core team structure.
+3.1.3.2	Weak points
+The following section will discuss some of the various weak points, as argued by Shubh and Gandhi (2012):
+1.	Not fully understanding the difference
+The major issue is that genuine Agile is hardly performed. Software engineers, development managers, and consultants frequently confuse Agile with its lowercase twin, agile, and believe that Agile is all about flexibility and lack of process. Above all, Agile is not anarchy. Despite what you may believe, it does not mean that everyone does anything they want and that there is no sense of organization.
+
+2.	Possibility of re-writing code during development
+Rework is frequently required in agile projects when the many components of the program are combined and forced to interact due to a lack of long-term planning and a lightweight approach to architecture. When two or more developers are out of sync, chunks of code may need to be rewritten, resulting in increasing and higher rework expenses as the number of iterations grows.
+
+3.	The reliance of customer interaction
+Heavy Customer Interaction is one of the main benefits of Agile, but it can also be a drawback in specific circumstances, as reflected in the four principles. One thing to keep in mind about agile development teams is that they require a lot of attention.
+
+4.	Insufficient architectural planning
+Before the heart of the software is produced, a dependable software architecture and platform are chosen. Otherwise, there's a good probability that a lot of labour will be wasted away. Many larger companies isolate software architecture and platform selection from software development via corporate architecture and architectural roadmaps, which relieves the agile software team of some of the work. The agile software strategy, on the other hand, will oppose defining and dealing with architecture if the platform is unknown prior to the start of the project and the architectural approach is new or unproven.
+
+5.	Difficulty in coordination for large projects and organisations
+As an agile team grows, it becomes increasingly difficult to coordinate work due to its strong emphasis on contact, self-organizing client teams, vocal communication over written documentation, prototyping, and requirements flexibility.
+
+ In continuation, Shahir et al. (2008) states the following additional weak points:
+1.	Ineffective communication and interaction methods
+Face-to-face contact is the most common sort of interaction in Agile techniques. Although other forms of communication are utilized to discuss ideas, the lack of models and recorded design leaves insufficient references in the event of conflicts or forgetting.
+
+
+
+2.	Global or distributed development obstacles
+Members of the development team work in close proximity to one another in Agile techniques, and some processes even need the entire team to be in the same room or building. Face-to-face contact, daily and weekly meetings, and human interactions all play an important part in the effectiveness of such operations.
+
+3.	High dependency on the development team
+Agile approaches are more people-oriented than process-oriented, as stated in the Agile Manifesto. As a result, circumstances arise in which teamwork issues become more challenging than they should be.
+
+4.	Misestimating Project time and budget
+Agile principles allow for frequent modifications to requirements, however, this affects project time and cost estimation. Furthermore, calculating the workload is challenging owing to the lack of modelling and design processes. In the lack of analytical class diagrams, for example, the number of classes to be implemented is frequently unknown until later phases. As a result, project managers are unable to plan effectively, and project plans must be revised frequently.
+3.1.3.3	Opportunities
+Shahir et al. (2008) identified the following opportunities which are listed below:
+1.	Light analysis and design
+Only the most basic and fundamental models, such as those describing use cases and classes, are used during analysis and design in a light analysis and design method. The adoption of such methods will help to alleviate the persistent model-phobia that plagued prior Agile methodologies.
+
+2.	Expert Advice
+Using expert advice in various situations is an opportunity that should be taken full advantage of. This includes not only development professionals, who are heavily involved in Agile teams, but also domain-, technology-, and, most importantly, methodology experts, who can help fine-tune the technique to meet the project at hand.
+
+3.	Distributed software development strategies and techniques
+Distributed software development has become a modern trend because to the Internet's daily expansion and steady speed rise. Because of its accessibility and usefulness, teleconferencing technologies-based development and web environments are becoming increasingly popular.
+	
+4.	Reverse engineering
+The implemented classes are frequently different from the ones that were originally proposed. This distinction could be in terms of class properties and methods, or it could simply be an unwelcome rise in the number of classes. The models may be generated fast using reverse engineering techniques based on the code.
+
+5.	Standardized testing methods
+Years of software development experience have resulted in the compilation and standardization of many testing methods. Such tried-and-true strategies may and should be used in conjunction with TDD to improve Q/A support in Agile development.
+
+Shubh and Gandhi (2012) has identified the following additional opportunities:
+1.	Iterative and Incremental methodology
+When employing Agile development approaches, every part of development is revisited throughout the life cycle, whether it be requirements or design. There is always a chance to move in a different path when a team stops and re-evaluates the course of a project every two weeks.
+
+2.	Inspect and adapt approach
+This strategy is the product of the iterative agile development technique, which allows developers to significantly cut both development time and cost to market by gathering requirements while constructing the application. The team work cycles are also limited to two weeks, giving clients the opportunity to test their success in the real world.
+
+3.	Rapid action development
+By eliminating the usability constraints in traditional development, methodologies like agile and scrum can either improve or damage the quality of the user experience.
+3.1.3.4	Threats
+The following section entails the threats identified by Shubh and Gandhi (2012):
+1.	Necessary documentation with lack of structure
+Various agile techniques have an informal structure and are highly prescriptive of crucial activities.
+
+2.	Requires greater cultural change to adopt
+If the requirements of one area of code change over time, the same programming may need to be done numerous times, however if a plan is followed, a single region of code should only be written once.
+
+3.	Tool to understand project velocity
+Because no one knew the whole requirement at the start of the project, it was impossible to produce an accurate estimate of the work effort required to provide a code. Most agile techniques offer a better tool for understanding how a project works. By placing the software in the hands of the customers, agile methodologies allow for early identification of needs and project planning.
+In addition, Shahir et al. (2008) argues the following threats of agile software development:
+1.	Lack of interest in utilization of agile methodologies in traditional organizations
+Traditional organizations have had mixed reactions to Agile approaches, owing to problems in synchronizing traditional and Agile processes and/or human resources, as well as difficulties adhering to standards like CMM.
+ 
+3.2	COBIT 2019 framework
+The following section is based on the information found within the COBIT 2019 Framework of Governance and Management Objectives.
+
+Best-practice frameworks have been established and advocated over time to aid in the understanding, design, and implementation of enterprise IT governance. COBIT 2019 expands on and integrates more than 25 years of research and development in this sector, not only incorporating new scientific discoveries but also operationalizing these ideas as practice.
+COBIT is a worldwide recognised set of tools that directors and IT specialists may use to guarantee that IT operations are in line with business objectives and goals (Zhang & Le Fever, 2013). 
+COBIT is an enterprise-wide framework for the governance and management of information and technology. Governance and management are clearly separated in the COBIT framework. These two fields include separate activities, necessitate different organizational structures, and have different goals.
+•	Governance will promote the following:
+o	To define balanced, agreed-upon enterprise objectives, the needs, conditions, and options of stakeholders are examined in detail.
+o	Prioritization and decision-making provide direction.
+o	Performance and compliance are assessed in relation to agreed-upon goals and objectives.
+•	To achieve enterprise objectives, management plans, builds, runs, and oversees activities in accordance with the governance body's instructions.
+o	Management in most businesses is the duty of executive management, which is led by the chief executive officer (CEO).
+COBIT outlines the processes, organisational structures, rules and procedures, information flows, culture and behaviours, skills, and infrastructure that go into constructing and maintaining a governance system. COBIT describes the design factors that an organisation should consider when constructing a best-fit governance system. COBIT solves governance problems by collecting key governance components into governance and management objectives that can be controlled to the requisite competency levels.
+3.2.1	Structure of COBIT Governance and Management Objectives
+COBIT 2019 has 40 governance and management objectives divided into five areas, as previously stated.
+•	Governance domain
+•	Evaluate, Direct and Monitor (EDM)
+•	Management domains
+•	Align, Plan and Organize (APO) – Information and Technology’s (I&T) general organisation, strategy, and supporting operations are addressed.
+•	Build, Acquire and Implement (BAI) - Defines, acquires, and implements I&T solutions, as well as their integration into business operations.
+•	Deliver, Service and Support (DSS) - Security, as well as the operational delivery and support of I&T services.
+•	Monitor, Evaluate and Assess (MEA) - examines I&T performance and compliance with internal performance targets, internal control objectives, and external obligations.
+3.2.2	Goals Cascade
+Each governance or management goal aids in the achievement of alignment objectives that are linked to bigger corporate objectives.
+Alignment goals (AG) include, but are not limited to:
+•	AG01: I&T compliance and support for business compliance with external laws and regulations
+•	AG02: Managed I&T-related risk
+•	AG03: Realized benefits from I&T-enabled investments and services portfolio
+•	AG04: Quality of technology-related financial information
+•	AG05: Delivery of I&T services in line with business requirements
+Enterprise goals (EG) include, but are not limited to:
+•	EG01: Portfolio of competitive products and services
+•	EG02: Managed business risk
+•	EG03: Compliance with external laws and regulations
+•	EG04: Quality of financial information
+•	EG05: Customer-oriented service culture
+
+3.2.3	APO11 – Managed quality
+The COBIT 2019 framework provides the following description and purpose of APO11: 
+Define and convey quality standards for all processes, procedures, and business outcomes. Promotes controls, ongoing monitoring, and the utilization of various tried and tested practises and standards. Ensure that technology solutions and services are delivered consistently to fulfil the enterprise's quality criteria and to meet the expectations of stakeholders.
+The following enterprise and alignment goals are utilised by APO11:
+Enterprise Goals	Alignment Goals
+EG01 - Portfolio of competitive products and services
+	AG09 - Delivering programs on time, on budget and meeting requirements and quality standards
+
+EG04 - Quality of financial information
+	AG10 - Quality of I&T management information
+EG07 - Quality of management information
+	
+EG12 - Managed digital transformation programs	
+
+3.2.4	APO05 – Managed portfolio
+The COBIT 2019 framework provides the following description and purpose of APO05: 
+Execute the investment strategy in accordance with the corporate architecture vision and I&T road map. Consider the various types of investments, as well as the available resources and budget limits. Evaluate, prioritise, and balance projects and services based on their alignment with strategic objectives, enterprise value, and risk, while managing demand within resource and financial limits. Select programmes for execution and add them to the active products or services portfolio. Monitor the overall performance of the company's products, services, and programmes, making adjustments as needed in response to programme, product, or service performance or shifting business priorities.
+
+The following enterprise and alignment goals are utilised by APO05:
+Enterprise Goals	Alignment Goals
+EG01  Portfolio of competitive products and services	AG03  Realized benefits from I&T-enabled investments and services portfolio
+
+EG08  Optimization of internal business process functionality
+	AG05  Delivery of I&T services in line with business requirements
+EG12  Managed digital transformation programs	
+3.2.5	BAI01 – Managed Programs
+The COBIT 2019 framework provides the following description and purpose of BAI01: 
+Using a consistent programme management technique, manage all programmes from the investment portfolio in accordance with corporate strategy and in a coordinated manner. Initiate, plan, control, and execute programmes, as well as track the program's projected value. Reduce the risk of unanticipated delays, costs, and value degradation by realising intended business value. Improve interactions with and participation from business and end users to achieve this, as well as ensure the value and quality of programme deliverables and project follow-up inside programmes, and maximise programme contribution to the investment portfolio.
+
+The following enterprise and alignment goals are utilised by BAI01:
+Enterprise Goals	Alignment Goals
+EG01 - Portfolio of competitive products and services	AG03 - Realized benefits from I&T-enabled investments and services portfolio
+EG08 - Optimization of internal business process functionality
+	AG09 - Delivering programs on time, on budget and meeting requirements and quality standards
+EG12 - Managed digital transformation programs	
+3.2.6	BAI11 – Managed projects
+The COBIT 2019 framework provides the following description and purpose of BAI11: 
+Manage all projects started within the company in accordance with the company's strategy and in a coordinated manner using the standard project management methodology. Begin, plan, control, and execute projects, and then conduct a post-implementation evaluation. Improve communication with and participation of business and end users to achieve defined project results and avoid the risk of unexpected delays, costs, and value erosion. Ascertain the value and quality of project deliverables, as well as their contribution to the defined programmes and investment portfolio.
+
+The following enterprise and alignment goals are utilised by BAI11:
+Enterprise Goals	Alignment Goals
+EG01 - Portfolio of competitive products and services
+	AG03 - Realized benefits from I&T-enabled investments and services portfolio
+
+EG08 - Optimization of internal business process functionality
+	AG06 - Agility to turn business requirements into operational solutions
+
+EG12 - Managed digital transformation programs	AG09 - Delivering programs on time, on budget and meeting requirements and quality standards
+3.2.7	SWOT analysis
+3.2.7.1	Strengths 
+The following section will discuss the benefits of using the COBIT 2019 framework, as argued by Gallagher (2020)
+1.	Optimized IT governance
+COBIT 2019 assists firms in establishing measurable IT objectives as part of larger business plans. COBIT practitioners may also set up the essential controls and tools to assist IT managers in achieving their goals with the full force of their operations behind them. A variety of tools are included in the methodology to assist with this, including:
+•	The COBIT maturity model can be used to determine the level of performance that IT components must achieve in order to accomplish goals.
+•	Enhancing activities, which are recommended by the ISACA for identifying and removing flaws and limiting factors in COBIT implementations.
+
+2.	Alignment between IT and business goals
+There are a total of 40 Management and Governance Objectives in the COBIT core model. Practitioners study this extensive collection to select focal areas based on their own objectives, needs, and environment, among other factors. They can then create custom frameworks that are tailored to their vision of optimal IT governance.
+
+3.	Customizable to suit your priorities
+COBIT 2019 is ideal for organisations that already employ IT techniques. COBIT's 'Tactical Design Factors' are tailored to a user's preferences for technologies, models, and frameworks to utilise in their operations. These variables can be used by practitioners to create systems that accept such aspects while also maximising their coherence and synergy.
+
+3.2.7.2	Weaknesses
+The following section will discuss practical problems which are encountered when utilising COBIT as stated by Zhang and Le Fever (2013).
+1.	Complicated concepts and structure
+Various professionals and specialists within the field have acknowledged that understanding the COBIT framework is not an easy task. As previously shown, the framework is massive and consists of numerous objectives, goals, guidelines, and even a maturity model. To fully understand everything contained in the framework takes a long time. 
+
+
+
+2.	Lack if implementation guidance and proven benefits
+COBIT's general character makes it challenging for corporations to comprehend and implement. Although the COBIT Management Instructions and Implementation Guidelines state that COBIT must be tailored to a given environment, they do not offer actual ways or guidelines to help firms do so. Even though it was evident that a COBIT programme should be implemented, several executives agreed that they would rather focus on ITIL and ISO27000, which had higher value.
+3.2.7.3	Threats
+
+3.3	PMBOK 
+The following section is based on information found within the Guide to the Project Management Body of Knowledge, written by the Project Management Institute.
+The Project Management Standard provides project management principles that guide project professionals and other stakeholders that work on or are involved with projects in their behaviours and activities. The Project Management Standard provides a foundation for understanding project management and how it facilitates desired objectives. This standard is applicable to any industry, location, size, or distribution method, such as predictive, hybrid, or adaptive. It outlines the structure in which projects run, including governance, possible functions, the project environment, and concerns for the project-product management link.
+
+A project performance domain is a collection of connected activities that are necessary for the successful completion of a project. Eight project performance domains have been identified:
+Stakeholders	Team
+Development Approach and life cycle	Planning
+Project Work	Delivery
+Measurements	Uncertainty 
+3.3.1	Project Management Knowledge Areas
+This next section will focus on The Project Management Knowledge Areas. The PMBOK Guide states that The Project Management Knowledge Areas are fields or specialisations utilised when managing projects. A knowledge area is a set of processes associated with a particular topic in project management.
+1.	Project Integration Management
+Within the Project Management Process Groups, Project Integration Management encompasses the processes and activities for identifying, defining, combining, unifying, and coordinating the numerous processes and project management activities.
+
+2.	Project Scope Management
+Project Scope Management refers to the procedures that must be followed to guarantee that the project includes all of the work necessary to execute it successfully.
+
+3.	Project Schedule Management
+Project Schedule Management includes the processes required to manage the timely completion of the project.
+
+4.	Project Cost Management
+The activities involved in planning, estimating, budgeting, financing, funding, managing, and controlling expenses so that the project can be completed within the allocated budget are referred to as project cost management.
+
+5.	Project Quality Management
+Project Quality Management refers to the procedures for implementing the organization's quality policy into project and product quality requirements planning, management, and control in order to fulfil stakeholders' expectations.
+
+
+6.	Project Resource Management
+Project Resource Management refers to the procedures for identifying, acquiring, and managing the resources required to complete a project successfully.
+
+7.	Project Communications Management
+Project Communications Management refers to the procedures that must be followed to guarantee that project information is collected, created, distributed, stored, retrieved, managed, controlled, monitored, and finally disposed of in a timely and suitable manner.
+
+8.	Project Risk Management
+Risk management planning, identification, analysis, reaction planning, response implementation, and risk monitoring are all procedures that go into project risk management.
+
+9.	Project Procurement Management
+Project Procurement Management refers to the procedures for acquiring products, services, or results from sources outside than the project team.
+
+10.	Project Stakeholder Management
+Project Stakeholder Management entails identifying the people, groups, or organisations who may have an impact on or be affected by the project, analysing stakeholder expectations and their impact on the project, and developing appropriate management strategies for effectively engaging stakeholders in project decisions and execution.
+3.3.2	SWOT analysis
+The following SWOT section is based on information asserted by Buehring (2021)
+3.3.2.1	Strengths
+The PMBOK Guide's key strength is that it offers a wide range of useful tools and procedures. There are 132 tools and techniques detailed or mentioned in all. Although the PMBOK guide loosely describes many of the tools and techniques, the main attraction is that the PMBOK Guide asserts when these various tools and techniques should be utilised during project management. Another advantage is that the PMBOK Guide's knowledge categories can be dealt with independently of one another. In many cases of uncertainty, the PMBOK Guide provides extensive information on specific generic areas that will be encountered, such as communication management and schedule management.
+
+3.3.2.2	Weaknesses
+One of the PMBOK Guide's flaws is the absence of clear responsibilities for project management team members. This is a broad term that refers to project team members who are directly involved in project management tasks. The problem with the PMBOK Guide's approach is that many of these obligations may be overlooked simply because who is responsible is not clearly specified. The extremely elaborate and extensive descriptions of some of the aspects are a second flaw. Complexity is always a burden, not an aid, and as previously stated, anecdotal evidence suggests that the PMBOK Guide is not helping itself in this area. The PMBOK Guide, developed by North American authors, is written entirely from a North American perspective and does not always translate well to other cultures.
+3.3.2.3	Threats
+4	Problem statement
+As discussed above, there exist various project management methodologies, each with its own strengths and weaknesses. Each PMM is based on their own unique principles and caters to the numerous different domains during the development lifecycle.  PMM is an essential component that contributes immensely to the success of a development cycle and its importance cannot be understated as the advantages of using a PMM outweigh the risks and weaknesses associated with it. Thus, the question arises, what project management methodology will be the most effective and efficient for the next five years.
+
+
+Figure 1 1:	This is the title of the figure.  (CaptionBot_Tbl_Fig)
+Table 1 1:	This is the title of the table.  (CaptionTop_Tbl_Fig)
+ 
+Figure 2 1:	This is the title of the figure.  (CaptionBot_Tbl_Fig)
+Table 2 1:	This is the title of the table.  (CaptionTop_Tbl_Fig)
+ 
+5	Analysis.
+Since the start of the COVID-19 pandemic, the office experience of various developers and managers has shifted to a work from home environment. From meetings being held on zoom, to various phases of the development cycle being completed at home. As a result of more work being completed outside of company premises, various processes and guidelines are influenced by these factors and require a re-evaluation of how these methodologies function within a post-COVID-19 world.
+
+The Agile methodology and its processes will need to be re-designed in order to accommodate the large switch from working in an office to working from home. Agile is hugely dependent on the interaction between people, as stated in its principles, which presents a new challenge when working from home.  Agile is highly focused on independent and self-organised team performance, as stated in the third domain. Regardless of the impact that working from home has, developers and teams are still able to deliver their work efficiently and effectively. The reliance on customer interaction is a weakness that continues to prevail within the Agile methodology, which is an even greater weakness since the start of the pandemic. The need for effective and efficient communication is ever-increasing based on the various factors discussed above. The rise of technologies such as zoom and teams have made it easier for managers, developers, stakeholders and clients to communicate with each other outside of the workplace. Every PMM will face challenges, but fortunately, as developers, challenges will be overcome and Agile is a methodology that can still be utilised in the coming years.
+
+The COBIT 2019 framework provides various actions, processes, guidelines and goals for the entire enterprise. The governance and management of information and technology are influenced by these factors. As a result of the framework covering the entire enterprise, the entire framework is enormous and will require extreme dedication and commitment to successfully implement the framework. In addition to the complexity, the framework does not provide any guidance to users on how to implement these goals and objectives. The frameworks promotes the uniqueness of different environments found within different companies, but, as stated above, no actual guidance is provided for the handling of unique environments within companies.  But all is not lost, as the COBIT framework has various advantages as stated earlier. The alignment of business goals and IT is an important factor that contributes to the success of a project.
+
+The project management body of knowledge provides information on multiple tools, technologies and processes that should be utilised in order to ensure the successful and efficient development of projects. The PMBOK provides, in detail, a guide to efficient management strategies that aid in the development processes. As with the COBIT 19 framework, the PMBOK Guide is an extensive read and will require a large amount of time to understand and successfully implement within a company. One of the PMBOK Guide’s best features is the all-inclusive knowledge areas that provide extensive information on the various management of generic environments. Successful management leads to better performance of development teams and aids with the achievement of business goals.
+
+These methodologies have been around for a long time and have been improved as time passed. Thus it is reasonable to assume that these methodologies will be effective and applicable for the next 5 years. Considering the scope and size of PMBOK and COBIT, Agile methodologies are a great starting methodology for new companies or companies looking to switch to a new methodology. It is easy to implement and will aid in the initialisation of the development cycle. After the initial dust has settled and the Agile methodology has been successfully implemented, new uncertainties might appear, such as effective communication between development teams, the establishment of long term goals and many other scenarios. This when the focus should be shifted over the COBIT 19 framework as it will provide further insight on how to deal with these uncertainties. The gradual study and introduction of the COBIT framework will streamline the whole process of implementing the guidelines and goals of COBIT. The combined use of Agile methodologies and the integration of the COBIT framework at a later stage will increase the company’s development performance and will greatly increase the chance of successful project completion.
+6	Conclusion
+The utilisation of project management methodologies is essential to the success of development projects. Various PPMs are based on different principles, each contributing to the uniqueness and different methods and processes utilised by each methodology. The rise of work from home opportunities is a new challenge that these methodologies should address in order to ensure the continued successful completion of development cycles. The various Agile methodologies that exist, in conjunction with the COBIT 19 framework, will enable developers to continue effective development and promotes the efficient management of various departments in the company.
+
+Figure 3 1:	This is the title of the figure.  (CaptionBot_Tbl_Fig)
+Table 3 1:	This is the title of the table.  (CaptionTop_Tbl_Fig)
+ 
+
+BIBLIOGRAPHY 

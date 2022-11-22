@@ -1,0 +1,778 @@
+
+
+
+
+
+
+Facial recognition technology used to assist the elderly and people with disabilities with secure authentication
+
+
+
+Michael Joshua Rosin
+31704948
+
+ITRI 671
+B.Sc. Hons. Computer Science & Information Technology 2022
+Potchefstroom Campus NWU
+
+
+Supervisor:	Mr. H.E. (Henri) van Rensburg
+
+Date of submission:   30 October 2022
+
+ABSTRACT 
+The need for security measures increases exponentially day by day through changing passwords and pins, stricter access control, and new authentication means, leaving the elderly and people with disabilities behind. Different biometric security methods are analysed to determine if it is capable to assist the elderly and people with disabilities with secure authentication. Facial recognition methods are analysed to determine which method is the most accurate and whether it can be used to assist the elderly and people with disabilities in daily activities with secure authentication. An artefact was developed using a pre-trained CNN machine learning model which is used to detect and verify an individual's face by comparing the statistics of the captured face(s) with the existing statistics of multiple faces in the database. Once an individual’s face is verified the individual is granted access to a building or system. The captured information is stored in a CSV file which is used to perform data analysis. The resulting system proposes a facial recognition approach to assist the elderly and people with disabilities with secure authentication. 
+
+Keywords:
+Security, Facial detection, Facial recognition, Biometrics, Authentication 
+
+
+
+
+
+
+
+
+
+
+
+UITTREKSEL
+Die behoefte aan sekuriteitsmaatreëls neem dag tot dag eksponensieel toe deur die verandering van wagwoorde en persoonlike identifikasie nommers, strenger toegangsbeheer en nuwe verifikasiemiddele, wat die bejaardes en mense met gestremdhede agterlaat. Verskillende biometriese sekuriteitsmethodes word ontleed om te bepaal of dit in staat is om bejaardes en mense met gestremdhede te help met veilige stawing. Gesigsherkenningsmethodes word ontleed om te bepaal watter metode die akkuraatste is en of dit gebruik kan word om bejaardes en mense met gestremdhede by te staan in daaglikse aktiwiteite met veilige verifikasie. 'n Artefak is ontwikkel met behulp van 'n voorafopgeleide CNN-masjienleermodel wat gebruik word om 'n individu se gesig op te spoor en te verifieer deur die statistieke van die vasgevangde gesig(te) te vergelyk met die bestaande statistieke van veelvuldige gesigte in die databasis. Sodra 'n individu se gesig geverifieer is, kry die individu toegang tot 'n gebou of stelsel. Die vasgelê inligting word gestoor in 'n CSV-lêer wat gebruik word om data-analise uit te voer. Die gevolglike stelsel stel  'n gesigsherkenningsbenadering voor om bejaardes en mense met gestremdhede te help met veilige verifikasie. 
+
+Sleutelwoorde:
+Sekuriteit, Gesigsopsporing, Gesigsherkenning, Biometrie, Verifikasie
+
+
+
+
+
+
+
+
+
+
+Table of Contents
+CHAPTER 1 - INTRODUCTION	1
+1.1	Introduction	1
+1.2	Background to study	1
+1.3	Problem statement	3
+1.4	Research aims and objectives	3
+1.4.1	Research aim	3
+1.4.2	Research objectives	4
+1.5	Research approach	4
+1.5.1	Paradigmatic perspective	4
+1.5.2	Research methodology	5
+1.5.3	Data collection and processing	6
+1.5.4	Artifact life cycle	6
+1.5.5	Development platform, resources, and environments	7
+1.6	Approach to project management and project plan	7
+1.6.1	Project scope	7
+1.6.2	Project limitations	8
+1.6.3	Risks of the project	8
+1.6.4	Responsibilities and contributions of each group member	8
+1.6.5	Gantt chart	9
+1.7	Provisional chapter division	10
+1.8	Rigour / Validity & reliability	10
+1.9	Ethical considerations	11
+1.9.1	Permission and informed consent	11
+1.9.2	Anonymity	11
+1.9.3	Confidentiality	11
+1.10	Summary	12
+CHAPTER 2 - LITERATURE STUDY	13
+2.1	Introduction	13
+2.2	Technology interaction with the elderly and people with disabilities	13
+2.2.1	Technological obstacles	13
+2.2.2	Digital obstacles	15
+2.2.3	Essential technological interaction and digital activities	16
+2.2.4	Digital security	17
+2.3	Biometric security	20
+2.3.1	Types of biometric security systems used in the world	20
+2.3.2	Biometric systems	23
+2.3.3	Limitations of biometric systems	26
+2.4	Facial recognition	28
+2.4.1	Advantages of facial recognition technology	30
+2.4.2	Examining facial recognition	30
+2.4.3	Facial recognition methods	32
+2.5	Summary	34
+CHAPTER 3 – DEVELOPMENT OF THE ARTIFACT	35
+3.1	Description of the artifact	35
+3.1.1	Face detection process	35
+3.1.2	Face verification process	36
+3.2	The life cycle of the artifact	40
+3.3	Agile methodology benefits	41
+3.4	Description of the development of the artefact	42
+3.4.1	Iteration 1: Setting up the environment:	43
+3.4.2	Iteration 2: Face detection using Haar cascade	44
+3.4.3	Iteration 3: Face detection and verification using the face_recognition library	44
+3.4.4	Iteration 4: Face detection with multiple faces	45
+3.4.5	Iteration 5: Face verification with multiple faces	45
+3.4.6	Iteration 6: Export to excel file	46
+3.5	Final artefact operation	47
+3.6	Summary	48
+CHAPTER 4 – RESULTS	49
+4.1	Results	49
+CHAPTER 5 – REFLECTION	50
+5.1	What did you learn while completing this project?	51
+5.2	Did you achieve the objectives that you set for the project? Discuss	51
+5.3	How successful were you in managing the project and meeting target dates? Discuss	51
+5.4	Summary	51
+6	BIBLIOGRAPHY	53
+7	APPENDICES	55
+7.1	Ethical declaration	55
+
+ 
+LIST OF TABLES
+Table 1 - DSRM activities	5
+Table 2 - The use of the internet and computers among the elderly (Selwyn, Gorard et al 2003)	16
+Table 3 – Comparison of biometrics (Liu and Silverman 2001)	23
+Table 4 - Characteristics of Biometrics (Sabhanayagam, Venkatesan et al. 2018)	24
+Table 5 -  Advantages and disadvantages of Facial Recognition (Sabhanayagam, Venkatesan et al. 2018)	30
+
+
+
+ 
+LIST OF FIGURES
+Figure 1 - Life-cycle evolution of the artifact sets	6
+Figure 2 - Gant chart	9
+Figure 3 - A generic biometrics-based system (Lourde and Khosla 2010)	24
+Figure 4 - Verification and Identification mode (Jain, Ross et al. 2004)	26
+Figure 5 - Process of Facial Recognition (Anwarul and Dahiya 2020)	29
+Figure 6 - Face detection using the artefact	36
+Figure 7 - Face verification process	37
+Figure 8 - Face verification using the artefact	38
+Figure 9 - Multiple faces verified using the artefact	38
+Figure 10 - Agile Development Methodology (Zayat and Senvar 2020)	39
+Figure 11 - Face verification with bad lighting using artefact	44
+Figure 12 - Face verification with glasses using artefact	44
+Figure 13 - Gant chart for Agile SDLC	45
+
+ 
+ 
+CHAPTER 1 - INTRODUCTION 
+1.1	Introduction
+Some people struggle to engage in technological activities such as people with disabilities and older people that may have considerable memory problems (Bozoki, Giordani et al. 2001). Facial recognition technology can be used to mitigate these problems. Instead of remembering numeric security codes, passwords and struggling to access a building through strict security measures, facial recognition technology can be used to assist the elder with daily activities such as accessing their bank account without having to remember numeric security codes and passwords and can also assist people with disabilities to access buildings without any struggles. 
+The aim of this chapter is to provide background and information on the research topic. Sections that will follow in this chapter is an introduction and background to the research topic and why it is necessary to conduct this study provided by the formulated Aims and Objectives and the research approach that will be followed throughout this study. 
+1.2	Background to study
+In an era where debit cards, credit cards, online banking, online trading, mobile phone, door locks, and other electronic security systems are becoming more common, remembering numeric security codes will undoubtedly become more difficult (Rasmussen and Rudmin 2010). According to Karlawish and Clark (2003), Alzheimer's disease, Frontotemporal dementia, Lewy body dementia, mild cognitive impairment, depression, and Cerebrovascular infarcts are medical illnesses that impair brain metabolism and are the main causes of mild memory loss in elderly patients. 
+A patient with clinically significant memory loss will nearly always have quantifiable difficulties recalling newly taught knowledge, therefore individuals struggling with memory loss will most likely not adapt to new security measures (Karlawish and Clark 2003). 
+The majority of people with impairments face considerable mobility challenges. The number of individuals with sensory disabilities such as blindness, deafness, low vision, hearing problems, and speech amount to about 40 to 50% of people with disabilities, whereas those with various physical disabilities are in the 20 to 50% range and people with cognitive disabilities are in the 7 to 15% range (Venter, Savill et al. 2002). People with physical disabilities such as cerebral palsy and multiple sclerosis struggles to engage in daily activities. 
+Apart from medical and physical treatment for memory loss and physical disabilities, there are no alternative accommodating measures. As an alternative to the above-mentioned difficulties, a biometric system is proposed to address the technological hindrances that they might face. 
+Biometrics is any automatically detectable, strong, and distinguishing physical attribute or personal trait that can be used to identify or validate an interval’s claimed identification (Woodward Jr, Horn et al. 2003), therefore a biometric system uses mathematical algorithms and biometric data to recognize a specific trait of an individual. A biometric system can consist of different reconditioning systems. Examples include iris scans, retinal scans, facial recognition, speaker- or voice recognition, fingerprints, hand- or finger geometry, dynamic signature verification, and keystroke dynamics. 
+Identification and verification are the two modalities in which biometric technology can be used (Faundez-Zanuy 2006). In identification mode, the system must figure out who the user is. An individual does not claim an identity, the input user image is compared to a collection of existing user images in a database to identify the best match. In verification mode, the system’s goal is to determine if the individual who claims to be someone is that person. The subject claims an identity, and the provided image is compared to the claimed identity via their respective feature sets to authenticate the claim (Faundez-Zanuy 2006). 
+Face detection and recognition is one of the most important biometric authentication technologies that may be used for both authentication and surveillance (Anwarul and Dahiya 2020). Facial recognition technology will be used to detect and verify an individual’s identity. Facial recognition technology is the chosen biometric security technology because it will best accommodate people with disabilities and the elderly and is safe to use during the COVID-19 pandemic. 
+In this study one of the objectives is to determine if a biometric security system is capable of assisting the elderly and people with disabilities with secure authentication therefore by developing a biometric system that makes use of facial recognition technology, the biometric system will make use of a verification mode to determine if the individual claims to be someone is that person. 
+
+
+
+1.3	Problem statement
+Security measures increase exponentially day by day through changing passwords and pins, stricter access control, and new authentication means, leaving the elderly and people with disabilities behind (Rasmussen and Rudmin 2010). The elderly has the tendency to struggle to remember passwords and pins because of memory loss and people with disabilities struggle to engage in daily activities because of their limitations. People with physical disabilities often face considerable mobility challenges (Venter, Savill et al. 2002). Biometric security needs to be discussed and how it can be used to assist the elderly and people with disabilities, and whether facial recognition technology can be used to assist the elderly and people with disabilities in daily activities with secure authentication. 
+1.4	Research aims and objectives		
+The extent, depth, and direction of the study will be determined by the research aims and objectives. The research aims state what needs to accomplish and the research objectives state how the research aims will be accomplished.
+1.4.1	Research aim
+As we move more towards a digital area where technology changes exponentially day by day, security measures increase drastically through changing passwords and pins, stricter access control, and new authentication means (Rasmussen and Rudmin 2010).  Some people struggle to engage in technological activities such as people with disabilities and older people that may have considerable memory problems (Bozoki, Giordani et al. 2001). The elderly and people with disabilities struggle to engage in technological activities because they struggle to adapt to the exponential technological and security changes. Facial detection and recognition are one of the most important biometric authentication technologies that may be used for both authentication and surveillance (Anwarul and Dahiya 2020). There are several approaches to mediate the problem but during this research, a biometric system is proposed to serve as an alternative accommodating measure to assist the elderly and people with disabilities to engage more efficiently in daily technological activities with secure authentication. Research will be conducted to create a facial recognition system that will detect and verify an individual’s face. 
+
+
+
+1.4.2	Research objectives
+In order to achieve the aim, the following objectives are set to be addressed:
+•	Conduct research regarding technological and digital difficulties the elderly and people with disabilities encounter daily.
+•	Determine why the elderly and people with disabilities struggle to engage with certain technological and digital activities.
+•	Research digital security.
+•	Research biometric security.
+•	Research facial recognition.
+•	Develop a facial recognition system that will be able to detect an individual’s face, process the image, and determine if the system recognizes an individual’s face or not. 
+•	Evaluate whether the proposed system works the way it should work.
+1.5	Research approach
+1.5.1	Paradigmatic perspective
+A paradigm is a term that refers to the theoretical framework, as opposed to a theory, that determines how knowledge is researched and perceived. Several paradigms can be used such as positivism, interpretivism, critical social theory, and critical realism. Positivism is based on the rationalistic, empiricist philosophy and is sometimes referred to as “scientific technique” or “science research”. Positivism can be applied to the social world if the social world can be investigated in the same manner that the natural world can be researched (Mackenzie and Knipe 2006).
+Positivism relies on the hypotheticodeductive approach to verify a prior hypothesis that is frequently stated quantitively, where functional correlations can be inferred between the dependent variables and independent variables (Park, Konge et al. 2020). Research practice methods included in positivism are questionnaires, hypotheses, stat analysis, and design science research. 
+Based on the paradigmatic background and perspective above, a positivistic paradigm will be best suited for this research study on assisting the elderly and people with disabilities with secure authentication to create a system or artifact to assist their daily technology struggles. In the research process, a positivist approach emphasizes measurements, experimentation, control, validity, dependability, and observations. This necessitates a quantitative strategy.  Proposed how facial recognition technology can help them to engage more efficiently in daily technological activities will be provided with the information found during the research study. 
+1.5.2	Research methodology
+With the positivistic approach to this study, Design Science Research will be the appropriate research methodology since this approach makes use of quantitative data which will help with the development of the artifact.
+Design science research methodology is viewed as the other half of the IS research cycle, which generates and assesses information technology artifacts aimed at solving issues (Bisandu 2016). Table 1 shows the six-step design science research methodology: 
+Table 1 - DSRM activities
+ 
+					
+Design science research contribution to Information Systems is measured in terms of how it is applied to certain needs in an appropriate environment, as well as how it contributes to the content of the knowledge base for future research and practice, and artifacts that solve existing problems (Bisandu 2016).
+The six steps indicated in Table 1 will be used to complete the project and develop an artifact in the form of a tool, a technique, a product or a process, or a technology to achieve the research aim.
+
+1.5.3	Data collection and processing
+Quantitative data will be collected. Data will be collected through research articles and case studies. Data will be collected before the system has been developed and data will be collected after the system has been collected. By comparing the data, we will find quantitative results. After data has been collected, the system will receive input from the user, process the input, and produce output. The computer will process the input image of the user and verify the user through the image of the person’s face. 
+1.5.4	Artifact life cycle
+Figure 1 indicates the different stages of the development of the artifact to address the aims of the study:
+ 
+Figure 1 - Life-cycle evolution of the artifact sets
+Requirements phase
+During the requirements phase, the resources which are required to build the artifact are defined and planning is done to figure out what the system is supposed to do and what it needs.
+Design phase
+Different solutions are assessed, and the most efficient solution will be designed which will convert the requirements into comprehensive system design specifications. 
+Implementation phase
+The system is developed and implanted during this phase.
+Deployment phase
+The system is deployed and ready to use during this phase.
+1.5.5	Development platform, resources, and environments
+The development platform typically comprises the programming language to be used, the environment in which the development will take place, and the IDE to be used with the chosen programming language. 
+Python will be the programming language for the project because it is simple and easy and contains OpenCV libraries. Visual Code will be the chosen IDE for this project because it works very well with Python and is easy to use. Windows 10 will be used as the development environment. Resources I will use to complete this project include a webcam and a computer. People who are willing to experiment with the system as well as acquire facial images from participants will be required.
+1.6	Approach to project management and project plan
+In order to ensure the completion of the project within a specific time frame, effective time management is key. The following processes and methods will be used to achieve the project objectives. Project scope and overview, a Gantt chart to plan around deadlines and manage resources appropriately, and the limitations and risks regarding the project.
+1.6.1	Project scope
+The scope of this project is to research older adults and people with disabilities and their issues with technology and authentication issues. Facial recognition, authentication, and biometric security will also be researched. A facial recognition system used to assist the elderly and people with disabilities need to be designed and developed. The system will be created using Python as the programming language, Visual Code as the IDE, and OpenCV libraries. The system must be able to detect an individual’s face and assist the person in daily activities such as automatically opening doors for people with disabilities and helping the elderly access their bank accounts without the need to remember pins and passwords. 
+
+
+
+1.6.2	Project limitations
+Time constraint 
+The project’s time constraint will limit the quality of the project because the project must be completed within a specified timeframe. 
+Budget constraint
+There is no budget constraint because the system will be developed using a webcam and a computer. 
+
+1.6.3	Risks of the project 
+There are several risks within this project namely: 
+Scope creep
+New features and functions may have to be added to the existing system or perform labor that is not approved. 
+Low performance
+There is a possibility that the system will underperform.
+Stretched resources
+There might not be enough resources to complete the project. Resources such as tools, skills, or time.
+1.6.4	Responsibilities and contributions of each group member
+The project will be done solely by the researcher; therefore, the researcher will have all the responsibilities to complete the project within the specified timeframe.
+
+1.6.5	Gantt chart
+A Gantt chart will be used to assist me in properly allocating resources and planning work around deadlines. The Gantt chart will show the relationship between the start of the project and the end of the project as well as milestones. Figure 2 indicates the start date and end date of the project as well as the duration of each phase.
+ 
+
+
+Figure 2 - Gant chart
+1.7	Provisional chapter division
+Chapter 1: Introduction
+The introduction consists of the problem the researcher has identified and how the researcher plans to approach the problem with an artifact. Discuss areas where the artifact will be used, the aims and objects of the project, the research methodology, and paradigm used throughout the research, and the approach to project management.
+Chapter 2: Literature Study
+A brief discussion of why the elderly and people with disabilities struggle with the exponential increment of security measures and how biometric security, and facial recognition can be used to assist the elderly and people with disabilities with secure authentication. 
+Chapter 3: Development of the project and documentation of the artifact 
+A discussion of the development of the project as well as the design of the artifact will be provided.
+Chapter 4: Results 
+The results of the artifact and the conclusion of the use of the artifact will be discussed here as to whether the development system is able to assist the elderly and people with disabilities with daily technological activities with secure authentication. 
+Chapter 5: Refection 
+A reflection will be provided on how the researcher found the project.
+1.8	Rigour / Validity & reliability
+In quantitative research, the purpose of quality and rigor is to reduce the danger of bias while increasing the accuracy and reliability of findings. Rigour and reliability are best attained by careful and deliberate preparation, consistent and continuing researcher reflexivity, and open and honest communication between the researcher and the audience about the study and its findings (Johnson, Adkins et al. 2020). The researcher will therefore not lie about the findings and will carefully and deliberately prepare for the research. To ensure reliability a technique will be used to collect data to ensure the results are precise, reproducible, and stable. Procedures will be carefully planned to ensure that each measurement follows the same steps in the same order. 
+1.9	Ethical considerations
+Within this project scope, there are some ethical considerations regarding quantitative research and the storing and scanning of an individual’s face. The system will need an individual’s permission and voluntary informed consent before being able to use the system and methods needs to be used to keep data confidential and ensure anonymity. The system will make use of certain protocols to ensure each user stays anonymous and to keep individuals’ information private. 
+1.9.1	Permission and informed consent
+Before the study begins, all participants will be told of the study’s goal, what will be required of them, and what will be gained from the study, after which they will be able to decide whether they wish to participate. 
+An individual’s permission and consent will be required before being able to use the facial recognition system. Before an individual’s face is scanned into the system, they will have to complete a form giving permission and consent to store personal information. 
+1.9.2	Anonymity
+During the study people will stay anonymous by making use of a pseudonym, therefore a fictitious name will be used instead of the person’s real name. No information regarding family relationships, occupation, and religious and cultural backgrounds will be asked. Data will be collected without obtaining any personal information. 
+The facial recognition system will hash the image of an individual’s face before storing the image in the database. This means no one will be able to view the images stored in the database. The system will use the images for processes only and therefore it will be secure allowing individuals to stay anonymous. 
+1.9.3	Confidentiality
+To ensure that an individual’s private information is respected and protected, the system will encrypt sensitive information and restrict data access, and regular safeguards will be used to keep data secret. 
+
+1.10	 Summary
+As physical and technological security measures increase exponentially day by day, people with disabilities and the elderly struggle to engage in daily activities such as assessing buildings with strict security measures, using an ATM machine, remembering passwords and pins and so forth. The goal of this research study is to determine how to assist the elderly and people with disabilities in daily technological activities with secure authentication using facial recognition. The aim will be achieved through conducting research regarding older adults with memory loss, challenges that people with disabilities encounter daily, biometric security, and facial recognition technology. The project involves developing an artifact that will detect an individual’s face, process the image, and verify an individual’s identity. 
+To ensure that the system will be developed within the given time frame an approach to project management and a project plan will be used consisting of the project scope, project limitations, risks of the project, responsibilities of the researchers, and a Gantt chart. Throughout the project, a positivistic approach will be used as well as a design science research methodology. Ethical concerns are discussed and addressed for this project seeing as individuals’ faces are captured and stored on a database.
+
+
+
+
+
+
+
+
+
+
+CHAPTER 2 - LITERATURE STUDY
+2.1	Introduction
+As we move more towards a digital era, digital security measures increase exponentially day by day to protect us against different types of threats, leaving the elderly and people with disabilities behind. Technological and digital obstacles as well as essential technological interaction and digital activities will be researched to determine with what activities older adults and people with disabilities struggle with daily. Different types of biometric security systems will be examined to determine which biometric security system will best accommodate the elderly and people with disabilities with secure authentication. Facial recognition technology will be discussed and examined to determine how this technology works and how it can be used to assist the elderly and people with disabilities to perform digital and technological tasks that require secure authentication.
+
+2.2	Technology interaction with the elderly and people with disabilities 
+In many cases, older adults lack the necessary abilities to engage successfully in technological activities such as online banking, using ATMs, and other online activities (Hill, Betts et al. 2015). The number of individuals with sensory disabilities such as blindness, deafness, low vision, hearing problems, and speech amount to about 40 to 50% of people with disabilities, whereas those with various physical disabilities are in the 20 to 50% range and people with cognitive disabilities are in the 7 to 15% range (Venter, Savill et al. 2002). People with physical disabilities such as cerebral palsy and multiple sclerosis, struggles to engage in daily technological activities.
+
+2.2.1	Technological obstacles 
+The elderly is called upon to adapt to new technologies and the demands of modern society as the population ages. It is well acknowledged that older people acclimatise to new technology more slowly than younger generations, either because they lack technological experience and skills or in other cases because of their current health status (Roupa, Nikas et al. 2010). 
+
+According to Roupa, Nikas et al. (2010) the elderly struggle to engage with the following technological devices:
+•	ATMs
+•	Mobile phones
+•	Tablets 
+•	Computers
+•	Televisions 
+According to Vaportzis, et al. (2017) there are three reasons the elderly struggle to engage in daily technological activities such as lack of instructions and guidance, lack of knowledge and confidence, as well as health-related barriers. These reasons are discussed in the sections that follows.
+Lack of Instructions and Guidance 
+The elderly tend to not understand technological devices due to the lack of instructions and guidance on how to use the technological device. In some cases where there are instructions on how to use the technological device, the user manual is too technical which causes confusion. Most technological designs don’t consider that individuals lack knowledge on how to use the technology (Vaportzis, Giatsi Clausen et al. 2017). 
+
+Lack of Knowledge and Confidence 
+Most older adults fear using technology due to a lack of knowledge or low confidence, as well as the perceived dangers of technological equipment. The internet has adverse effects. With its large volume of data, it empowers users. Information overload, on the other hand, might be frightening for the elderly who are just learning how to use the internet. They are not aware of the difference between different types of technologies such as the difference between a computer and a smartphone. The elderly have the tendency of avoiding the use of technological devices due to the fact that they are scared of unknown technologies and are unsure of what the technology does or how it works (Vaportzis, Giatsi Clausen et al. 2017). 
+
+
+Health-Related Barriers 
+A patient with clinically significant memory loss will nearly always have quantifiable difficulties recalling newly taught knowledge, therefore individuals struggling with memory loss will most likely not adapt to new security measures (Karlawish and Clark, 2003). Most older adults struggle to use technological devices such as ATMs, computers, smartphones, tablets, and so forth due to age-related changes such as poor eyesight and wrist and finger problems. Most technological designs don’t consider physical or sensor disabilities (Vaportzis, Giatsi Clausen et al. 2017). 
+The above-mentioned technological obstacles inherently include several digital obstacles as they are related to one another. 
+2.2.2	Digital obstacles  
+People with disabilities are typically at a disadvantage in terms of technological activities, the reason being they have little or no access to the Internet. Even if they have digital accessibility, they face additional difficulties and obstacles as compared to the general population, particularly in terms of technology and software that does not sufficiently serve the requirements of individuals with disabilities (Lin, Tang et al. 2022). 
+Johansson, Gulliksen et al. (2021) has identified that people with disabilities struggle at times with using general functions on the internet, using online banking and shopping, and using social media such as blogging and Facebook. 
+Difficulties in using general functions on the internet
+People with impairments, dyscalculia, intellectual impairments, and language disorders find it difficult to navigate, search, grasp information, cope with the design, and use passwords (Johansson, Gulliksen et al. 2021). 
+Use of online banking and shopping
+According to Johansson, et al. (2021) the percentage of individuals who struggle to use online banking to pay bills ranges from 34% (intellectual impairment) to 88% (bipolar syndrome) and the percentages of individuals who struggle to shop online range from 35% (intellectual impairment) to 88% (ADD). 
+
+
+Use of social media
+People with autism, ADD, ADHD, bipolar syndrome, and dyscalculia struggle to use social media, whereas people with bipolar, blindness, dyslexia, fine motor impairments, intellectual disabilities, and language impairments generally do not even have a social media account therefore hindering their technology and digital interactions.
+2.2.3	Essential technological interaction and digital activities 
+In an era where debit cards, credit cards, online banking, online trading, mobile phone, door locks, and other electronic security systems are becoming more common, remembering numeric security codes will undoubtedly become more difficult (Rasmussen and Rudmin 2010).
+Selwyn, Gorard et al. (2003) conducted a study where they questioned older adults regarding their daily technological interactions and digital activities. Table 2 indicates the technological and digital activities in which the elderly engages on a daily basis.
+Table 2 - The use of the internet and computers among the elderly (Selwyn, Gorard et al 2003)
+ 
+As seen in Table 2, the majority of the elderly engage in the following technological and digital activities:
+•	Writing and editing letters, reports, and other documents 
+•	Send/read E-mail
+•	Looking for products and services/gathering product information online
+•	Looking for information related to work/business/study on the world-wide-web
+•	Online banking/management of personal finances 
+•	Buy goods and services online
+The above-mentioned technological and digital activities are essential in older adults’ daily lives. Therefore, digital security is extremely important in order to protect the elderly against different kinds of threats.
+
+2.2.4	Digital security
+We live in an area where our personal and professional lives are increasingly online. In the digital age, we use online banking applications, purchase goods and services, pay bills, interact with people through online social media, and perform certain activities of our jobs. Along with the convenience it offers, this growing reliance on the internet and digital networks have concerns. 
+The phrase “digital security” refers to the tools used to protect an individual's online identity, data, and other resources. In essence, computerized security is the procedure employed to guarantee an individual’s online persona. Online media has become an essential part of our daily lives as a result of our constant exposure to cell phones and social media platforms such as Facebook, Instagram, Twitter, and many more (Masarani 2021). 
+Masarani (2021) has identified that the following information, in a digital security sense, are at risk: personal payment data, personal health data, personal identification data, and personal investments. This information is discussed in the sections that follow.
+Personal payment data 
+This information includes credit and charge card numbers, online financial numbers, and PIN codes if related to financial transactions. Criminals who gain access to an individual’s online banking information can trade a person’s assets or make purchases.
+Personal health data
+This type of information contains details about an individual’s health, such as a person's medical history, any prescribed medications, memberships in medical insurance plans, and trips to doctor’s offices and clinics. An individual’s health information may be used by criminals to arrange and swap professionally prescribed prescriptions or to record false insurance claims. 
+Personal identification data
+An individual’s name, phone number, email address, government-backed retirement number, and home address are all included in this information. Individual data is only seldom used for both friendly design and wholesale fraud. 
+Personal investments
+This includes financial, security, and reputational consequences, as well as occasionally even real damages. Although colleagues are becoming more aware of the challenges posed by computerized security risk, they seldom handle it only from a specialist perspective and in a way that is disassociated from the financial and social dynamics. 
+In addition to the four digital security risks identified by (Masarani 2021),  Humayun, Niazi et al. (2020) have identified several other digital security vulnerabilities such as Malware attacks, SQL injection attacks, Denial-of-service (DOS) attacks, Phishing, Session hijacking, Man-in-the-Middle attacks, and Cross-site scripting (XSS) attacks. These security vulnerabilities are discussed in the sections that follows.
+Malware attacks 
+By taking advantage of security flaws in computer systems, the attacker deploys malicious software to obtain unauthorized access to these systems. An extreme financial or political payoff is the motive behind the malware, which heightens an attacker’s drive to infiltrate as many network devices as they can in order to further their nefarious objectives. 
+
+
+
+
+SQL injection attacks 
+In order to alter or manipulate the SQL statement to the attacker’s benefit, an input string is injected into the application. The database is harmed by this attack in several ways, including illegal access, database manipulation, and exposure of sensitive information. This attack poses a danger since it may result in data loss or usage by unauthorized parties, which would damage functionality and confidentiality. Additionally, with this type of attack, system-level commands are also executed, preventing authorized users from accessing the necessary data.
+Denial-of-service (DOS) attacks
+An attacker who intends to disrupt a computer network will launch a DOS attack by bombarding the target with unnecessary requests in an effort to overburden the system and perhaps reduce its effectiveness. 
+Phishing 
+In order to get sensitive information from an Internet user, this illegal practice employs social engineering and technology. Phishing tactics include a variety of channels for communication, including email, instant messaging, pop-up windows, and websites. Which is especially concerning to the elderly and people with disabilities that do no regularly interact with technological devices to recognize when these phishing attacks are presented to them. 
+Session hijacking and Man-in-the-Middle attacks 
+This attack is a cyberattack when an unauthorized third party stealthily seizes control of the communication path connecting many destinations. The communication traffic of the intended victims might be interrupted, modified, or even replaced by the Man-in-the-Middle attacker. Additionally, since victims are unaware of the intrusion, they assume the communication connection is secure.
+Cross-site scripting (XSS) attacks
+A malicious attacker attempts to run JavaScript code in the victim’s browser in order to steal the victim’s sensitive information. It is a widespread vulnerability discovered in current Web sites. 
+
+
+According to Nicholson, Coventry et al. (2019) there are three unique digital security issues among the elderly which are:
+•	Compared to younger adults, they are less defensive and more vulnerable to spam
+•	They are less knowledgeable about computer privacy and security dangers
+•	They frequently have a higher trust level for people they deal with online
+The above-mentioned digital security issues are a great concern regarding technological and digital activities among the elderly and people with disabilities. Biometric security can be used to protect them against different types of threats the world has to offer such as Malware attacks, SQL injection attacks, Denial-of-service attacks, Phishing, Session hijacking and Man-in-the-Middle attacks, and Cross-site scripting attacks.
+
+2.3	Biometric security 
+According to Faundez-Zanuy (2006), biometrics is derived from the Greek words “bios” (life) and “metrikos” (measure). It is a science that deals with the statistical study of biological properties in their strictest sense. As a result, biometric recognition of persons should be referred to as security applications that examine human traits for identity verification or identification.
+2.3.1	Types of biometric security systems used in the world
+A biometric system can consist of different reconditioning systems. According to Liu and Silverman (2001), there are several different biometric security technologies such as fingerprints, hand geometry, retinal scans, iris scans, facial recognition, dynamic signature verification, and speak- or voice recognition. These different biometric security technologies will be evaluated to determine which biometric security technologies can best accommodate the elderly and people with disabilities.
+
+
+
+
+
+Fingerprints 
+Fingerprint verification may be done in a variety of ways. Some are based on the traditional police approach of comparing minutiae, others are based on straight pattern-matching devices, and yet others are a little more unusual, using moiré fringe patterns and ultrasonics (Liu and Silverman 2001). According to Lourde and Khosla (2010), there are five stages involved in finger-scan verification and identification namely fingerprint image acquisition, image processing, locating distinctive characteristics, template creation, and template matching. These five stages are used in the process of confirming a person’s identification using multiple fingerprints of an individual. Fingerprint verification may be a viable option for in-house systems if one can provide enough training and explanation to users and the system functions in a controlled environment (Liu and Silverman 2001).
+Hand geometry 
+Hand geometry is the study and measurement of the shape of the hand. This biometric is easy to use and has a decent mix of performance features (Liu and Silverman 2001). Hand geometry readers take measurements of a user’s palm and fingers in a variety of dimensions, such as deviation, length, angle, and breadth, and compare them to data recorded in a file. According to Ross, Jain et al. (1999) there are three stages involved in hand geometry verification and identification namely image acquisition, enrolment phase, and verification phase. These three stages are used in the process of confirming a person’s identification using multiple images of an individual’s hand. Hand geometry readers are being used by businesses in a variety of applications, including time and attendance records, where they have proven to be quite popular (Liu and Silverman 2001). 
+Retinal scans 
+This biometric is used to analyze the layer of blood vessels at the back of an individual’s eye. This approach involves scanning the distinctive patterns of the retina using a low-intensity light source through an optical coupler. This biometric does necessitate the user to look into a receptacle and focus on a certain area which can be inconvenient for individuals wearing glasses (Liu and Silverman 2001). Retinal scanning has not acquired popularity because individuals view the technology to be obtrusive, and retinal scanning devices are not commercially accessible (Woodward Jr, Horn et al. 2003). 
+
+Iris scans
+Iris scans entail examining characteristics identified in the colorful tissue ring that surrounds the pupil. Iris scanning, by far the least intrusive of the eye-related biometrics, uses a standard camera element and does not necessitate direct contact between the user and the scanner (Liu and Silverman 2001). Iris patterns emerge at random. As a result, the iris patterns of a person’s left and right eyes, as well as identical twins’ iris patterns, vary. Because the iris is very unique and robust, it can be used for both identification and verification applications (Woodward Jr, Horn et al. 2003). 
+Facial recognition
+Face detection and recognition is one of the most important biometric authentication technologies that may be used for both authentication and surveillance (Anwarul and Dahiya 2020). The spatial geometry of identifying aspects of the face is recorded by facial recognition. Facial recognition is done in a variety of ways by different methods, but all the methods focus on important aspects of the face. By comparing an image or video to a database consisting of different individuals' faces, a specific individual may be recognized (Anwarul and Dahiya 2020). Facial recognition has a clandestine or covert potential since a person’s face may be captured by a camera from a long distance. As a result, programs to identify card counters or other undesirables in casinos, shoplifters in stores, criminals, and terrorists in metropolitan areas have utilized facial recognition (Woodward Jr, Horn et al. 2003). 
+Dynamic signature verification 
+A written signature has traditionally served as a method of confirming an individual's identity. Dynamic signature verification is a way of assessing an individual's signature that is automated. This technology examines such dynamics as writing speed, pressure, and direction (Woodward Jr, Horn et al. 2003). People are accustomed to using signatures for transaction-related identity verification, and most would not consider it unusual to expand this to biometrics. Signature verification devices are relatively precise in operation and, as a result, as well suited to applications where a signature is a recognized identification (Liu and Silverman 2001).
+
+
+
+Speak- or voice recognition
+Speech authentication is based on sound-to-print authentication, which involves complicated technology that converts voice into text. Poor quality and ambient noise might obstruct verification. Furthermore, the enrolment process has frequently proven more difficult than other biometrics, contributing to the idea that voice is less reliable (Liu and Silverman 2001). These different biometric security systems are summarised in Table 2 below. 
+Table 3 – Comparison of biometrics (Liu and Silverman 2001)
+ 
+Biometric security technology has been well known for decades, but it has mostly been used in extremely clandestine areas requiring severe security (Liu and Silverman 2001). Face detection and recognition is one of the most important biometric authentication technologies that may be used for both authentication and surveillance (Anwarul and Dahiya 2020). After evaluating the different biometric security systems, it is clear that facial recognition will best accommodate the elderly and people with disabilities due to high ease of use, high accuracy, and the high security level it provides. Facial recognition technology will be used to detect and verify an individual’s identity. Facial recognition technology is the chosen biometric security technology because as seen in Table 2 it will best accommodate people with disabilities and the elderly due to its high accuracy, ease of use, and user acceptance, and is safe to use during the COVID-19 pandemic. 
+2.3.2	Biometric systems
+Biometrics is any automatically detectable, strong, and distinguishing physical attribute or personal trait that can be used to identify or validate an interval’s claimed identification (Woodward Jr, Horn et al. 2003), therefore a biometric system uses mathematical algorithms and biometric data to recognize a specific trait of an individual. Figure 3 indicates the six primary components of a biometric security system.
+ 
+Figure 3 - A generic biometrics-based system (Lourde and Khosla 2010)
+As seen in Figure 3, Lourde and Khosla (2010) have stated that several components make up a biometric system such as data acquisition, compression, decompression, feature extraction, matcher, and decision-maker. The data acquisition component uses a sensor to collect biometric data in a digital format. The compression and decompression components are optional depending on the system’s storage requirements. The feature extraction component is used to create a feature vector whose elements are numerical characterizations of the underlying biometrics. The matcher component analyses feature vectors to provide a score indicating the degree of similarity between the pair of biometrics data under consideration. The decision-maker component determines whether the individual is who she/he claims to be. 
+According to Sabhanayagam, Venkatesan et al. (2018), the characteristics of biometrics are Acceptability, Uniqueness, Performance, Universality, Collectability, Circumvention, and Permanence. These characteristics and their descriptions can be seen in Table 4. 
+Table 4 - Characteristics of Biometrics (Sabhanayagam, Venkatesan et al. 2018)
+ 
+
+2.3.2.1	Identification mode 
+Identification and verification are the two modalities in which biometric technology can be used (Faundez-Zanuy 2006). In Identification mode, the biometric system searches for matches across all of the database’s user templates to identify a specific individual. The system thereby uses a one-to-many comparison to determine an individual's identity without the need for the subject to assert their identity (or fails if the subject is not registered in the system database). In negative recognition applications, identification plays a crucial role in determining if the individual is who she/he refuses to be. Negative recognition serves to prohibit the use of several identities by one individual. Negative recognition is used to prevent an individual from using multiple identities. Positive recognition may also be used to identify individuals. 
+While Traditional techniques for positive recognition, such as keys, passwords, tokens, and PINS may be effective, biometrics is the sole way to create negative recognition (Jain, Ross et al. 2004). 
+
+2.3.2.2	Verification mode
+In verification mode, the system verifies an individual’s identity by comparing the acquired biometric information with her/his biometric template(s) that are kept in the system database. In such a system, an individual who wants to be recognized asserts their identity, typically through a PIN, a smart card, a username, and so forth. The system then performs a one-to-one comparison to determine whether the assertion is true or false. In order to prevent numerous individuals from utilizing the same identity, identity verification is often used for positive recognition (Jain, Ross et al. 2004). Figure 4 indicates how the Verification and Identification mode works.
+ 
+Figure 4 - Verification and Identification mode (Jain, Ross et al. 2004)
+The components found in Figure 4 are explained in the Biometric Systems section. Verification mode will be used in this project to identify and verify an individual due to the requirements of this project.
+2.3.3	Limitations of biometric systems
+Despite the fact that biometric systems are more user-friendly and offer greater security than conventional solutions, their usage is restricted to particular kinds of applications. These systems have several drawbacks that might drastically reduce their utilization. El-Abed and Charrier (2012) have identified the following limitations of biometric systems such as performance limitations, acceptability limitations, and architecture limitations. 
+
+
+
+Performance limitations
+The verification of biometric raw data is vulnerable to mistakes, unlike password checking, and is expressed as a similarity percentage (one hundred percent is never obtained). The variance in human features, environmental circumstances, and cross-device matching are only a few causes of verification mistakes. Such acquisition artifacts may significantly degrade the functionality of biometric systems, reducing their usefulness in practical applications. 
+Acceptability limitations 
+The utilisation of biometric systems is connected to its perceived acceptability and satisfaction. Acceptability is influenced by the intended audience and the environment in which it is used. The three major kinds of basic biometrics obstacles are correctness in terms of mistakes, size or scale of the database, and usability in terms of ease of use. It is challenging to impose a system on a corporation that users would not accept for logical or physical access control.  
+Architecture limitations
+A generic biometric system may be attacked in four different places namely the sensor, feature extractor, matcher, and the template database. Threats of circumvention, repudiation, contamination, collusion, and coercion threats are only a few of the negative aspects of biometric systems. 
+The password technique uses the least expensive and most straightforward technology since it only needs basic software resources. On the other hand, this system is extremely vulnerable to attacks since it is very easy to conning them or by hacking the software of the system. Biometric information is impenetrable to guesswork, theft, or user sharing. Since biometric characteristics like facial recognition, retina scans, fingerprints, and iris scans are exclusive to an individual and cannot be shared across users, they offer individuality, accurate identification, and high security. A biometric system is user-friendly since it is simple to install and use. The technology is also extremely quick, operating in microseconds or seconds (El-Abed and Charrier 2012). 
+As discussed in the Biometric security section, Facial recognition technology is a great biometric system due to its high accuracy, ease of use, and user acceptance, and is safe to use during the COVID-19 pandemic.
+
+2.4	Facial recognition 
+In daily life, faces are the primary source of information about other people. Faces reveal a person’s identity, age, gender, and emotional state. The most natural method of biometric authentication between people is arguably facial recognition. A single still image, a collection of still images, or a video sequence may be used for facial recognition (Faundez-Zanuy 2006). Facial recognition is turning into a critical system as fraud exponentially increases day by day. There are many uses for an effective facial recognition system, including forensics, criminal identification, surveillance, fraud exclusion, person verification, and so forth (Anwarul and Dahiya 2020). 
+With complicated effects of lighting, occlusion, and imaging condition on the live images, face recognition systems are a challenging image processing challenge in real-world applications, it combines face detection and identification methods from image analysis. To locate the faces in each image, a detection program is used. In most computer vision applications, provided pictures with well-known structural attributes are classified using a recognition algorithm. Applications that employ standard images for recognition identify faces using face identification algorithms to extract images of the face’s eyes, eyebrows, nose, and mouth (Gürel and Erden 2012). 
+According to Woodward Jr, Horn et al. (2003) there are five-step to successfully recognize an individual through the use of facial recognition and will be discussed in the sections that follow.
+An image of an individual’s face is first captured. This acquisition can be carried out using an electro-optical camera to capture a live image of a subject or by digitally scanning an existing snapshot. Videos may also be utilized as a source of face images because it provides a quick succession of distinct still images.
+The second step is to use software to locate any faces in the image that was just collected. This is a challenging process, thus, to identify the faces, generalized patterns of what a face “looks like” (two eyes and a mouth positioned in an oval shape) are frequently used. 
+
+Once a face has been selected by the facial detection software, it may be examined. Facial recognition examines the spatial geometry of distinctive facial traits. The methods used by various vendors to extract a face’s distinguishing traits vary. Therefore, precise information about the methods is confidential. The most widely used technique is known as Principal Components Analysis (PCA), often known as the eigenface technique. To improve its performance, PCA has been integrated with neural networks and local feature analysis. The process of feature extraction leads to the creation of templates. A template is a condensed set of information that depicts the distinctive traits of an enrolee’s face. 
+The third phase’s template is compared with known faces in a database in the fourth step. This procedure generates scores that represent how well each produced template matches each template in the database for an identification application. The created template in a verification application is solely contrasted with the claimed identity template, which is the only template in the database. 
+Whether any of the scores generated in step four are high enough to declare a match is the last step. The end-user may often configure the rules guiding the declaration of a match, allowing him or her to choose how the facial recognition system should operate depending on security and operational factors.  Anwarul and Dahiya (2020) have identified three steps of facial detection and recognition which are Face detection, Feature extraction, and Face recognition. These steps can be seen in Figure 5. 
+ 
+Figure 5 - Process of Facial Recognition (Anwarul and Dahiya 2020)
+Face detection: Unitising landmarks on the face, such as the eyes, nose, and mouth, it is possible to recognize the faces in an image or video. 
+Feature extraction: For more accurate face recognition, the faces have been aligned and normalized. 
+Face recognition: To identify a certain individual in an image or video by comparing the image or video to the database.
+
+
+
+
+
+2.4.1	Advantages of facial recognition technology 
+The advantages and disadvantages of facial recognition are mentioned in Table 5 along with examples of applications, and appropriate techniques that may be chosen depending on the needs of the application. 
+Table 5 -  Advantages and disadvantages of Facial Recognition (Sabhanayagam, Venkatesan et al. 2018)
+ 
+The disadvantages mentioned in Table 5 are temporary disadvantages seeing that researchers are examining these disadvantages and improving facial recognition technology exponentially.
+2.4.2	Examining facial recognition
+In recent years, facial recognition technology has advanced significantly. The best facial recognition algorithm as of April 2020 has an error rate of just 0.08% compared to the best algorithm in 2014. Facial recognition software can be almost entirely accurate under the right circumstances. Verification algorithms can attain accuracy ratings of up to 99.97% when compared to clear reference images such as a passport photo or mugshot (Crumpler 2020). However perfect circumstances are difficult to achieve in real-world operations, and algorithms are subject to various factors that reduce their accuracy. Anwarul and Dahiya (2020) have identified several factors that affect facial recognition accuracy such as occlusion, noise, pose variation, aging, illumination, plastic surgery, and low resolution. These several factors are discussed in the sections that follow.
+Occlusion
+One of the most significant obstacles to face recognition is partial occlusion. In the event that a portion of an individual’s face is missing, it may be challenging to identify the face. For instance, sunglasses and eyeglasses may cover eyes, hairstyles and earrings can cover ears, scarves can cover half of the face, and moustaches and beards can cover half of the face. The system’s performance may suffer as a result of these elements. Researchers suggest several strategies to deal with these issues. 
+Noise 
+Different kinds of noise are prone to appear in digital images. Poor detection and identification accuracy are caused by this noise. Depending on how the image was created, noise can be added to it in many ways. Pre-handling is a crucial component of the overall architecture for face detection and identification. 
+Pose variation 
+One of the main issues with the facial recognition system is the different distribution of poses. For the profile face and gallery face to correspond, frontal face reconstruction is necessary. A database image with a frontal view and non-frontal profile face might produce inaccurate results, necessitating this reconstruction. The researchers’ various methods for transforming non-frontal faces into frontal faces might improve recognition precision. 
+Aging 
+One of the natural factors impacting face recognition systems is aging, which might cause an algorithm to crash. The face is made up of bones, skin, and muscle components. When muscles contract, the consequence is a twisting of the face features. However, as a person ages, they experience significant changes in their facial features, such as changes in their face’s shape and surface. The facial recognition frameworks should be capable of taking this need into account. 
+
+
+Illumination
+The facial recognition system’s effectiveness can be severely hurt by changes in lighting. These differences may be the result of backdrop lighting, shadows, brightness, contrast, and so forth. 
+Plastic surgery
+It is a major concern element that influences the accuracy of face recognition. Numerous occurrences involving accidents resulted in many people having cosmetic surgery, therefore the current face recognition framework cannot recognize their faces. Plastic surgery is typically used by criminals to conceal their identities. Research is being done on the need to create identification systems that are capable of recognizing faces even after plastic surgery. 
+Low resolution
+The images captured by security cameras have low quality since they capture small faces. It might be difficult to match the high-resolution gallery image with the low-resolution query image. As the majority of the items of interest are lost in such a low-resolution image, there is a very limited amount of data present. The recognition rate may be significantly reduced as a result. Researchers are suggesting several approaches to deal with this problem. 
+The above-mentioned factors that affect facial recognition accuracy are being addressed day by day through extensive research to improve facial recognition accuracy. As mentioned before most of these factors have already been addressed and the accuracy of facial recognition has improved drastically over the past years and is still improved as of today.
+2.4.3	Facial recognition methods
+Solanki and Pittalia (2016) have stated that facial recognition methods are divided into four categories namely Knowledge-based methods, Feature-invariant methods, Template matching methods, and Appearance-based methods. 
+Knowledge-based methods
+Our understanding of human faces is being encoded through knowledge-based methods. These techniques are rule-based. They attempt to abstract our understanding of faces into a set of rules. A face typically features two symmetrical eyes, and the area around the eyes is darker than the cheeks. The space between the eyes or the contrast in colour intensity between the lower zone and the eye area are examples of facial characteristics. The difficulty of creating a suitable set of rules is the main issue with these systems. If the rules were too broad, there may be plenty of false positives. On the other side, if the restrictions were too specific, there may be a slot of false negatives. To solve these issues, hierarchical knowledge-based methods might be built. With minimal inputs, these techniques demonstrate their effectiveness. However, what if an individual is wearing glasses? Other features can solve that issue. For instance, some algorithms can recognize the colour of human skin or textures that resemble faces. 
+Feature-invariant methods
+Methods that look for a face’s invariant characteristics regardless of its angle or position. Facial recognition makes use of the distinct micro-elements on the face, such as the mouth, chin, nose, cheekbones, lips, ears, forehead, and so forth. Eye socket outlines, the area around the cheekbones, the sides of the mouth, and the position of the nose and eyes may all be seen in the upper face. The separation between the eyes, the length of the nose, and the jaw angle. 
+Template matching methods
+These algorithms compare the incoming images with previously recorded faces or feature patterns. Methods of template matching attempt to categorize a face as a function. One might attempt to locate a common template for each face. It is possible to define several aspects independently. A face, for instance, may be broken down into its eyes, facial contour, nose, and mouth. A face model may also be constructed using edges. However, these techniques are only effective on frontal faces. Other templates take advantage of the relationship between the brightness and darkness of the various facial areas. To find faces, these common patterns are contrasted with the input image. 
+Appearance-based methods
+An algorithm that matches templates and learns its pattern database from a series of training images. The majority of appearance-based methods include statistical analysis and using machine learning to identify the relevant characteristics of face images. Appearance-based methods make use of two different algorithms such as the Principal Component Analysis (PCA) algorithm and the Fisher’s Discriminant Analysis (LDA) algorithm. 
+
+
+
+2.5	Summary
+Technological and digital obstacles have been researched and a good understanding of how and why the elderly and people with disabilities struggle to engage in daily technological activities was achieved through this literature study. Biometric security has been researched and discussed and a good understanding of how different types of biometric systems work has been achieved. Through examining the different types of biometric security systems discussed in Section 2.3.1 a conclusion has been made that the most appropriate viable biometric security system for this project is facial recognition. Facial recognition has been researched and a good understanding has been achieved of how it works and the different types of methods that can be used to implement this technology. 
+The knowledge gained from this study will be applied to create an artifact in the following chapter of this project. To accomplish the project’s goal, a facial recognition system will be programmed, designed, and implemented. The artifact’s documentation will also be supplied.
+
+
+ 
+CHAPTER 3 – DEVELOPMENT OF THE ARTIFACT
+3.1	Description of the artifact
+An artifact was developed with the goal to assist the elderly and people with disabilities with secure authentication. The artifact consists of facial recognition and verification technology which is used to automatically detect and verify an individual’s face. The main idea behind the development of the artifact is to assist the elderly in accessing passwords and pins without the need to remember passwords and pins and to assist people with disabilities to gain access to a building without the struggle to open and close doors. The artifact verifies an individual’s face and gives the person access to a building, an ATM, an online banking application, et cetera. After the recognition and verification process, the verified individual’s name(s) are written to an excel file as well as the time the individual's face was verified. The artifact doesn’t store new images in a database as we’ll assume the database for a bank or access to a building already exists. 
+The description of the artifact can be broken up into two sections: the face detection process and the recognition and verification process. 
+3.1.1	Face detection process
+The artifact makes use of the face_recognition library which measures the distances between an individual’s major facial features such as the eyes, mouth, nose, et cetera. The Euclidean distance algorithm uses these distances to create a distinct face signature. Four locations are calculated which are the end points of an individual’s face. The top left and top right corner of an individual’s face as well as the bottom right and bottom left corner of an individual's face. Figure 6 illustrates the face detection process by drawing a square around each face detected within each frame. The statistics-based technique is used to detect multiple faces by classifying all conceivable sections of images, which looks at the face region as a class of models and develops the classifier using a large number of face and non-face training samples. 
+ 
+Figure 6 - Face detection using the artefact
+3.1.2	Face verification process 
+Many different methods can be used to recognise and verify an individual’s face. The different methods are discussed in Section 2.4.3 and for this project, the template matching method is used. Figure 7 illustrates a flow chart of the steps involved in the template matching method that was used with a detailed explanation following the figure. 
+ 
+Figure 7 - Face verification process
+
+Each step illustrated in Figure 7 is explained below.
+•	The Face recognition model is loaded
+•	Known face images are loaded from the database 
+•	Face detection
+o	A new frame is captured
+o	The frame is compressed 
+o	Find all the faces and face encodings in the current frame of the video
+o	Convert the image colour from BGR to RGB
+o	Detect face using the Euclidean distance algorithm
+•	If a face is detected the program will continue to the next step, otherwise the process will start from the beginning unless the user terminated the program
+•	Face feature extraction 
+o	Extract locations of the mouth, eyes, nose, and so forth from the current frame
+•	Feature comparison (compare frame with known faces in the database)
+o	See if the face is a match for the known face(s)
+o	If a match was found append the name of the image. Draw a red rectangle around the person’s face and display the appended name above the rectangle
+o	If a match was not found. Draw a red rectangle around the person’s face and display “Unknown” above the rectangle 
+•	Write the appended name(s) or “Unknown” to a csv file as well as the time the face was verified or not
+•	Determine if the program was terminated or not
+o	If not, the process will start from the beginning
+o	Otherwise, the program will end
+Figure 8 and Figure 9 illustrates how the artefact detects and verifies faces using the processes described above.
+ 
+Figure 8 - Face verification using the artefact
+
+ 
+Figure 9 - Multiple faces verified using the artefact
+
+
+
+
+
+
+
+
+
+
+
+3.2	The life cycle of the artifact
+The agile methodology has been chosen as the artifact development life cycle due to its iterative and incremental method to develop software, this is important due to the fact that the chosen research methodology is DSRM which is discussed in Section 1.5.2. The capacity to move quickly is referred to as agility. The agile methodology’s development life cycle is a predefined sequence of stages that a project goes through from the beginning to the end. These stages include Planning, Requirement analysis, Design, Building, Testing, and Deployment. Figure 10 illustrates the iterative nature and different phases of the agile development life cycle.
+ 
+Figure 10 - Agile Development Methodology (Zayat and Senvar 2020)
+
+Planning phase:
+During the planning phase, the developer establishes the goal and scope of the software solution. A document is created during this phase outlining the essential specifications for the software solution. A gant chart is also included in Section 3.4.6 allocating the time needed for each phase. 
+Requirement analysis phase: 
+During the requirements phase, the resources which are required to build the artifact are defined to figure out what the system is supposed to do and what it needs.
+
+Design phase:
+Different solutions are assessed, and the most efficient solution will be designed which will convert the identified requirements into comprehensive system design specifications for the next phase. 
+Building phase:
+During this phase, the artefact will be developed. Not every aspect of the artefact will be completed in one iteration of the life cycle. Each building incrementally adding the required functionality to the artefact. 
+Testing phase:
+Once a certain part of the artefact has been designed and developed, that part will be tested to ensure that it works the way it should.
+Deployment phase
+The system is deployed and ready to use during this phase.
+
+3.3	Agile methodology benefits 
+According to Nehra (2022) using an agile methodology has the following benefits:
+Increased flexibility 
+The agile development methodology is built on flexibility. Using an agile methodology enables an individual to respond to changes and still be able to produce a successful software solution by identifying where their flexibility lies, accounting for it in their project plan, and incorporating it into the agile development process.
+Better project predictability 
+Given that an agile methodology makes use of sprints (or in this case builds), the predetermined lengths make is simpler for the developer to analyse his/her performance. A sprint is a brief period during which a developer works to finish assignments, benchmarks, or deliverables.  Sprints, also known as iterations, effectively divide the project into manageable blocks where smaller objectives may be achieved. 
+Better control
+Agile allows developers to have more control over the project with features such as transparency, quality-control, and feedback integrations. By making use of sophisticated reporting tools and procedures for daily progress updates, the client is guaranteed the desired software quality.
+Continuous improvement 	
+One of the primary concepts of Agile is the pursuit of continuous improvement. Each sprint will be more promising than the previous one and include no iterative errors since the agile methodology is recursive. Once the final testing phase in the final iteration has passed successfully, the artefact has been deployed and is ready to use. 
+Product Quality 
+The agile approach is an iterative process that provides the ability to improve the system/artefact being developed with each iteration. The development of high-quality software solutions is facilitated by a persistent focus on quality control and improvements.
+
+3.4	Description of the development of the artefact 
+Since the Agile methodology was used, multiple iterations occurred which includes multiple phases in each iteration. Once an iteration has been completed, feedback was provided, which was used to move to the next iteration. Each iteration was an improvement on the previous iteration. 
+Figure 13 in Section 3.4.6 illustrates the Gant chart which was used to help the researcher stay on track and deliver the artefact on time.
+
+
+
+
+
+3.4.1	Iteration 1: Setting up the environment:
+Setting up environment 
+Research has been conducted on which programming language, Integrated Development Environment (IDE), operating system, and web camera to use that will best suite a facial detection and verification system. The advantages and disadvantages of each mentioned technology were compared, and the following technologies were chosen for the facial detection and verification system:
+Programming language 
+Python was the chosen programming language, the reason being that it is simple and easy to use and understand. It contains libraries that other languages don’t contain and is currently the most used language in the world. Python bindings are available for OpenCV which is the most widely used library for computer vision. 
+Integrated Development Environment (IDE)
+Visual Studio Code was the chosen IDE, the reason being that it’s very simple and easy to use and understand and works very well with Python. Anaconda was used as the environment in Visual Studio Code to simplify package management and deployment. Different packages were installed to create an environment where face detection and verification can work optimally.
+Operating system
+Windows 10 Pro was the chosen operating system.
+Web Camera 
+Hikvision DS-U12 1080p was the chosen web camera due to its reasonable price, high quality, and availability for this development of the artefact. It was the most feasible option for this project.
+Source control
+A GitHub repository has been setup to help the researcher with source control and incremental development improvements on the artefact.
+
+3.4.2	Iteration 2: Face detection using Haar cascade 
+Research was done to understand how face detection works and the system requirements were analysed to ensure that the environment is right for facial detection. There are many different options on how to use computer vision to detect an individual’s face. Objects in images can be detected using the haar cascade algorithm which can function in real-time and isn’t overly complicated. A haar cascade detector can be trained to recognise many different objects including bikes, fruits, faces, cars, etc.
+The haar cascade model was designed, developed, implemented, and tested. Once it has been tested the researcher realised that haal cascade algorithms tend to have a higher probability of false-positive detections and are not as accurate as the latest algorithms we have today. 
+3.4.3	Iteration 3: Face detection and verification using the face_recognition library 
+The face_recognition OpenCV library was researched and compared to other facial detection algorithms. The haal cascade model was removed and replaced by the face_recognition model. The face_recognition model is a lot more accurate than the haal cascade and makes use of the Euclidean distance algorithm and a pre trained CNN model. The face detection process is described in Section 3.1.1.  Facial verification algorithms are researched and designed after the face detection model has been designed, developed, and tested. Research has shown that the Convolutional Neural Network (CNN) facial verification model is the most accurate model due to its popular deep learning algorithms. 
+Planning and requirement analysis has been done regarding using the CNN model. Once the CNN algorithm has been designed, developed, and implemented, the researcher has found that a lot of processing power is needed in order to use the CNN model. Therefore, the face_recognition model has been implemented to use the Euclidean distance algorithm and a pre trained CNN to create a template for each face. These templates are stored in a database and once an individual’s face has been detected, the face_recognition model calculates the distance between the template face and the detected face. If these distances match, then the name is retrieved and displayed above the individual’s face. This process was tested multiple times to ensure that it is highly accurate and works the way it should. 
+
+3.4.4	Iteration 4: Face detection with multiple faces
+Once the facial detection and verification system works on an individual, it was time to adjust some features to ensure multiple individuals can be detected at the same time. When this feature was tested, the program was extremely slow. Therefore, a thread was created for each frame, and when this was tested the program was slower than previously. Therefore, the threads were removed, and the program was designed, developed, and tested with the feature to detect multiple faces. 
+3.4.5	Iteration 5: Face verification with multiple faces 
+Once multiple individuals can be detected at the same time, multiple face verification was researched, designed, developed, and tested. Different algorithms were tested but once again the face_recognition library was the best option and was very accurate. Figure 11 illustrates that the algorithm can detect and verify multiple faces with high accuracy even in bad lighting.
+ 
+Figure 11 - Face verification with bad lighting using artefact
+Research was done on how to make the verification process more accurate by detecting individuals with glasses. Different algorithms were researched, designed, developed, and tested. Figure 12 illustrates how the artefact can detect and verify the same person with glasses.
+ 
+Figure 12 - Face verification with glasses using artefact
+3.4.6	Iteration 6: Export to excel file
+At this point, the facial detection and verification system works better than expected and there is time to add a security feature. Research was done on how to create an attendance sheet to determine when an individual accesses a building or system using his/her face. During the planning phase, it was clear to use a csv file to write the verified/unverified names and the time the face(s) was recognised to the file. The attendance function was designed, developed, and tested. Once everything worked,  the program was tested for the last time to ensure it reached the expected outcome.
+ 
+Figure 13 - Gant chart for Agile SDLC
+
+3.5	Final artefact operation
+Firstly, if a user doesn’t exist in the database which is used to grant an individual access to a building or ATM /online banking system, the user must first register at the organisation, scanning his/her face and storing it in a database. If the user has already registered at the organisation his/her face already exists in the database. 
+Before an individual is granted access to a building, ATM, or online banking system, their face is detected and verified. Once the software solution has been deployed it will continually search for known faces until the key “q” is pressed which will terminate the process. 
+
+
+
+
+3.6	Summary
+An agile system development life cycle was followed to develop the artefact due to the fact that this methodology is an iterative and incremental method to develop software. Therefore, it is important for the chosen research methodology which is DSRM. Different facial detection and verification algorithms were researched, analysed, and tested. Most algorithms required machine learning models to detect and verify an individual’s face but for this project an OpenCV library was used due to how accurate the model is and requires a lot less processing power. The library was adjusted to enable the artefact to detect and verify multiple faces regardless of if the lighting is good or bad and to detect and verify an individual’s face with or without glasses/facial hair.
+The face_recognition OpenCV library makes use of face landmarks, face locations, face comparisons, and face distances to compare statistics of multiple faces with each other. If the statistics of two faces match, the face is verified and allows the user to access a building, ATM, online banking application, et cetera. The verified user’s name is written to a file as well as the time the face was verified.
+
+
+
+
+
+
+
+
+
+
+
+
+
+CHAPTER 4 – RESULTS
+4.1	Results 
+As physical and technological security measures increase exponentially day by day, people with disabilities and the elderly struggle to engage in daily activities such as assessing buildings with strict security measures, using an ATM machine, remembering passwords and pins and so forth. The goal of this research study is to determine how to assist the elderly and people with disabilities in daily technological activities with secure authentication using facial recognition. The aim will be achieved through conducting research regarding older adults with memory loss, challenges that people with disabilities encounter daily, biometric security, and facial recognition technology. The project involves developing an artifact that will detect an individual’s face, process the image, and verify an individual’s identity. 
+To ensure that the system will be developed within the given time frame an approach to project management and a project plan will be used consisting of the project scope, project limitations, risks of the project, responsibilities of the researchers, and a Gantt chart. Ethical concerns are discussed and addressed for this project seeing as individuals’ faces are captured and stored on a database.
+The positivistic research paradigm was used to determine how knowledge is researched and perceived, and the Design Science Research methodology was used to develop the artefact to address the identified problem. Technological and digital obstacles have been researched and a good understanding of how and why the elderly and people with disabilities struggle to engage in daily technological activities was achieved through this literature study. Digital security has been researched to determine how important it is for secure authentication. Biometric security has been researched and discussed and a good understanding of how different types of biometric systems work has been achieved. Through examining the different types of biometric security systems, the conclusion has been made that the most appropriate and viable biometric security system to assist the elderly and people with disabilities is facial recognition. Facial recognition has been researched and a good understanding has been achieved of how it works and the different types of methods that can be used to implement this technology. 
+The knowledge gained from this study was applied to create an artifact. The artefact can successfully detect and verify an individual and store data for data analytics. The artefact has been implemented and tested and the system works well enough to solve the identified problem. It has a facial detection accuracy of 99.38% and can accurately verify an individual regardless of good or bad lighting, if the person is wearing glasses, or if the person has facial hair. Since all the research objectives has been successfully completed a conclusion can be made that facial recognition technology is capable of assisting the elderly and people with disabilities with secure authentication.  
+Further research should be conducted, and systems implemented to ensure that the elderly and people with disabilities are included in the advancement of technology relating to secure authentication. The system can be implemented with IoT devices as well as include liveness detection which is a machine learning model which can differentiate the difference between a real person and a photo of a person. Further research can be conducted on different facial detection and verification algorithms to determine which algorithm is the most optimal. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+CHAPTER 5 – REFLECTION 
+5.1	What did you learn while completing this project?
+I learned how to conduct research in order to solve an identified problem. I developed time management skills which I used to successfully complete the project. The agile project management methodology was used to help me develop the artefact while delivering a high-quality software solution. I learned how facial recognition technology works as well as how a CNN machine learning model works. I developed a better understanding of how the OpenCV library works and how good python is for computer vision. 
+5.2	Did you achieve the objectives that you set for the project? Discuss
+All objectives were achieved due to project management. The following objectives were set to be addressed:
+•	Conduct research regarding technological and digital difficulties the elderly and people with disabilities encounter daily.
+•	Determine why the elderly and people with disabilities struggle to engage with certain technological and digital activities.
+•	Research digital security.
+•	Research biometric security.
+•	Research facial recognition.
+•	Develop a facial recognition system that will be able to detect an individual’s face, process the image, and determine if the system recognizes an individual’s face or not. 
+•	Evaluate whether the proposed system works the way it should work.
+All the above-mentioned objectives were achieved through researching the different topics and designing and developing an artefact which addressed the identified problem. 
+5.3	How successful were you in managing the project and meeting target dates? Discuss 
+The agile project management methodology helped me with time management and to finish work before the given deadlines. A gant chart was created to help me with time management. Therefore, I was successful in managing the project and delivering the project before the deadline.
+5.4	Summary 
+To conclude, this module has given me the necessary skills to identify a problem, research topics regarding the problem, solve the identified problem using problem solving skills and a project management methodology. I enjoyed the project and found it interesting. I realised that computer scientists have the capability to make contributions to the real world and that software can be used to help the elderly and people with disabilities.  
+6	Bibliography
+Anwarul, S. and S. Dahiya (2020). "A comprehensive review on face recognition methods and factors affecting facial recognition accuracy." Proceedings of ICRIC 2019: 495-514.
+	
+Crumpler, W. (2020). "How Accurate are Facial Recognition Systems–and Why Does It Matter." Center for Strategic and International Studies 14.
+	
+El-Abed, M. and C. Charrier (2012). Evaluation of biometric systems.
+	
+Faundez-Zanuy, M. (2006). "Biometric security technology." IEEE Aerospace and Electronic Systems Magazine 21(6): 15-26.
+	
+Gürel, C. and A. Erden (2012). Design of a face recognition system. Proc. The 15th int. Conference on machine design and production (umtik 2012).
+	
+Hill, R., et al. (2015). "Older adults’ experiences and perceptions of digital technology:(Dis) empowerment, wellbeing, and inclusion." Computers in Human Behavior 48: 415-423.
+	
+Humayun, M., et al. (2020). "Cyber security threats and vulnerabilities: a systematic mapping study." Arabian Journal for Science and Engineering 45(4): 3171-3189.
+	
+Jain, A. K., et al. (2004). "An introduction to biometric recognition." IEEE Transactions on circuits and systems for video technology 14(1): 4-20.
+	
+Johansson, S., et al. (2021). "Disability digital divide: the use of the internet, smartphones, computers and tablets among people with disabilities in Sweden." Universal Access in the Information Society 20(1): 105-120.
+	
+Lin, Z., et al. (2022). "Livestreaming: exploring the obstacles and possibilities of digital usage for people with disabilities." Disability & Society: 1-5.
+	
+Liu, S. and M. Silverman (2001). "A practical guide to biometric security technology." IT Professional 3(1): 27-32.
+	
+Lourde, M. and D. Khosla (2010). "Fingerprint identification in biometric securitysystems." International Journal of Computer and Electrical Engineering 2(5): 852.
+	
+Masarani, K. (2021). "A Study on Social Networks and Digital Security in Cyber World." Journal of Mobile Computing, Communications & Mobile Networks 8(2): 36-43p.
+	
+Nehra, M. (2022). "6 Stages of the Agile Development Lifecycle." Retrieved 11 May, 2022, from https://www.decipherzone.com/blog-detail/agile-development-lifecycle.
+	
+Nicholson, J., et al. (2019). " If It's Important It Will Be A Headline" Cybersecurity Information Seeking in Older Adults. Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems.
+	
+Ross, A., et al. (1999). A prototype hand geometry-based verification system. Proceedings of 2nd conference on audio and video based biometric person authentication.
+	
+Roupa, Z., et al. (2010). "The use of technology by the elderly." Health Science Journal 4(2): 118.
+	
+Sabhanayagam, T., et al. (2018). "A comprehensive survey on various biometric systems." International Journal of Applied Engineering Research 13(5): 2276-2297.
+	
+Selwyn, N., et al. (2003). "Older adults' use of information and communications technology in everyday life." Ageing & Society 23(5): 561-582.
+	
+Solanki, K. and P. Pittalia (2016). "Review of face recognition techniques." International Journal of Computer Applications 133(12): 20-24.
+	
+Vaportzis, E., et al. (2017). "Older adults perceptions of technology and barriers to interacting with tablet computers: a focus group study." Frontiers in psychology 8: 1687.
+	
+Woodward Jr, J. D., et al. (2003). Biometrics: A look at facial recognition, RAND CORP SANTA MONICA CA: 31.
+	
+Woodward Jr, J. D., et al. (2003). Biometrics: A look at facial recognition, RAND CORP SANTA MONICA CA.
+	
+Zayat, W. and O. Senvar (2020). "Framework study for agile software development via scrum and Kanban." International journal of innovation and technology management 17(04): 2030002.
+	
+Williams, C. (2007). "Research methods." Journal of Business & Economics Research (JBER) 5(3).
+
+
+
+
+
+7	Appendices 
+7.1	Ethical declaration 
+ITRI 671 Research ethics form: Honours project
+Name: Michael Rosin
+Title of project: Facial recognition technology used to assist the elderly and people with disabilities with secure authentication
+Supervisor: Mr. H.E. (Henri) van Rensburg
+1. Have you read the information available related to research ethics (Chapter 5 of Researching Information Systems and Computing; BJ Oates and Chapter 13 of Writing for computer science, J Zobel; Manual for post graduate studies, available on efundi)?	Yes x	No
+2. Do you make use of people as source of data in your project (for example the completion of questionnaires or evaluation of products)?	Yes x	No
+3. Are there any aspects of your research that you need permission from another party to use (for example use of property or tools)? 
+If yes, provide more detail. 	Yes
+x
+I need to ask permission from people to store images of their faces.	No
+4. Describe your research question and give a short description of your plans for the collection of data.
+Security measures increase exponentially day by day through changing passwords and pins, stricter access control, and new authentication means, leaving the elderly and people with disabilities behind (Rasmussen and Rudmin 2010). The elderly has the tendency to struggle to remember passwords and pins because of memory loss and people with disabilities struggle to engage in daily activities because of their limitations. People with physical disabilities often face considerable mobility challenges (Venter, Savill et al. 2002). Biometric security needs to be discussed and how it can be used to assist the elderly and people with disabilities, and whether facial recognition technology can be used to assist the elderly and people with disabilities in daily activities with secure authentication.
+I need to collect images of people’s face. I will ask my friends and family to use images of their faces. 
+5. Describe how you plan to provide information about yourself and the goals of your research to participants.
+I will introduce myself and tell them what I am studying, what my research project is about, and what I need from them. 
+6. Describe what methods you will use to get permission from participants in your study.
+I will give participants a form to complete which gives me permission to use images of their faces. 
+7.	Will you be able to ensure that participants’ information will be used in an anonymous, private and confidential way? How?	Yes X
+I will 
+encrypt sensitive information.	No
+8. Are there any foreseeable risks of damage (physical, social or psychological) to participants or the environment? If you answer yes, give detail of the preventative measures you will follow.	Yes	No X
+9. Are there any foreseeable risks to the NWU, for example lawful actions that may follow the research, or damage to the image of the university? If yes, give detail.	Yes	No X
+10.Are there any other ethical issues that may occur during the execution of the research (for example conflicting interests)? If yes, provide detail and explain how you plan to handle them.	Yes	No X
+
+I declare that the information contained in this form is accurate. I have attempted to identify the risks that may arise in conducting this research and acknowledge my obligations and the rights of the participants. I confirm that
+ 
+the research will be conducted in line with all University, legal and ethical standards.
+Name of student: Michael Rosin Signature:
+Date:2022/08/25
+Name of study leader: Mr. Henri van Rensburg Signature:
+Date:	2022/08/25
+
+
+
+
+
+
+
+
+

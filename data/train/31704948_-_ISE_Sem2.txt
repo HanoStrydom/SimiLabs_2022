@@ -1,0 +1,477 @@
+
+
+
+
+
+Most used Project Management and Software Development Methodologies in the South African IT job market
+
+
+Michael Joshua Rosin
+31704948
+
+ITRI 614
+B.Sc. Hons. Computer Science & Information Technology
+2022
+Potchefstroom Campus NWU
+
+
+Supervisor:	Prof Neels Kruger
+
+
+Date of submission: 22 October 2022
+
+Table of Contents
+1	ABSTRACT	1
+2	INTRODUCTION	1
+3	WATERFALL PROJECT MANAGEMENT METHODOLOGY	2
+3.1	Waterfall methodology SDLC	2
+3.2	Strengths	3
+3.3	Weaknesses	4
+3.4	Opportunities	5
+3.5	Threats	5
+3.6	When to use the Waterfall methodology	5
+3.7	When not to use the Waterfall methodology	5
+4	AGILE (SCRUM) PROJECT MANAGEMENT METHODOLOGY	5
+4.1	Agile (Scrum) methodology SDLC	6
+4.2	Strengths	7
+4.3	Weaknesses	8
+4.4	Opportunities	8
+4.5	Threats	9
+4.6	When to use an agile methodology	9
+4.7	When not to use an agile methodology	10
+5	RAPID APPLICATION DEVELOPMENT (RAD) SOFTWARE DEVELOPMENT METHODOLOGY	10
+5.1	Rapid Application Development (RAD) methodology SDLC	11
+5.2	Strengths	12
+5.3	Weaknesses	12
+6	OVERVIEW OF CASE STUDIES	13
+7	COMPARISON OF CASE STUDY	17
+7.1	Project management methodologies used by companies	17
+7.2	Company size	18
+7.3	Difference of the function and duty between the project management methodologies and software development methodologies	18
+7.4	Software development methodologies used by companies	19
+7.5	Build better relationship via online communication	20
+7.6	Security problems and how did the company counter these issues	20
+8	CONCLUSION	21
+9	BIBLIOGRAPHY	22
+
+
+
+
+
+
+
+LIST OF TABLES 
+Table 1 - A comparison between Waterfall and Agile methodology	10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LIST OF FIGURES 
+Figure 1 - Waterfall Methodology SDLC (Balaji and Murugaiyan 2012)	2
+Figure 2 - Scrum Methodology SDLC (Zayat and Senvar 2020)	6
+Figure 3 - Rapid Application Development Methodology SDLC (Chien 2020)	11
+Figure 4 - Number of companies using SDM	19
+
+
+
+
+ 
+1	Abstract 
+Various project management and software development approaches are available, but none offer the same  benefits or strengths. While some excel in procedures and processes, others excel at cost management, soft skill development, and project management in challenging circumstances. Other project management approaches excel in communication, stakeholder management, product delivery management, risk management, and structure and governance approach adaptability. This study’s goal is to highlight the most used project management and software development methodologies in the South African IT job market compared to the international IT job market. South African companies are compared in terms of the project management and software methodologies they use, the effect COVID-19 has had on these companies, and their successes and failures. 
+
+2	Introduction 
+Over time, project managers have seen that projects have common qualities that may be codified into a structural procedure, allowing them to manage projects more efficiently. Each project phase can usually be brought to a logical conclusion before the next begins, and each phase produces identifiable milestones or deliverables that serve as the beginning point for the next. After each phase, cost and schedule estimates, requirements, plans, and specifications should be revised and analysed, sometimes before determining whether or not to continue with the project (Charvat 2003).
+The effects of COVID-19 have put organisations’ capacity to deliver programs and projects to the test. Some programs and projects were able to adapt swiftly and successfully, with sponsors and managers able to switch to remote working, while others experienced significant delays or even cancellations. Due to the circumstances during the pandemic, project managers must apply the best possible project management and software development methodologies for a given project or program. 
+There are different types of project management and software development methodologies used in the world such as Waterfall, Kanban, Agile, Scrumban, PRINCE2, eXtreme programming (XP), Adaptive project framework (APK), Critical chain project management, six sigma, DevOps, and Rapid application development (RAD). While certain project management and software development methodologies are customised to specific industries or sectors, other project management methodologies are robust in practically all elements of project management, and some methodologies are robust in only a few aspects, therefore some methodologies may be more popular than other. This study aims to determine the most used project management and software development methodologies in the South African IT job market. Different project management and software development methodologies will be examined by conducting a SWOT analysis. The research will be conducted to determine how COVID-19 has changed these businesses, what type of software projects they complete, and their successes and failures. Due to time and spatial constraints, this research study will focus on two project management methodologies namely Waterfall and Agile (Scrum), and a software development methodology namely RAD (Rapid Application Development).
+
+3	Waterfall Project Management Methodology 
+As the name indicates, the waterfall model is a sequential software development technique. The production cycle progresses progressively from one stage to the next, and a series of phases must be completed one after the other (McCormick 2012). 
+3.1	Waterfall methodology SDLC
+Analysis, design, implementation, testing, and maintenance are the five steps of the Waterfall model (Bassil 2012). Figure 1 indicates the different phases of the system development life cycle of the Waterfall Methodology. 
+ 
+Figure 1 - Waterfall Methodology SDLC (Balaji and Murugaiyan 2012)
+
+
+The different phases of the Waterfall SDLC seen in Figure 1 are described below:
+Analysis phase
+A Software Requirements Specification is a precise and complete explanation of the behaviour of the software to be generated. All the project’s requirements are assessed and documented in a specification document, and a feasibility study is conducted to see whether they are feasible. Any limits or limitations that may affect the development process must be considered (Bassil 2012). 
+Design phase
+It is the problem-solving process and planning for solutions for software (Bassil 2012). The requirements derived from the analysis phase are studied to develop the software solution and prepare a blueprint design successfully. This phase aids in the specification of system requirements, hardware, and the definition of overall system architecture.
+Implementation phase
+The programming and deployment of business demands and design specifications into a tangible executable program, database, software component, or website are referred to as the implementation step (Bassil 2012). The programmers are involved in this phase because they take the project requirements and specifications and develop the applications. 
+Testing phase 
+This phase is a technique for verifying that a software solution meets the original requirements and specifications while also accomplishing its intended aim (Bassil 2012). 
+Maintenance phase
+After the software product has been completed, delivered, and installed, the maintenance phase involves refining output, fixing errors, and enhancing performance and quality (Bassil 2012).
+
+3.2	Strengths
+The advantages of the waterfall methodology are the following:
+•	Requirements are explicit before development starts (Balaji and Murugaiyan 2012). 
+•	Before going on to the following phase, each phase demands a specific duration to finish (Balaji and Murugaiyan 2012).
+•	It is simple to implement due to its linear model (Balaji and Murugaiyan 2012).
+•	The resources needed to put this approach into action are low (Balaji and Murugaiyan 2012).
+•	At each stage of development, appropriate documentation is followed(Balaji and Murugaiyan 2012).
+•	Errors are early detected (Amlani 2012). 
+•	Requirement specification documents are helpful in the future for code modification and project enhancement (Amlani 2012).
+•	Succeeding phases are dependent on the previous phase. Therefore, this technique allows for project timetable control (Amlani 2012).
+•	Each phase is distinct, and team members in each step verify that the stage is excellent before moving on to the next (Amlani 2012).
+•	This method may be quite effective when team members are distributed across the country or countries (Amlani 2012).
+•	The waterfall approach requires fewer resources to implement than other methods (Amlani 2012). 
+•	There are no geographic boundaries which mean that team members can work remotely (Amlani 2012).
+3.3	Weaknesses 
+The disadvantages of the waterfall methodology are the following:
+•	Many faults within a single phase appear after the phase has been completed, therefore it results in an unorganised system (Balaji and Murugaiyan 2012).
+•	A modification to the requirement requested by the client will not be executed during the phase team members are currently working on (Balaji and Murugaiyan 2012).
+•	There’s no turning back. Team members can go back to the previous phase once it has been completed (Amlani 2012).
+•	It can be difficult to predict the amount of time necessary for various phases, and inaccurate assumptions might cause the project to miss its deadline (Amlani 2012).
+•	The project must be redone from the beginning if changes to the waterfall procedure are necessary (Amlani 2012).
+•	Because the client keeps adding requirements to the list, the software development time and cost will increase (Amlani 2012).
+•	Except for the team members who are in the current working phase, the remainder of the phase is idle (Amlani 2012).
+3.4	Opportunities 
+It will aid future endeavors. This indicates that similar programs might be developed in the future due to appropriate documentation in waterfall models (Teamwork 2021). 
+3.5	Threats 
+Waterfall models are based on hardware. The Waterfall models have several flaws since it was portrayed as a damaged model (Teamwork 2021). 
+3.6	When to use the Waterfall methodology
+According to Teamwork (2021), the Waterfall methodology is best suited when the following occurs:
+•	The stakeholders already know what they want, and their requirements will not change. 
+•	When a project is constant and predictable, the project will not alter. 
+•	When a project’s eventual purpose is well-defined and unlikely to alter. 
+3.7	When not to use the Waterfall methodology 
+According to Teamwork (2021), the Waterfall methodology must not be an option to consider when the following occurs:
+•	There is a possibility that the project will alter. 
+•	There are uncertainties about the project requirements. 
+•	Throughout the process, continuous testing or adjustments are required. 
+
+4	Agile (Scrum) Project Management Methodology 
+The capacity to move quickly is referred to as agility. The core of this software development method is an iterative and incremental method to software development. The needs and solutions were developed through collaboration among self-organising and cross-functional teams. The most important part of this approach is customer happened, which is achieved through offering useful and simple software in a consistent and timely manner (McCormick 2012). Scrum was incorporated into the agile approach since it shares many of the same ideas. A Scrum is a team pack in which every member cooperates. It completes the project on schedule within a specific time frame and with minimal cost (Mahalakshmi and Sundararajan 2013). 
+4.1	Agile (Scrum) methodology SDLC
+Product Backlog, Sprint  Planning, The Sprint, Completed Sprint, Review, and Reap are the six steps of the Waterfall model (Bassil 2012). Figure 2 indicates the different phases of the system development life cycle of the Scrum Methodology. 
+ 
+Figure 2 - Scrum Methodology SDLC (Zayat and Senvar 2020)
+
+The different phases of the Scrum SDLC seen in Figure 2 are described below:
+Product Backlog
+The product owner makes a list of the elements from user stories and prioritises them correctly. This is accomplished by ranking the features or components that must be on the product in order of importance, then those that are less crucial, and ultimately those that are not feasible within the given period. This will guarantee the project elements’ clarity and is done based on the items’ effect, risk, and contribution to the project’s learning process for the future product (Zayat and Senvar 2020). 
+Sprint Planning
+Depending on their importance, the development team begins working with backlog items. The team initially decides how to construct it. The development team should focus on the items that are ready to be worked on rather than the level of detail at which they are currently being developed. The development team is urged to inquire about the necessary features of the product from the product owner and stakeholders at this stage (Zayat and Senvar 2020).
+
+
+
+The Sprint
+The developing team will now focus on the user stories that were chosen for the product’s subsequent distribution. During the planning meeting, these stories are picked from the product backlog based on priority and the anticipated work required, which should not take more than one sprint. A daily meeting is held to ensure that the sprint is proceeding according to schedule (Zayat and Senvar 2020).
+Completed Sprint 
+A sprint can be finished after the work is finished and the project is prepared for delivery. At this stage, the client or the shareholders can run certain tests (Zayat and Senvar 2020).
+Review  
+A meeting is scheduled to discuss what went well and what did not during the sprint. This is crucial for the next sprints. The Scrum team often works to keep up good implementations and remove any barriers. There should be ground rules for discussions to keep the conversation on a good note (Zayat and Senvar 2020).
+Repeat
+The same cycle keeps repeating, beginning with the items at the top of the product backlog, going through the same processes, and enhancing the procedure by learning about new ideas and refining work to achieve a high level of performance (Zayat and Senvar 2020).
+4.2	Strengths 
+The advantages of the agile (Scrum) methodology are the following:
+•	It is feasible to access individual productivity through daily meetings. Every team member’s productivity increases as a result of this (Amlani 2012). 
+•	Through the daily project review process, problems are discovered well in advance and can therefore be resolved quickly (Amlani 2012).
+•	Scrum may be used with any technology or programming language, but it is especially helpful for projects using new fast-moving media or web technologies (Amlani 2012).
+•	It facilitates the iteration process, allowing to integrate code into the development life cycle with less time and effort 
+•	Agile scrum assists businesses in time and cost savings (Amlani 2012).
+•	It is a lightly managed strategy that demands regular meetings to update everyone on the status of the project. As a result, the progress of the project is visible (Amlani 2012).
+4.3	Weaknesses 
+The disadvantages of the agile (Scrum) methodology are the following:
+•	Agile Scrum is one of the top software development methodologies because, in the absence of a clear end date, project management stakeholders will continue to press for the delivery of additional features (Amlani 2012).
+•	It will be difficult to accurately estimate project expenses and time if a task is not clearly defined. The task can be divided into many sprints in this scenario. (Amlani 2012).
+•	Only experienced team members are required for this methodology. The project cannot be finished on time if the team consists of individuals who are not experienced with using this methodology  (Amlani 2012).
+•	The project will either never be finished or will be a failure if the team members are not dedicated. (Amlani 2012).
+
+4.4	Opportunities 
+Iterative and incremental methodology 
+Throughout the life cycle, every component of development, including requirements and design, is examined. There is always a chance to move in a different direction when a team stops and re-evaluates the course of a project every two weeks, therefore an agile (Scrum) methodology is regarded as iterative or incremental since it focuses on such repletion of work cycles (Gandhi 2012). 
+Inspect and adapt approach 
+This approach is the product of the iterative agile development technique, which allows developers to significantly cut both development time and cost to market by allowing teams to gather requirements while constructing the application (Gandhi 2012). 
+Rapid action development 
+By eliminating the usability constraints in traditional development, methodologies like agile and scrum may either improve or damage the quality of the user experience (Gandhi 2012). 
+
+
+4.5	Threats 
+Necessary documentation with a lack of structure 
+Various agile methods have an unstructured framework and are very prescriptive of crucial activities (Gandhi 2012). 
+Requires greater cultural change to adapt 
+If the needs of one area of code vary over time, several times the same programming is required (Gandhi 2012). 
+Tool to understand project velocity 
+It is impossible to develop an accurate estimate of the work effort required to provide a code because no one knows the entire requirements at the beginning of the project. Most agile techniques offer a better tool for understanding how a project works. By placing the software in the hands of the customers, agile methodologies allow for early identification of needs and project planning (Gandhi 2012). 
+4.6	When to use an agile methodology 
+An agile methodology is best suited when the following occurs: 
+•	When there is a possibility that a project will alter.
+•	When there are any uncertainties about the outcome of the solution.
+•	If the workflow needs to be rapid and flawless outcomes are less important than seeing rapid progress. 
+•	At every stage, the companies’ stakeholders or customers need to be involved. 
+4.7	When not to use an agile methodology 
+An agile methodology mustn’t be an option to consider when the following occurs:
+•	A lot of documentation is required. 
+•	A company lack self-motivated individuals. 
+•	A predictable deliverable is required from the start.
+•	When a company must adhere to stringent timelines or deliverables. 
+
+
+The following table illustrates the comparison between the Agile and Waterfall methodology:
+Table 1 - A comparison between Waterfall and Agile methodology
+ 
+
+5	Rapid Application Development (RAD) Software Development Methodology 
+Rapid Application Development (RAD) is a development lifecycle created to provide software solutions faster and of higher quality than those provided by a traditional lifecycle (Daud, Bakar et al. 2010). This methodology emphasises immediate feedback and rapid prototyping over extensive development and testing cycles. RAD enables developers to rapidly iterate and update software without having to start from scratch each time. This ensures that the final product is more quality focused and satisfies the needs of the end consumers (Chien 2020). 
+5.1	Rapid Application Development (RAD) methodology SDLC
+Define project requirements, Prototype, Rapid construction, and feedback, and finalise product/implementation are the four steps of the RAD model (Chien 2020). Figure 3 indicates the different phases of the system development life cycle of the RAD Methodology.
+ 
+Figure 3 - Rapid Application Development Methodology SDLC (Chien 2020)
+
+
+The different phases of the RAD SDLC seen in Figure 2 are described below:
+Define project requirements
+A loosely defined set of project requirements, similar to what would be completed during project scoping in conventional development cycles, is defined by stakeholders at the start of the RAD cycle. Although this planning phase is quick and emphasises prototype iterations as having a greater priority, it is crucial to the project’s success (Chien 2020). 
+Prototype 
+Teams start developing the earliest models and prototypes when a project has been scoped. The objective is to quickly generate a functional design that can be shown to the customer. To make sure the client’s demands are addressed, developers and designers collaborate with clients up until the completion of the final product. As the project progresses, this stage is frequently repeated as often as required (Chien 2020).
+Rapid construction and feedback gathering 
+Application development, system testing, and unit integration take place during rapid building, converting prototype and beta systems into operational models. This phase may be repeated as necessary to accommodate additions and modifications. Teams typically utilise low-code or RAD methods to develop the product faster(Chien 2020).
+Finalise product/implementation
+Developers handle the technical debt accumulated during early prototyping in the last stage of RAD, optimising implementation to increase stability and maintainability as they prepare the product for launch. Components are transferred to a real-world production setting where extensive testing is done to find product flaws (Chien 2020).
+5.2	Strengths 
+The advantages of the Rapid Application Development (RAD) methodology are the following:
+•	With a business-focused approach, RAD tends to develop solutions more rapidly and more affordably (Amlani 2012). 
+•	Enables quick system design changes in response to user requests (Amlani 2012).
+•	The final product usually matches the requirements and expectations of the user (Amlani 2012).
+•	Emphasis on key system components from the user’s perspective (Amlani 2012).
+5.3	Weaknesses 
+The disadvantages of the Rapid Application Development (RAD) methodology are the following:
+•	Reusing modules in future systems is difficult (Amlani 2012).
+•	Large companies may find it challenging to manage RAD prototyping (Amlani 2012).
+•	Conflicting naming conventions and inconsistent documentation may be a violation of programming standards (Amlani 2012).
+•	Lower cost and higher speed can cause lower overall system quality (Amlani 2012).
+
+6	Overview of case studies
+Research has been conducted on the following South African companies. Below is a brief overview of each company. These companies will be analysed and compared to determine what project management and software development methodologies are mostly used in South African companies. 
+BBD Software development 
+BBD provides value by leveraging its domain experience to develop transformative solutions in any industry. Their 1000+ specialists throughout the globe take the lead in innovation to develop robust systems and procedures that are effective for any company. They provided the following services/products:
+•	Digital strategy
+•	Tech and business consulting 
+•	Cloud enablement 
+•	Software development
+•	System Integration
+•	Maintenance and support 
+•	UX/UI
+•	Risk toolkit
+•	AI-driven search
+•	Orchestration and automation
+The following information about BBD was captured during a questionnaire:
+BBD is a large company that has between 501 and 1000 employees. They make use of Agile (Scrum), Waterfall, Rapid Application Development, Prototyping, and DevOps as their Project Management Methodologies. They say there is no separation of function and duty between project management and software development methodologies. Before COVID-19 work was done on the premise, during covid employees worked from their homes, and after covid work is done on the premise. COVID-19 had the following impact on BBD:
+•	A negative impact on the way they conducted project management 
+•	A positive impact on organisational productivity 
+•	A positive impact on software development success
+•	Created an enjoyable online environment during the pandemic 
+•	Impacted mostly the people within software development and project management
+•	Had an impact on governance and strategy within BBD
+•	Had an impact on technology architecture and infrastructure
+•	Helped employees build better relationships via online communication
+•	A negative impact on security
+Retro Rabbit	
+Retro Rabbit develops software solutions for any company. They provide specialized solutions that cultivate creativity and brilliance. They produce innovative products and provide clients with the most comprehensive information technology design solution by fusing data science, human-centered, and the most recent software development methodologies. They provided the following services/products: 
+•	Mobile development
+•	Web development 
+•	Cloud development 
+•	Artificial Intelligence
+•	Experience design 
+•	Game development 
+The following information about Retro Rabbit was captured during a questionnaire:
+Retro Rabbit is a medium company that has between 101 and 500 employees. They make use of Agile (Scrum) as their Project Management Methodologies. They say there is a separation of function and duty between project management and software development methodologies. Before COVID-19 work was done on the premise, during covid employees worked from their homes, and after covid work is done online (remote). COVID-19 had the following impact on Retro Rabbit:
+•	A positive impact on the way they conducted project management 
+•	A positive impact on organisational productivity 
+•	A positive impact on software development success
+•	Created an enjoyable online environment during the pandemic 
+•	Impacted mostly the people within software development and project management
+•	Had an impact on governance and strategy within Retro Rabbit
+•	Had an impact on technology infrastructure
+•	Helped employees build better relationships via online communication
+•	A negative impact on security
+Integrity Software 
+Integrity Software was founded by Neil Patterson in 1999. Innovation in both products and services is what Integrity Software is all about. Integrity Software provides insurance management solutions built around accounting capabilities through policy and claims management, enabling the most effective and auditable financial management of the operations of their associated brokerages. Their software solution has the following features:
+•	Policy and Claims Management
+•	Claims Management
+•	Insurer rating engine integration 
+•	User audit trail
+•	Policy and Claims enquiries 
+•	Fully customisable Group Policy Management with different levels of user security access
+•	Fully keyboard driven allowing for high-speed data capture 
+
+
+The following information about Integrity Software was captured during a questionnaire:
+Integrity Software is a small company that has between 1 and 100 employees. They make use of Agile (Scrum) as DevOps as their Project Management Methodologies. They say there is no separation of function and duty between project management and software development methodologies. Before COVID-19 work was done on the premise, during covid employees worked from their homes, and after covid work is done online (remote). COVID-19 had the following impact on Integrity Software:
+•	A negative impact on the way they conducted project management 
+•	A negative impact on organisational productivity 
+•	A positive impact on software development success
+•	Created an enjoyable online environment during the pandemic 
+•	Impacted mostly the people within software development and project management
+•	Had an impact on governance and strategy within Integrity Software 
+•	Had an impact on technology infrastructure and architecture
+•	Helped employees build better relationships via online communication
+•	A negative impact on security
+
+Discovery 
+The main goals of Discovery are to improve individuals’ health and to enhance and protect their lives. By educating individuals about their health risk factors and assisting them in managing and enhancing their health, they help individuals become healthier. They provided the following services/products:
+•	Banking 
+•	Health cover
+•	Life insurance 
+•	Investments 
+•	Car and home insurance 
+Discovery is a huge company that has more than 1000 employees. They make use of Agile (Scrum) as their Project Management Methodologies. They say there is a separation of function and duty between project management and software development methodologies. Before COVID-19 work was done on the premise, during covid employees worked from their homes, and after covid work is done online (remote). COVID-19 had the following impact on Discovery:
+•	A positive impact on the way they conducted project management 
+•	A positive impact on organisational productivity 
+•	A positive impact on software development success
+•	Created an enjoyable online environment during the pandemic 
+•	Impacted mostly the people within software development and project management
+•	Had an impact on governance and strategy within Discovery 
+•	Had an impact on technology infrastructure
+•	Helped employees build better relationships via online communication
+•	A negative impact on security
+Symbiotics
+Symbiotics' main focus is customer development - they create solutions for their customers. They provided the following services/products:
+•	Customer Software Development
+•	Mobile App Development 
+•	Hosting and Cloud Enablement 
+•	Co-sourcing Application Development 
+Symbiotics is a small company that has between 1 and 100 employees. They make use of Agile (Scrum) as their Project Management Methodologies. They say there is a separation of function and duty between project management and software development methodologies. Before COVID-19 work was done on the premise, during covid employees worked from their homes, and after covid work is done online (remote). COVID-19 had the following impact on Symbiotics:
+•	A negative impact on the way they conducted project management 
+•	A negative impact on organisational productivity 
+•	A negative impact on software development success
+•	Created an enjoyable online environment during the pandemic 
+•	Impacted everyone in the company in the same way
+•	Had an impact on governance and strategy within Discovery 
+•	Did not have an impact on technology infrastructure and architecture 
+•	Helped employees build better relationships via online communication
+•	Had no impact on security
+
+7	Comparison of case study
+The following factors of each company will be compared with one another:
+7.1	Project management methodologies used by companies 
+Company	Project Management Methodology
+BBD	Agile, Waterfall
+Retro Rabbit	Agile 
+Integrity Software	Agile
+Discovery	Agile, Waterfall
+Symbiotics	Agile 
+
+7.2	Company size
+Company	Size of the company
+BBD	Large (501 – 1000 Employees)
+Retro Rabbit	Medium (101 – 500 Employees) 
+Integrity Software 	Small (1 – 100 Employees)
+Discovery 	Enterprise (1000+ Employees)
+Symbiotics 	Small (1 – 100 Employees)
+
+
+
+7.3	Difference in the function and duty between the project management methodologies and software development methodologies 
+Company	Is there a separation of the function and duty between the PM and the SDM?
+BBD	No
+Retro Rabbit	Yes
+Integrity Software 	No
+Discovery 	Yes
+Symbiotics 	Yes
+
+7.4	Software development methodologies used by companies 
+Company	Software Development Methodology 
+BBD	Agile (Scrum), Waterfall, Rapid Application Development (RAD), Prototyping, and DevOps
+Retro Rabbit	Agile (Scrum)
+Integrity Software 	Agile (Scrum) and DevOps
+Discovery 	Agile (Scrum)
+Symbiotics 	Agile (Scrum)
+
+ 
+Figure 4 - Number of companies using SDM
+
+7.5	Build better relationships via online communication
+Company 	Better relationships during online work?
+BBD	Yes
+Retro Rabbit	Yes
+Integrity Software 	Yes
+Discovery 	Yes
+Symbiotics 	Yes
+
+
+
+7.6	Security problems and how did the company counter these issues
+Company 	Security issues during online work?
+BBD	Yes, employees were skilled enough to deal with cyber threats, and security measures were taken during online work
+Retro Rabbit	Yes, employees were skilled enough to deal with cyber threats, and security measures were taken during online work
+Integrity Software 	Yes, employees were skilled enough to deal with cyber threats, and security measures were taken during online work
+Discovery 	Yes, employees were skilled enough to deal with cyber threats, and security measures were taken during online work
+Symbiotics 	No, employees were skilled enough to deal with cyber threats, and security measures were taken during online work
+
+
+
+
+
+
+
+
+8	Conclusion
+This study has examined two different project management methodologies such as the Agile (Scrum) and the Waterfall methodology and one software development methodology such as the Rapid Application Development (RAD). A SWOT analysis has been conducted for each methodology indicating the strengths, weaknesses, threats, and opportunities of the methodologies. Five different South African companies have been examined and research has shown that no matter how big a company is, Agile (Scrum) is the way to go for the project management methodology and Agile for the software development methodology. Three of the five companies have indicated that there is a separation of the function and duty between the project management and the software development methodology, yet they indicate that they use Agile for both the project management and the software development methodology.
+All companies have indicated that employees have built better relationships by using online communication channels during the pandemic. The cause for this can be due to the reason employees are introverted or because they needed interaction with other people during isolation. Three out of the five companies indicated that employees were more productive during the pandemic than before the pandemic. The reason for this can be due to the reason they don’t waste time in traffic and simply because they don’t know what else to do during the day other than work. 
+All companies have indicated that security was one of the sectors that were severely affected by COVID-19. They also indicated that that wasn’t a problem for them since their employees were skilled enough to deal with cyber threats. 
+
+
+
+
+
+
+
+
+
+9	Bibliography
+Amlani, R. D. (2012). "Advantages and limitations of different SDLC models." International Journal of Computer Applications & Information Technology 1(3): 6-11.
+	
+Balaji, S. and M. S. Murugaiyan (2012). "Waterfall vs. V-Model vs. Agile: A comparative study on SDLC." International Journal of Information Technology and Business Management 2(1): 26-30.
+	
+Bassil, Y. (2012). "A simulation model for the waterfall software development life cycle." arXiv preprint arXiv:1205.6904 2.
+	
+Charvat, J. (2003). "Project management methodologies: selecting, implementing, and supporting methodologies and processes for projects."
+	
+Chien, C. (2020). "What is Rapid Application Development (RAD)?" CODEBOTS https://codebots.com/app-development/what-is-rapid-application-development-rad 2022.
+	
+Daud, N. M. N., et al. (2010). Implementing rapid application development (RAD) methodology in developing practical training application system. 2010 International Symposium on Information Technology, IEEE.
+	
+Gandhi, P. (2012). "SWOT Analysis of Agile Methodologies." International Journal of Computer Science and its Applications 2(1).
+	
+Mahalakshmi, M. and M. Sundararajan (2013). "Traditional SDLC vs scrum methodology–a comparative study." International Journal of Emerging Technology and Advanced Engineering 3(6): 192-196.
+	
+McCormick, M. (2012). "Waterfall vs. Agile methodology." MPCS, N/A.
+	
+Teamwork (2021). "Which project management methodologies should you use?"  https://www.teamwork.com/project-management-guide/project-management-methodologies/ 2022.
+	
+Zayat, W. and O. Senvar (2020). "Framework study for agile software development via scrum and Kanban." International journal of innovation and technology management 17(04): 2030002.
+	
+

@@ -1,0 +1,415 @@
+
+
+
+
+
+Project Management and Software Development Methodologies
+
+
+A Du Toit
+31842534
+
+Research proposal for the Dissertation submitted in partial fulfillment of the requirements for the degree Magister Curation is in information and computer science at the North-West University
+
+
+
+
+Supervisor:	Prof Neels Kruger
+
+
+
+Date of submission: 17 Oct 2022
+Version: 1.0
+
+ 
+TABLE OF CONTENTS
+1	INTRODUCTION	1
+2	PROJECT MANAGEMENT METHODOLOGIES	1
+2.1	PMBOK (project management body of knowledge)	1
+2.1.1	Project management process groups	1
+2.1.2	Knowledge areas	3
+2.1.3	Advantages of PMBOK	3
+2.1.4	Disadvantages of PMBOK	3
+2.1.5	Opportunities of PMBOK	3
+2.1.6	Threats of PMBOK	4
+2.2	APM (Agile project management)	4
+2.2.1	Principles of agile project management	4
+2.2.2	Agile project management delivery framework	5
+2.2.3	Advantages of APM	6
+2.2.4	Disadvantages of APM	6
+2.2.5	Opportunities of APM	7
+2.2.6	Threats of APM	7
+2.3	COBIT19	7
+2.3.1	Processes of COBIT	8
+3	EXECUTIVE SUMMARY	9
+SOFTWARE DEVELOPMENT METHODOLOGY	10
+1	INTRODUCTION	10
+2	SOFTWARE DEVELOPMENT METHODOLOGIES	10
+2.1	Stages within the methodologies	10
+2.1.1	Research	10
+2.1.2	Planning	10
+2.1.3	Design	11
+2.1.4	Development	11
+2.1.5	Testing	11
+2.1.6	Setup	11
+2.1.7	Maintenance	11
+2.2	Methodologies	12
+2.2.1	Waterfall	12
+2.2.2	Agile	13
+2.2.3	Rapid application development	13
+2.2.4	Open source development	14
+2.2.5	Extreme programming	15
+2.2.6	Prototyping	15
+2.2.7	Comparison of methodologies	15
+3	CASE STUDIES	17
+3.1	Company 1 (Entelect)	18
+3.2	Company 2 (BBD)	18
+3.3	Company 3 (Singular Systems)	18
+3.4	Company 4 (GateKeeper Technology)	19
+3.5	Comparison between companies	19
+4	EXECUTIVE SUMMARY	19
+BIBLIOGRAPHY	21
+
+ 
+LIST OF FIGURES
+Figure 1: Project Management Process Groups by (Guide 2001)	1
+Figure 2: Agile project management by Ambler Scott (1998)	5
+Figure 3: Waterfall methodology by Despa (2014)	12
+Figure 4: Agile (Scrum) Methodology	13
+Figure 5: Rapid Application Development Methodology	14
+Figure 6: Open Source Development Methodology	14
+Figure 7: Extreme Programming Methodology	15
+Figure 8: Prototyping Methodology	15
+
+LIST OF TABLES
+Table 1: Comparisons between companies	19
+ 
+RESEARCH PROTOCOL 
+1	Introduction 
+This study will discuss the different types of project management methodologies and failures to guide organisations. The PRINCE2 and Agile project management methodologies will be discussed and the PMBOK and COBIT19 bodies of knowledge. According to Charvat (2003), a methodology is a set of guidelines that describes a sequence of actions and procedures for completing a project. Methodologies are used within an organisation to guide the project life cycle using instructions. It is essential to determine the correct project management methodology, or else the process will not reach its full potential, and the project may result in failure.
+2	Project Management Methodologies
+2.1	PMBOK (project management body of knowledge)
+Project management Body of Knowledge (PMBOK) is defined by the process groups and knowledge areas. The processes and knowledge areas are defined and explained as follows: (Guide 2001).
+2.1.1	Project management process groups
+ 
+Figure 1: Project Management Process Groups by (Guide 2001)
+Initiating process group
+Initiating process group defines the initial scope of the new process required for the new project. All the necessary roles are identified: the project manager, internal and external stakeholders, and the project management team. Throughout the initiating process, the project is divided into smaller phases to help keep the project focused on its needs.
+Planning process group
+The Planning Process Group includes the procedures used to determine the project's overall scope. Invest time and effort in defining and refining the goals and developing the plan of action needed to achieve them. Due to possible changes within the process, there may be a need to adjust the planning process. The documentation output of the planning process includes the scope, time, costs, quality, communication, risk, and procurements (Guide 2001).
+Execution process group
+The Executing Process Group consist of those processes performed to complete the work defined in the project management plan to satisfy the project specifications(Guide 2001). The activities listed in the project management plan are integrated and carried out, and human resources and technical resources are managed throughout the updates of the project plan.
+Monitoring and controlling process group
+The Monitoring and Controlling Process Group includes the procedures that track, assess, and control the project's progress and performance, identify any areas where modifications to the plan are needed, and implement those adjustments (Guide 2001). Project performance is regularly assessed to identify the quality produced.
+Closing process group
+The closing process group consists of all the processes to finalise the project. the closing of this project needs to be verified, and when that happens the following may occur:
+•	Receive customer approval
+•	Review the project
+•	Documentations of new developments
+•	Update processes managements
+2.1.2	Knowledge areas
+The knowledge areas of PMBOK occur within the process groups. These areas describe the tools, techniques, inputs and outputs determined within the processes. These knowledge areas are listed below:
+•	Project integration management
+•	Project scope management
+•	Project time management
+•	Project cost management
+•	Project quality management
+•	Project human resource management
+•	Project communications management
+•	Project risk management
+•	Project procurement management
+•	Project stakeholder management
+2.1.3	Advantages of PMBOK
+The goal of PMBOK is to standardise management practices across organisations. The advantages of using PMBOK are listed below:
+•	Provide helpful guides of practices and are regularly updated
+•	Provide documentation of each step within the processes, and the tools, input and techniques are necessary 
+•	Standardised project management process
+•	Any industry can use this guide for the best practices
+2.1.4	Disadvantages of PMBOK
+Although PMBOK is widely used, there may be some disadvantages:
+•	Too complex for small projects
+•	Needs to adapt to project size
+•	Needs to adapt to the application area
+•	Needs to adapt to the scope, time, budget, and quality constraints
+2.1.5	Opportunities of PMBOK
+•	Improves more organisations and their management
+•	More consistency between organisations management that improve user performance
+•	More industries can make use of PMBOK
+2.1.6	Threats of PMBOK
+PMBOK defines risk as an uncertain event with a positive or negative outcome (Guide 2001).
+•	PMBOK is too complex, and organisations are at risk of poor planning
+•	Project performance may not be up to standard
+•	Time to understand the guide may take a long time
+•	Cost analysis may determine a poor budget
+2.2	APM (Agile project management)
+Agile project management (APM) is an iterative approach to developing a project throughout its life cycle (Madampe 2017). Iterative or agile life cycles are composed of several iterations or incremental steps towards completing a project. APM is mainly used because changes can be made throughout the project life cycle. APM makes use of small iterations to minimise the risk with clearly outlined deliverables. These deliverables are constantly communicated throughout the project life cycle to minimise the use of unnecessary documentation.
+One of the aims of an agile or iterative approach is to release benefits throughout the process rather than only at the end. APM is based on the agile software development movement (Cervone 2011). Agile software project management concepts are accepting change, focusing on customer value, gradually releasing functionality, collaborating, reflecting, and learning continually (Fitsilis 2008). 
+2.2.1	Principles of agile project management
+APM is known for its ability to handle constant change and communication to deliver the maximum value with proper time and budget management. The principles named below are typically used in the Agile Software Development Manifesto.
+Individuals and interactions over processes and tools
+This principle focuses on the individuals working within the project in teams. Every person must focus on the benefits of teamwork, sharing data, team communication and learning from feedback.
+Working software over comprehensive documentation
+The goal of this principle is to concentrate more on the quality solution and to be able to deliver working software instead of focusing on large detailed documentation.
+Customer collaboration over contract negotiation
+Throughout the agile process, there is constant communication with end-users to change or improve the deliverables of the project. Iterate with small processes through the project to benefit the outcomes of the project. This principle can improve the quality of work, customer satisfaction and teamwork management.
+Responding to change by following a structured plan
+Instead of sticking to the structured plan, an agile environment is open to change when new developments are determined to work better than the proposed solution. New ideas are constantly gathered to improve the project outcomes.
+
+2.2.2	Agile project management delivery framework
+Agile project management is typically divided into four main processes: the initial, construct, deliver, and support phases.
+ 
+Figure 2: Agile project management by Ambler Scott (1998)
+
+
+•	Initial phase
+This phase aims to start the team working on the project and clear any confusion about the project. This phase consists of four main stages. Justification is the first phase where a technical, operational, and economic feasibility study is evaluated to determine whether it makes sense to proceed with this project. Next is the definition and validation of requirements followed by the initial documents and project infrastructure definition.
+•	Construct phase
+The construct phase involves analysing, designing, testing, and manufacturing the project.
+•	Deliver phase
+In this phase, the project will be released to the client, and the environment will be tested. The results of the tests will be assessed, and the project can continue to improve. 
+•	Support phase
+This phase supports the changes identified in the delivery phase and is in charge of the change management.
+2.2.3	Advantages of APM
+There are advantages to using APM (Sharma, Sarkar et al. 2012).
+•	Agile is adaptive to a changing environment.
+•	Ensure customer satisfaction through constant communication throughout the process.
+•	Agile minimises documentation.
+•	Within agile, the development risks are reduced due to feedback received to help discover errors.
+•	Agile methodologies empower individuals engaged, increase responsibility, promote various ideas, allow for early benefits release, and promote ongoing development.
+•	Because changes are progressive and evolutionary rather than revolutionary, Agile may assist generate client and user involvement. Therefore, it can successfully promote cultural change, which is essential to the success of most transformation programs.
+•	Agile provides feedback that benefits the process more than waterfall.
+
+2.2.4	Disadvantages of APM
+•	Customer feedback determines the development throughout the project. If the customer is not clear on the requirements, the development process will fail.
+•	Agile focuses more on the physical solution rather than the documentation. This leads to less detail about the project, which makes the development challenging to understand.
+•	Agile can be very time consuming due to the regular changing of requirements. Many resources are wasted.
+•	Developers struggle to keep up with the ever-changing environment and every design and code-based change.
+2.2.5	Opportunities of APM
+APM can increase design flexibility. Productivity, communication, and coordination between team members can be improved. Time and effort are better managed throughout the process, leading to better team morale.
+2.2.6	Threats of APM
+Traditional companies have not entirely accepted APM due to the difficulty of organising the agile process and standards set by the methodology.
+2.3	COBIT19
+COBIT19 is a newer version of the COBIT5 document. With this, there were 12 processes adopted.
+1.	SUPPORT – Governance:  Evaluate, Direct and Monitor (EDM)
+a.	EDM01: Governance framework setting and maintenance
+2.	SUPPORT – Management: Align, Plan and Organize (APO)
+a.	APO01: Manage the ICT management framework
+b.	APO02: Manage strategy
+c.	APO03: Manage enterprise architecture (TOGAF)
+d.	APO05: Manage portfolio (MIOS)
+e.	APO10: Manage Suppliers
+f.	APO12: Manage Risk
+g.	APO13: Manage security (ISO/IEC 2700)
+3.	CORE – Management: Build, Acquire and Implement (BAI)
+a.	BAI01: Manage programmes and projects (PRINCE 2/PMBOK)
+4.	CORE – Management: Deliver, Service and Support (DSS) (ITIL)
+a.	DSS01: Manage operations
+5.	DSS04: Manage continuity
+6.	SUPPORT – Management: Monitor, Evaluate and Assess (MEA)
+a.	MEA01: Monitor, evaluate and assess performance and conformance 
+2.3.1	Processes of COBIT
+•	Evaluate, Direct and Monitor
+o	Evaluate the strategic options, direct the management on the strategic options and monitor the strategy results.
+o	Components of this domain consist of Process, Organizational Structures, Information Flows and Items, People Skills and Competencies, Policies and Procedures, Culture & Ethics and Behaviour, Services, Infrastructure and Applications
+•	Align, Plan and Support
+o	Design a management system based on the goals covering the management processes, roles and responsibilities, among many.
+o	Goals:
+	EG03 Compliance with external laws and regulations
+	EG08 Optimisation of internal business process functionality
+	EG11 Compliance with internal policies
+	EG12 Managed digital transformation programs
+	AG03 Realised benefits from I&T-enabled investments and services portfolio
+	AG11 I&T compliance with internal policies
+•	Build, Acquire and Implement
+o	Initiate, plan, control, and execute programs and monitor the project's progress.
+o	Goals:
+	EG01 Portfolio of competitive products and services
+	EG08 Optimisation of internal business process functionality
+	EG12 Managed digital transformation programs
+	AG03 Realised benefits from I&T-enabled investments and services portfolio
+	AG09 Delivering programs on time, on budget and meeting requirements and quality standards
+•	Deliver, Service and Support
+o	Manage Operations
+o	Execute the standard procedure
+o	Goals:
+	EG01 Portfolio of competitive products and services
+	EG08 Optimisation of internal business process functionality
+	AG05	Delivery of I&T services in line with business requirements
+•	Monitor, Evaluate and Assess
+o	Managed Performance and Conformance Monitoring
+o	Provide transparency of performance and conformance and drive achievement of goals.
+o	Goals:
+	EG01 Portfolio of competitive products and services
+	EG04 quality of financial information
+	EG07 quality of management information
+	EG08 Optimisation of internal business process functionality
+3	Executive Summary
+Within this study, a SWOT analysis was done for PMBOK, and APM. In order to determine which methodology would be most applicable for a organisation, numerous areas need to be looked at. PMBOK would not be suggested for smaller companies because of complications within projects. We also need to look at the current state of our world. Since the COVID19 pandemic started, it has influenced the economy and the ways organisations need to manage their projects and resources. These methodologies may need an update for the current world and the emerging problems. It is impossible to determine which methodology would be best for an organisation exactly. An organisation will need to take the risk and determine which works the best.
+
+Overall a nice summary of the two methodologies PMBOK (a framework) and APM. I am missing any deliberation and support for the statements you make in your executive summary. More rigour and discussion regarding the changing environment, supported by sources, are needed. 
+60%    
+
+ 
+SOFTWARE DEVELOPMENT METHODOLOGY
+1	Introduction
+The term "software development methodology" describes the systematic procedures used to complete a project. It is a mix of pragmatism and design principles that dates to the early days of computers (Chandra 2015). The objective is to offer a systematic methodology for software development. This chapter will discuss the different types of software development methodologies which includes Waterfall, Agile, Rapid application development, Open source development, Extreme programming, and Prototyping. The comparison of these methodologies is summarised to provide clear information for decision making. The stages within software development methodologies consists of research, planning, design, development, testing, setup, and maintenance which help build the methodology.
+2	Software development methodologies
+2.1	Stages within the methodologies
+The stages within software development occurs at their own time frame and produce the relevant deliverables of that stage (Saeed, Jhanjhi et al. 2019). These stages are also referred to as projects.
+2.1.1	Research
+Research is the first project within the cycle. The client formulate the desired requirements such as the budget, objectives and time constraint by doing research of similar projects(Saeed, Jhanjhi et al. 2019). This stage consists of the main characters comes together where the project owner formulate the requirements of the project and send it to the project manager where the requirements are evaluated before it is send to the project team (Despa 2014). The project team will then evaluate the requirements from a technical perspective such as the tools and software nodded to build the application. This phase is done in form of a feasibility study (Chandra 2015).
+2.1.2	Planning
+Planning is second in line to complete. Also know as the requirement analysis phase(Chandra 2015). This phase consists of dividing the project into smaller projects where a team within the project team is dedicated to determine the best technology to be used to adhere the objectives of that sub project (Saeed, Jhanjhi et al. 2019). This phase determine the flow and management methodology of the project (Despa 2014).
+2.1.3	Design
+The Design of the project will continue from the planning phase and contains the layout of the application. This includes the ER-diagrams of the application (Chandra 2015). This phase concentrate on the graphic design of the project based on the type of application and provide an overview of the design layout to the project owner (Despa 2014). This will create an opportunity where the project owner can suggest changes.
+2.1.4	Development 
+The Development phase consists of the actual code for the application to be built. The different coding languages are selected that are used in the development environment and implemented in the test environment by use of a protocol (Saeed, Jhanjhi et al. 2019). The project owner is updated on the progress of the project from the project manager.
+2.1.5	Testing
+Testing is the fifth stage where problems with the programming and design are identified and fixed. Testing methods known as unit testing are used to identify bugs within the project. The testing phase test the security, usability, design, and programming within the project (Despa 2014). Although the project owner needs to be present to identify some design problems.
+2.1.6	Setup
+The application is launched in the Setup phase where it is available for the client to use. This phase installs that is required by the application such as source code, database, and the necessary APIs (Saeed, Jhanjhi et al. 2019). After the testing conditions are accepted the project can be deployed. After deployment, the project is tested again for any problems that may occur.
+2.1.7	Maintenance
+The Maintenance phase is respectively after the setup phase because it ensures the application is setup correctly and that no errors occur. This phases consists of maintaining the application aver time by upgrading the application with such as a feature or a change of design (Chandra 2015).
+These stages occur in the different methodologies in some way or another to proceed through the whole project development process. These methodologies will be discussed in the next section.
+2.2	Methodologies
+According to Despa (2014): “A software development methodology is a set of rules and guidelines that are used in the process of researching, planning, designing, developing, testing, setup and maintaining a software product”. This section will discuss a few of the software development methodologies with their advantages and disadvantages.
+2.2.1	Waterfall
+The waterfall methodology requires a phase within the project to be fully completed before moving on to the next phase. These phases must be performed consecutively (Adenowo and Adenowo 2013). The phases of the methodology is presented in the diagram below.
+ 
+Figure 3: Waterfall methodology by Despa (2014)
+
+
+2.2.2	Agile
+The Agile methodology, also known as the Scrum methodology, prioritise the requirements and address these requirements within a four week sprint cycle process (Despa 2014). Within This methodology can be addressed by small, medium and large projects. The cycle consists of three main phases (Al-Saqqa, Sawalha et al. 2020). The first phase is where the objectives, and tools required are declared before a sprint begins. The second phase is the actual sprint that will commence for four weeks. Within this time a daily meeting is held to enhance communication between developers on the progress of the application. The third phase is when all the requirements of the sprint has been approved by the project manger and project owner. These sprints continue until all sub project are completed and can progress to the next phase of the development cycle. The diagram below gives a visual representation of the Agile(scrum) cycle.
+ 
+Figure 4: Agile (Scrum) Methodology
+
+2.2.3	Rapid application development
+In contrast to outdated and time-consuming procedures, the rapid application development methodology creates a life cycle design to enable quick development with excellent quality. Within this methodology, sub-categories are created that are being work on simultaneously and results are reported to the project owner. This methodology can be used for small medium and large projects.
+ 
+Figure 5: Rapid Application Development Methodology
+
+2.2.4	Open source development 
+The success rate of open source software development is high despite the lack of a project owner, a central authority, or any other kind of compensation for the project team (Despa 2014).
+ 
+Figure 6: Open Source Development Methodology
+
+2.2.5	Extreme programming
+This methodology divides the project in sub-projects before the planning phase, and then start from there for every sun-project. It makes use of pair programming which improve the quality of code as one programmer constantly checks the code done by the other (Saeed, Jhanjhi et al. 2019).
+ 
+Figure 7: Extreme Programming Methodology
+
+2.2.6	Prototyping
+Prototyping is a methodology that are dependent of the project owner. Every time the project has finished a feature of the application, the project owner delivers feedback and if changes needs to be made, the project returns to the planning phase (Carr and Verner 1997). 
+ 
+Figure 8: Prototyping Methodology
+
+2.2.7	Comparison of methodologies 
+These comparisons of methodologies are summarised by Despa (2014).
+Methodology	Characteristics	Strengths	Weaknesses
+Waterfall	•	comprehensive documentation
+•	meticulous planning
+•	linear-sequential process
+•	each phase has its own deliverables	•	easy to manage 
+•	easy to understand for the project owner and team	•	working code is delivered late in the project 
+•	does not cope well with changing requirements
+•	low tolerance for design and planning errors
+Agile(scrum)	•	iterative development
+•	timebox approach known as Sprints
+•	daily meetings to assess progress known as Daily Scrum
+•	self-organizing development team
+•	tasks are managed using backlogs; product backlog and sprint backlog	•	deliver products in short cycles 
+•	enables fast feedback
+•	rapid adaptation to change	•	lack of documentation
+•	requires experienced developers
+•	hard to estimate at the beginning the overall effort required to implement large projects; thus, cost estimates are not very precise.
+Rapid application development	•	less emphasis on planning tasks and more focus on development
+•	timebox approach	•	applications are developed fast
+•	code can be easily reused	•	poor documentation
+•	high development costs
+•	code integration issues
+•	application has to be broken into modules
+Open source development 	•	iterative development
+•	geographically distributed teams 
+•	collaborative work	•	low costs 
+•	highly motivated and dedicated developers
+•	comprehensive testing as code is reviewed by a large number of developers	•	low accountability for submitted code
+•	no central management authority
+•	unstructured approach to development
+Extreme programming	•	pair programming 
+•	unit testing
+•	fast consecutive releases
+•	collective ownership
+•	on-site project owner
+•	open workspace
+•	project owner decides the priority of tasks	•	application gets very fast in the production environment
+•	frequent releases of working code
+•	reduced number of bugs
+•	smooth code integration
+•	continuous feedback from the project owner	•	lack of documentation
+•	developer’s reluctance to pair programming
+•	developer’s reluctance to write tests first and code later
+•	requires frequent meetings
+•	lack of commitment to a well-defined product leads to project owner reluctance
+Prototyping	•	build one or more demo versions of the software product
+•	project owner is actively involved 
+•	prototypes are meant to be discarded 
+•	writing code is valued over writing specifications	•	accurate identification of application requirements 
+•	early feedback from the project owner 
+•	improved user experience
+•	early identification of missing or redundant functionality	•	leads to unnecessary increase of the application’s complexity
+•	increased programming effort 
+•	costs generated by building the prototype
+
+
+3	Case Studies
+For this research, various companies were asked to answer a survey in relations to the change in their software development methodologies throughout the COVID-19 pandemic. The results of the surveys will be discussed in this section of the research.
+3.1	Company 1 (Entelect)
+This first company consists of more than 1000 employees. Results from the survey shows that the main methodology used is the Agile(scrum) methodology, but with some projects they make use of the Dev Ops Methodology. Before the COVID-19 pandemic this company worked mainly on the premise, but during the pandemic the company strictly worked remotely and continued so after the pandemic. This had and impact on the way the organisation conducted their project management. This proves that the pandemic had a positive impact on the software development, organisational productivity, project management productivity, software development success, personal productivity within the company. This had significant impact on the processes, technology, governance, within the project development and management team. 
+3.2	Company 2 (BBD)
+This second company consists of 501-1000 employees. Results from the survey shows that the main methodology used is the Agile(scrum) methodology. Before the COVID-19 pandemic this company worked mainly on the premise, but during the pandemic the company strictly worked remotely and continued so after the pandemic. Although this had no impact on the way the company conducted their project management. This proves that the pandemic had a positive impact on the software development, organisational productivity, project management productivity, software development success, personal productivity within the company. This had significant impact on the people, governance, within the project development and management team. 
+3.3	Company 3 (Singular Systems)
+This third company consists of 101-500 employees. Results from the survey shows that the main methodology used is the Agile(scrum) methodology. Before the COVID-19 pandemic this company worked mainly on the premise, but during the pandemic the company strictly worked remotely and continued so after the pandemic. This had an impact on the way the organisation conducted their project management. This proves that the pandemic had a positive impact on the software development, organisational productivity, software development success, personal productivity within the company. This had significant impact on the governance and strategy within the project development and management team but no impact on the people, processes, and technology.
+3.4	Company 4 (GateKeeper Technology)
+This fourth company consists of 1-100 employees. Results from the survey shows that the main methodology used is the Waterfall Methodology. This company worked on their premise from before the COVID-19 pandemic and continued throughout the pandemic with this approach. This had no impact on the way the organisation conducted their project management. This proves that the pandemic had a positive impact on the software development, organisational productivity, software development success, personal productivity within the company. This had significant impact on the people, processes, technology, governance and strategy, culture and maturity within the project development and management team. 
+3.5	Comparison between companies
+In the table below, the different companies are shortly compared.
+Table 1: Comparisons between companies
+Company	Company size	Software develop methodology used?	Did COVID-19 have a positive impact on the SDM?	Did COVID-19 have an impact on the SDM success?
+Entelect	1000+	Agile(scrum), Dev Ops	Yes	Yes
+BBD	501-1000	Agile(scrum)	Yes	Yes
+Singular systems	101-500	Agile(scrum)	Yes	Yes
+Gatekeeper Technology	1-100	Waterfall	Yes	Yes
+
+4	Executive summary
+In this research, it can be concluded that the most used Software Development Methodology is the Agile (scrum) Methodology. Although some companies use Waterfall and Dev Ops as well, it does not compare to the amount that makes use of Agile. The size of the company does not have an influence on the impact that COVID-19 had on the SDM of the companies. For all the companies interviewed, COVID-19 had a positive impact on their SDM as well as the success of the SDM. Although the COVID-19 pandemic had a negative impact on the world, these methodologies were so well designed that even within a pandemic, the company can not just maintain the quality of their work but even improve their success rate.
+ 
+
+BIBLIOGRAPHY 
+Adenowo, A. A. and B. A. Adenowo (2013). "Software engineering methodologies: a review of the waterfall model and object-oriented approach." International Journal of Scientific & Engineering Research 4(7): 427-434.
+	
+Al-Saqqa, S., et al. (2020). "Agile Software Development: Methodologies and Trends." International Journal of Interactive Mobile Technologies 14(11).
+	
+Ambler Scott, W. (1998). Process patterns: building large-scale systems using object technology, Cambridge University Press, Cambridge.
+	
+Carr, M. and J. Verner (1997). "Prototyping and software development approaches." Department of Information Systems, City University of Hong Kong, Hong Kong: 319-338.
+	
+Cervone, H. F. (2011). "Understanding agile project management methods using Scrum." OCLC Systems & Services: International digital library perspectives.
+	
+Chandra, V. (2015). "Comparison between various software development methodologies." International Journal of Computer Applications 131(9): 7-10.
+	
+Charvat, J. (2003). "Project management methodologies: selecting, implementing, and supporting methodologies and processes for projects."
+	
+Despa, M. L. (2014). "Comparative study on software development methodologies." Database Systems Journal 5(3): 37-56.
+	
+Fitsilis, P. (2008). Comparing PMBOK and Agile Project Management software development processes. Advances in Computer and Information Sciences and Engineering, Springer: 378-383.
+	
+Guide, A. (2001). Project management body of knowledge (pmbok® guide). Project Management Institute.
+	
+Madampe, M. (2017). "Successful adoption of agile project management in software development industry." International Journal of Computer Science and Information Technology Research 5(4): 2327.
+	
+Saeed, S., et al. (2019). "Analysis of software development methodologies." International Journal of Computing and Digital Systems 8(5): 446-460.
+	
+Sharma, S., et al. (2012). "Agile processes and methodologies: A conceptual study." International journal on computer science and Engineering 4(5): 892.
+	
+

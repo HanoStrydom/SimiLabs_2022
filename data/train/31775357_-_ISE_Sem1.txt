@@ -1,0 +1,448 @@
+
+
+
+
+
+
+Project management methodologies to use during the next three years
+
+
+
+
+S Boshoff
+ 
+
+
+
+
+
+Supervisor:	Prof Neels Kruger 
+
+
+
+
+
+
+
+Student number: 31775357 
+TABLE OF CONTENTS
+INTRODUCTION	1
+CHAPTER 1  GOVERNANCE FRAMEWORK	2
+1	COBIT 2019	2
+1.1	Components	3
+1.1.1	Process component	3
+1.1.2	Organisational structures component	3
+1.1.3	Information flows and items component	3
+1.1.4	People, skills and competencies component	3
+1.1.5	Policies and procedures component	3
+1.1.6	Culture, ethics and behaviour component	4
+1.1.7	Services, infrastructure and applications component	4
+CHAPTER 2  BODY OF KNOWLEDGE	5
+2	PMBOK	5
+2.1	The standard for project management	5
+2.1.1	Creating value	5
+2.1.2	Organisational governance systems	5
+2.1.3	Functions associated with projects	6
+2.1.4	The project environment	7
+2.1.5	Product management considerations	8
+2.2	Project management principles	8
+CHAPTER 3  PROJECT MANAGEMENT METHODOLOGIES	9
+3	PRINCE2	9
+3.1	Seven principles	9
+3.1.1	Continued business justification	9
+3.1.2	Learn from experience	9
+3.1.3	Roles and responsibilities are defined	10
+3.1.4	Manage by stages	10
+3.1.5	Manage by exception	10
+3.1.6	Focus on products	10
+3.1.7	Tailor to suit the project environment	10
+3.2	Six roles to be filled in the PRINCE2 method	11
+3.2.1	The customer	11
+3.2.2	The user	11
+3.2.3	The supplier	11
+3.2.4	The project manager	11
+3.2.5	The project team and team manager	11
+3.3	Seven phases of the PRINCE2 method	11
+3.3.1	Starting up a project	11
+3.3.2	Initiating a project	11
+3.3.3	Directing a project	12
+3.3.4	Controlling a stage	12
+3.3.5	Managing product delivery	12
+3.3.6	Managing stage boundaries	12
+3.3.7	Closing the project	12
+3.4	SWOT analysis	12
+4	AGILE	14
+4.1	Core values	15
+4.1.1	Individuals and interactions over processes and tools	15
+4.1.2	Working software	15
+4.1.3	Customer collaboration over contract negotiation	15
+4.1.4	Responding to change	15
+4.2	Principles	15
+4.3	Key components	16
+4.3.1	User stories	16
+4.3.2	Sprints	16
+4.3.3	Stand-up meetings	16
+4.3.4	Agile board	16
+4.3.5	Backlog	17
+4.4	Agile team roles	17
+4.4.1	Scrum Master	17
+4.4.2	Product owner	17
+4.4.3	Team members	17
+4.4.4	Stakeholders	17
+4.5	Steps to follow	17
+4.5.1	Project planning	17
+4.5.2	Product roadmap creation	18
+4.5.3	Release planning	18
+4.5.4	Sprint planning	18
+4.5.5	Daily stand-ups	18
+4.5.6	Sprint review and retrospective	18
+4.6	SWOT analysis	19
+5	WATERFALL	20
+5.1	Stages of the Waterfall methodology	20
+5.1.1	Requirements	20
+5.1.2	Design	21
+5.1.3	Implementation	21
+5.1.4	Verification or testing	21
+5.1.5	Deployment and maintenance	21
+5.2	SWOT analysis	21
+CHAPTER 5 CONCLUSION	22
+BIBLIOGRAPHY	22
+
+ 
+LIST OF TABLES 
+Table 1: PRINCE2 SWOT analysis	13
+Table 2: Agile SWOT analysis	19
+Table 3: Waterfall SWOT analysis	22
+ 
+ 
+INTRODUCTION
+Information and communication technology (ICT) has become crucial in improving productivity and economic growth throughout the world (Arellano & Camara, 2017:1). As such, countless ICT projects have been implemented, but many have failed (Ebad, 2018). Although there can be many reasons why an ICT project fails, most often the chosen project management methodologies are not used to their full potential, thus leading to weak management and a failed project. Recent happenings around the world, such as COVID-19, have also made it difficult for businesses to successfully implement ICT projects.
+In this article, I will be discussing three project management methodologies that I think are best suited for ICT projects in the current environment. I will compare each in terms of the SWOT analysis and discuss which methodology will be the most effective for ICT projects within the next three to five years, taking into account the state of the world in 2022. I will discuss each methodology regarding external and internal clients and how each methodology is influenced by bodies of knowledge and governance frameworks. The governance framework that will be discussed is COBIT 2019, the body knowledge Project Management Body of Knowledge (PMBOK), and the three project management methodologies are Projects IN Controlled Environments (PRINCE2), Agile, and Waterfall.
+
+CHAPTER 1  GOVERNANCE FRAMEWORK
+1	COBIT 2019
+COBIT 2019 is a governance and management framework used by enterprises for information and technology processes (ISACA, 2018:9). It is considered the best practice framework to be used if an enterprise has anything to do with information and technology processes (ISACA, 2018:9). COBIT 2019 has two main disciplines that include a range of activities, different organisational structures, and distinct goals (ISACA, 2018:9). These two disciplines are governance and management.
+Governance ensures that stakeholder demands, conditions, and choices are assessed to establish balanced, mutually agreed-upon corporate goals, the direction of the organisation is established via prioritising and decision-making, and that performance and compliance are measured in relation to agreed-upon goals and objectives (ISACA, 2018:9). Management plans, creates, runs, and oversees operations following the governance body’s instructions to accomplish enterprise objectives (ISACA, 2018:9).
+Processes, organisational structures, policies and procedures, information flows, culture and behaviours, skills, and infrastructure are the components defined by COBIT to develop and maintain a governance system (ISACA, 2018:9). It describes the design considerations that should be taken into account by an organisation when creating a best-fit governance system (ISACA, 2018:9). It also handles governance concerns by collecting important governance components into management and governance objectives that can be controlled to the required competency levels (ISACA, 2018:9).
+The governance and management goals are divided into five domains:
+•	The governance goals are divided in the Evaluate, Direct and Monitor (EDM) domain. The governing body evaluates strategic possibilities, directs top management on the selected possible strategies, and monitors strategy implementation in this domain (ISACA, 2018:10).
+•	The management goals are divided into four domains (ISACA, 2018:10):
+o	Align, Plan and Organise takes care of the overarching structure, strategy, and supporting activities for information and technology.
+o	Build, Acquire and Implement refers to the definition, purchase, and deployment of information and technology solutions, as well as their integration with business processes.
+o	Deliver, Service and Support is a framework for delivering and supporting information and technology services.
+o	Monitor, Evaluate and Assess covers performance measurement and information and technology conformity to external requirements, internal performance targets, and internal control goals.
+1.1	Components
+1.1.1	Process component
+Several process techniques are included in each governance and management goal, with one or more activities in each process (ISACA, 2018:19). All process activities are assigned a capability level, allowing for a clear characterization of processes at various capacity levels (ISACA, 2018:20). When all actions at a certain capacity level are completed successfully, the process is said to have reached that level (ISACA, 2018:20). A Capability Maturity Model Integration based process-capability scheme, spanning from 0 to 5, is supported by COBIT 2019 (ISACA, 2018:20). The capacity level indicates how successfully a process has been implemented and is performing (ISACA, 2018:20). 
+1.1.2	Organisational structures component
+The governance component of organisational structures implies degrees of authority and accountability for process practices (ISACA, 2018:20), in the form of roles assigned to the people involved in a project. These structures’ many levels of engagement can be categorised into responsible and accountable levels (ISACA, 2018:22). Responsible roles are in charge of carrying out the practice and achieving the desired result (ISACA, 2018:22). Overall responsibility is carried through accountable positions (ISACA, 2018:22). Accountability cannot be shared as a principle (ISACA, 2018:22). 
+1.1.3	Information flows and items component
+Each practice has inputs and outputs, as well as origin and destination indicators (ISACA, 2018:22). Each output is often transmitted to one or a small number of destinations, usually another COBIT process practice (ISACA, 2018:22). Every output becomes a destination input (ISACA, 2018:22). However, several outputs have multiple destinations (ISACA, 2018:23).
+1.1.4	People, skills and competencies component
+The human resources and skills needed to fulfil the governance or management goal are identified in this component (ISACA, 2018:25). 
+1.1.5	Policies and procedures component
+This component contains specific information on policies and procedures that are important to the governance or management goal (ISACA, 2018:25).
+1.1.6	Culture, ethics and behaviour component
+This component gives extensive guidance on desired cultural characteristics inside the business that assist the attainment of a governance or management goal (ISACA, 2018:25).
+1.1.7	Services, infrastructure and applications component
+This component provides specific information about third-party services, infrastructure types, and application categories that can be used to help accomplish a governance or management goal (ISACA, 2018:25).
+
+Each of these components has to be present in any project management methodology for the project to be successful. The following section will discuss the body of knowledge, PMBOK, that should be applied in every project.
+
+
+
+
+CHAPTER 2  BODY OF KNOWLEDGE
+2	PMBOK
+2.1	The standard for project management
+The Project Management Institute (PMI) (2021:33) states that “The Standard for Project Management identifies project management principles that guide the behaviors and actions of project professionals and other stakeholders who work on or are engaged with projects.”
+The standard for project management provides project management principles that guide project professionals and other stakeholders that work on or are involved with a project in their behaviours and activities (PMI, 2021:33). The standard sets the context for value delivery, project functions, product management, governance, and the project environment (PMI, 2021:36). Each of these contexts has to be present during the management of a project for the project to be successful. 
+
+2.1.1	Creating value
+Value is created for stakeholders by organisations (PMI, 2021:36). There are five ways this can be done mentioned by the Project Management Institute (PMI) (2021):
+•	Developing a new service, product or outcome that addresses the demands of clients or end-users.
+•	Making a good environmental or social impact.
+•	Improving productivity, responsiveness, efficiency, or effectiveness.
+•	Facilitating the necessary adjustments for the organisation’s transition to its intended future state.
+•	Benefits that have been sustained as a result of earlier initiatives, projects, or company activities.
+Portfolios, programmes, projects, products, and operations are all components that may be employed separately or together to produce value (PMI, 2021:37). These elements, when combined, provide a value-delivery system that is in line with the organisation’s strategy (PMI, 2021:37). Information and feedback are transmitted regularly throughout all components of a value delivery system, keeping the system attentive to the environment and aligned with strategy (PMI, 2021:38).
+2.1.2	Organisational governance systems
+To ensure seamless operations, resolve difficulties, and assist decision-making, the governance system works in tandem with the value delivery system (PMI, 2021:39). Governance systems give a structure for activities, including functions and procedures (PMI, 2021:39). Control, oversight, component integration, decision-making skills, and value assessment are all features of a governance structure (PMI, 2021:39).
+Systems of governance give an integrated framework for assessing environmental changes, concerns, and risks, as well as any other component in the value delivery system (PMI, 2021:39). Portfolio objectives, programme benefits, and project deliverables are all included (PMI, 2021:39). 
+Projects might be part of a larger programme or portfolio, or they can stand alone (PMI, 2021:40). PMI (2021:40) also states that “In some organizations, a project management office might support programs and projects within a portfolio.” The authority to approve modifications and conduct other project-related business decisions is defined by project governance (PMI, 2021:40). Program and/or organisational governance are in sync with project governance (PMI, 2021:40).
+2.1.3	Functions associated with projects
+Project delivery is driven by people (PMI, 2021:40). They accomplish so by performing functions that are required for the project to run well (PMI, 2021:40). PMI (2021:40) states that “The needs of the project, organization, and environment influence which functions are used on a project and how those functions are carried out.” There are eight functions provided by PMI (2021):
+•	Provide oversight and coordination: this role assists the project team in achieving the project’s objectives by coordinating the project’s activities (PMI, 2021:40). Consulting with senior and business unit executives on ideas for advancing objectives, enhancing project performance, or addressing customer demands is part of the coordination process (PMI, 2021:41). It may also entail assistance with business analysis, tendering and contract negotiations, and the building of business cases (PMI, 2021:41). After the project deliverables are completed but before the project is officially closed, oversight might be involved in actions relating to benefit the realisation and sustainability (PMI, 2021:41). This function can help with portfolios and programs where the project is started (PMI, 2021:41).
+•	Present objectives and feedback: customers and end-users provide viewpoints, insights, and clear direction to those in this job (PMI, 2021:41). They must provide clear direction on project needs, outputs, and expectations (PMI, 2021:41). Because project teams are exploring and developing product features within precise increments in adaptive and hybrid project contexts, the demand for continual input is increased (PMI, 2021:41).
+•	Facilitate and support: depending on the nature of the project, facilitation and support may be closely tied to providing oversight and coordination (PMI, 2021:41). Encouraging project team member engagement, teamwork, and a shared feeling of responsibility for the work output are all part of the job (PMI, 2021:41). Facilitation assists the project team in reaching an agreement on solutions, resolving problems, and making choices (PMI, 2021:41).
+•	Contribute insights and perform work: as stated by PMI (2021:42), “This group of people provides the knowledge, skills, and experience necessary to produce the products and realize the outcomes of the project.” PMI (2021:42) further states that “Gaining insights from cross-functional project team members representing different parts of the organization can provide a mix of internal perspectives, establish alliances with key business units, and encourage project team members to act as change agents within their functional areas.” 
+•	Apply expertise: this role provides a project with knowledge, vision, and competence in a given field (PMI, 2021:42). They provide guidance and assistance across the company, as well as contribute to the learning and accuracy of the project team (PMI, 2021:42).
+•	Provide insight and business direction: this function’s members steer and explain the project’s or product’s direction (PMI, 2021:42). Prioritising needs or backlog items based on business value, dependencies, and technical or operational risk is part of this activity (PMI, 2021:42).
+•	Provide direction and resources: this function promotes the project and communicates the organisation’s goals, vision, and the project team's expectations and other stakeholders (PMI, 2021:43). They assist in securing the resources, choices, and authority that permits project activities to proceed by advocating for the project and the project team (PMI, 2021:43). This job can help with innovation by recognising and sharing opportunities that exist inside the project to top management (PMI, 2021:43).
+•	Maintain governance: people who work in the governance role accept and support the project team’s suggestions and keep track of the project’s progress toward its goals (PMI, 2021:43). They keep the lines of communication open among project teams, as well as strategic or business objectives that may shift over time (PMI, 2021:43).
+2.1.4	The project environment
+“Projects exist and operate within internal and external environments that have varying degrees of influence on value delivery.” (PMI, 2021:43). The internal and external environments might have an impact on project planning and other operations (PMI, 2021:43). As stated by PMI (2021:43) “These influences can yield a favorable, unfavorable, or neutral impact on project characteristics, stakeholders, or project teams.”
+Internal environment: internal factors might stem from the company itself, a program, a portfolio, a different project, or a mix of these, including artefacts, practices, and internal knowledge (PMI, 2021:44). Examples of internal factors provided by PMI (2021) include:
+•	Organisational culture, structure, and governance	•	Geographic distribution of facilities and resources
+•	Governance documentation	•	Infrastructure
+•	Data assets	•	Information technology software
+•	Knowledge assets	•	Resource availability
+•	Security and safety	•	Employee capability
+•	Process assets	
+
+External environment: external factors can impact project outcomes in a positive, negative, or neutral way (PMI, 2021:45). Examples provided by PMI (2021):
+•	Marketplace conditions	•	Academic research
+•	Social and cultural influences and issues	•	Industry standards
+•	Regulatory environment	•	Financial considerations
+•	Commercial databases	•	Physical environment
+2.1.5	Product management considerations
+A product is a manufactured, quantified artefact that can be either a finished product or a component (PMI, 2021:45). As stated by PMI (2021:46-47) “Product management involves the integration of people, data, processes, and business systems to create, maintain, and develop a product or service throughout its life cycle. The product life cycle is a series of phases that represents the evolution of a product, from introduction through growth, maturity, and to retirement.” 
+At any stage during the product life cycle, product management can start programs or projects to build or improve certain components, functions, or capabilities (PMI, 2021:46). Product management takes many forms, including (PMI, 2021:46-47):
+•	Program management within a product life cycle: subsidiary programs, related projects, and program activities are all included in this method.
+•	Project management within a product life cycle: as a continuous business activity, this method controls the development and maturation of product capabilities.
+•	Product management within a program: within the scope and constraints of a specific programme, this technique applies to the whole product life cycle.
+2.2	Project management principles
+Professional principles serve as guiding principles for strategy, decision-making, and problem-solving (PMI, 2021:48). PMI (2021) gives eleven principles for project management for guidance:
+•	Be a diligent, respectful, and caring steward 
+•	Create a collaborative project team environment
+•	Effectively engage with stakeholders
+•	Focus on value
+•	Recognise, evaluate, and responds to system interactions
+•	Demonstrate leadership behaviours
+•	Tailor based on context
+•	Build quality into processes and deliverables
+•	Navigate complexity
+•	Optimise risk responses
+•	Embrace adaptability and resiliency
+•	Enable change to achieve the envisioned future state
+COBIT 2019 used with PMBOK sets the base for the steps and processes that should be followed in any information technology project. The following sections will discuss project management methodologies and how COBIT 2019 and PMBOK affect them.
+
+CHAPTER 3  PROJECT MANAGEMENT METHODOLOGIES
+3	PRINCE2
+Malsam (2021) defines the PRINCE2 methodology as a method that “focuses on managing resources and risks by dividing projects into smaller stages, defining clear roles and responsibilities and using seven processes to manage the project life cycle.” Since the start of COVID19 around the world, organisations have had to adapt to ensure they survive economically. Thomson (2020) gave examples for each of the principles on how a project team can adapt to working from home.
+3.1	Seven principles
+3.1.1	Continued business justification
+This includes having a well-defined business case, a specified consumer, attainable benefits, and a thorough cost analysis (Slate, 2021). 
+From a professional standpoint, the project team should have agreed-upon objectives that drive their daily responsibilities and provide a clear framework for their most critical actions when working from home (Thomson, 2020).
+3.1.2	Learn from experience
+At each stage of the PRINCE2 process, lessons are learned and documented and used to better future work (Slate, 2021). 
+Learning to solve issues, teaching other members of the project team, and adapting to new technologies and methods of working will make the project team’s remote working experience more manageable (Thomson, 2020).
+3.1.3	Roles and responsibilities are defined
+Everyone has to have a clear idea of their own responsibilities as well as those of their team members (Slate, 2021). 
+It is critical that everyone on the project team understands their jobs and duties as this makes deciding who to invite to virtual meetings much easier (Thomson, 2020). Additionally, team members whose workloads are lowered due to remote working may be redeployed to assist other teams with higher workloads (Thomson, 2020).
+3.1.4	Manage by stages
+The projects are divided into individual work phases, with frequent reviews to document lessons learned and to ensure the project is still on schedule to satisfy the requirements (Slate, 2021). Starting and finishing different activities adds diversity to your life while reducing stress (Thomson, 2020).
+3.1.5	Manage by exception
+The project board members don’t always have the time to handle the day-to-day activities of a project, so they establish baseline requirements and delegate these activities to the project manager (Slate, 2021). If concerns develop that influence the stated requirements, this is classified as an “exception”, and the board will choose the appropriate course of action (Slate, 2021). 
+If a team member sees something that does not appear quite right, they should notify the other team members immediately and, if required, escalate the conversation and follow up in writing (Thomson, 2020). When everyone is working flexible hours remotely and handling multiple obligations, it is also crucial to be contactable for the other team members, even after hours (Thomson, 2020).
+3.1.6	Focus on products
+A quality register is used to assess deliverables against specifications regularly (Slate, 2021).
+The products when working from home is how team members complete their work (Thomson, 2020).
+3.1.7	Tailor to suit the project environment
+The PRINCE2 approach should be changed to match the demands of each client project, with the degree of oversight and planning altered to fit the project’s size, number of people participating, and work package delegation (Slate, 2021).
+Team members should make sure to set up a productive remote working environment, as close to a business setting as possible (Thomson, 2020).
+3.2	Six roles to be filled in the PRINCE2 method
+3.2.1	The customer
+This is the person or organization who ordered and will be funding the project (Willis, 2017). They own the business case and are responsible for ensuring that the project fulfils its requirements (Willis, 2017).
+3.2.2	The user
+This is the representative of the people or organization that will use the product or service created by the project (Willis, 2017). The customer and user can be the same entity (Willis, 2017).
+3.2.3	The supplier
+This is the person or organization that provides the necessary skills needed for the project (Willis, 2017).
+3.2.4	The project manager
+The project manager is in charge of organising and managing the project, as well as selecting the team and ensuring that the project is finished on time, on budget, and to the needed quality standards (Willis, 2017).
+3.2.5	The project team and team manager
+The project manager is often also the team manager on smaller projects. The team manager is in charge of overseeing the team member and making sure the daily tasks are done (Slate, 2021).
+3.3	Seven phases of the PRINCE2 method
+3.3.1	Starting up a project
+This phase is about the planning that takes place before the project is considered to be taken on (Graham, 2009:18). This is done by submitting a project mandate that needs to be assessed by the organisation that received it (Slate, 2021). This phase also includes assigning project roles if it is decided that the project will be taken on (Graham, 2009:45).
+3.3.2	Initiating a project
+A project initiation document is created that contains a detailed project plan and benchmarks for six performance goals as given by Slate (2021) “time, cost, quality, scope, risk, and benefits.” 
+3.3.3	Directing a project
+This phase is continuous throughout the project. The project board manages the initiation phase, the delivery of the final product or service, and the closing of the project (Malsam, 2021).
+3.3.4	Controlling a stage
+In this phase, the project manager breaks the project into smaller parts and assigns them to the project team (Slate, 2021).
+3.3.5	Managing product delivery
+The project manager has to make sure that the work is completed on time, within budget, fulfils the requirements set out in the project brief, and is of high quality (Slate, 2021).
+3.3.6	Managing stage boundaries
+The project board has meetings after every stage of the project is completed to review whether that stage fulfils the requirements and meets the expectations of the customer (Slate, 2021). At these meetings, mistakes are recorded and passed on to the project team to learn from them and to ensure the same mistakes aren’t made in future projects (Slate, 2021).
+3.3.7	Closing the project
+The project manager makes sure all documentation, outcomes, and reposting is complete before handing over the final product or service to the customer (Slate, 2021).
+3.4	SWOT analysis
+Table 1-1: PRINCE2 SWOT analysis
+Strengths	Weaknesses
+•	It is a widely recognised project management methodology and is considered a best practice framework because of how successful it has been (Gallagher, 2019).
+•	It is a very flexible methodology that can be applied to any project no matter the size, scale, location, industry, or sector, and can be combined with other project management frameworks (Gallagher, 2019).
+•	It uses common language, which makes it easy for teams from different departments and sectors to work together on the same project (Gallagher, 2019).
+•	It has optimized clarity – everyone knows what their and their team member’s responsibilities are, which eliminates confusion and ensures accountability can be taken for mistakes (Gallagher, 2019).
+•	The risk management in a PRINCE2 project ensures that time, money, and resources will not be wasted because risk assessments are done before a project is started and throughout (Gallagher, 2019).
+•	Expectations of each stakeholder are met throughout the project, with measures in place to accommodate changes in requirements before a project is completed (Gallagher, 2019).
+•	The PRINCE2 methodology requires experience from the team members to be able to be successful (Buehring, 2021).
+•	It requires a lot of documentation which makes it less flexible than other modern methodologies (Buehring, 2021).
+
+Opportunities 	Threats 
+The PRINCE2 methodology has 4 responses to handling opportunities that might arise during a project.
+•	The first is to exploit the opportunity by using it to the project team’s advantage (Litten, 2018).
+•	The second is to enhance the probability of an opportunity arising by taking action (Litten, 2018).
+•	The third response is to share the opportunity (Litten, 2018). This usually means the project board will share the gain if costs are less than what they expected.
+•	The last response is to reject an opportunity (Litten, 2018). The project board might reject opportunities because the output might not be worth the resources put into the opportunity (Litten, 2018).
+The PRINCE2 methodology has 6 responses to threats that might arise during a project.
+•	The first is avoiding the risk by taking action to prevent the risk from being a threat (Litten, 2018).
+•	The second response is to either reduce the probability of the threat or to reduce the impact of the threat on the project (Litten, 2018).
+•	The third response is to have a contingency plan if a threat does occur to reduce the impact of the threat (Litten, 2018).
+•	The fourth response is to transfer the impact of the risk (Litten, 2018). This is usually done when there is a financial risk. The project board can get insurance to cover any losses that might occur due to the risk.
+•	The next response is to share the losses that might occur due to a threat (Litten, 2018). This usually means the project board will share the losses if the costs are greater than what they expected.
+•	The last response is to accept the threat (Litten, 2018). The project board decides that it will cost too much to mitigate the threat or it might not be possible to do anything about it.
+Table 1: PRINCE2 SWOT analysis
+Given the results of the SWOT analysis, PRINCE2 has methods in place to be effective during threats such as the COVID-19 pandemic. 
+4	Agile
+According to Workfront (2022a), “Agile project management is an iterative approach to project management that focuses on breaking down large projects into more manageable tasks, which are completed in short iterations throughout the project life cycle.” The Agile project management methodology is an iterative project management strategy that focuses on breaking large projects down into smaller, more manageable tasks that are accomplished in short iterations throughout the project life cycle (Workfront, 2022a). Agile teams are better equipped to accomplish work faster, adapt to changing project needs, and streamline their processes (Workfront, 2022a). It allows teams to re-evaluate their work and make adjustments in small increments to ensure that the team's focus fluctuates depending on the job and customer environment (Workfront, 2022a).
+There are four core values and twelve guiding principles in the Agile methodology (Workfront, 2022a). Agile also has key components, team roles, and six steps to be followed (Workfront, 2022a).
+4.1	Core values
+4.1.1	Individuals and interactions over processes and tools
+It is critical to have the appropriate people on the project team for the project to succeed (Productboard, 2022). Even more crucial is how these people interact with one another (Productboard, 2022). 
+4.1.2	Working software
+Software engineers used to spend hours creating extensive documentation (Productboard, 2022). Working software is more essential than documentation (Workfront, 2022a). This value focuses on offering developers exactly what they need to do their tasks without overloading them (Workfront, 2022a).
+4.1.3	Customer collaboration over contract negotiation
+One of the most valuable assets in an Agile project is the customers (Workfront, 2022a). “Whether internal or external customers, involving them throughout the process can help to ensure that the end product meets their needs more effectively” (Workfront, 2022a). This method removes the need for a contract.
+4.1.4	Responding to change
+The world is not static, there is constant change that affects projects (Workfront, 2022a). A project team should be able to pivot and change course as necessary, with a flexible plan to reflect this (Workfront, 2022a).
+4.2	Principles
+While each team's Agile methodology will be unique, the twelve principles should always guide the team's decisions and product development (Workfront, 2022a):
+1.	Customer satisfaction is the project team’s first goal, thus they release excellent software early and often.
+2.	Even late in the development process, project teams should welcome changing needs. Agile processes take advantage of change to provide customers with a competitive edge.
+3.	Delivery projects regularly, ranging from a few weeks to a few months, with a preference for a shorter timeframe.
+4.	Team members should collaborate daily throughout the project.
+5.	Build initiatives around enthusiastic people. Provide them with the environment and support they require and trust them to do the task.
+6.	The most efficient and successful means of delivering information to and within various teams is face-to-face interaction.
+7.	The key indicator of progress is the finished product.
+8.	Agile processes encourage sustainable development. All stakeholders should be able to keep up with each other indefinitely.
+9.	A constant focus on technical excellence and smart design improve agility.
+10.	Simplicity is key for maximising the quantity of labour not done.
+11.	Self-organising teams produce the finest requirements, designs, and architectures.
+12.	At regular intervals, the team evaluates how to improve its effectiveness, then adapts and modifies its behaviour accordingly.
+4.3	Key components
+4.3.1	User stories
+As stated by Workfront (2022a), “Put simply, a user story is a high-level definition of a work request. It contains just enough information so the team can produce a reasonable estimate of the effort required to accomplish the request.” This short, basic explanation is provided from the perspective of the user and concentrates on describing what the customer’s goals are and why they need the product (Workfront, 2022a).
+4.3.2	Sprints
+“Sprints are a short iteration, usually between one to three weeks to complete, where teams work on tasks determined in the sprint planning meeting.” (Workfront, 2022a). As time goes on, the goal is to keep repeating these sprints until your product is feature-ready (Workfront, 2022a). After the sprint, you evaluate the product to determine what is and is not working, make changes, and start a new sprint to enhance the product or service (Workfront, 2022a).
+4.3.3	Stand-up meetings
+Daily stand-up meetings, often known as “daily Scrum meetings”, are an excellent approach to keep everyone on track and informed (Workfront, 2022a). The participants are expected to remain standing during these meetings, which helps to keep the sessions brief and to the point (Workfront, 2022a). 
+4.3.4	Agile board
+An Agile board allows your team to keep track of your project’s progress (Workfront, 2022a). This might be a basic Kanban board, a whiteboard with sticky notes, or a feature within your project management software (Workfront, 2022a).
+4.3.5	Backlog
+When project requests are submitted using the intake process, they become outstanding stories in the queue. (Workfront, 2022a). The team will estimate narrative points for each task during Agile planning meetings (Workfront, 2022a). Stories from the backlog are added to the sprint to be performed during the iteration during sprint preparation (Workfront, 2022a). In an Agile context, managing the backlog is critical for project managers (Workfront, 2022a).
+4.4	Agile team roles
+Depending on the Agile method, particular team roles may or may not be required to conform to the framework (Workfront, 2022a).
+4.4.1	Scrum Master
+Each sprint is kept on track by the Scrum Master, who assists in the resolution or removal of any concerns or barriers that may develop. (Workfront, 2022a). They are the team’s spokesperson (Workfront, 2022a).
+4.4.2	Product owner
+The product owner's responsibilities include setting the goals for each sprint, managing and prioritising the team backlog, and representing the client or internal stakeholder. (Workfront, 2022a).
+4.4.3	Team members
+The team members are responsible for carrying out the work in each sprint (Workfront, 2022a). “These teams, usually of three to seven people, can be composed of different specialties and strengths, or they can be teams of people with the same job roles.” (Workfront, 2022a).
+4.4.4	Stakeholders
+This is only an informational role (Workfront, 2022a). Stakeholders should be brought up to date on the spring and product goals, given the chance to evaluate and approve work throughout the sprint, and be allowed to give input during the sprint retrospective (Workfront, 2022a). 
+4.5	Steps to follow
+4.5.1	Project planning
+Before beginning any project, the team should be clear on the value to the organisation or client the final goals, and how they will be met (Workfront, 2022a). The team can construct a project scope here, but keep in mind that the goal of Agile project management is to be able to respond quickly to modifications and additions to the project, therefore the scope should not be regarded fixed (Workfront, 2022a).
+4.5.2	Product roadmap creation
+A roadmap is a set of requirements that will appear in the finished product (Workfront, 2022a). This is a key aspect of the Agile planning step because the team will build these specific features during each sprint (Workfront, 2022a). At this point, the team will also build a product backlog, which is a set of all the requirements and deliverables that will be included in the final product (Workfront, 2022a). When it comes to sprint planning, your team will pull items from this backlog (Workfront, 2022a).
+4.5.3	Release planning
+One implementation date follows the completion of the entire project in traditional waterfall project management (Workfront, 2022a). When using Agile, the project will have shorter development cycles (known as sprints), with features being released after each cycle (Workfront, 2022a). Before beginning the project, the team will design a high-level strategy for feature releases, which they will revisit and reassess at the beginning of each sprint (Workfront, 2022a).
+4.5.4	Sprint planning
+Prior to the start of each sprint, all stakeholders must attend a sprint planning meeting to determine what each person will do during that sprint, how it will be completed, and to assess the task load (Workfront, 2022a). It is vital to allocate workload evenly among team members so that they can do their assigned tasks during the sprint. (Workfront, 2022a). For team openness, shared understanding, and detecting and reducing bottlenecks, the team will also need to visually describe their workflow (Workfront, 2022a).
+4.5.5	Daily stand-ups
+Short daily stand-up meetings should be held to assist the team in completing their duties throughout each sprint and determining whether any changes are required. (Workfront, 2022a). During these sessions, each team member will briefly describe what they did the day before and what they will be focusing on the next day. (Workfront, 2022a). These daily meetings should be limited to fifteen minutes (Workfront, 2022a). They are not intended to be prolonged problem-solving sessions or chances to talk about current events (Workfront, 2022a). 
+4.5.6	Sprint review and retrospective
+After each sprint, the team will hold two meetings: the first will be a sprint review with project stakeholders, where they will be shown the finished product (Workfront, 2022a). This is a crucial aspect of maintaining open lines of communication with stakeholders (Workfront, 2022a). Both groups can create a relationship and discuss any product difficulties that arise during an in-person or video conference conversation (Workfront, 2022a). Second, there will be a retrospective sprint meeting with the stakeholders to talk about what could have gone better during the sprint, what went well, what was done, and whether the job load was too heavy or too low for each member (Workfront, 2022a).
+4.6	SWOT analysis
+Table 1-2: Agile SWOT analysis
+Strengths	Weaknesses 
+•	Agile is highly flexible (Kukhnavets, 2016).
+•	It has high customer satisfaction throughout the development process (Kukhnavets, 2016).
+•	The interaction between stakeholders is ongoing (Kukhnavets, 2016).
+•	There is continuous quality control and meticulous attention to detail (Kukhnavets, 2016).
+•	The initial value delivery times are shorter (Teasdale, 2021).
+•	There are increased internal interactions (Teasdale, 2021).
+•	There could be problems with workflow coordination because the project workload is divided into several small teams (Kukhnavets, 2016).
+•	Because planning is so vital in Agile, if it is not done correctly it can cause major problems for the duration of the project (Kukhnavets, 2016).
+•	The project team has to be made up of skilled individuals (Kukhnavets, 2016).
+•	Because Agile projects are done in small increments, there will often be a lack of a clear understanding of what the final deliverable must be (Kukhnavets, 2016)
+
+Opportunities	Threats
+•	Customer feedback is taken regularly and changes are made frequently (Sinha et al., 2020:4).
+•	Parts of the project are released to the customer as they are completed (Sinha et al., 2020:5).
+•	Strong client-vendor relationships are built throughout the project because of continuous communication (Sinha et al., 2020:5).
+•	The project teams often consist of skilled human resources which make a project more successful (Sinha et al., 2020:5).
+•	Agile relies on human interaction for projects to be successful. Because of COVID-19 many employees work from home and have had to communicate through other means such as online meetings. The lack of face to face interaction can lead to misunderstandings which could be detrimental to a project (Sinha et al., 2020:6).
+•	Tasks can be allocated to the wrong teams or the workload could be uneven (Sinha et al., 2020:6).
+•	Cultural differences within the project team and the stakeholders could lead to coordination complexities (Sinha et al., 2020:6).
+
+Table 2: Agile SWOT analysis
+Given the results of the SWOT analysis, Agile could, in theory, present a problem for remote working conditions, but a study done by Neumann et al. (2021) found that the performance of Agile project teams has increased or stayed the same. The reason for this is because there is more transparency during the project, the team’s working time is better used, and there is optimized integration of the customer (Neumann et al., 2021:12-13).
+5	Waterfall 
+Wrike (2022) states that “Waterfall project management maps out a project into distinct, sequential phases, with each new phase beginning only when the previous one has been completed. The Waterfall system is the most traditional method for managing a project, with team members working linearly towards a set end goal.” There will be no changes to the phases or goals, and each participant will have a clear role to play (Wrike, 2022). This methodology is suitable for projects that require a single timeframe and have long, detailed blueprints (Wrike, 2022). Change is often discouraged because it is costly (Wrike, 2022).
+5.1	Stages of the Waterfall methodology
+The Waterfall methodology is a sequential approach that works with set deadlines, requirements, and outcomes (Workfront, 2022). Individual teams are not required to be in constant communication with one another and are normally self-contained unless special integrations are necessary (Workfront, 2022). Team members often operate more independently and aren't required to make progress reports as frequently as they would in an Agile environment (Workfront, 2022).
+5.1.1	Requirements
+The Waterfall approach is based on the assumption that all project requirements can be acquired and understood in advance (Workfront, 2022). The project manager makes every effort to fully comprehend the project sponsor's expectations (Workfront, 2022). Written requirements are used to explain each stage of the project, including expenses, assumptions, risks, dependencies, success metrics, and completion timeframes, and are usually contained in a single document (Workfront, 2022).
+5.1.2	Design
+To overcome the challenges given by product requirements, software developers design scenarios, layouts, and data models. (Workfront, 2022). To begin, a higher-level or logical design is established, which outlines the project's objective and scope, as well as the overall traffic flow of each component and the integration points (Workfront, 2022). After that, it is turned into a physical design employing specialised hardware and software technologies (Workfront, 2022).
+5.1.3	Implementation
+Following the completion of the design, technical execution begins (Workfront, 2022). Because arduous research and design have already been completed, this may be the fastest phase of the Waterfall process (Workfront, 2022). This phase involves programmers writing applications based on project needs and specifications, as well as some testing and implementation (Workfront, 2022). If major changes are required during this stage, it may be necessary to return to the design step (Workfront, 2022).
+5.1.4	Verification or testing
+Before a product can be released to clients, it must be tested to ensure that it is free of flaws and meets all standards, assuring a great user experience with the application (Workfront, 2022). The testing team will use the product manager's design documents, personas, and use case scenarios to create their test cases (Workfront, 2022).
+5.1.5	Deployment and maintenance
+After the programme has been deployed to the market or consumers, the maintenance phase begins (Workfront, 2022). A team will be formed to manage updates and the deployment of new software versions as bugs are detected and user requests for modifications are received (Workfront, 2022).
+5.2	SWOT analysis
+Table 1-3: Waterfall SWOT analysis
+Strengths	Weaknesses
+•	Each step of development must be completed before moving on to the next (Martin, 2022).
+•	It is suitable for smaller projects with well-defined criteria (Martin, 2022).
+•	Before completing each stage, they should conduct a quality assurance test (Martin, 2022).
+•	At every stage of the software development cycle, detailed documentation is produced (Martin, 2022).
+•	The project is fully dependent on the project team, with minimal client engagement (Martin, 2022).
+•	Any software modifications are made during the development phase (Martin, 2022).
+•	Errors can only be corrected during the current phase (Martin, 2022).
+•	It is not recommended for complex projects with continuously changing requirements (Martin, 2022).
+•	Testing takes place at the end of the development process (Martin, 2022).
+•	Developers and testers spend a lot of time on documentation (Martin, 2022).
+•	Client feedback is not possible to include in the ongoing development process (Martin, 2022).
+•	Small adjustments or faults in the finished product might trigger a slew of issues (Martin, 2022).
+
+Opportunities	Threats
+•	It may be possible to develop comparable to even better projects in the future thanks to appropriate documentation (Iorio, 2018).
+•	Due to its numerous flaws, it is a faulty model for software development projects (Iorio, 2018).
+•	It is self-restricted, making it extremely vulnerable to future threats (Iorio, 2018).
+
+Table 3: Waterfall SWOT analysis
+Given the results of the SWOT analysis, the Waterfall methodology is not the most effective project management methodology to be used on software development projects when project teams have to work remotely. 
+
+CHAPTER 5 CONCLUSION
+In this article, three project management methodologies were discussed as well as COBIT 2019 and PMBOK. A SWOT analysis was conducted for each methodology to determine which methodology is the best to be used for projects during the next three years when more organisations adopt a hybrid working approach. 
+A hybrid approach of PRINCE2 and Agile is the best approach for project management. The documentation process of PRINCE2 works well with the fast-paced development of Agile. Using these two in conjunction will provide the best method for managing projects where the project team have minimal face to face interactions.
+If the project team follows the guidelines set out in COBIT and PMBOK, their projects will most likely succeed with minimal issues.
+
+BIBLIOGRAPHY 
+Arellano, A. & Camara, N. 2017. The importance of ICT in society's needs: An empirical approach through Maslow's lens.15. https://www.bbvaresearch.com/en/publicaciones/the-importance-of-ict-in-societys-needs-an-empirical-approach-though-maslows-lens/ Date of access: 1 Mar 2022. 
+Buehring, S. 2021. Prince2 benefits, advantages and disadvantages. https://www.knowledgetrain.co.uk/project-management/prince2/prince-2-course/prince2-benefits Date of access: 4 May.
+Ebad, S.A. 2018. An exploratory study of ICT projects failure in emerging markets. Journal of Global Information Technology Management, 21(2):139-160. https://doi.org/10.1080/1097198X.2018.1462071 
+Gallagher, P. 2019. 7 benefits of prince2 project management. https://blog.goodelearning.com/subject-areas/prince2/7-benefits-of-prince2-project-management/ Date of access: 28 April.
+Graham, N. 2009. Prince2 for dummies. 2nd. Chichester, West Sussex: John Wiley & Sons, Ltd.
+Iorio, M. 2018. Project methodology - Waterfall vs. Agile. https://www.linkedin.com/pulse/project-methodology-waterfall-vs-agile-mario-iorio/ Date of access: 15 May.
+ISACA. 2018. Cobit 2019: Governance and management objectives. ISACA.
+Kukhnavets, P. 2016. Strong and weak points of Agile. https://hygger.io/blog/agile-strong-and-weak-points/ Date of access: 12 May.
+Litten, D. 2018. Planning prince2 risk responses. https://www.projex.com/planning-prince2-risk-responses/ Date of access: 4 May.
+Malsam, W. 2021. What is prince2? Principles, aspects, roles & processes. https://www.projectmanager.com/blog/prince2-methodology Date of access: 28 April.
+Martin, M. 2022. What is Waterfall model in SDLC? Advantages and disadvantages. https://www.guru99.com/what-is-sdlc-or-waterfall-model.html Date of access: 15 May.
+Neumann, M., Bogdanov, Y., Lier, M. & Baumann, L. 2021. The sars-cov-2 pandemic and agile methodologies in software development: A multiple case study in germany. In. International Conference on Lean and Agile Software Development. Springer. pp. 40-58.
+Productboard. 2022. The four values of the Agile manifesto. https://www.productboard.com/glossary/agile-values/ Date of access: 10 May.
+Project Management Institute (PMI). 2021. The standard for project management and a guide to the project management body of knowledge (PMBOK guide). 7th. Pennsylvania, USA: Project Management Institute, Inc.
+Sinha, R., Shameem, M. & Kumar, C. 2020. SWOT: Strength, weaknesses, opportunities, and threats for scaling agile methods in global software development. In. Proceedings of the 13th innovations in software engineering conference on formerly known as India software engineering conference. pp. 1-10.
+Slate, A. 2021. Prince2: The reigning project management methodology. https://www.wrike.com/blog/project-management-basics-prince2-explained/ Date of access: 28 April.
+Teasdale, H. 2021. The strengths and weaknesses of Agile project management. https://i2a.co.uk/the-strengths-and-weaknesses-of-agile-project-management/ Date of access: 12 May.
+Thomson, A. 2020. Applying prince2 principles while working from home. https://www.axelos.com/resource-hub/blog/applying-prince2-principles-working-from-home Date of access: 10 May.
+Willis, R. 2017. The seven roles in prince2 projects. https://yourprojectmanager.com.au/roles-prince2-projects/ Date of access: 28 April.
+Workfront. 2022a. Agile project management. https://www.workfront.com/project-management/methodologies/agile Date of access: 10 May.
+Workfront. 2022b. Waterfall methodology. https://www.workfront.com/project-management/methodologies/waterfall#:~:text=The%20waterfall%20methodology%20is%20a,detailed%20documentation%2C%20and%20consecutive%20execution. Date of access: 13 May.
+Wrike. 2022. What is Waterfall project management? https://www.wrike.com/project-management-guide/faq/what-is-waterfall-project-management/ Date of access: 12 May.
+

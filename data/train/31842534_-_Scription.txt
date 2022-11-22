@@ -1,0 +1,628 @@
+
+
+
+
+
+
+Designing a dashboard with streaming sensor data to support decision-making.
+
+
+
+
+A Du Toit
+  orcid.org/0000-0000-0000-000X
+
+
+
+
+
+Supervisor:	Prof Roelien Goede
+
+
+
+
+Graduation: 
+Student number: 31842534 
+TABLE OF CONTENTS (HEADING 0)
+CHAPTER 1 INTRODUCTION	1
+1	PROBLEM STATEMENT	1
+1.1	Introduction	1
+1.2	Background to study	1
+1.3	Aspects to study	2
+1.3.1	Sensors	2
+1.3.2	Streaming database	2
+1.3.3	Dashboards	2
+1.4	Problem statement	2
+1.5	Paradigmatic perspective	3
+1.5.1	Critical realism	4
+1.6	Research aim and objectives	4
+1.6.1	Research aim	5
+1.6.2	Research objectives	5
+1.6.2.1	Primary objectives	5
+1.6.2.2	Secondary objectives	5
+1.6.2.3	Theoretical objective	5
+1.6.2.4	Empirical/practical objectives	5
+1.6.3	Study design	5
+1.7	Research methodology	6
+1.7.1	Design science research	6
+1.7.1.1	Phase 1: Problem identification and motivation	6
+1.7.1.2	Phase 2: Define the objectives for a solution	7
+1.7.1.3	Phase 3: Design and development	7
+1.7.1.4	Phase 4: Demonstration	7
+1.7.1.5	Phase 5: Evaluation	7
+1.7.1.6	Phase 6: Communication	7
+1.8	Approach to project management and project plan	7
+1.8.1	Scope	7
+1.8.2	Limitations	8
+1.8.3	Risk analysis	8
+1.8.4	Project plan	9
+1.9	Chapter division	10
+1.9.1	Chapter 1: Introduction	10
+1.9.2	Chapter 2: Research Methodology	10
+1.9.3	Chapter 3: Literature Review	10
+1.9.4	Chapter 4: Artefact Design	10
+1.9.5	Chapter 5: Evaluation	10
+1.9.6	Chapter 6: Conclusion	10
+1.10	Executive Summary	10
+CHAPTER 2 RESEARCH METHODOLOGY	11
+2	HEADING 1 WON’T PRINT.  DON’T DELETE – DOING SO WILL LEAD TO INCORRECT NUMBERING.	11
+2.1	Introduction	11
+2.2	Research paradigms	12
+2.3	Research process	13
+2.4	Design science research	14
+2.4.1	Design science research cycle	14
+2.4.2	Design science framework	15
+2.4.3	Design science process model	15
+2.4.4	Design science research guidelines	17
+2.5	Executive summary	18
+CHAPTER 3 LITERATURE REVIEW	19
+3	HEADING 1 WON’T PRINT.  DON’T DELETE – DOING SO WILL LEAD TO INCORRECT NUMBERING.	19
+3.1	Introduction	19
+3.2	Sensor	20
+3.2.1	Sensor properties	21
+3.2.2	Types of sensors	22
+3.2.3	Sensor data process	23
+3.3	Streaming database	25
+3.3.1	Data stream processing classes	27
+3.3.1.1	Data management	27
+3.3.1.2	Data mining	27
+3.3.2	Challenges of streaming databases	28
+3.3.2.1	Energy efficiency	28
+3.3.2.2	Communication efficiency	28
+3.3.2.3	Processing power	28
+3.3.2.4	Memory size	29
+3.3.2.5	Scalability	29
+3.3.2.6	Fault tolerance	29
+3.4	Dashboard	29
+3.4.1	Dashboard purposes	30
+3.4.2	Dashboard features	30
+3.4.3	Examples of dashboards	31
+3.5	Executive summary	32
+BIBLIOGRAPHY	33
+
+ 
+LIST OF TABLES (HEADING 0)
+Table 1: Philosophical assumptions of the four research paradigms(Adebesin, Kotzé et al. 2011)	4
+Table 2: DSR guidelines	17
+Table 3: Areas in need of sensors	20
+Table 4: Sensor properties	21
+Table 5: Example of sensors	24
+Table 6: Differences between traditional and stream data processing	26
+ 
+LIST OF FIGURES (HEADING 0)
+Figure 1: DSR Process Model (Peffers, Tuunanen et al. 2007)	6
+Figure 2: Project plan	9
+Figure 3: Research paradigms and philosophical assumptions	12
+Figure 4: DSR process cycle	14
+Figure 5: DSR design cycle	15
+Figure 6: DSR framework	15
+Figure 7: DSR Process Model (Peffers, Tuunanen et al. 2007)	16
+Figure 8: Sensor process cycle	21
+Figure 9: Sensor data process	24
+Figure 10: Architecture of a database management system	26
+Figure 11: Architecture of artefact	27
+Figure 12: Architecture of dashboard	30
+Figure 13: Example of dashboard	31
+Figure 14: Example of dashboard	31
+Figure 15: Example of dashboard	31
+
+ 
+CHAPTER 1 INTRODUCTION
+1	Problem statement 
+1.1	Introduction
+Technology is growing rapidly while improving real-life applications with the use of the Internet of Things (IoT). The areas of application where machine sensor data can be implemented in a streaming database to support dashboard decision-making will be investigated in this study. People must desire to use the support and then act on the suggestions from computerized decision support to help them make logical decisions that are more likely to lead to the goal and positive results (Power 2016). 
+
+With decision support, there needs to be an understanding of what data is generated and how to use it for important decision-making. Some areas of application are more difficult to improve decision-making with sensor data. These fields may include transportation, healthcare, energy management, and agriculture. In the healthcare sector, the biggest challenge is data fragmentation according to Dimitrov (2016).
+
+For an area of application, a certain machine sensor must be identified to be able to produce useful data for intelligent queries related to the area. The sensor data that will be generated will be stored in a database. From the database, visualization will be created to form an informative dashboard. In a study done by van Hillegersberg, Vroling et al. (2017), a MySQL server is used for the data storage platform, Python as the coding language to convert the CSV files into SQL files and Tableau for the creation of the dashboard of visualizations was used. This was done to improve decision-making in ocean race sailing with the use of sensor data.
+
+ This study aims to identify and demonstrate the use of sensor data in a streaming database with visualizations via a dashboard.
+1.2	Background to study
+The purpose of this study is to identify different fields of application where sensor data can be used to improve decision-making about a topic within the field. These studies do not only improve certain tasks but also create new opportunities for future studies.
+
+To comply with the aim of the study, it will create a system that receives data from a sensor, transfers the data to a database and performs computations that will provide useful information, display the results on a dashboard with visualizations and use the dashboard to support decision making with the use of an IoT platform and web applications. IoT platforms can be used to connect to devices, secure a device, manage a device, assist with the data analysis, and make it possible for the developers to create code and applications that interact with the IoT system (Patt 2020). 
+
+The use of an IoT platform or a web service makes it much easier for developers to concentrate on the more logical coding of the problem. Although one of the main challenges of using an IoT platform is the level of uncertainty with sensor data, Hussain, Nugent et al. (2021) stated that raw sensor data can be converted into meaningful information despite the levels of uncertainty and does provide a more rational approach to decision making. To complete the system, there are a variety of technologies that can be used to develop the system and all its components.
+1.3	Aspects to study
+This section will discuss the aspects of the study.
+1.3.1	Sensors
+This study would make use of sensors to gain data from a specific field of application. The sensors will only be able to provide stream numerical values. There is a wide variety of sensor types that include, including proximity sensors, motion sensors, temperature sensors.
+1.3.2	Streaming database
+A streaming database is used to monitor and record the data received from certain events. The purpose of a streaming database is to collect, process, and possibly improve the quality and value of the data received. As the name indicates, a stream means that the data will consecutively be read as a sequence in a near real time experience.
+1.3.3	Dashboards
+A data dashboard is a tool for tracking, analysing, and displaying important performance indicators, measurements, and statistical results.
+1.4	Problem statement
+The problem is that within certain fields of study, there are situations where it is difficult to determine a reliable solution for a problem. Therefore, data needs to be extracted from the field to support the decision-making. Currently, these types of systems make use of sensor data to complete the calculations and create a dashboard of visualizations to support the decision-making. The sensors provide valuable data, but the data needs to be modified to the correct format to be used in the solution (Lamshöft, Neubert et al. 2021). The sensor data will only be useful if it can be understood, processed,  efficiently stored to perform appropriate data analysis and create informative visualisations (van Hillegersberg, Vroling et al. 2017). For the data to be useful in visualisations, it needs to be stored in a server that transfers the data to a database. According to Wiska, Habibie et al. (2016), Kafka could serve as the server and transfer the data to the Impala database.  The data in the database can only be valuable if it is used to represent visualisations on a dashboard. In a study by van Hillegersberg, Vroling et al. (2017) they make use of Tableau the create data visualisations. This will provide new knowledge to the users and they can incorporate the results to improve their decision. Although these results are only a guideline and do not guarantee a perfect solution. Possible outcomes of not using sensor data in the designed system to improve decision making are as follows:
+•	Interpretation of situation may be incorrect and may result in choosing the worst possible solution.
+•	Too much data is available, and the users do not have the knowledge to determine the most reliable solution.
+This study will benefit others by advancing their understanding of why the use of sensor data will improve decision-making. There are so many areas of applications that can be improved but need new and meaningful development. According to Nieminen, Räty et al. (2009), by using a logical decision-making system (LDMS) that is supported by multiple sensor data, the system can define a reliable solution.
+The research question is composed as followed: Can sensor data that are stored in a streaming database, provide a dashboard with informative data that would support the decision making.
+1.5	Paradigmatic perspective
+A research paradigm can be described as the way the researcher sees the world and this can influence the process of how their research is approached. A paradigm is the combination of beliefs and principles that determine how the world is seen and interpreted and the way the researcher acts upon it (Kivunja and Kuyini 2017). The types of worldviews are identified as ontological, epistemological, methodological, and axiological which may have related paradigms namely, positivist, interpretive, critical and design research. Ontological views are concerned with the nature of the research area, while epistemological views are concerned with the relationship between the researcher and what can be known.  Methodological views are concerned with the methods by which the inquirer can obtain knowledge about the topic of interest and axiological views which is concerned with the things that the researcher values and the influence of those values on the research process (Adebesin, Kotzé et al. 2011). 
+In the table below, a summary of the worldviews and paradigms is given.
+
+This study will make use of critical realism as the paradigm.
+
+1.5.1	Critical realism
+The ontological perspective of critical realism describes the nature of reality and if the reality exists objectively or subjectively to the research study (Chua 1986). Ontology describes how the world exists independent of our sensors but each one has a subjective experience of the world. The layers that are focused on are the mechanics of the cause, the event that is caused and the experience of the event.
+
+The epistemological perspective of critical realism determines the way knowledge claims are presented, how they are evaluated for truth or validity, and how they are weighed against existing knowledge are all determined by one's epistemological beliefs. Theories regarding the nature of reality have been developed to explain observable events based on knowledge(Wynn Jr and Williams 2008). Epistemology is to understand the process from the sensor to the dashboard. 
+Both epistemology and ontology perspective is relevant to critical realism.
+1.6	Research aim and objectives
+The aim of this study will be discussed in this section.
+1.6.1	Research aim
+The aim of this study is to design and develop an artefact that implements a streaming database from sensor data to provide a user with useful information for decision support.
+1.6.2	Research objectives
+The research objectives of this study will be discussed in this section.
+1.6.2.1	Primary objectives
+The primary objective is to design and develop an artefact that implements a streaming database from sensor data to provide a user with useful information for decision support.
+1.6.2.2	Secondary objectives 
+The following section discuss the secondary objectives.
+1.6.2.3	Theoretical objective 
+The following theoretical objectives have been formulated to achieve the primary objective:
+•	To gain a shared understanding of how Design Science Research applies to the development of this study.
+•	To present an understanding of the sensors and their provided data along with their implementation.
+•	To present an understanding of the streaming databases and their implementation.
+•	To present an understanding of the dashboards and their implementation.
+•	To gain an understanding of existing projects that are similar.
+•	To analyse the effectiveness of DSR in relevant\similar problems.
+1.6.2.4	Empirical/practical objectives 
+The following empirical objectives have been formulated in accordance with the primary objective:
+•	To build and implement the system software that will be able to retrieve data from a sensor.
+•	To build a system that can convert raw sensor data into the correct format to be stored in a database.
+•	To build and implement a system that can create a dashboard of information from the data stored in the database.
+•	To implement the system for evaluation.
+1.6.3	Study design
+The methods that are applicable for this study are Design Science research and experimentation. According to Nunamaker Jr et al. (1990), there are four research strategies namely, theory building, experimentation, observation, and systems development, of which we will make use of experimentation.
+1.7	Research methodology
+The design science research methodology will be discussed.
+
+1.7.1	Design science research
+DSR (design science research) is a problem-solving paradigm that aims to improve human knowledge via the production of artefacts (Hevner, March et al. 2004). Design science is used to solve problems with existing knowledge and then, therefore, creating new knowledge. In this study, an information technology artefact will provide a solution to a problem and will communicate the results in order to provide new knowledge. These actions comply with the requirements of DSR.  The research questions developed in this study can be addressed by the Design Science Research Methodology (DSRM) of Peffers, Tuunanen et al. (2007). Both Merwe, Gerber et al. (2019) and van Hillegersberg, Vroling et al. (2017) make use of this Design Science Research Methodology. The phases of DSRM are described below:
+
+1.7.1.1	Phase 1: Problem identification and motivation
+In this phase, the problem statement is defined, and the artefact design is based on the problem statement. When the value of the solution is determined and proved reasonable, it means the artefact design complies with the objectives of the study, as well as motivates the researcher’s understanding of the problem.
+1.7.1.2	Phase 2: Define the objectives for a solution
+The objectives of the solution are determined in accordance with the problem definition. There are two types of objectives namely quantitative and qualitative objectives. To define the proper objectives, a wide range of knowledge of the problem and solutions to similar problems is needed. This way the researcher will have the proper knowledge to determine the best suitable solutions.
+1.7.1.3	Phase 3: Design and development
+The desired functions that the artefact must be able to produce should be kept in mind when designing and developing the actual artefact. To proceed from the second phase to the current phase, knowledge about the technologies and the problem is required.
+1.7.1.4	Phase 4: Demonstration
+This phase requires evidence that the artefact does solve at least one of the problem statements. This evidence can be provided using experimentation, simulation, case study, or any other appropriate proof. To demonstrate the artefact correctly, proper knowledge is required of how to use the artefact to solve the problem.
+1.7.1.5	Phase 5: Evaluation
+To evaluate the artefact, the results of the artefact demonstration are compared to the objectives stated for the solution. Through observation and measurement of the results, it is determined if the results would support the solution of the problem. To complete this phase, some knowledge is required about analysis techniques. The type of evaluation depends on the type of objectives defined in phase 2. When the evaluation phase is completed, the researcher can determine whether the study needs to go back to phase 3 to adjust for improvements otherwise, move on to the communication phase.
+1.7.1.6	Phase 6: Communication
+When applicable, inform researchers and other important audiences, such as practicing professionals, about the problem and its relevance, the artefact, its utility and originality, the quality of its design, and its efficacy. This communication can be in the form of a literature review. To complete this phase properly, knowledge of disciplinary culture is required.
+1.8	Approach to project management and project plan
+1.8.1	Scope
+The scope of the project is to identify and demonstrate an area of application that uses sensor data in a streaming database to create a dashboard that will support the decision-making.
+1.8.2	Limitations
+The limitations of the project can consist of the following:
+•	Not having the necessary sensors needed to complete the study
+•	The user does not have enough knowledge about the technology needed within the study
+•	The data received from the sensors are not accurate enough and cannot produce quality feedback
+1.8.3	Risk analysis
+The project's risk can be located in the artefact delivering erroneous data that can be misinterpreted as accurate data. The users of the artefact may also not be able to interpret the data visualizations in the correct manner which can lead to unreliable decisions.
+1.8.4	Project plan
+
+1.9	Chapter division
+This section will be providing the outline of the different chapters that will be found in this study.
+1.9.1	Chapter 1: Introduction	
+In this chapter, a broad understanding of the study and all its aims and objectives that will be followed throughout the research.
+1.9.2	Chapter 2: Research Methodology 
+This chapter will go into the study's research methodology, design science research, and how its procedures will shape the structure of the study.
+1.9.3	Chapter 3: Literature Review 
+This is where the literature review will be done to address the different technologies available for the artefact. There will be focused on previous studies to determine the best suited technology and programming methods to provide a well-designed system.
+1.9.4	Chapter 4: Artefact Design
+This chapter will present the development of the artefact. This is where the artefact will be built and tested.
+1.9.5	Chapter 5: Evaluation
+The artefact will be demonstrated and evaluated to determine the level of success and if there are parts that need more adjustments.
+1.9.6	Chapter 6: Conclusion
+The conclusion of the artefact's creation, the research and information gained from this study, and lastly future prospects that may be studied will all be included in this chapter.
+1.10	Executive Summary
+The aim of this study is to design and develop an artefact that implements a streaming database from sensor data to provide a user with useful information for decision support. The technologies and methods used to develop and implement the system will be researched.
+
+
+ 
+CHAPTER 2 RESEARCH METHODOLOGY
+2	Heading 1 won’t print.  Don’t delete – doing so will lead to incorrect numbering.
+2.1	Introduction
+In order to do research, one must adhere to a framework of philosophies, use processes, methods, and techniques to verify the reliability and validity, and maintain objectivity and impartiality throughout the process(Kumar 2018).The aim of this study is to design and develop an artefact that creates a visual representation to support with relevant decision-making with the use of streaming sensor data into a real-time streaming database. This can only be achieved by using the most relevant research methodology. In this study, design science research (DSR).
+
+Research is known as the scientific search/investigation to gain knowledge on a specific topic (Kothari 2004). A research methodology has the role of creating a structure of how to conduct the research with its components, namely the approach to the research, strategy and paradigms (Al Kilani and Kobziev 2016). According to Wedawatta, Ingirige et al. (2011), identifying the most appropriate research methodology for the study, can improve the process of achieving the set objectives through data collection and analysis. Determining the correct research methodology is very important as it would assist in developing the best solution for the study.
+
+DSR (design science research) is a problem-solving paradigm that aims to improve human knowledge via the production of artefacts (Hevner, March et al. 2004). Design science is used to solve problems with existing knowledge and then, therefore, creating new knowledge. In this study, an information technology artefact will provide a solution to a problem and will communicate the results to provide new knowledge. DSR consists of different processes, activities and guidelines that will assist with the process of this study (Peffers, Tuunanen et al. 2007).
+
+The purpose of this chapter is to provide an overview of how the research methodology structure the process of completing this study. The cycle of design science research and all the steps necessary to complete the study will be discussed in this chapter.
+
+This chapter will discuss the research process in Section 2.2, research paradigms in Section 2.3 and the design of the study in Section 2.4. The overview of design science research will be discussed in Section 2.5 followed by Section 2.6 which concludes the chapter with a summary of the knowledge obtained throughout the chapter.
+
+2.2	Research paradigms
+A research paradigm can be described as the way the researcher sees the world and this can influence the process of how their research is approached. A paradigm is the combination of beliefs and principles that determine how the world is seen and interpreted and the way the researcher acts upon it (Kivunja and Kuyini 2017). 
+
+The types of philosophical assumptions are identified as ontological, epistemological, methodological, and axiological which may have related paradigms namely, positivist, interpretive, critical and design research. Ontological views are concerned with the nature of the research area, while epistemological views are concerned with the relationship between the researcher and what can be known.  Methodological views are concerned with the methods by which the inquirer can obtain knowledge about the topic of interest and axiological views which is concerned with the things that the researcher values and the influence of those values on the research process (Adebesin, Kotzé et al. 2011). In the table below, a summary of the worldviews and paradigms is given.
+
+ 
+Figure 3: Research paradigms and philosophical assumptions
+
+According to Rehman and Alharthi (2016) there are three different approaches towards a study, namely positivism, interpretivist and critical theory. Weber (2010) thinks that design science research has the potential to be a new, cutting-edge research paradigm, despite the fact that it is not yet widely recognised as a research methodology. These paradigms have four different philosophical assumptions that guide the development of the study.  
+
+The positivist paradigm is predicated on the idea that there is only one distinct, observable reality that can be comprehended, identified, and measured(Park, Konge et al. 2020). Positivism is the name for the scientific study of the social world (Rehman and Alharthi 2016). Positivism is a philosophy that states that only information that has been verified via observation and measurement can be trusted. In positivism the researcher conducts the research objectively with a prediction of the limited data that they collected (Park, Konge et al. 2020).  Positivists have an inflexible mind-set because they think everything can be measured and calculated and may disregard unexplained events. In general, positivists prefer quantitative research techniques, whereas interpretivists prefer qualitative research techniques (Weber 2010).
+ 
+According to Rogers (2020) interpretivists can be described as the opposite of positivism because the researcher shapes the research with their subjective view and observe multiple realities. Interpretivists believe it is impossible to see reality without letting one's own worldview, conceptions, and background influence it and as a result, actual reality can only be discovered, not made (Rehman and Alharthi 2016). Researchers that practice interpretivist seek to acquire data using qualitative techniques because they prefer to utilize their own data over information from statistical sources(Thanh and Thanh 2015).
+
+Critical Theory, stated by Horkheimer (1972) is only acknowledged if the research is simultaneously explanatory, practical and normative. Critical theory is a paradigm that aims to criticize the status in society of methodologies whether qualitative or quantitative and provide knowledge on their claim to be objectively (Rehman and Alharthi 2016). According to Patton (2002) the goal of critical theory is to change an improve society and not just to describe and comprehend it.
+
+Design science research is commonly used in engineering and computer science fields of research (Hevner and Chatterjee 2010). The purpose of design science research is to provide information about how objects should be built or structured under the influence of humans in order to accomplish the intended set of goals (Vom Brocke, Hevner et al. 2020).
+
+2.3	Research process
+The research process is made up of a number of processes or activities needed to carry out research efficiently and result scientific conclusions. DSR is suited for this research since creating and designing an artefact will contribute to outcomes for the issue statement and give relevant methods for a solution. Design science in information systems make use of artefacts to solve real world problems(Prat, Comyn-Wattiau et al. 2014). The problem statement of this study is to determine if sensor data that are stored in a streaming database, provide a dashboard with informative data that would support the decision making. DSR will be discussed in depth in the next section of the chapter.
+2.4	Design science research
+Designing and creating an artefact is a key element of DSR, but the needs of that artefact must be understood in terms of the environment in which it functions(Gregor and Jones 2007). The artefact must address the problem stated in the study. The artefact has two main phases namely the development phase where research is done to gain more knowledge about the problem and evaluation phase where the result of the artefact is evaluated to determine the best solution for the problem (Peffers, Tuunanen et al. 2007).
+
+ 
+Figure 4: DSR process cycle
+2.4.1	Design science research cycle
+The research cycle is derived from the framework by (Hevner, March et al. 2004). The Relevance Cycle connects the activities of design science with the context of the research environment. The Rigor Cycle establishes a link between the design science activities and the body of information, experience, and competence that underpins the research environment. The main design cycle iterates between the main tasks of creating and assessing design objects and research methods (Hevner, March et al. 2004).
+ 
+Figure 5: DSR design cycle
+
+2.4.2	Design science framework
+The conceptual framework of design-science paradigms for comprehending, conducting, and reviewing information systems research (Hevner, March et al. 2004). These paradigms are positioned and contrasted using this framework.
+
+  
+Figure 6: DSR framework
+2.4.3	Design science process model
+The DS process includes six steps: problem identification and motivation, definition of the objectives for a solution, design and development, demonstration, evaluation, and communication (Peffers, Tuunanen et al. 2007).
+
+Activity 1: Problem identification and motivation
+
+In this phase, the problem statement is defined, and the artefact design is based on the problem statement. When the value of the solution is determined and proved reasonable, it means the artefact design complies with the objectives of the study, as well as motivates the researcher’s understanding of the problem.
+
+Activity 2: Define the objectives for a solution
+
+The objectives of the solution are determined in accordance with the problem definition. There are two types of objectives namely quantitative and qualitative objectives. To define the proper objectives, a wide range of knowledge of the problem and solutions to similar problems is needed. This way the researcher will have the proper knowledge to determine the best suitable solutions.
+
+Activity 3: Design and development
+
+The desired functions that the artefact must be able to produce should be kept in mind when designing and developing the actual artefact. To proceed from the second phase to the current phase, knowledge about the technologies and the problem is required.
+
+Activity 4: Demonstration
+
+This phase requires evidence that the artefact does solve at least one of the problem statements. This evidence can be provided using experimentation, simulation, case study, or any other appropriate proof. To demonstrate the artefact correctly, proper knowledge is required of how to use the artefact to solve the problem.
+
+Activity 5: Evaluation
+
+To evaluate the artefact, the results of the artefact demonstration are compared to the objectives stated for the solution. Through observation and measurement of the results, it is determined if the results would support the solution of the problem. To complete this phase, some knowledge is required about analysis techniques. The type of evaluation depends on the type of objectives defined in phase 2. When the evaluation phase is completed, the researcher can determine whether the study needs to go back to phase 3 to adjust for improvements otherwise, move on to the communication phase.
+
+Activity 6: Communication
+
+When applicable, inform researchers and other important audiences, such as practicing professionals, about the problem and its relevance, the artefact, its utility and originality, the quality of its design, and its efficacy. This communication can be in the form of a literature review. To complete this phase properly, knowledge of disciplinary culture is required.
+
+2.4.4	Design science research guidelines
+In DSR Guidelines is provided within the evaluation phase (Hevner, March et al. 2004). These guidelines are discussed below:
+
+Table 2: DSR guidelines
+Guideline	Description
+Guideline 1: Design as an Artefact	Design-science research must produce a viable artefact in the form of a construct, a model, a method, or an instantiation.
+Guideline 2: Problem Relevance	The objective of design-science research is to develop technology-based solutions to important and relevant business problems.
+Guideline 3: Design Evaluation	The utility, quality, and efficacy of a design artefact must be rigorously demonstrated via well-executed evaluation methods.
+Guideline 4: Research Contributions	Effective design-science research must provide clear and verifiable contributions in the areas of the design artefact, design foundations, and/or design methodologies
+Guideline 5: Research Rigor	Design-science research relies upon the application of rigorous methods in both the construction and evaluation of the design artefact.
+Guideline 6: Design as a Search Process	The search for an effective artefact requires utilizing available means to reach desired ends while satisfying laws in the problem environment.
+Guideline 7: Communication of Research	Design-science research must be presented effectively both to technology-oriented as well as management-oriented audiences.
+
+2.5	Executive summary
+The objective of this chapter is to provide an overview of how the research methodology structure the process of completing this study. This objective was met by giving an overview of the cycle of design science research and all the steps necessary to complete the study. DSR was used to design and develop the research study and to build an artefact that produce a viable solution. The next chapter will discuss the technological components to use in the research project in a literature review.
+ 
+
+CHAPTER 3 LITERATURE REVIEW
+3	Heading 1 won’t print.  Don’t delete – doing so will lead to incorrect numbering.
+3.1	Introduction
+In this study, several technologies are needed to perform necessary calculation to achieve the objectives set (Mekonnen, Namuduri et al. 2019). The aim of this study is to design and develop an artefact that creates a visual representation to support with relevant decision-making with the use of streaming sensor data into a real-time streaming database.
+
+Sensors is part of our everyday life. It creates the world as we know it. Sensors are used to gain data from the environment to assist decision-making regardless the importance of the decision (Mekonnen, Namuduri et al. 2019). A temperature and humidity sensor are used to detect the weather, which can be used to decide whether a warm coat is needed. According to Vetelino and Reghu (2017), the human body can also be classified as a group of sensors such as sound sensitivity sensor as the ear, and the eye that can be classified as a dynamic range sensor. All these human-sensors relate to the five senses of a human body namely vision, hearing, tasting, smell and feel. The data from these sensors are read into a streaming database.
+
+The rapid growth of technology where many resources produce data continuously, streaming databases is becoming more frequently used (Gama and Rodrigues 2007). A streaming database is used to monitor and record the data received from certain events. The purpose of a streaming database is to collect, process, and possibly improve the quality and value of the data received. As the name indicates, a stream means that the data will consecutively be read as a sequence in a near real time experience (Chandrasekaran and Franklin 2002). From the streaming database, the data is used to create a dashboard.
+
+Dashboards are diagnostic tools created to offer rapid summaries of a company's performance to busy management (Velcu-Laitinen and Yigitbasioglu 2012). Dashboards may be thought of as a collection of individual decision support systems that focus on integration and alignment at the organizational level as opposed to the level of an individual activity (Pauwels, Ambler et al. 2009).
+
+The objective of the chapter is to give an overview of the types of technology components that are used for this study. In Section 3.2 Sensors will be discussed which include the properties of a sensor. Section 3.3 gives an overview of the streaming database component. The dashboard component will be discussed in Section 3.4.
+3.2	Sensor
+A sensor can respond, measure, or detect a physical property within the physical environment. This study would make use of sensors to gain data from a specific field of application. A sensor is a device that recognizes or quantifies a physical characteristic and records, displays, or reacts to it by sending an impulse as a result. To provide a signal that may be electrically recorded, it translates a physical specification (such as temperature, speed, or distance). In Table 3 a variety of areas where sensors can be implemented to support decision-making is listed. (Vetelino and Reghu 2017). Figure 3 indicates the development process of a sensor.
+
+Table 3: Areas in need of sensors
+ 
+
+ 
+Figure 8: Sensor process cycle
+3.2.1	Sensor properties
+
+The table below describe the properties of a sensor (Vetelino and Reghu 2017).
+
+Table 4: Sensor properties
+Property	Description
+Response time	The time it takes for a sensor to react to a load change from zero to one step. Typically stated as the amount of time needed to reach 90% of the final value, calculated from the moment the measured variable's step input change began.
+Recovery time	Recovery Time is defined as the amount of time it takes for a sensor to recover to its initial value after the measured variable has been removed in steps. When a measured variable is removed in steps, the time to decrease to 10% of the final value is often provided.
+Reproducibility	The capacity of a sensor to produce equal results for the same inputs. Also known as repeatability.
+Aging	As sensors age, their output deviates from what was originally intended, leading to inaccurate reports of their operational status and, in turn, inaccurate actions based on those reports (Anik, Guilley et al. 2020).
+
+Stability (short term, long term)	The degree to which sensor properties stay steady over time is referred to as stability. The term "drift" refers to changes in stability that might occur when a component ages or becomes less sensitive.
+Sensitivity	Stability is the degree to which a sensor's characteristics remain constant throughout time. When a component ages or becomes less sensitive, stability changes known as "drift" may take place.
+Resolution	The smallest change in the amount being measured that can be detected is the sensor resolution, also known as measurement resolution. The numerical resolution of a digital output often determines the resolution of a sensor with a digital output.
+Dynamic range	The ratio of the sensor's highest and lowest signals is known as dynamic range.
+Selectivity	A sensor's selectivity refers to its capacity to distinguish between the target and interfering molecules and to produce a sensor response that is particular to the target.
+Size and weight	The size refers to the physical scale of the sensor and the weight refers to how much the sensor weigh.
+Cost	The cost of a sensor varies within the industry and is dependent on the version of the sensor.
+
+
+3.2.2	Types of sensors
+
+The range of sensors are expanded significantly and can be divided into five core category classification systems. These classifications are discussed below:
+
+Active and Passive Sensors
+
+Active sensors depend on an outside power source to function. In a Wireless Sensor Network (WSN), the need for low power sensors is important to provide the system with low power consumption (Pereira, Correia et al. 2018). Examples of these type of sensors include GPS sensors and radar sensors. Self-generating or passive sensors produce their own electric signal without the need for an external power source. Thermal sensors and metal detecting sensors are examples of passive sensors.
+
+Contact and Non-Contact Sensors
+
+As the name indicates, contact sensors need direct physical contact to produce useable data. This can be presented in the form of a touch sensors and pressure sensors. Non-contact sensors don't need any physical touch to gain information. Infrared thermometers are a great example, though it does not need physical touch to gain information.
+
+Absolute and Relative Sensors
+
+By offering an absolute interpretation of its stimuli, absolute sensors live up to their name. A thermistor can measure the exact temperature reading. A fixed or variable measurement is measured using relative sensors. A thermocouple, where the temperature difference is measured, not the actual temperature.
+
+Analog and Digital Sensors
+
+Continuous analogue output signals proportional to its measurement are produced by analogue sensors. Accelerometers, pressure sensors, light, and sound sensors are viable examples. Digital sensors translate the data transfer into a digital format (also known as electronic or electrochemical sensors). Examples include digital accelerometers, moisture, and temperature sensors.
+
+Miscellaneous Sensors
+
+This category is created for the remaining sensors that does not fit into the other category.
+
+3.2.3	Sensor data process
+
+Within a measurement system, the sensor is the heart which consists of different roles to fulfil. In Figure 4 the diagram illustrates the process of how the data is obtained from a sensor. Firstly, the environment which is intended to be measured is located and the sensor is placed within. Secondly, the data from the sensor is fed to an appropriate signal conditioner which modifies the data to a form of digital output. Obtaining the data from the sensor needs to be transferred to a place where decision can be made from the results (Ripka and Tipek 2013)
+
+ 
+Figure 9: Sensor data process
+.
+This process can be used with multiple sensors, depending on the environment and problem within the environment would determine which sensor is more suitable. This process needs to be done correctly because the quality of the data can drastically change the outcomes of the research on result in an incorrect business decision (Klein and Lehner 2009). Examples of sensors is listed in the Table 5.
+
+
+Table 5: Example of sensors
+Name of Sensor	Picture
+Ultrasonic Distance Sensor	 
+Moisture Sensor	 
+Humidity Sensor	 
+LDR (Light Sensor)	 
+Touch Sensor	 
+Rain Sensor	 
+Gas Sensor	 
+
+Sensors are now used in practically every aspect of life because to technological improvement and size reduction. Due to the lack of comprehensive information, choosing sensors and effectively using them to address problems has proven to be a difficult task for new users (Abbasi, Islam et al. 2014). The sensor data is then streamed into a streaming database to store the historical data and create a dashboard to support the decision-making process.
+
+3.3	Streaming database
+Streaming data works differently from traditional data, since streaming data is not stored and retrieved when needed, but instead it constantly streams the data through a network (Tatbul 2010). Although, the fact that the data is only stored for a short period which can lead to a data overloading problem (Sow, Biem et al. 2010). In this study a streaming database will be used to transport the data from a sensor to a dashboard to create a visual representation to support decision-making. In Table 5, the differences between traditional and stream data processing is summarised (Gama and Rodrigues 2007).
+
+Table 6: Differences between traditional and stream data processing
+ 
+
+The differences between traditional and stream processing is actually quite the opposite in every aspect. The architecture of a database management system consists of several stages (Golab and Özsu 2010). 
+ 
+Figure 10: Architecture of a database management system
+The left side indicates how streaming inputs is received by a buffer/input monitor. The input monitor collects the data and send it to the working storage where it will be stored temporarily. The working storage may store some metadata on the local storage that can be updated but only the working storage can be used for query processing. In theory, each operator in the pipeline takes a data stream and then outputs a changed stream for the next operator to ingest. As the workload and input rates vary, the query processor may interact with the input monitor and modify the query plans accordingly. Results may also be broadcast to programs that process events or notify users (Golab and Özsu 2010).
+
+The architecture of this research project is designed as follows.
+
+
+ 
+Figure 11: Architecture of artefact
+
+3.3.1	Data stream processing classes
+In this section the tasks of each class of processing streaming data will be discussed.
+3.3.1.1	Data management
+The handling, querying, scheduling, and storing of data streams produced by sensor networks fall under this category of processing activities (Gama and Rodrigues 2007). 
+•	In sensor networks, spatial and temporal properties are crucial. The location and timing of the sensor reading are critical for sensor network applications.
+•	Certain queries require more energy than others. This is entirely determined of the environment the sensors are placed.
+•	In-network data processing is more feasible than transferring the data streams from a different site in terms of bandwidth and energy constraints.
+•	In sensor networks, the computational model is called distributed query processing.
+
+3.3.1.2	Data mining
+
+Over the past few years, mining data streams has been an active study field.
+The difficulties of mining streaming data have been addressed in many ways via the use of sampling, load shedding, and approximation approaches (Gama and Rodrigues 2007). The differences between traditional data stream mining and sensor network streaming mining are discussed.
+•	Due to comparable environmental conditions across wide areas, data duplication in sensor networks is frequent and is addressed by the data mining technique. The problem of data duplication has not been addressed by traditional data stream mining.
+•	Data mining on multiple levels is crucial in sensor networks. Individual node-generated data streams can create completely distinct local models from the global model. This has not been addressed by traditional data stream mining.
+•	Sensor network data streams are seen as being noisy. Data cleansing is necessary in order to create trustworthy data mining models. To create an accurate model, real-time data cleansing is necessary.
+•	Data mining in sensor networks requires adaptation to the resources that are now accessible. The data mining method need to be flexible enough to accommodate the present state of resource availability. This has not been addressed by traditional data stream mining.
+3.3.2	Challenges of streaming databases
+The challenges of streaming databases are discussed in this section.
+
+3.3.2.1	Energy efficiency
+Techniques for data handling and mining in sensor networks should be energy-conscious. It is necessary to develop an energy-efficient resource scheduling and optimization framework in large data stream computing systems to achieve great energy efficiency and rapid reaction times (Sun, Zhang et al. 2015).
+3.3.2.2	Communication efficiency
+Sensor networks need bandwidth-constrained wireless connections to function. The widespread use of sensor networks poses a significant problem for data processing (Gama and Rodrigues 2007). It has also been suggested to employ data-reduction methods like Principal Component Analysis (PCA) to improve communication (Kargupta, Puttagunta et al. 2006).
+
+3.3.2.3	Processing power
+The processing capability of sensor nodes is insufficient for complex computational activities.
+
+3.3.2.4	Memory size
+Data must dwell in memory for processing in a broad variety of classical processing methods. These strategies are inappropriate for sensor network applications due to the restricted memory available on sensor nodes. This problem is resolved by the use of data stream processing.
+
+3.3.2.5	Scalability
+To process massive quantities data streams, data processing systems should be scalable.
+
+3.3.2.6	Fault tolerance
+Fault tolerance is a critical problem since sensor networks are being widely deployed to fulfil application requirements. Various techniques have been addressed (Koushanfar, Potkonjak et al. 2002).
+
+The focus of database streams has been on systems that analyse freshly arriving data and stream it continually to the user in real-time (Chandrasekaran and Franklin 2002). The data within the streaming database is used to create a visual representation such as a dashboard. The dashboard will then support the decision-making process.
+
+3.4	Dashboard
+
+Dashboards are visual representations of data. A data dashboard is a tool for tracking, analysing, and displaying important performance indicators, measurements, and statistical results (Eckerson 2010). Dashboards are anticipated to enhance intelligence and take advantage of human perceptual talents to better decision making (Yigitbasioglu and Velcu 2012). Dashboards have grown in from their original use of performance monitoring to more sophisticated analytical uses, adding additional elements like scenario analysis, drill down capabilities, and display format flexibility (Velcu-Laitinen and Yigitbasioglu 2012). The architecture of how the data are transported to create a dashboard are shown in Figure 12.
+
+ 
+Figure 12: Architecture of dashboard
+
+The development stage of a streaming database consists of Stage 1: Selecting the key metric, Stage 2: Populating the dashboard with data, Stage 3: Establishing relationships between the dashboard items, Stage 4: Forecasting and scenarios, and Stage 5: Connecting to financial consequences.
+
+3.4.1	Dashboard purposes
+According to Pauwels, Ambler et al. (2009) dashboards have at least 4 different purposes namely monitoring, consistency, planning, and communication. Monitoring is the most fundamental process of regularly assessing measurements that call for remedial action. The measuring practices utilized across departments and business divisions must be consistent. Since scenario analysis is one of its characteristics, dashboards may also be utilized for planning. dashboard communicates to its stakeholders both performance and the values of a business.
+
+3.4.2	Dashboard features
+The features that dashboards have to offer consists of real-time notifications, drill-down capabilities, scenario analysis, presentation flexibility, and external benchmarking (Velcu-Laitinen and Yigitbasioglu 2012). So that corrective actions may be initiated as soon as the measurements diverge from pre-set objectives, real-time warnings and alerts are required. The drill down functionality would enable users to modify data for a more in-depth study, without which customers would be compelled to go to another reporting platform. When the dashboard is meant to be used as a planning tool, scenario analysis may be a beneficial component. flexibility in presentation, or the capacity to show facts in tables or graphs. External benchmarking can provide consumers with useful information about how well the organization is doing in comparison to its rivals.
+3.4.3	Examples of dashboards
+This section provides different examples of dashboards. 
+
+
+
+
+ 
+Figure 15: Example of dashboard
+
+
+
+According to Khairat, Dukkipati et al. (2018) visualisation dashboard solutions increase situation awareness, usability, and navigation while reducing time spent on data collection. Decisions must be based on accurate information that is current, readily available, and timely, as well as on an analysis of this information (Muntean, Sabau et al. 2010). It has been shown that dashboards are useful tools for showing data to decision-makers.
+
+3.5	Executive summary
+The objective of the chapter was to give an overview of the types of technology components. It focused on sensors, streaming database, and dashboards. For each component the understanding of its use was comprehended. The properties of sensors have an impact on the data quality which can disturb the results of the project. The architecture of a streaming database indicate how this project will be designed. The dashboard determines that a valid decision-making approached would benefit from it. The next chapter introduces the life cycle of the project.
+
+
+
+
+
+
+
+
+ 
+BIBLIOGRAPHY 
+
+Abbasi, A. Z., et al. (2014). "A review of wireless sensors and networks' applications in agriculture." Computer Standards & Interfaces 36(2): 263-270.
+	
+Adebesin, F., et al. (2011). "Design research as a framework to evaluate the usability and accessibility of the digital doorway."
+	
+Al Kilani, M. and V. Kobziev (2016). "An overview of research methodology in information system (IS)." Open Access Library Journal 3(11): 1-9.
+	
+Anik, M. T. H., et al. (2020). On the effect of aging on digital sensors. 2020 33rd International Conference on VLSI Design and 2020 19th International Conference on Embedded Systems (VLSID), IEEE.
+	
+Chandrasekaran, S. and M. J. Franklin (2002). Streaming queries over streaming data. VLDB'02: Proceedings of the 28th International Conference on Very Large Databases, Elsevier.
+	
+Chua, W. F. (1986). "Radical developments in accounting thought." Accounting review: 601-632.
+	
+Dimitrov, D. V. (2016). "Medical internet of things and big data in healthcare." Healthcare informatics research 22(3): 156-163.
+	
+Eckerson, W. W. (2010). Performance dashboards: measuring, monitoring, and managing your business, John Wiley & Sons.
+	
+Gama, J. and P. P. Rodrigues (2007). Data stream processing. Learning from Data Streams, Springer: 25-39.
+	
+Golab, L. and M. T. Özsu (2010). "Data stream management." Synthesis Lectures on Data Management 2(1): 1-73.
+	
+Gregor, S. and D. Jones (2007). The anatomy of a design theory, Association for Information Systems.
+	
+Hevner, A. and S. Chatterjee (2010). Design science research in information systems. Design research in information systems, Springer: 9-22.
+	
+Hevner, A., et al. (2004). "Design science research in information systems." MIS quarterly 28(1): 75-105.
+	
+Hevner, A. R., et al. (2004). "Design science in information systems research." MIS quarterly: 75-105.
+	
+Horkheimer, M. (1972). Critical theory: Selected essays, A&C Black.
+	
+Hussain, T., et al. (2021). "A Risk-Based IoT Decision-Making Framework Based on Literature Review with Human Activity Recognition Case Studies." Sensors 21(13): 4504.
+	
+Kargupta, H., et al. (2006). "On-board vehicle data stream monitoring using minefleet and fast resource constrained monitoring of correlation matrices." New Generation Computing 25(1): 5-32.
+	
+Khairat, S. S., et al. (2018). "The impact of visualization dashboards on quality of care and clinician satisfaction: integrative literature review." JMIR human factors 5(2): e9328.
+	
+Kivunja, C. and A. B. Kuyini (2017). "Understanding and applying research paradigms in educational contexts." International Journal of higher education 6(5): 26-41.
+	
+Klein, A. and W. Lehner (2009). "Representing data quality in sensor data streaming environments." Journal of Data and Information Quality (JDIQ) 1(2): 1-28.
+	
+Kothari, C. R. (2004). Research methodology: Methods and techniques, New Age International.
+	
+Koushanfar, F., et al. (2002). Fault tolerance techniques for wireless ad hoc sensor networks. SENSORS, 2002 IEEE, IEEE.
+	
+Kumar, R. (2018). Research methodology: A step-by-step guide for beginners, Sage.
+	
+Lamshöft, K., et al. (2021). Information Hiding in Cyber Physical Systems: Challenges for Embedding, Retrieval and Detection using Sensor Data of the SWAT Dataset. Proceedings of the 2021 ACM Workshop on Information Hiding and Multimedia Security.
+	
+Mekonnen, Y., et al. (2019). "Machine learning techniques in wireless sensor network based precision agriculture." Journal of the Electrochemical Society 167(3): 037522.
+	
+Merwe, A. v. d., et al. (2019). Guidelines for conducting design science research in information systems. Annual Conference of the Southern African Computer Lecturers' Association, Springer.
+	
+Muntean, M., et al. (2010). Performance dashboards for universities. Proceedings of the 2nd international conference on manufacturing engineering, quality and production systems.
+	
+Nieminen, M., et al. (2009). Multi-sensor logical decision making in the single location surveillance point system. 2009 Fourth International Conference on Systems, IEEE.
+	
+Park, Y. S., et al. (2020). "The positivism paradigm of research." Academic Medicine 95(5): 690-694.
+	
+Patt, M. K. (2020). "IoT platforms: How they work and how to choose one." TechTarget.
+	
+Patton, M. Q. (2002). Qualitative research & evaluation methods, sage.
+	
+Pauwels, K., et al. (2009). "Dashboards as a service: why, what, how, and what research is needed?" Journal of service research 12(2): 175-189.
+	
+Peffers, K., et al. (2007). "A design science research methodology for information systems research." Journal of management information systems 24(3): 45-77.
+	
+Pereira, F., et al. (2018). Comparison of active and passive sensors for IoT applications. 2018 IEEE Wireless Power Transfer Conference (WPTC), IEEE.
+	
+Power, D. J. (2016). "Data science: supporting decision-making." Journal of Decision systems 25(4): 345-356.
+	
+Prat, N., et al. (2014). "Artifact evaluation in information systems design-science research–a holistic view."
+	
+Rehman, A. A. and K. Alharthi (2016). "An introduction to research paradigms." International Journal of Educational Investigations 3(8): 51-59.
+	
+Ripka, P. and A. Tipek (2013). Modern sensors handbook, John Wiley & Sons.
+	
+Rogers, J. (2020). "The Interpretivist Lens – What Design Study as a Method of Inquiry Can Teach Us." Visualization design lab 
+	
+Sow, D., et al. (2010). Body sensor data processing using stream computing. Proceedings of the international conference on Multimedia information retrieval.
+	
+Sun, D., et al. (2015). "Re-Stream: Real-time and energy-efficient resource scheduling in big data stream computing environments." Information Sciences 319: 92-112.
+	
+Tatbul, N. (2010). Streaming data integration: Challenges and opportunities. 2010 IEEE 26th International Conference on Data Engineering Workshops (ICDEW 2010), IEEE.
+	
+Thanh, N. C. and T. Thanh (2015). "The interconnection between interpretivist paradigm and qualitative methods in education." American journal of educational science 1(2): 24-27.
+	
+van Hillegersberg, J., et al. (2017). "Improving Decision Making in Ocean Race Sailing using Sensor Data."
+	
+Velcu-Laitinen, O. and O. M. Yigitbasioglu (2012). "The Use of Dashboards in Performance Management: Evidence from Sales Managers." International Journal of Digital Accounting Research 12.
+	
+Vetelino, J. and A. Reghu (2017). Introduction to sensors, CRC press.
+	
+Vom Brocke, J., et al. (2020). Design Science Research. Cases, Springer.
+	
+Weber, S. (2010). "Design science research: Paradigm or approach?".
+	
+Wedawatta, G., et al. (2011). "Case study as a research strategy: Investigating extreme weather resilience of construction SMEs in the UK."
+	
+Wiska, R., et al. (2016). Big sensor-generated data streaming using kafka and impala for data storage in wireless sensor network for co 2 monitoring. 2016 International Workshop on Big Data and Information Security (IWBIS), IEEE.
+	
+Wynn Jr, D. E. and C. K. Williams (2008). "Critical realm-based explanatory case study research in information systems."
+	
+Yigitbasioglu, O. M. and O. Velcu (2012). "A review of dashboards in performance management: Implications for design and research." International Journal of Accounting Information Systems 13(1): 41-59.
+
+ 
+
+
+	
+
